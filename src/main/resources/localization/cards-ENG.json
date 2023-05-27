@@ -5311,7 +5311,7 @@
   },
    "shadowverse:FighterFortitude": {
     "NAME": "Fighter's Fortitude",
-    "DESCRIPTION": "Lose !M! HP, Gain 1 Dexterity。"
+    "DESCRIPTION": "Lose !M! HP. Gain 1 Dexterity. "
   },
   "shadowverse:Garuda4_Cry": {
     "NAME": "Garuda, Winged Radiance (Crystallized)",
