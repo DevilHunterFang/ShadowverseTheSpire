@@ -4823,7 +4823,7 @@
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL Whenever you fuse at least 2 cards at once to this card and you have at least 1 energy, spend 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. If a Condemned card was fused this way, no energy is spent. NL NL --------------------- NL NL Deal !D! Damage. Put a *Volunteer *Test *Subject into your hand. It costs 0. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage to them for each one in your hand."
+    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL Whenever you fuse at least 2 cards at once to this card and you have at least 1 energy, spend 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was fused this way, no energy is spent. NL NL --------------------- NL NL Deal !D! Damage. Put a *Volunteer *Test *Subject into your hand. It costs 0. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage to them for each one in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
