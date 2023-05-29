@@ -4734,7 +4734,7 @@
   },
   "shadowverse:DiamondMaster": {
     "NAME": "Diamond Master",
-    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, you will not lose Block at the start of your turn. NL If your next attack damage is doubled, double your attack damage this turn. NL If both of the previous effects are activated, deal damage to all enemies equal to your Block.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, you no longer lose Block at the start of your turn. NL If your next attack damage is doubled, double your attack damage this turn. NL If you have both effects active, deal damage to all enemies equal to your Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]
@@ -4745,7 +4745,7 @@
   },
   "shadowverse:BejeweledShrine": {
     "NAME": "Bejeweled Shrine",
-    "DESCRIPTION": "Draw 1 card. NL At start of your turn, randomly gain 1 Blur or double your next attack damage. NL At the end of your turn, if both of the previous effects are active, you do not lose your Block and double damage and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 instead of 1."
+    "DESCRIPTION": "Draw 1 card. NL At the start of your turn, randomly gain 1 Blur or double your next attack damage. NL At the end of your turn, if both of the previous effects are active, you do not lose your Block and double damage and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 instead of 1."
   },
   "shadowverse:ImpiousBishop": {
     "NAME": "Impious Bishop",
