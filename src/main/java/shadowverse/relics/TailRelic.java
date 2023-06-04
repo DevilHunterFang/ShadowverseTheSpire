@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
- import shadowverse.cards.Temp.Ginsetsu;
- import shadowverse.cards.Temp.OneTailFox;
+ import shadowverse.cards.Neutral.Temp.Ginsetsu;
+ import shadowverse.cards.Neutral.Temp.OneTailFox;
 
 
  public class TailRelic

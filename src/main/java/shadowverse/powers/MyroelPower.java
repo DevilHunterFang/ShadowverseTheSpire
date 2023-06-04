@@ -12,11 +12,11 @@ public class MyroelPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public MyroelPower(AbstractCreature owner) {
+    public MyroelPower(AbstractCreature owner,int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
-        this.amount = 3;
+        this.amount = amount;
         this.type = PowerType.BUFF;
         updateDescription();
         this.img = new Texture("img/powers/MyroelPower.png");

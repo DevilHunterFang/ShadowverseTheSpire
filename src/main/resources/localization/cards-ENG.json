@@ -4603,18 +4603,7 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "Click to View Included Cards",
-    "EXTENDED_DESCRIPTION": [
-      "Standard",
-      "Followers",
-      "Evolution",
-      "Loot",
-      "Levin",
-      "Machina & Natura",
-      "Ambush",
-      "Gold",
-      "Heroic"
-    ]
+    "DESCRIPTION": "Click to View Included Cards"
   },
   "shadowverse:GlitteringGold": {
     "NAME": "Glittering Gold",
@@ -5333,10 +5322,6 @@
       ". )" 
       ]
   },
-  "shadowverse:BellWitch": {
-    "NAME": "Bell Witch",
-    "DESCRIPTION": "Academic · Mysteria NL Gain !B! Block. NL Add 1 *Mysterian *Missile and *Mysterian *Circle to your hand. "
-  },
   "shadowverse:ThicketOfGnarledHands": {
     "NAME": "Thicket of Gnarled Hands",
     "DESCRIPTION": "Accelerate 0 : Add an Attack or Power card from your discard pile to your hand, Deal !D! Damage to a random enemy. NL  NL --------------------- NL  NL Deal !M! Damage to all enemies X times, gain !M! Block Y times. NL X and Y are equal to the total number of other cards you played this combat (except this card) divided randomly. ",
@@ -5356,5 +5341,106 @@
    "shadowverse:Weiss": {
     "NAME": "Weiss, Discerning Professor",
     "DESCRIPTION": "Academic NL You are immune to Debuffs this turn. NL Enemies cannot gain Buffs this turn. "
+  },
+  "shadowverse:BishopPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "护符1",
+      "护符2",
+      "诅咒",
+      "机械&狮子",
+      "回复1",
+      "回复2",
+      "守护"
+    ]
+  },
+  "shadowverse:ElfPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "妖精",
+      "离场",
+      "长连击",
+      "自然&机械",
+      "回手",
+      "短连击",
+      "密林&载具"
+    ]
+  },
+  "shadowverse:NecroPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "葬送",
+      "幽灵",
+      "谢幕曲",
+      "机械",
+      "自然",
+      "死灵术",
+      "墓地"
+    ]
+  },
+  "shadowverse:NemesisPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "造物",
+      "八狱",
+      "机械",
+      "洗抽",
+      "人偶",
+      "共鸣",
+      "堆尸"
+    ]
+  },
+  "shadowverse:RoyalPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "潜伏",
+      "进化",
+      "宴乐",
+      "英雄",
+      "雷维翁",
+      "财宝",
+      "自然&机械",
+      "协作"
+    ]
+  },
+  "shadowverse:VampirePool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "渴望",
+      "蝙蝠",
+      "进化",
+      "自然&机械",
+      "自残",
+      "复仇",
+      "狂乱"
+    ]
+  },
+  "shadowverse:WitchPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "西洋棋",
+      "土之印1",
+      "土之印2",
+      "机械",
+      "自然",
+      "增幅1",
+      "增幅2"
+    ]
   }
 }

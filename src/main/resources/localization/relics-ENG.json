@@ -557,5 +557,13 @@
     "DESCRIPTIONS": [
       "At the start of your first two turns, randomly add #yLoot card to your hand. At the start of your 3rd turn, gain #b14 Block."
     ]
+  },
+  "shadowverse:FortuneWell": {
+    "NAME": "幸运井",
+    "FLAVOR": "你这井怎么不能井异画啊！",
+    "DESCRIPTIONS": [
+      "拾起时，以及每6（第一次为8）次战斗结束后可从3张随机稀有牌中选择一张加入卡组。",
+      "选择一张加入卡组"
+    ]
   }
 }

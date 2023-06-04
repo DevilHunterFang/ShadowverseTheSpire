@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.ClashEffect;
-import shadowverse.cards.Curse.*;
+import shadowverse.cards.Neutral.Curse.*;
 import shadowverse.characters.Bishop;
 
 import java.util.ArrayList;

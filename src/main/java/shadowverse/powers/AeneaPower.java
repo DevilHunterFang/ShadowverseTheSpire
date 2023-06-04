@@ -14,8 +14,8 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import shadowverse.cards.Temp.GenerateNine;
-import shadowverse.cards.Temp.Manmaru1;
+import shadowverse.cards.Neutral.Temp.GenerateNine;
+import shadowverse.cards.Neutral.Temp.Manmaru1;
 
 
  public class AeneaPower

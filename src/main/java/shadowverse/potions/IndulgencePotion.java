@@ -11,8 +11,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.cards.Curse.Indulgence;
-import shadowverse.cards.Temp.ForestBat;
+import shadowverse.cards.Neutral.Curse.Indulgence;
 
 public class IndulgencePotion extends CustomPotion {
     public static final String POTION_ID = "shadowverse:IndulgencePotion";

@@ -3,7 +3,7 @@
   "name": "Shadowverse",
   "author_list": ["Fang","shp241"],
   "description": "Shadowverse The Spire",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "sts_version": "12-22-2020",
   "mts_version": "3.21.0",
   "dependencies": ["basemod","stslib","LazyManKits"]

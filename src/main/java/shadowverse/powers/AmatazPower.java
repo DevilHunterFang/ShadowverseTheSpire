@@ -8,7 +8,7 @@
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.localization.PowerStrings;
  import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.cards.Temp.Fairy;
+ import shadowverse.cards.Neutral.Temp.Fairy;
 
 
  public class AmatazPower

@@ -8,10 +8,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Temp.GildedBlade;
-import shadowverse.cards.Temp.GildedBoots;
-import shadowverse.cards.Temp.GildedGoblet;
-import shadowverse.cards.Temp.GildedNecklace;
+import shadowverse.cards.Neutral.Temp.GildedBlade;
+import shadowverse.cards.Neutral.Temp.GildedBoots;
+import shadowverse.cards.Neutral.Temp.GildedGoblet;
+import shadowverse.cards.Neutral.Temp.GildedNecklace;
 
 import java.util.ArrayList;
 

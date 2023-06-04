@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -22,11 +21,13 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.cards.Basic.*;
-import shadowverse.cards.Curse.CurseOfPurgation;
+import shadowverse.cards.Nemesis.Basic.Defend_Nm;
+import shadowverse.cards.Nemesis.Basic.DimensionCut;
+import shadowverse.cards.Nemesis.Basic.MagisteelLion;
+import shadowverse.cards.Nemesis.Basic.Strike_Nm;
+import shadowverse.cards.Nemesis.NemesisPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
-
 
 import java.util.ArrayList;
 
@@ -54,6 +55,7 @@ public class Nemesis extends AbstractShadowversePlayer{
         initializeClass(null, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[6]).skins[(CharacterSelectScreenPatches.characters[6]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
         bigAnimation.skeleton.setSkin("skin_01");
+        this.cardPool= new NemesisPool(0);
     }
 
     @Override

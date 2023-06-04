@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.random.Random;
-import shadowverse.cards.Temp.*;
+import shadowverse.cards.Neutral.Temp.*;
 
 import java.util.ArrayList;
 

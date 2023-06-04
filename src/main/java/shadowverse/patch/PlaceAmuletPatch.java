@@ -1,10 +1,9 @@
 package shadowverse.patch;
 
-import shadowverse.cards.Uncommon.OrchidExaminationHall;
+import shadowverse.cards.Bishop.Recover2.OrchidExaminationHall;
 import shadowverseCharbosses.actions.RealWaitAction;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -14,7 +13,7 @@ import com.megacrit.cardcrawl.relics.PrismaticShard;
 import shadowverse.action.PlaceAmulet;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
-import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
 import shadowverse.cards.AbstractNoCountDownAmulet;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;

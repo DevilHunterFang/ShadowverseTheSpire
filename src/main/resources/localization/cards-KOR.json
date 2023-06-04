@@ -1209,8 +1209,8 @@
   },
   "shadowverse:Minthe": {
     "NAME": "영혼 파수꾼 민트",
-    "DESCRIPTION": "묘지를 20 얻습니다. NL 내 다음 턴 시작에 묘지를 20 잃습니다. NL 휘발성.",
-    "UPGRADE_DESCRIPTION": "묘지를 20 얻습니다. NL 내 다음 턴 시작에 묘지를 20 얻습니다."
+    "DESCRIPTION": "묘지를 20 얻습니다. NL 이번 턴, 사령술을 사용할 때마다 소모한 사령술만큼 묘지를 얻습니다. NL 내 다음 턴 시작에 묘지를 20 잃습니다. NL 휘발성.",
+    "UPGRADE_DESCRIPTION": "묘지를 20 얻습니다. NL 이번 턴, 사령술을 사용할 때마다 소모한 사령술만큼 묘지를 얻습니다. NL 내 다음 턴 시작에 묘지를 20 얻습니다."
   },
   "shadowverse:Fafnir": {
     "NAME": "주검이 된 용 파프니르",
@@ -4601,18 +4601,7 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "금지된 카드 목록을 보려면 누르세요",
-    "EXTENDED_DESCRIPTION": [
-      "기본",
-      "추종자",
-      "진화",
-      "보물",
-      "레비온",
-      "기계자연",
-      "잠복",
-      "금화",
-      "히어로"
-    ]
+    "DESCRIPTION": "금지된 카드 목록을 보려면 누르세요"
   },
   "shadowverse:GlitteringGold": {
     "NAME": "찬란한 금화",
@@ -4749,7 +4738,7 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "전정의 죄인 마가치요",
-    "DESCRIPTION": "팔옥 NL 피해를 !D! 준다. NL 이번 턴 사용한 카드 수+1.  NL 이번 전투동안 카드를 4장 이상 사용한 라운드가 3회 이상일 경우, 힘과 민첩을 2 얻고 내 손에 있는 팔옥 공격카드의 피해량에  !M! 한다.",
+    "DESCRIPTION": "팔옥 NL 피해를 !D! 준다. NL 이번 턴 사용한 카드 수+1.  NL 이번 전투동안 1턴 내에 카드를 4장 사용한 횟수가 3회 이상이면, 힘과 민첩을 2 얻고 내 손에 있는 팔옥 공격카드의 피해량에  !M! 한다.",
     "EXTENDED_DESCRIPTION": [
       " NL (총 ",
       " 라운드)"
@@ -4774,7 +4763,7 @@
   },
   "shadowverse:Wimael": {
     "NAME": "향풍의 집행자 위무엘",
-    "DESCRIPTION": "팔옥, 보존 NL 보존될때마다 비용 -1. NL 드로우될때마다 복사본을 1장 얻는다. NL 피해를 !D! 준다."
+    "DESCRIPTION": "팔옥. NL 스킬 카드를 사용할 때마다 비용 -1. NL 피해를 !D! 준다. NL 다음 턴 시작시, 이번 턴 비용이 0인 복사본을 하나 얻습니다."
   },
   "shadowverse:BenevolentElf": {
     "NAME": "베네딕션 엘프",
@@ -4984,9 +4973,9 @@
   },
   "shadowverse:Radiel": {
     "NAME": "무황의 집행자 레디엘",
-    "DESCRIPTION": "팔옥 NL 피해를 !D! 준다. NL 연계 20：피해를 3번 준다. NL 약화와 취약을 !M! 부여한다. NL 손과 뽑을 카드더미, 버린 카드더미, 소멸된 카드중 강화된 공격/스킬 카드가 7장 이상이면 대신 모든 적에게 약화와 취약을 부여한다.",
+    "DESCRIPTION": "팔옥 NL 피해를 !D! 준다. (힘이 !M!배로 적용된다) NL 연계 20：피해를 3번 준다. NL 약화와 취약을 !M! 부여한다. NL 손과 뽑을 카드더미, 버린 카드더미, 소멸된 카드중 강화된 공격/스킬 카드가 7장 이상이면 대신 모든 적에게 약화와 취약을 부여한다.",
     "EXTENDED_DESCRIPTION": [
-      " NL （协作数：",
+      " NL （연계：",
       ")"
     ]
   },
@@ -5303,7 +5292,7 @@
   "shadowverse:DimensionCrack": {
     "NAME": "차원의 틈새",
     "DESCRIPTION": "결단 ： NL *분석의 *아티팩트, *고대의 *아티팩트, *척결의 *아티팩트, *공습의 *아티팩트 중 둘을 골라 각각 2장씩 뽑을 카드더미에 섞어넣습니다. NL 강화 3 : 뽑을 카드더미 대신 손에 넣습니다.  NL 소멸. ",
-    "UPGRADE_DESCRIPTION": "결단 ： NL *분석의 *아티팩트, *고대의 *아티팩트, *척결의 *아티팩트, *공습의 *아티팩트 중 둘을 골라 각각 2장씩 뽑을 카드더미에 섞어넣습니다. NL 강화 3 : 뽑을 카드더미 대신 손에 넣습니다.  NL 앞으로 !stslib:ex! 회 사용 후 소멸합니다."
+    "UPGRADE_DESCRIPTION": "결단 ： NL *분석의 *아티팩트+, *고대의 *아티팩트+, *척결의 *아티팩트+, *공습의 *아티팩트+ 중 둘을 골라 각각 2장씩 뽑을 카드더미에 섞어넣습니다. NL 강화 3 : 뽑을 카드더미 대신 손에 넣습니다.  NL 앞으로 !stslib:ex! 회 사용 후 소멸합니다."
   },
   "shadowverse:MagicalBishop": {
     "NAME": "매지컬 비숍",
@@ -5348,5 +5337,106 @@
   "shadowverse:Weiss": {
     "NAME": "선별의 교사 바이스",
     "DESCRIPTION": "학원 NL 이번 턴, 적에게서 디버프를 받지 않는다.  NL 이번 턴, 적은 버프를 얻지 못한다. "
+  },
+  "shadowverse:BishopPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "마법진1",
+      "마법진2",
+      "저주",
+      "기계&성사자",
+      "회복1",
+      "회복2",
+      "수호"
+    ]
+  },
+  "shadowverse:ElfPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "엘프",
+      "전장을 벗어난~",
+      "12콤보",
+      "자연&기계",
+      "바운스",
+      "4콤보",
+      "밀림&마법진"
+    ]
+  },
+  "shadowverse:NecroPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "장송",
+      "유령",
+      "유언",
+      "기계",
+      "자연",
+      "사령술",
+      "묘지"
+    ]
+  },
+  "shadowverse:NemesisPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "아티팩트",
+      "팔옥",
+      "기계",
+      "뽑을 카드 조작",
+      "꼭두각시",
+      "공명",
+      "파괴된 카드"
+    ]
+  },
+  "shadowverse:RoyalPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "잠복",
+      "진화",
+      "연악",
+      "히어로",
+      "레비온",
+      "보물",
+      "자연&기계",
+      "연계"
+    ]
+  },
+  "shadowverse:VampirePool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "학원",
+      "갈망",
+      "박쥐",
+      "진화",
+      "자연&기계",
+      "자해",
+      "복수",
+      "광란"
+    ]
+  },
+  "shadowverse:WitchPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "기본",
+      "학원",
+      "체스",
+      "비술1",
+      "비술2",
+      "기계",
+      "자연",
+      "주문증폭1",
+      "增幅2"
+    ]
   }
 }

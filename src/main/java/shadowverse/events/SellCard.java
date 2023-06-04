@@ -11,12 +11,10 @@ import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.EventStrings;
-import com.megacrit.cardcrawl.relics.Circlet;
-import com.megacrit.cardcrawl.relics.SpiritPoop;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
-import shadowverse.cards.Rare.Alyaska;
-import shadowverse.cards.Uncommon.MasterDealer;
+import shadowverse.cards.Royal.Default.Alyaska;
+import shadowverse.cards.Royal.Default.MasterDealer;
 
 public class SellCard extends AbstractImageEvent {
     public static final String ID = "SellCard";

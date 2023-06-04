@@ -7,13 +7,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.Shadowverse;
-import shadowverse.cards.Rare.Albert;
+import shadowverse.cards.Royal.Levin.Albert;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class AlbertDrawAction extends AbstractGameAction {
     public static final float DURATION = Settings.ACTION_DUR_MED;

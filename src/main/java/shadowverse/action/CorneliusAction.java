@@ -7,9 +7,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import shadowverse.cards.AbstractEnhanceCard;
-import shadowverse.cards.Rare.DeadSoulTaker;
-import shadowverse.cards.Rare.Jatelant;
-import shadowverse.cards.Rare.PrimalGigant;
 import shadowverse.characters.Necromancer;
 
 import java.util.ArrayList;

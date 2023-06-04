@@ -5,8 +5,6 @@
  import com.megacrit.cardcrawl.actions.animations.VFXAction;
  import com.megacrit.cardcrawl.actions.common.DamageAction;
  import com.megacrit.cardcrawl.actions.common.HealAction;
- import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
- import com.megacrit.cardcrawl.cards.AbstractCard;
  import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -17,7 +15,6 @@
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.SmallLaserEffect;
- import shadowverse.cards.Temp.ManaForce;
 
 
  public class WorldEliminatorLastWordPower

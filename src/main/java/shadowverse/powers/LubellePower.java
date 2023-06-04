@@ -11,10 +11,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.NaterranGreatTree;
-import shadowverse.cards.Temp.NecroAnimals;
+import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
+import shadowverse.cards.Neutral.Temp.NecroAnimals;
 
 
  public class LubellePower

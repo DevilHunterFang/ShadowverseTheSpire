@@ -2,22 +2,17 @@ package shadowverse.potions;
 
 import basemod.abstracts.CustomPotion;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.RetainCardPower;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.cards.Temp.EnhancedPuppet;
-import shadowverse.cards.Temp.Puppet;
+import shadowverse.cards.Neutral.Temp.EnhancedPuppet;
+import shadowverse.cards.Neutral.Temp.Puppet;
 
 public class RevisedPotion extends CustomPotion {
     public static final String POTION_ID = "shadowverse:RevisedPotion";

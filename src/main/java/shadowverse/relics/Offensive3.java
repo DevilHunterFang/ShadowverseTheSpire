@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import shadowverse.action.NecromanceAction;
-import shadowverse.cards.Temp.Zombie;
+import shadowverse.cards.Neutral.Temp.Zombie;
 import shadowverse.powers.Cemetery;
 
 

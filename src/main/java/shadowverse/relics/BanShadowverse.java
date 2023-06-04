@@ -3,10 +3,7 @@ package shadowverse.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Temp.NaterranGreatTree;
 
 public class BanShadowverse extends CustomRelic {
     public static final String ID = "shadowverse:BanShadowverse";

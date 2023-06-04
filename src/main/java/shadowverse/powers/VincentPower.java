@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.WhirlwindEffect;
-import shadowverse.cards.Temp.JudgmentWord;
+import shadowverse.cards.Neutral.Temp.JudgmentWord;
 
 import java.util.ArrayList;
 

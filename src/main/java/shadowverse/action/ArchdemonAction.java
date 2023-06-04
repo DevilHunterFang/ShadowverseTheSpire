@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Rare.Archdemon;
+import shadowverse.cards.Vampire.Avarice.Archdemon;
 
 public class ArchdemonAction extends AbstractGameAction {
     private AbstractCard card;

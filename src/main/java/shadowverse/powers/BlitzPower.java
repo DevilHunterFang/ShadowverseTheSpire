@@ -10,11 +10,9 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import shadowverse.cards.Common.MagicalKnight;
-import shadowverse.cards.Common.MagicalRook;
-import shadowverse.cards.Temp.MagicalPawn;
+import shadowverse.cards.Witch.Chess.MagicalKnight;
+import shadowverse.cards.Witch.Chess.MagicalRook;
+import shadowverse.cards.Neutral.Temp.MagicalPawn;
 
 
 public class BlitzPower

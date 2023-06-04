@@ -15,7 +15,7 @@
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.SmallLaserEffect;
- import shadowverse.cards.Temp.ManaForce;
+ import shadowverse.cards.Neutral.Temp.ManaForce;
 
 
  public class chushouExplosionPower

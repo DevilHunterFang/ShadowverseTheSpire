@@ -5,7 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
 
 public class Tree extends CustomRelic {
     public static final String ID = "shadowverse:Tree";

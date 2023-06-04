@@ -3,12 +3,11 @@ package shadowverse.cardmods;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Temp.Skeleton;
+import shadowverse.cards.Neutral.Temp.Skeleton;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 public class PrinceCatacombMod extends AbstractCardModifier {

@@ -1,6 +1,5 @@
 package shadowverse.orbs;
 
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -8,7 +7,6 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.MinionAttackAction;
-import shadowverse.cards.Temp.GlitteringGold;
 
 public class MasterfulMusicianOrb extends Minion {
 

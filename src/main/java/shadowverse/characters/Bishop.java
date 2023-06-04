@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -22,8 +21,11 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.cards.Basic.*;
-import shadowverse.cards.Common.SacredPlea;
+import shadowverse.cards.Bishop.Basic.BlackenedScripture;
+import shadowverse.cards.Bishop.Basic.Defend_B;
+import shadowverse.cards.Bishop.Basic.PriestOfTheCudgel;
+import shadowverse.cards.Bishop.Basic.Strike_B;
+import shadowverse.cards.Bishop.BishopPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
@@ -49,6 +51,7 @@ public class Bishop extends AbstractShadowversePlayer{
     public Bishop(String name) {
         super(name, Enums.Bishop, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[5]).skins[(CharacterSelectScreenPatches.characters[5]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
+        this.cardPool= new BishopPool(0);
     }
 
     @Override

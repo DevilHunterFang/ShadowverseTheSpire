@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.cards.Temp.ManaForce;
+ import shadowverse.cards.Neutral.Temp.ManaForce;
 
 
  public class chushouHealPower

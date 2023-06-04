@@ -13,9 +13,9 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import shadowverse.cards.Rare.DeadSoulTaker;
-import shadowverse.cards.Rare.Jatelant;
-import shadowverse.cards.Rare.PrimalGigant;
+import shadowverse.cards.Neutral.Temp.DeadSoulTaker;
+import shadowverse.cards.Bishop.Amulet2.Jatelant;
+import shadowverse.cards.Elf.Left.PrimalGigant;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;

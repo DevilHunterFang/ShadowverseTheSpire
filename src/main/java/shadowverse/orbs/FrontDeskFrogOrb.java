@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.MinionAttackAction;
-import shadowverse.cards.Temp.GlitteringGold;
+import shadowverse.cards.Neutral.Temp.GlitteringGold;
 
 public class FrontDeskFrogOrb extends Minion {
 

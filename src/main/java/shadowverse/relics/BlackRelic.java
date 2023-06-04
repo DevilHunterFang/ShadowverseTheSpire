@@ -4,18 +4,14 @@
  import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.*;
  import com.megacrit.cardcrawl.cards.AbstractCard;
- import com.megacrit.cardcrawl.cards.DamageInfo;
  import com.megacrit.cardcrawl.core.AbstractCreature;
  import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
  import com.megacrit.cardcrawl.helpers.ImageMaster;
  import com.megacrit.cardcrawl.monsters.AbstractMonster;
  import com.megacrit.cardcrawl.powers.AbstractPower;
- import com.megacrit.cardcrawl.powers.PoisonPower;
  import com.megacrit.cardcrawl.powers.VulnerablePower;
- import com.megacrit.cardcrawl.powers.WeakPower;
  import com.megacrit.cardcrawl.relics.AbstractRelic;
- import com.megacrit.cardcrawl.rooms.AbstractRoom;
- import shadowverse.cards.Temp.WhiteArtifact;
+ import shadowverse.cards.Neutral.Temp.WhiteArtifact;
 
  public class BlackRelic
    extends CustomRelic {

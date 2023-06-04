@@ -43,8 +43,8 @@ public class ArisaPower
     public void onGainedBlock(float blockAmount) {
         if (blockAmount > 0.0F) {
             flash();
-            addToBot((AbstractGameAction)new SFXAction("ArisaPower"));
-            addToBot((AbstractGameAction) new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+            addToBot(new SFXAction("ArisaPower"));
+            addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
     }
 
@@ -57,8 +57,8 @@ public class ArisaPower
     public int betterOnApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
         if ((power instanceof StrengthPower || power instanceof DexterityPower) && stackAmount > 0) {
             flash();
-            addToBot((AbstractGameAction)new SFXAction("ArisaPower"));
-            addToBot((AbstractGameAction) new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+            addToBot(new SFXAction("ArisaPower"));
+            addToBot( new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         }
         return stackAmount;
     }

@@ -22,7 +22,7 @@
  import com.megacrit.cardcrawl.powers.EnvenomPower;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.IntenseZoomEffect;
- import shadowverse.cards.Temp.LegendaryFighterA;
+ import shadowverse.cards.Neutral.Temp.LegendaryFighterA;
 
 
  public class LegendaryFighterPower

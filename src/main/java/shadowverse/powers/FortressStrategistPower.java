@@ -1,8 +1,6 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.UpgradeRandomCardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -11,10 +9,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.GildedBlade;
-import shadowverse.cards.Temp.GildedBoots;
-import shadowverse.cards.Temp.GildedGoblet;
-import shadowverse.cards.Temp.GildedNecklace;
 
 public class FortressStrategistPower  extends AbstractPower {
     public static final String POWER_ID = "shadowverse:FortressStrategistPower";

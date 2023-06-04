@@ -5,9 +5,9 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Temp.Due;
-import shadowverse.cards.Temp.Tre;
-import shadowverse.cards.Temp.Uno;
+import shadowverse.cards.Neutral.Temp.Due;
+import shadowverse.cards.Neutral.Temp.Tre;
+import shadowverse.cards.Neutral.Temp.Uno;
 
 import java.util.ArrayList;
 

@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -22,18 +21,15 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.Shadowverse;
-import shadowverse.cards.Basic.DarkGeneral;
-import shadowverse.cards.Basic.Defend_V;
-import shadowverse.cards.Basic.RazoryClaw;
-import shadowverse.cards.Basic.Strike_V;
-import shadowverse.cards.Rare.NightVampire;
+import shadowverse.cards.Vampire.Basic.DarkGeneral;
+import shadowverse.cards.Vampire.Basic.Defend_V;
+import shadowverse.cards.Vampire.Basic.RazoryClaw;
+import shadowverse.cards.Vampire.Basic.Strike_V;
+import shadowverse.cards.Vampire.VampirePool;
 import shadowverse.effect.ShadowverseEnergyOrb;
-import shadowverse.helper.BanCardHelper;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class Vampire extends AbstractShadowversePlayer{
     public static class Enums
@@ -58,6 +54,7 @@ public class Vampire extends AbstractShadowversePlayer{
         super(name, Enums.Vampire, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[4]).skins[(CharacterSelectScreenPatches.characters[4]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
+        this.cardPool=new VampirePool(0);
     }
 
     @Override

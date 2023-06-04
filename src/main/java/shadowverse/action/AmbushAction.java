@@ -1,24 +1,18 @@
 package shadowverse.action;
 
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.vfx.combat.LightFlareParticleEffect;
-import shadowverse.cards.AbstractNoCountDownAmulet;
-import shadowverse.cards.Temp.Ambush;
-import shadowverse.cards.Temp.AmbushAttack;
+import shadowverse.cards.Neutral.Temp.Ambush;
+import shadowverse.cards.Neutral.Temp.AmbushAttack;
 import shadowverse.orbs.AmbushMinion;
-import shadowverse.orbs.AmuletOrb;
 import shadowverse.orbs.Minion;
 import shadowverse.powers.DualbladePower;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class AmbushAction extends AbstractGameAction {
     public static final String[] TEXT = (CardCrawlGame.languagePack.getUIString("shadowverse:Ambush")).TEXT;

@@ -23,7 +23,7 @@
    public static final String ID = "shadowverse:Mysteria";
    public static final String IMG = "img/relics/Mysteria.png";
    public static final String OUTLINE_IMG = "img/relics/outline/Mysteria_Outline.png";
-   public static AbstractCard c = (AbstractCard)new shadowverse.cards.Temp.Mysteria();
+   public static AbstractCard c = (AbstractCard)new shadowverse.cards.Neutral.Temp.Mysteria();
  
    
    public Mysteria() {

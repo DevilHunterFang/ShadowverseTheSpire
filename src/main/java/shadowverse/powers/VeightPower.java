@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.ForestBat;
+import shadowverse.cards.Neutral.Temp.ForestBat;
 
 public class VeightPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:VeightPower";

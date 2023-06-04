@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.action.MinionAttackAction;
 import shadowverse.action.MinionBuffAction;
-import shadowverse.cards.Temp.GildedBoots;
+import shadowverse.cards.Neutral.Temp.GildedBoots;
 import shadowverse.powers.DualbladePower;
 
 public class Cannoneer extends Minion {

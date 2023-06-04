@@ -3,13 +3,11 @@ package shadowverse.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.GlitteringGold;
-import shadowverseCharbosses.actions.common.EnemyMakeTempCardInHandAction;
+import shadowverse.cards.Neutral.Temp.GlitteringGold;
 
 public class GiveGoldPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:GiveGoldPower";

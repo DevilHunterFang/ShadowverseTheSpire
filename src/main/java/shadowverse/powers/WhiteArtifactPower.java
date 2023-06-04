@@ -9,8 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.BlackArtifact2;
-import shadowverse.cards.Temp.WhiteArtifact2;
+import shadowverse.cards.Neutral.Temp.BlackArtifact2;
 
 
 public class WhiteArtifactPower

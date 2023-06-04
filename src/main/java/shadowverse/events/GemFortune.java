@@ -1,15 +1,14 @@
 package shadowverse.events;
 
 import com.badlogic.gdx.math.MathUtils;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
-import shadowverse.cards.Temp.CrystalBright;
-import shadowverse.cards.Temp.GemLight;
+import shadowverse.cards.Neutral.Temp.CrystalBright;
+import shadowverse.cards.Neutral.Temp.GemLight;
 
 import java.util.ArrayList;
 import java.util.List;

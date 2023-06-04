@@ -3,8 +3,6 @@
 
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,9 +12,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.MagicalPawn;
-import shadowverse.cards.Temp.Puppet;
-import shadowverse.cards.Uncommon.MagicalStrategy;
+import shadowverse.cards.Neutral.Temp.MagicalPawn;
+import shadowverse.cards.Witch.Chess.MagicalStrategy;
 
 
  public class MysticQueenPower

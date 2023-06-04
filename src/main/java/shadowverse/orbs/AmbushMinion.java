@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -20,7 +19,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import shadowverse.action.AmbushAction;
 import shadowverse.action.MinionAttackAction;
 import shadowverse.action.MinionBuffAction;
-import shadowverse.cards.Uncommon.Leod;
+import shadowverse.cards.Royal.Ambush.Leod;
 import shadowverse.effect.AddCardToStasisEffect;
 import shadowverse.powers.DualbladePower;
 

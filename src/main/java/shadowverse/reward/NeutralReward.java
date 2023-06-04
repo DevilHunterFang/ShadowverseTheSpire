@@ -1,14 +1,13 @@
 package shadowverse.reward;
 
 import basemod.abstracts.CustomReward;
-import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.rewards.RewardItem;
-import shadowverse.cards.Neutral.AbstractNeutralCard;
+import shadowverse.cards.AbstractNeutralCard;
 
 import java.util.ArrayList;
 

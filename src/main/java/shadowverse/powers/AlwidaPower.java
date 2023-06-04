@@ -1,22 +1,14 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.MinionSummonAction;
-import shadowverse.cards.Rare.LightOfHollow;
-import shadowverse.cards.Temp.GildedBlade;
-import shadowverse.cards.Temp.GildedBoots;
-import shadowverse.cards.Temp.GildedGoblet;
-import shadowverse.cards.Temp.GildedNecklace;
-import shadowverse.cards.Uncommon.UltimateHollow;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.orbs.*;
 

@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Status.Ghost;
-import shadowverse.cards.Uncommon.Mordecai;
+import shadowverse.cards.Neutral.Status.Ghost;
+import shadowverse.cards.Necromancer.Default.Mordecai;
 
 public class ArcusPower extends AbstractPower{
     public static final String POWER_ID = "shadowverse:ArcusPower";

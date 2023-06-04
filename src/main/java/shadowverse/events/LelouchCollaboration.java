@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Circlet;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
-import shadowverse.cards.Curse.Geass;
+import shadowverse.cards.Neutral.Curse.Geass;
 import shadowverse.relics.GeassRelic;
 
 public class LelouchCollaboration extends AbstractEvent {

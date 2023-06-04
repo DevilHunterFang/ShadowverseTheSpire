@@ -10,8 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.cards.Status.EvolutionPoint;
- import shadowverse.characters.AbstractShadowversePlayer;
+ import shadowverse.cards.Neutral.Status.EvolutionPoint;
  import shadowverse.characters.Bishop;
 
 

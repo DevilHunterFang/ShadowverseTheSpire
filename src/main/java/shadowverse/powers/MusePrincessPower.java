@@ -14,9 +14,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.NaterranGreatTree;
-import shadowverse.cards.Temp.NecroAnimals;
-import shadowverse.cards.Uncommon.Muse;
+import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
+import shadowverse.cards.Neutral.Temp.Muse;
 
 
  public class MusePrincessPower

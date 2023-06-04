@@ -3,7 +3,7 @@ package shadowverse.action;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Uncommon.WhirlwindRhinoceroach;
+import shadowverse.cards.Elf.Return.WhirlwindRhinoceroach;
 
 public class WhirlwindRhinoceroachAction extends AbstractGameAction {
     private AbstractCard card;

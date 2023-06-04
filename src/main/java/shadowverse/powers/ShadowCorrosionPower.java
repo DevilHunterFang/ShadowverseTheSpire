@@ -12,7 +12,7 @@
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.localization.PowerStrings;
  import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.cards.Temp.NaterranGreatTree;
+ import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
 
  public class ShadowCorrosionPower extends AbstractPower implements HealthBarRenderPower {
    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:ShadowCorrosionPower");

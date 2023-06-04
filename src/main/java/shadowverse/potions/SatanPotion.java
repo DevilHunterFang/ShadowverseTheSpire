@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.random.Random;
 import shadowverse.action.ChoiceAction;
-import shadowverse.cards.Temp.*;
+import shadowverse.cards.Neutral.Temp.*;
 
 import java.util.ArrayList;
 

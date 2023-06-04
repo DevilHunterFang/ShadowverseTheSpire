@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Temp.RepairMode;
+import shadowverse.cards.Neutral.Temp.RepairMode;
 
 
  public class LonePromise

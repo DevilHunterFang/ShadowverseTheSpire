@@ -7,8 +7,8 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Temp.ForestBat;
-import shadowverse.cards.Temp.ProductMachine;
+import shadowverse.cards.Neutral.Temp.ForestBat;
+import shadowverse.cards.Neutral.Temp.ProductMachine;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.Iterator;

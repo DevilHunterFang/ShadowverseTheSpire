@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import shadowverse.cards.Rare.Albert;
+import shadowverse.cards.Royal.Levin.Albert;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;

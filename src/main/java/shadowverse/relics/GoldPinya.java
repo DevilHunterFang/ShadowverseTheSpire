@@ -11,9 +11,9 @@
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Temp.Horse;
-import shadowverse.cards.Temp.Jeep;
-import shadowverse.cards.Temp.Motorbike;
+import shadowverse.cards.Neutral.Temp.Horse;
+import shadowverse.cards.Neutral.Temp.Jeep;
+import shadowverse.cards.Neutral.Temp.Motorbike;
 
 import java.util.ArrayList;
 

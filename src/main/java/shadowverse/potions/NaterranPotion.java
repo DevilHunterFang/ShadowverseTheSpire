@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
 
 public class NaterranPotion extends CustomPotion {
     public static final String POTION_ID = "shadowverse:NaterranPotion";

@@ -11,9 +11,9 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.PlaceAmulet;
-import shadowverse.cards.Temp.RelicPlaton;
-import shadowverse.cards.Temp.RelicPrism;
-import shadowverse.cards.Temp.RelicTorus;
+import shadowverse.cards.Neutral.Temp.RelicPlaton;
+import shadowverse.cards.Neutral.Temp.RelicPrism;
+import shadowverse.cards.Neutral.Temp.RelicTorus;
 import shadowverse.orbs.AmuletOrb;
 
 import java.util.ArrayList;

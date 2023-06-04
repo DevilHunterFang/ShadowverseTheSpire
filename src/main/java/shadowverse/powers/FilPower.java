@@ -9,7 +9,7 @@
  import com.megacrit.cardcrawl.core.CardCrawlGame;
  import com.megacrit.cardcrawl.localization.PowerStrings;
  import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.cards.Temp.Fil;
+ import shadowverse.cards.Neutral.Temp.Fil;
 
  public class FilPower extends AbstractPower {
    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("shadowverse:FilPower");

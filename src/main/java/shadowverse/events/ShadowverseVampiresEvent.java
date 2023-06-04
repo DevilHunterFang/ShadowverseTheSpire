@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.BloodVial;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
-import shadowverse.cards.Basic.RazoryClaw;
+import shadowverse.cards.Vampire.Basic.RazoryClaw;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Common.GreenWoodGuardian;
+import shadowverse.cards.Elf.Wood.GreenWoodGuardian;
 
 
  public class GreenbrierElfPower

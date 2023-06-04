@@ -1209,8 +1209,8 @@
   },
   "shadowverse:Minthe": {
     "NAME": "魂の番人・ミント",
-    "DESCRIPTION": "墓場 20を得る。 NL ターン開始時、 墓場 20を失う。 NL エセリアル 。",
-    "UPGRADE_DESCRIPTION": "墓場 20を得る。 NL ターン開始時、 墓場 20を失う"
+    "DESCRIPTION": "墓場 20を得る。 NL このターン、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値する。 NL ターン開始時、 墓場 20を失う。 NL エセリアル 。",
+    "UPGRADE_DESCRIPTION": "墓場 20を得る。 NL このターン、自分が ネクロマンス をした時、 墓場 を+ ネクロマンス の値する。  NL ターン開始時、 墓場 20を失う"
   },
   "shadowverse:Fafnir": {
     "NAME": "屍竜・ファフニール",
@@ -4604,18 +4604,7 @@
   },
   "shadowverse:BanCardView": {
     "NAME": "",
-    "DESCRIPTION": "カードパック一覧",
-    "EXTENDED_DESCRIPTION": [
-      "ベーシック",
-      "フォロワー",
-      "進化",
-      "財宝",
-      "レヴィオン",
-      "機械・自然",
-      "潜伏",
-      "金貨",
-      "ヒーロー"
-    ]
+    "DESCRIPTION": "カードパック一覧"
   },
   "shadowverse:GlitteringGold": {
     "NAME": "輝く金貨",
@@ -4752,7 +4741,7 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "剪定の咎人・マガチヨ",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL このターン中にプレイしていたカードの数を+1する。 NL この戦闘中に1ターンにプレイしていたカードの数が4以上のターン数が3以上なら、 筋力 と 敏捷性 2を得、手札の 八獄 アタックのダメージとブロックを+ !M! する。",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL このターン中にプレイしていたカードの数を+1する。 NL この戦闘中に1ターンに4枚のカードをプレイしていた回数が3以上なら、 筋力 と 敏捷性 2を得、手札の 八獄 アタックのダメージとブロックを+ !M! する。",
     "EXTENDED_DESCRIPTION": [
       " NL (4枚プレイのターン数は ",
       " 。)"
@@ -4987,7 +4976,7 @@
   },
   "shadowverse:Radiel": {
     "NAME": "武皇の執行者・レーディエル",
-    "DESCRIPTION": "八獄 NL !D! ダメージを与える。 NL 連携 20 ダメージを3回与える。 NL 弱体化 と 脱力 !M! を与える。 NL 手札、山札、捨札、廃棄札の アップグレード したアタックまたはパワーが7枚以上なら、デバフを敵全体に与える。",
+    "DESCRIPTION": "八獄 NL !D! ダメージを与える( !M! 倍の 筋力 ボーナスが適用される)。 NL 連携 20 ダメージを3回与える。 NL 弱体化 と 脱力 !M! を与える。 NL 手札、山札、捨札、廃棄札の アップグレード したアタックまたはパワーが7枚以上なら、デバフを敵全体に与える。",
     "EXTENDED_DESCRIPTION": [
       " NL （連携数：",
       ")"
@@ -5351,5 +5340,106 @@
   "shadowverse:Weiss": {
     "NAME": "選別の教員・ヴァイス",
     "DESCRIPTION": "学園 NL このターン、敵からのデバフを受けない。 NL このターン、敵はバフを受けない。"
+  },
+  "shadowverse:BishopPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "护符1",
+      "护符2",
+      "诅咒",
+      "机械&狮子",
+      "回复1",
+      "回复2",
+      "守护"
+    ]
+  },
+  "shadowverse:ElfPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "妖精",
+      "离场",
+      "长连击",
+      "自然&机械",
+      "回手",
+      "短连击",
+      "密林&载具"
+    ]
+  },
+  "shadowverse:NecroPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "葬送",
+      "幽灵",
+      "谢幕曲",
+      "机械",
+      "自然",
+      "死灵术",
+      "墓地"
+    ]
+  },
+  "shadowverse:NemesisPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "造物",
+      "八狱",
+      "机械",
+      "洗抽",
+      "人偶",
+      "共鸣",
+      "堆尸"
+    ]
+  },
+  "shadowverse:RoyalPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "潜伏",
+      "进化",
+      "宴乐",
+      "英雄",
+      "雷维翁",
+      "财宝",
+      "自然&机械",
+      "协作"
+    ]
+  },
+  "shadowverse:VampirePool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "渴望",
+      "蝙蝠",
+      "进化",
+      "自然&机械",
+      "自残",
+      "复仇",
+      "狂乱"
+    ]
+  },
+  "shadowverse:WitchPool": {
+    "NAME": "",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "基本",
+      "学园",
+      "西洋棋",
+      "土之印1",
+      "土之印2",
+      "机械",
+      "自然",
+      "增幅1",
+      "增幅2"
+    ]
   }
 }

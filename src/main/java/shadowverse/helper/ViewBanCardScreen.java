@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.screens.mainMenu.ScrollBar;
 import com.megacrit.cardcrawl.screens.mainMenu.ScrollBarListener;
 import shadowverse.Shadowverse;
-import shadowverse.cards.BanCardView;
+import shadowverse.cards.AbstractBanPool;
 
 import java.util.*;
 
@@ -225,6 +225,9 @@ public class ViewBanCardScreen implements ScrollBarListener {
     public void open(ArrayList<AbstractCard> group) {
         this.group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         this.group.group.addAll(group);
+        this.group.sortByType(true);
+        this.group.sortByCost(true);
+        this.group.sortByRarity(false);
         this.open();
     }
 
@@ -340,8 +343,8 @@ public class ViewBanCardScreen implements ScrollBarListener {
 
             if ((InputHelper.justReleasedClickLeft && this.hoveredCard == this.clickStartedCard || CInputActionSet.select.isJustPressed()) && this.headerIndex < 0) {
                 InputHelper.justReleasedClickLeft = false;
-                if (this.clickStartedCard instanceof BanCardView) {
-                    ((BanCardView)this.clickStartedCard).showGroup();
+                if (this.clickStartedCard instanceof AbstractBanPool) {
+                    ((AbstractBanPool)this.clickStartedCard).showGroup();
                 } else {
                     CardCrawlGame.cardPopup.open(this.hoveredCard, this.group);
                 }

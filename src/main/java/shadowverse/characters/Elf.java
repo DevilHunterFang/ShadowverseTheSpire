@@ -12,7 +12,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -22,10 +21,11 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.cards.Basic.Defend_E;
-import shadowverse.cards.Basic.FairyWhisperer;
-import shadowverse.cards.Basic.Strike_E;
-import shadowverse.cards.Basic.SylvanJustice;
+import shadowverse.cards.Elf.Basic.Defend_E;
+import shadowverse.cards.Elf.Basic.FairyWhisperer;
+import shadowverse.cards.Elf.Basic.Strike_E;
+import shadowverse.cards.Elf.Basic.SylvanJustice;
+import shadowverse.cards.Elf.ElfPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
 
@@ -53,6 +53,7 @@ public class Elf extends AbstractShadowversePlayer{
         super(name, Enums.Elf, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[1]).skins[(CharacterSelectScreenPatches.characters[1]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
         bigAnimation.setVisible(false);
+        this.cardPool= new ElfPool(0);
     }
 
     @Override

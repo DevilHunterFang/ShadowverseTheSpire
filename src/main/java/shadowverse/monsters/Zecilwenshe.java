@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.DaggerSprayEffect;
-import shadowverse.cards.Temp.NaterranGreatTree;
+import shadowverse.cards.Neutral.Temp.NaterranGreatTree;
 
 import java.util.ArrayList;
 

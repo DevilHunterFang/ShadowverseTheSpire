@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
-import shadowverse.cards.Uncommon.ExecutorOfTheOath;
+import shadowverse.cards.Bishop.Recover2.ExecutorOfTheOath;
 import shadowverse.orbs.AmuletOrb;
 
 public class AmuletOrbPatch {

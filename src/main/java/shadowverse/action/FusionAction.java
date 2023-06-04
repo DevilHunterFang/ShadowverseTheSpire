@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
-import shadowverse.cards.Neutral.Machinus;
+import shadowverse.cards.Neutral.Neutral.Machinus;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;

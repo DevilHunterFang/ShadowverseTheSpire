@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.MasqueradeGhost_Copy;
+import shadowverse.cards.Neutral.Temp.MasqueradeGhost_Copy;
 
 public class NextTurnMasqueradeGhostPower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:NextTurnMasqueradeGhostPower";

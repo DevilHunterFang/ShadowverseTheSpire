@@ -9,8 +9,7 @@
  import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.relics.AbstractRelic;
  import shadowverse.action.NecromanceAction;
- import shadowverse.cards.Temp.Litch;
- import shadowverse.cards.Temp.Skullfather;
+ import shadowverse.cards.Neutral.Temp.Skullfather;
  import shadowverse.patch.CharacterSelectScreenPatches;
  import shadowverse.powers.Cemetery;
 

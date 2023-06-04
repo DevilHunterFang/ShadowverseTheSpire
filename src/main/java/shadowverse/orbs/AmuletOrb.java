@@ -25,7 +25,7 @@ import shadowverse.cardmods.GarudaMod;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
-import shadowverse.cards.Uncommon.GoldenCity;
+import shadowverse.cards.Bishop.Amulet1.GoldenCity;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.effect.AddCardToStasisEffect;
 import shadowverse.powers.UnerielPower;

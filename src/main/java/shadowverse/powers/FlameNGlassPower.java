@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.FlameNGlass;
+import shadowverse.cards.Neutral.Temp.FlameNGlass;
 
 
  public class FlameNGlassPower

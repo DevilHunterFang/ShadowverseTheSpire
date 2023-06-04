@@ -1,18 +1,14 @@
 package shadowverse.relics;
 
 import basemod.abstracts.CustomRelic;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.colorless.Discovery;
-import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Rare.Tolerance;
-import shadowverse.cards.Temp.AbsoluteOrder;
-import shadowverse.cards.Temp.VerdictWord;
+import shadowverse.cards.Neutral.Temp.AbsoluteOrder;
+import shadowverse.cards.Neutral.Temp.VerdictWord;
 
 public class Bullet
         extends CustomRelic {

@@ -13,9 +13,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import shadowverse.cards.Temp.Horse;
-import shadowverse.cards.Temp.Jeep;
-import shadowverse.cards.Temp.Motorbike;
+import shadowverse.cards.Neutral.Temp.Horse;
+import shadowverse.cards.Neutral.Temp.Jeep;
+import shadowverse.cards.Neutral.Temp.Motorbike;
 
 import java.util.ArrayList;
 import java.util.Collections;

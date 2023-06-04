@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import shadowverse.Shadowverse;
-import shadowverse.cards.BanCardView;
+import shadowverse.characters.AbstractShadowversePlayer;
 
 import java.util.ArrayList;
 
@@ -30,7 +30,7 @@ public class ViewBanCardOption {
 
     public ViewBanCardOption() {
         this.hb = new Hitbox(64.0F * Settings.scale, 64.0F * Settings.scale);
-        this.hb.move((float)Settings.WIDTH - (64.0F * Settings.scale + 10.0F * Settings.scale) * 4.0F + 32.0F * Settings.scale, (float)Settings.HEIGHT - 32.0F * Settings.scale);
+        this.hb.move((float) Settings.WIDTH - (64.0F * Settings.scale + 10.0F * Settings.scale) * 4.0F + 32.0F * Settings.scale, (float) Settings.HEIGHT - 32.0F * Settings.scale);
     }
 
     public void unhoverHitboxes() {
@@ -38,7 +38,7 @@ public class ViewBanCardOption {
     }
 
     public void update() {
-        if (Shadowverse.banCards) {
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.MASTER_DECK_VIEW) {
                 this.rotateTimer += Gdx.graphics.getDeltaTime() * 4.0F;
                 this.angle = MathHelper.angleLerpSnap(this.angle, MathUtils.sin(this.rotateTimer) * 15.0F);
@@ -85,7 +85,7 @@ public class ViewBanCardOption {
                 } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.MAP && !AbstractDungeon.dungeonMapScreen.dismissable) {
                     AbstractDungeon.previousScreen = AbstractDungeon.CurrentScreen.MAP;
                     this.openScreen();
-                }else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.NEOW_UNLOCK){
+                } else if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.NEOW_UNLOCK) {
 
                 } else if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.SETTINGS && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.MAP) {
                     if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.INPUT_SETTINGS) {
@@ -127,35 +127,37 @@ public class ViewBanCardOption {
     }
 
     private void openScreen() {
-        if (Shadowverse.banCardScreen == null) {
-            Shadowverse.banCardScreen = new ViewBanCardScreen();
-        }
-
-        ArrayList<AbstractCard> list = new ArrayList();
-        Shadowverse.logger.info("start open");
-
-        for(int i = 0; i < Shadowverse.allGroupNumber; ++i) {
-            if (Shadowverse.groupActive[i]) {
-                list.add(new BanCardView(i));
-                Shadowverse.logger.info(((AbstractCard)list.get(list.size() - 1)).name);
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
+            if (Shadowverse.banCardScreen == null) {
+                Shadowverse.banCardScreen = new ViewBanCardScreen();
             }
-        }
 
-        Shadowverse.banCardScreen.open(list);
+            ArrayList<AbstractCard> list = new ArrayList<>();
+            Shadowverse.logger.info("start open");
+
+            for (int i = 0; i < ((AbstractShadowversePlayer) AbstractDungeon.player).cardPool.getGroupCount(); ++i) {
+                if (Shadowverse.groupActive[i]) {
+                    list.add(((AbstractShadowversePlayer) AbstractDungeon.player).cardPool.copy(i));
+                    Shadowverse.logger.info(((AbstractCard) list.get(list.size() - 1)).name);
+                }
+            }
+
+            Shadowverse.banCardScreen.open(list);
+        }
     }
 
     public void render(SpriteBatch sb) {
-        if (Shadowverse.banCards) {
+        if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
             if (this.hb.hovered && AbstractDungeon.screen != AbstractDungeon.CurrentScreen.MASTER_DECK_VIEW) {
-                TipHelper.renderGenericTip(1550.0F * Settings.scale, (float)Settings.HEIGHT - 120.0F * Settings.scale, TEXT[0], TEXT[1]);
+                TipHelper.renderGenericTip(1550.0F * Settings.scale, (float) Settings.HEIGHT - 120.0F * Settings.scale, TEXT[0], TEXT[1]);
             }
 
             sb.setColor(Color.WHITE);
-            sb.draw(BAN_CARD_VIEW, (float)Settings.WIDTH - (64.0F * Settings.scale + 10.0F * Settings.scale) * 4.0F - 32.0F + 32.0F * Settings.scale, (float)Settings.HEIGHT - 64.0F * Settings.scale - 32.0F + 32.0F * Settings.scale, 32.0F, 32.0F, 64.0F, 64.0F, Settings.scale, Settings.scale, this.angle, 0, 0, 64, 64, false, false);
+            sb.draw(BAN_CARD_VIEW, (float) Settings.WIDTH - (64.0F * Settings.scale + 10.0F * Settings.scale) * 4.0F - 32.0F + 32.0F * Settings.scale, (float) Settings.HEIGHT - 64.0F * Settings.scale - 32.0F + 32.0F * Settings.scale, 32.0F, 32.0F, 64.0F, 64.0F, Settings.scale, Settings.scale, this.angle, 0, 0, 64, 64, false, false);
             if (this.hb.hovered) {
                 sb.setBlendFunction(770, 1);
                 sb.setColor(new Color(1.0F, 1.0F, 1.0F, 0.25F));
-                sb.draw(BAN_CARD_VIEW, (float)Settings.WIDTH - (64.0F * Settings.scale + 10.0F * Settings.scale) * 4.0F - 32.0F + 32.0F * Settings.scale, (float)Settings.HEIGHT - 64.0F * Settings.scale - 32.0F + 32.0F * Settings.scale, 32.0F, 32.0F, 64.0F, 64.0F, Settings.scale, Settings.scale, this.angle, 0, 0, 64, 64, false, false);
+                sb.draw(BAN_CARD_VIEW, (float) Settings.WIDTH - (64.0F * Settings.scale + 10.0F * Settings.scale) * 4.0F - 32.0F + 32.0F * Settings.scale, (float) Settings.HEIGHT - 64.0F * Settings.scale - 32.0F + 32.0F * Settings.scale, 32.0F, 32.0F, 64.0F, 64.0F, Settings.scale, Settings.scale, this.angle, 0, 0, 64, 64, false, false);
                 sb.setBlendFunction(770, 771);
             }
 

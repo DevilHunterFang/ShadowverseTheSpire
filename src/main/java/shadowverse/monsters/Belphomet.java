@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.InflameEffect;
 import com.megacrit.cardcrawl.vfx.combat.LaserBeamEffect;
 import com.megacrit.cardcrawl.vfx.combat.SmallLaserEffect;
-import shadowverse.cards.Status.BelphometStatus;
+import shadowverse.cards.Neutral.Status.BelphometStatus;
 import shadowverse.powers.ManaBarrier;
 import shadowverse.powers.chushouExplosionPower;
 import shadowverse.powers.chushouHealPower;

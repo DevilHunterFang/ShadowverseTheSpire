@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.cards.AbstractAmuletCard;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.AbstractNoCountDownAmulet;
-import shadowverse.cards.Temp.HeavenFire;
+import shadowverse.cards.Neutral.Temp.HeavenFire;
 
 public class HeavenFirePower extends AbstractPower {
     public static final String POWER_ID = "shadowverse:HeavenFirePower";

@@ -1,28 +1,28 @@
  package shadowverse.characters;
 
  import basemod.animations.AbstractAnimation;
-import basemod.animations.SpriterAnimation;
-import com.badlogic.gdx.graphics.Color;
+ import basemod.animations.SpriterAnimation;
+ import com.badlogic.gdx.graphics.Color;
  import com.badlogic.gdx.graphics.Texture;
  import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.EnergyManager;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.events.beyond.SpireHeart;
-import com.megacrit.cardcrawl.events.city.Vampires;
-import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
-import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.helpers.ScreenShake;
-import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.cards.Basic.Insight;
+ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
+ import com.megacrit.cardcrawl.actions.AbstractGameAction;
+ import com.megacrit.cardcrawl.cards.AbstractCard;
+ import com.megacrit.cardcrawl.cards.DamageInfo;
+ import com.megacrit.cardcrawl.characters.AbstractPlayer;
+ import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.core.EnergyManager;
+ import com.megacrit.cardcrawl.events.beyond.SpireHeart;
+ import com.megacrit.cardcrawl.events.city.Vampires;
+ import com.megacrit.cardcrawl.helpers.CardHelper;
+ import com.megacrit.cardcrawl.helpers.CardLibrary;
+ import com.megacrit.cardcrawl.helpers.FontHelper;
+ import com.megacrit.cardcrawl.helpers.ScreenShake;
+ import com.megacrit.cardcrawl.localization.CharacterStrings;
+ import com.megacrit.cardcrawl.screens.CharSelectInfo;
+ import com.megacrit.cardcrawl.unlock.UnlockTracker;
+ import shadowverse.cards.Witch.Basic.Insight;
+ import shadowverse.cards.Witch.WitchPool;
  import shadowverse.effect.ShadowverseEnergyOrb;
  import shadowverse.patch.CharacterSelectScreenPatches;
 
@@ -57,6 +57,7 @@ import shadowverse.cards.Basic.Insight;
      super(name, Enums.WITCHCRAFT, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).scmlURL));
      initializeClass(null, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[0]).skins[(CharacterSelectScreenPatches.characters[0]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
      bigAnimation.setVisible(false);
+     this.cardPool= new WitchPool(0);
    }
  
    

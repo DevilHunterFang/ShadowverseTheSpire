@@ -14,8 +14,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
- import shadowverse.cards.Rare.SkyDevouring;
- import shadowverse.cards.Temp.Fairy;
+ import shadowverse.cards.Elf.Long.SkyDevouring;
+ import shadowverse.cards.Neutral.Temp.Fairy;
 
 
  public class FillyPower

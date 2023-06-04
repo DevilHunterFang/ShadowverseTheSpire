@@ -3,21 +3,12 @@
  import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
  import com.megacrit.cardcrawl.actions.common.DrawCardAction;
- import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+ import com.megacrit.cardcrawl.core.AbstractCreature;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
-import com.megacrit.cardcrawl.random.Random;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
-import shadowverse.cards.Common.ConjureTwosome;
-import shadowverse.cards.Common.Petrification;
-import shadowverse.cards.Common.StaffOfWhirlwinds;
+ import com.megacrit.cardcrawl.relics.AbstractRelic;
  import shadowverse.stance.Resonance;
-
- import java.util.ArrayList;
 
 
  public class TranquilCog

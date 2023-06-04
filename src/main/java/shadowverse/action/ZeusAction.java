@@ -76,32 +76,32 @@ public class ZeusAction extends AbstractGameAction {
             int z = l[2];
             int a = l[3];
             int b = l[4];
-            addToBot((AbstractGameAction)new HealAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, x*5));
+            addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, x*5));
             if (y > 0){
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDeadOrEscaped()){
-                        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new LightningEffect(mo.drawX, mo.drawY), 0.05F));
-                        addToBot((AbstractGameAction)new RemoveAllBlockAction((AbstractCreature)mo, (AbstractCreature)this.p));
+                        addToBot(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), 0.05F));
+                        addToBot(new RemoveAllBlockAction(mo, this.p));
                     }
                 }
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new StrengthPower((AbstractCreature)p, y*3), y*3));
+                addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, y*3), y*3));
             }
             if (z>0){
-                addToBot((AbstractGameAction)new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.MED, ScreenShake.ShakeIntensity.HIGH));
+                addToBot(new ShakeScreenAction(0.0F, ScreenShake.ShakeDur.MED, ScreenShake.ShakeIntensity.HIGH));
                 for (int i = 0; i < z; i++){
-                    addToBot((AbstractGameAction)new SFXAction("THUNDERCLAP", 0.05F));
-                    addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)this.p, this.multiDamage, this.damageType, AttackEffect.BLUNT_HEAVY, true));
+                    addToBot(new SFXAction("THUNDERCLAP", 0.05F));
+                    addToBot(new DamageAllEnemiesAction(this.p, this.multiDamage, this.damageType, AttackEffect.BLUNT_HEAVY, true));
                 }
             }
             if (a>0){
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDeadOrEscaped()){
-                        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)mo, a*2, false), a*2));
-                        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)p, (AbstractPower)new PoisonPower((AbstractCreature)mo, (AbstractCreature)p, a*4)));
+                        addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, a*2, false), a*2));
+                        addToBot(new ApplyPowerAction(mo, p, new PoisonPower(mo, p, a*4)));
                     }
                 }
             }
-            addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)p, (AbstractCreature)p, this.block*b));
+            addToBot(new GainBlockAction(p, p, this.block*b));
             if (!this.freeToPlayOnce)
                 this.p.energy.use(EnergyPanel.totalCount);
         }

@@ -2,7 +2,6 @@ package shadowverse.cards;
 
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.input.InputHelper;
-import shadowverse.cards.Neutral.AbstractNeutralCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 
 public abstract class AbstractRightClickCard extends AbstractNeutralCard {

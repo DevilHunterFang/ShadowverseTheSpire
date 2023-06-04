@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BufferPower;
-import shadowverse.cards.Temp.LionBless;
+import shadowverse.cards.Neutral.Temp.LionBless;
 import shadowverse.characters.Bishop;
 
 public class SacredLion extends AbstractBossCard {
