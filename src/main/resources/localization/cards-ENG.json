@@ -4630,8 +4630,8 @@
   },
   "shadowverse:OpulentStrategist": {
     "NAME": "Opulent Strategist",
-    "DESCRIPTION": "Choose 1 of 5 Skill cards to add to your hand. NL Whenever you play a Skill card, activate one of the following effects in order: NL Gain 3 Block. NL Draw a card. NL Give +1/+1 to all allied *Followers.",
-    "UPGRADE_DESCRIPTION": "Choose 1 of 5 Skill cards to add to your hand and change its cost to 0 until the end of game. NL Whenever you play a Skill card, activate one of the following effects in order: NL Gain 3 Block. NL Draw a card. NL Give +1/+1 to all allied Followers."
+    "DESCRIPTION": "Choose 1 of 5 Skill cards to add to your hand. NL Whenever you play a Skill card, activate one of the following effects in order: NL 1. Gain 3 Block. NL 2. Draw a card. NL 3. Give +1/+1 to all allied *Followers.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 5 Skill cards to add to your hand and change its cost to 0 this combat. NL Whenever you play a Skill card, activate one of the following effects in order: NL 1. Gain 3 Block. NL 2. Draw a card. NL 3. Give +1/+1 to all allied Followers."
   },
   "shadowverse:SuaveBandit": {
     "NAME": "Suave Bandit",
