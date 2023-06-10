@@ -820,7 +820,7 @@
   },
   "shadowverse:OmenOfUnkilling2": {
     "NAME": "Izudia, Unkilling Annihilation",
-    "DESCRIPTION": "At the end of your turn, a random enemy loses 6 Strength. NL This effect lasts for 3 turns and does not stack. NL Add a *Annihilating *Onslaught to your hand."
+    "DESCRIPTION": "At the end of your turn, a random enemy loses 6 Strength. NL This effect lasts for 3 turns and does not stack. NL Add an *Annihilating *Onslaught to your hand."
   },
   "shadowverse:AriasWhirlwind": {
     "NAME": "Aria's Whirlwind",
@@ -832,7 +832,7 @@
   },
   "shadowverse:Hero": {
     "NAME": "Heroic Resolve",
-    "DESCRIPTION": "Heroic. NL At the end of your turn, if at least 4 cards were played this turn, !M! more cards at the start of your next turn. Gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
+    "DESCRIPTION": "Heroic. NL At the end of your turn, if at least 4 cards were played this turn, draw !M! more card(s) at the start of your next turn and gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
   },
   "shadowverse:WindFall": {
     "NAME": "Windfall Fay",
@@ -965,7 +965,7 @@
   },
   "shadowverse:ResolveOfSekka": {
     "NAME": "Resolve of the Nine-Tailed Fox",
-    "DESCRIPTION": "Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attack cards were played this combat  and there is a *Sekka, *Fatebound *Fox in your hand, gain !M! Strength and !M! Dexterity. NL Exhaust.",
+    "DESCRIPTION": "Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attack cards were played this combat and there is a *Sekka, *Fatebound *Fox in your hand, gain !M! Strength and !M! Dexterity. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Upgrade all cards in your hand. NL If at least 18 non-Strike Forestcraft Attack cards were played this combat and there is a *Sekka, *Fatebound *Fox in your hand, gain !M! Strength and !M! Dexterity. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (non-Strike Forestcraft Attack cards played: ",
@@ -974,8 +974,8 @@
   },
   "shadowverse:Sekka": {
     "NAME": "Sekka, Fatebound Fox",
-    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage X times (up to 9 times). X equals the number of non-Strike Forestcraft Attack cards played this combat. NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal !D! damage X times (up to 9 times). X equals the number of non-Strike Forestcraft Attack cards played this combat. NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox+ into your hand.",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage X times (max. 9). X equals the number of non-Strike Forestcraft Attack cards played this combat. NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal !D! damage X times (max. 9). X equals the number of non-Strike Forestcraft Attack cards played this combat. NL If X is at least 9, put a *Resolve *of *the *Nine-Tailed *Fox+ into your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (X equals ",
       ".)"
@@ -1020,7 +1020,7 @@
   },
   "shadowverse:Lymaga": {
     "NAME": "Lymaga, Forest Champion",
-    "DESCRIPTION": "Accelerate 0: Add a *Greenwood *Guardian into your hand and add 1 *Lymaga, *Forest *Champion without Accelerate into your discard pile. NL NL --------------------- NL NL Deal !D! damage. NL Invocation: At the start of your turn, If at least 6 *Greenwood *Guardians were played this combat, put this card into your hand and change its cost to 0. NL Exhaust.",
+    "DESCRIPTION": "Accelerate 0: Add a *Greenwood *Guardian into your hand and add a copy of this card without Accelerate into your discard pile. NL NL --------------------- NL NL Deal !D! damage. NL Invocation: At the start of your turn, If at least 6 *Greenwood *Guardians were played this combat, put this card into your hand and change its cost to 0. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (*Greenwood *Guardians played this combat:",
       ".)"
@@ -1067,7 +1067,7 @@
   },
   "shadowverse:Kokkoro": {
     "NAME": "Kokkoro, Faithful Guide",
-    "DESCRIPTION": "Draw 2 cards. If at least 2 other cards were played this turn, draw 3 instead. NL Union_Burst !M! Heal 3 HP, gain 1 Strength and 1 Dexterity."
+    "DESCRIPTION": "Draw 2 cards. If at least 2 other cards were played this turn, draw 3 instead. NL Union_Burst !M!: Heal 3 HP, gain 1 Strength and 1 Dexterity."
   },
   "shadowverse:Amataz": {
     "NAME": "Amataz, Fairy Blader",
@@ -1084,7 +1084,7 @@
   },
   "shadowverse:Cleft": {
     "NAME": "Cleft, Dual Fencer",
-    "DESCRIPTION": "Machina. NL If at least 2 other cards were played this turn, deal X damage. X equals !D! times of the number of other Machina cards in your hand. NL If X is at least 3, also deal !D! damage to a random enemy."
+    "DESCRIPTION": "Machina. NL If at least 2 other cards were played this turn, deal X damage. X equals !D! times the number of other Machina cards in your hand. NL If X is at least 3, also deal !D! damage to a random enemy."
   },
   "shadowverse:TwinAssault": {
     "NAME": "Elf Twins' Assault",
@@ -1108,13 +1108,13 @@
     "DESCRIPTION": "Natura. NL Add !M! *Fairy into your hand. NL If you have the Power Naterran_Great_Tree, add 1 more *Fairy into your hand and deal !D! damage."
   },
   "shadowverse:ThronBurst": {
-    "NAME": "Thorne Burst",
+    "NAME": "Thorn Burst",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Exhaust."
   },
   "shadowverse:RoseQueen": {
     "NAME": "Rose Queen",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust all *Fairies in your hand and add a *Thorne *Burst into your hand for each *Fairy Exausted.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust all *Fairies in your hand and add a *Thorne *Burst+ into your hand for each *Fairy Exausted."
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust all *Fairies in your hand and add a *Thorn *Burst into your hand for each *Fairy Exhausted.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust all *Fairies in your hand and add a *Thorn *Burst+ into your hand for each *Fairy Exhausted."
   },
   "shadowverse:Pamera": {
     "NAME": "Forest Oracle Pascale",
@@ -3871,7 +3871,7 @@
   },
   "shadowverse:TerrorFormer": {
     "NAME": "Terrorformer",
-    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost at least 1 Energy. NL Whenever 2 or more cards are fused to this card at once, increase this card's damage by !M! and draw 1 card. NL Deal !D! damage and apply 2 Weak."
+    "DESCRIPTION": "Retain. NL Fusion: Forestcraft Attack cards that cost at least 1 Energy. NL When at least 2 cards are fused to this card at once, increase this card's damage by !M! and draw 1 card. NL Deal !D! damage. Apply 2 Weak."
   },
   "shadowverse:Ambush": {
     "NAME": "Ambush",
@@ -4371,7 +4371,7 @@
   },
   "shadowverse:Tweyen": {
     "NAME": "Tweyen, Dark Huntress",
-    "DESCRIPTION": "Increase damage the enemy takes by 20%. NL Deal !D! damage. NL Skybound_Art 3: Upgrade all cards in your hand hand and gain 2 Strength. NL Super_Skybound_Art 6: Deal !D! damage to all enemies.",
+    "DESCRIPTION": "Increase damage the enemy takes by 20%. NL Deal !D! damage. NL Skybound_Art 3: Upgrade all cards in your hand and gain 2 Strength. NL Super_Skybound_Art 6: Deal !D! damage to all enemies.",
     "EXTENDED_DESCRIPTION": [
       "Increase damage the enemy takes by 20%. NL Deal !D! damage. NL Skybound_Art ",
       ": Upgrade all cards in your hand and gain 2 Strength. NL Super_Skybound_Art ",
@@ -4702,7 +4702,7 @@
   },
   "shadowverse:HeroOfAntiquity": {
     "NAME": "Hero of Antiquity",
-    "DESCRIPTION": "Heroic. NL Gain !B! block and deal !D! damage. NL Distress_Call: You do not lose your Block at the start of your next turn."
+    "DESCRIPTION": "Heroic. NL Gain !B! Block and deal !D! damage. NL Distress_Call: You do not lose your Block at the start of your next turn."
   },
   "shadowverse:CosmosFang": {
     "NAME": "Cosmos Fang",
@@ -4711,7 +4711,7 @@
   },
   "shadowverse:Blitz": {
     "NAME": "Blitz",
-    "DESCRIPTION": "Gain the following effect: At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once:  NL Add 2 *Magical *Pawn into your hand. NL Add 1 *Magical *Rook to your hand, give it Exhaust and change its cost to 0. NL Add 1 *Magical *Knight to your hand, give it Exhaust and change its cost to 0. NL Exhaust."
+    "DESCRIPTION": "Gain the following effect: At the start of your turn, activate 1 of the following effects in order until all 3 have been activated once:  NL 1. Add 2 *Magical *Pawn into your hand. NL 2. Add 1 *Magical *Rook to your hand, give it Exhaust and change its cost to 0. NL 3. Add 1 *Magical *Knight to your hand, give it Exhaust and change its cost to 0. NL Exhaust."
   },
   "shadowverse:Check": {
     "NAME": "Check",
@@ -4723,18 +4723,18 @@
   },
   "shadowverse:DiamondMaster": {
     "NAME": "Diamond Master",
-    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, you no longer lose Block at the start of your turn. NL If your next attack damage is doubled, double your attack damage this turn. NL If you have both effects active, deal damage to all enemies equal to your Block.",
+    "DESCRIPTION": "Gain !B! Block. NL If you have Blur, gain Barricade. NL If you have Pen Nib, double your attack damage the rest of this turn. NL If you have both effects active, deal damage to all enemies equal to your Block.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]
   },
   "shadowverse:SapphirePriestess": {
     "NAME": "Sapphire Priestess",
-    "DESCRIPTION": "Gain !B! Block. NL If you have an Amulet in your Amulet Zone, draw 1 card. NL If there is only 1 Attack card in your hand, gain 1 Blur and double your next attack damage."
+    "DESCRIPTION": "Gain !B! Block. NL If you have an Amulet in your Amulet Zone, draw 1 card. NL If there is only 1 Attack card in your hand, gain 1 Blur and Pen Nib."
   },
   "shadowverse:BejeweledShrine": {
     "NAME": "Bejeweled Shrine",
-    "DESCRIPTION": "Draw 1 card. NL At the start of your turn, randomly gain 1 Blur or double your next attack damage. NL At the end of your turn, if both of the previous effects are active, you do not lose your Block and double damage and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 instead of 1."
+    "DESCRIPTION": "Draw 1 card. NL At the start of your turn, randomly gain 1 Blur or Pen Nib. NL At the end of your turn if both effects are active, gain Barricade, your attack damage remains doubled next turn and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 Strength and Dexterity instead."
   },
   "shadowverse:ImpiousBishop": {
     "NAME": "Impious Bishop",
@@ -4742,7 +4742,7 @@
   },
   "shadowverse:Magachiyo": {
     "NAME": "Magachiyo, Barbed Convict",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you played at least 4 cards in 3 or more rounds, gain 2 Strength and Dexterity and add plus !M! to Condemned Attack cards in hand.",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Add 1 to the number of cards played this turn.  NL If you have played 4 cards at least 3 times this combat, gain 2 Strength, Dexterity and add !M! Damage and Block to Condemned Attack cards in hand.",
     "EXTENDED_DESCRIPTION": [
       " NL (You played 4 card for ",
       " rounds. )"
@@ -4750,7 +4750,7 @@
   },
   "shadowverse:LeafshadeAssassin": {
     "NAME": "Leafshade Assassin",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Add 1 to the number of cards played this turn. NL Whenever you play a card this  turn, if it's at least the 4th card you've played this turn, deal !M! damage to random enemy."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Add 1 to the number of cards played this turn. NL Whenever you play a card this turn, if it's at least the 4th card you've played this turn, deal !M! damage to a random enemy."
   },
   "shadowverse:VerdantLieutenant": {
     "NAME": "Verdant Lieutenant",
@@ -4763,11 +4763,11 @@
   },
   "shadowverse:WardenOfBalms": {
     "NAME": "Warden of Balms",
-    "DESCRIPTION": "Condemned NL Crystallize 0: Next turn, draw 1 more card. NL NL --------------------- NL NL Gain !B! Block and deal !M! damage to all enemy. NL Repeat this once."
+    "DESCRIPTION": "Condemned NL Crystallize 0: Next turn, draw 1 more card. NL NL --------------------- NL NL Gain !B! Block and deal !M! damage to all enemies twice."
   },
   "shadowverse:Wimael": {
     "NAME": "Wimael, Redolent Enforcer",
-    "DESCRIPTION": "Condemned / Retain NL Reduce the cost of this card by 1 whenever it is Retained.  NL When you draw this card, put copy of this card in your hand. NL Deal !D! damage. "
+    "DESCRIPTION": "Condemned / Retain NL Reduce the cost of this card by 1 whenever it is Retained.  NL When you draw this card, add a copy of this card to your hand. NL Deal !D! damage. "
   },
   "shadowverse:BenevolentElf": {
     "NAME": "Benevolent Elf",
@@ -5077,8 +5077,8 @@
   },
   "shadowverse:Castelle": {
     "NAME": "Castelle, Budding Mage",
-    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand.(X is non-strike Forestcraft Attack cards played in this combat)",
-    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand.(X is non-strike Forestcraft Attack cards played in this combat)",
+    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand. (X is non-strike Forestcraft Attack cards played in this combat)",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand. (X is non-strike Forestcraft Attack cards played in this combat)",
     "EXTENDED_DESCRIPTION": [
       " NL (X is",
       " .)"
