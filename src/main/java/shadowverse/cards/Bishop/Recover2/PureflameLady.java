@@ -12,6 +12,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.LoseDexterityPower;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.powers.PureflameLadyPower;
@@ -44,6 +48,10 @@ import shadowverse.powers.PureflameLadyPower;
      addToBot(new SFXAction("PureflameLady"));
      addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new PureflameLadyPower(abstractPlayer)));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, 1), 1));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new LoseStrengthPower(abstractPlayer, 1), 1));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new DexterityPower(abstractPlayer, 1), 1));
+     addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new LoseDexterityPower(abstractPlayer, 1), 1));
      addToBot(new HealAction(abstractPlayer,abstractPlayer,1));
    }
  

@@ -63,14 +63,6 @@ public class AmaryllisPower extends AbstractPower implements OnLoseTempHpPower, 
         return damage;
     }
 
-    @Override
-    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount) {
-        if (isUpgraded){
-            if (info.owner == this.owner)
-                return damageAmount+1;
-        }
-        return damageAmount;
-    }
 
     @Override
     public int onLoseTempHp(DamageInfo damageInfo, int i) {

@@ -1,6 +1,8 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.evacipated.cardcrawl.mod.stslib.patches.core.AbstractCreature.TempHPField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -36,7 +38,11 @@ public class CurseOfSufferingPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer){
             if (this.amount > 0){
-                addToBot(new DamageAction(this.owner,new DamageInfo(this.owner,1, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.POISON));
+                if ((Integer) TempHPField.tempHp.get(this.owner) > 0){
+                    addToBot(new AddTemporaryHPAction(this.owner,this.owner,-1));
+                }else {
+                    addToBot(new DamageAction(this.owner,new DamageInfo(this.owner,1, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.POISON));
+                }
                 for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters){
                     if (mo != null && !mo.isDeadOrEscaped()){
                         addToBot(new DamageAction(mo,new DamageInfo(this.owner,1, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.POISON));

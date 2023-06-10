@@ -63,7 +63,7 @@
      } 
      tickDuration();
      if (secondTime){
-       addToBot(new Choose2DifferentAction(false,secondGroup));
+       addToBot(new Choose2DifferentAction(false,this.amount,secondGroup));
        this.secondTime = false;
      }
    }
