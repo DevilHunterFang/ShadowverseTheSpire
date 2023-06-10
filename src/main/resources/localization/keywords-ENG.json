@@ -5,7 +5,7 @@
       "NAMES": [
         "spellboost"
       ],
-      "DESCRIPTION": "Triggered every time a Skill card is played."
+      "DESCRIPTION": "Triggers an effect every time a Skill card is played. Certain cards can also Spellboost other cards."
     },
     {
       "PROPER_NAME": "Earth Essence",
@@ -13,7 +13,7 @@
         "earth essence",
         "earth_essence"
       ],
-      "DESCRIPTION": "Some cards can spend #yEarth #yEssence to active #yEarth #yRite which has more powerful effect."
+      "DESCRIPTION": "Some cards can spend #yEarth #yEssence to activate #yEarth #yRite which has more powerful effects."
     },
     {
       "PROPER_NAME": "Earth Rite",
@@ -63,14 +63,14 @@
       "NAMES": [
         "choose"
       ],
-      "DESCRIPTION": "Select one or more cards. Different effects will activate depending on the cards chosen."
+      "DESCRIPTION": "Select one or more cards or effects. Different effects will activate depending on the cards chosen."
     },
     {
       "PROPER_NAME": "Invocation",
       "NAMES": [
         "invocation"
       ],
-      "DESCRIPTION": "Automatically adds card to your hand if certain conditions have been met. #yInvocation will only activate once for each card per turn, even if you have multiple copies in your deck."
+      "DESCRIPTION": "Automatically adds card to your hand or triggers an effect if certain conditions have been met. #yInvocation will only activate once for each card per turn, even if you have multiple copies in your deck."
     },
     {
       "PROPER_NAME": "Natura",
@@ -121,7 +121,7 @@
         "union burst",
         "union_burst"
       ],
-      "DESCRIPTION": "Activates if your turn number is equal to or greater than #yUnion #yBurst value. Can be upgraded multiple times to reduce the value."
+      "DESCRIPTION": "Activates if your turn number is equal to or greater than #yUnion #yBurst value. Can be upgraded multiple times to reduce the value until it is 0."
     },
     {
       "PROPER_NAME": "Destroy",
@@ -207,7 +207,7 @@
       "NAMES": [
         "maneuver"
       ],
-      "DESCRIPTION": "Cards with #yManeuver can't be played from hand directly. If another Attack card with cost higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhaust , it will return the Attack card into your hand with 0 cost to play this turn."
+      "DESCRIPTION": "Cards with #yManeuver can't be played directly. If another Attack card with cost equal or higher than the #yManeuver value is played while this card is in hand, the Attack card will lose its effects and #yExhaust, then this card can be played. If this card is #yExhausted, the Attack card used to Manuever this card returns to your hand and costs 0 this turn."
     },
     {
       "PROPER_NAME": "Cannon Hermit Crab",
@@ -231,7 +231,7 @@
         "skybound art",
         "skybound_art"
       ],
-      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySkybound #yArt value of the cards decreases by 1."
+      "DESCRIPTION": "#ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySkybound #yArt value. Can be upgraded multiple times, each time reducing the #ySkybound #yArt value by 1 until it is 0."
     },
     {
       "PROPER_NAME": "Super Skybound Art",
@@ -239,7 +239,7 @@
         "super skybound art",
         "super_skybound_art"
       ],
-      "DESCRIPTION": "#ySuper #ySkybound #yArt effects activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded for multiple times, and each time the #ySuper #ySkybound #yArt value of the cards decreases by 1."
+      "DESCRIPTION": "#ySuper #ySkybound #yArt effects are extremely powerful and activate if your turn number is equal to or greater than the #ySuper #ySkybound #yArt value. Can be upgraded multiple times, each time the #ySuper #ySkybound #yArt value by 1 until it is 0."
     },
     {
       "PROPER_NAME": "Rally",
@@ -358,7 +358,7 @@
       "NAMES": [
         "disupgrade"
       ],
-      "DESCRIPTION": "Undo the upgrade of this card for this combat after being played. The damage and #yBlock won't decrease. Can be upgraded by specific effects again. NL Won't affect the next combat."
+      "DESCRIPTION": "Downgrades the card for this combat after being played. The damage and #yBlock won't decrease. Can be upgraded by specific effects again. NL Remains upgraded between combats."
     },
     {
       "PROPER_NAME": "Banish",
@@ -425,7 +425,7 @@
         "distress call",
         "distress_call"
       ],
-      "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage since the end of your last turn. NL Your current HP is no greater than 1/4th of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus that is not an #yEvolution #yPoint."
+      "DESCRIPTION": "#yDistress #yCall effects activate when at least one of the following conditions is met: NL You have taken damage last turn. NL Your current HP is no greater than 1/4th of your max HP. NL You are currently afflicted with a debuff (such as #yWeak or #yVulnerable). NL You have a #yCurse in your hand or #yStatus other than an #yEvolution #yPoint."
     },
     {
       "PROPER_NAME": "Condemned",
