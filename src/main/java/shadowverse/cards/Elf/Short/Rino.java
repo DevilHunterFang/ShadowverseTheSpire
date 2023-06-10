@@ -62,21 +62,21 @@ public class Rino extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new StrengthPower((AbstractCreature)p, 4), 4));
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new LoseStrengthPower((AbstractCreature)p, 4), 4));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 4), 4));
+        addToBot(new ApplyPowerAction(p, p, new LoseStrengthPower(p, 4), 4));
         AbstractDungeon.actionManager.cardsPlayedThisTurn.add(this);
         AbstractDungeon.actionManager.cardsPlayedThisTurn.add(this);
         if (this.magicNumber>0){
-            addToBot((AbstractGameAction)new SFXAction("Rino"));
+            addToBot(new SFXAction("Rino"));
         }else {
-            addToBot((AbstractGameAction)new SFXAction("Rino_UB"));
+            addToBot(new SFXAction("Rino_UB"));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters){
                 if (!mo.isDeadOrEscaped()){
                     int rand = AbstractDungeon.cardRandomRng.random(99);
                     if (rand<50){
-                        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)mo, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+                        addToBot(new DamageAction(mo, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
                     }else {
-                        addToBot((AbstractGameAction)new DamageAction((AbstractCreature)mo, new DamageInfo((AbstractCreature)p, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+                        addToBot(new DamageAction(mo, new DamageInfo(p, this.damage*2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
                     }
                 }
             }

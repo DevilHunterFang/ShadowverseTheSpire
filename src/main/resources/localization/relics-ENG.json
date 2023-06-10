@@ -559,11 +559,11 @@
     ]
   },
   "shadowverse:FortuneWell": {
-    "NAME": "幸运井",
+    "NAME": "Fortune Well",
     "FLAVOR": "你这井怎么不能井异画啊！",
     "DESCRIPTIONS": [
-      "拾起时，以及每6（第一次为8）次战斗结束后可从3张随机稀有牌中选择一张加入卡组。",
-      "选择一张加入卡组"
+      "When picked up or battle 6 (8 with the first time) times, choose 1 rare card from 3 into your deck.",
+      "Choose a bonus card"
     ]
   }
 }

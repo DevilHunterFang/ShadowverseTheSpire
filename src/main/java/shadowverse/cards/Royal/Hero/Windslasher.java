@@ -1,6 +1,7 @@
 package shadowverse.cards.Royal.Hero;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.FetchAction;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -68,13 +69,13 @@ public class Windslasher extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new MoveCardsAction(p.drawPile,p.hand, card -> hasTag(AbstractShadowversePlayer.Enums.HERO), 1, abstractCards -> {
+        addToBot(new FetchAction(p.drawPile, card -> hasTag(AbstractShadowversePlayer.Enums.HERO), 1, abstractCards -> {
             if (inDanger())
                 for (AbstractCard c : abstractCards) {
                     c.setCostForTurn(0);
                 }
         }));
-        addToBot(new SelectCardsAction(p.discardPile.group,1,TEXT[0],true,card -> hasTag(AbstractShadowversePlayer.Enums.HERO),abstractCards ->
+        addToBot(new SelectCardsAction(p.discardPile.group,1,TEXT[0],false,card -> hasTag(AbstractShadowversePlayer.Enums.HERO),abstractCards ->
         {
             for (AbstractCard c : abstractCards) {
                 c.setCostForTurn(0);

@@ -5346,101 +5346,101 @@
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "护符1",
-      "护符2",
-      "诅咒",
-      "机械&狮子",
-      "回复1",
-      "回复2",
-      "守护"
+      "Basic",
+      "Amulet1",
+      "Amulet2",
+      "Curse",
+      "Machina&Lion",
+      "Heal1",
+      "Heal2",
+      "Ward"
     ]
   },
   "shadowverse:ElfPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "妖精",
-      "离场",
-      "长连击",
-      "自然&机械",
-      "回手",
-      "短连击",
-      "密林&载具"
+      "Basic",
+      "Elf",
+      "Out Of Play",
+      "Long Combo",
+      "Natura & Machina",
+      "Bounce",
+      "Short Combo",
+      "Forest & Magic Circle"
     ]
   },
   "shadowverse:NecroPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "葬送",
-      "幽灵",
-      "谢幕曲",
-      "机械",
-      "自然",
-      "死灵术",
-      "墓地"
+      "Basic",
+      "Burial Rite",
+      "Ghost",
+      "Finale",
+      "Machina",
+      "Natura",
+      "Necromancy",
+      "Reanimate"
     ]
   },
   "shadowverse:NemesisPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "造物",
-      "八狱",
-      "机械",
-      "洗抽",
-      "人偶",
-      "共鸣",
-      "堆尸"
+      "Basic",
+      "Artifact",
+      "Condemned",
+      "Machina",
+      "Manipulate",
+      "Puppet",
+      "Resonance",
+      "Destroyed Card"
     ]
   },
   "shadowverse:RoyalPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "潜伏",
-      "进化",
-      "宴乐",
-      "英雄",
-      "雷维翁",
-      "财宝",
-      "自然&机械",
-      "协作"
+      "Basic",
+      "Ambush",
+      "Evolve",
+      "Evolved",
+      "Hero",
+      "Levin",
+      "Loot",
+      "Natura & Machina",
+      "Rally"
     ]
   },
   "shadowverse:VampirePool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "学园",
-      "渴望",
-      "蝙蝠",
-      "进化",
-      "自然&机械",
-      "自残",
-      "复仇",
-      "狂乱"
+      "Basic",
+      "Academic",
+      "Desire",
+      "Bat",
+      "Evolution",
+      "Natura & Machina",
+      "Self-Damage",
+      "Vengeance",
+      "Wrath"
     ]
   },
   "shadowverse:WitchPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "学园",
-      "西洋棋",
-      "土之印1",
-      "土之印2",
-      "机械",
-      "自然",
-      "增幅1",
-      "增幅2"
+      "Basic",
+      "Academic",
+      "Chess",
+      "Earth Rite1",
+      "Earth Rite2",
+      "Machina",
+      "Natura",
+      "Spellboost1",
+      "Spellboost2"
     ]
   }
 }

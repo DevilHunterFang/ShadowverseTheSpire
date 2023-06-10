@@ -26,7 +26,7 @@ public class Wimael extends CustomCard {
     public static final String IMG_PATH = "img/cards/Wimael.png";
 
     public Wimael() {
-        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 20;
         this.tags.add(AbstractShadowversePlayer.Enums.CONDEMNED);
     }
