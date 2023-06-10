@@ -2093,7 +2093,7 @@
   },
   "shadowverse:NeoTisiphone": {
     "NAME": "Tisiphone, Malignance Lives",
-    "DESCRIPTION": "Machina. NL Deal !D! damage 2 times. NL Change your next damage taken into 0. NL Exhaust."
+    "DESCRIPTION": "Machina. NL Deal !D! damage 2 times. NL Gain 1 Buffer. NL Exhaust."
   },
   "shadowverse:NeoAlector": {
     "NAME": "Alecto, Dissonance Lives",
@@ -5099,7 +5099,7 @@
   },
   "shadowverse:Amaryllis": {
     "NAME": "Amaryllis, the Princess",
-    "DESCRIPTION": "Academic NL Gain !B! Temporary HP. NL Add 1 *Curse *of *Suffering in hand. NL Gain following effect: When you take damage and still have Temporary HP, Randomly trigger 1 of the following effects: NL (1)Heal 1 HP. NL (2)Draw 1 more card next turn. NL (3)Spellboost your draw pile once.",
+    "DESCRIPTION": "Academic. NL Gain !B! Temporary HP. NL Add 1 *Curse *of *Suffering in hand. NL Gain following effect: When you take damage and still have Temporary HP, Randomly trigger 1 of the following effects: NL (1)Heal 1 HP. NL (2)Draw 1 more card next turn. NL (3)Spellboost your draw pile once.",
     "UPGRADE_DESCRIPTION": "Academic NL Gain !B! Temporary HP. NL Add 1 *Curse *of *Suffering in hand. NL You deal +1 more damage. NL Gain following effect: When you take damage and doesn't loss all Temporary HP, Trigger 1 following effect at randomly: NL (1)Heal 1 HP. NL (2)Draw 1 more card next turn. NL (3)Spellboost your draw pile once."
   },
   "shadowverse:FellTransformation": {
@@ -5109,16 +5109,16 @@
   },
   "shadowverse:MachSpeedMaron": {
     "NAME": "Mach-Speed Maron",
-    "DESCRIPTION": "Academic NL Can only be played if Vengeance is active.  NL Deal !D! damage."
+    "DESCRIPTION": "Academic. NL Can only be played if Vengeance is active.  NL Deal !D! damage."
   },
   "shadowverse:BadGirlLife": {
     "NAME": "Bad-Girl Life",
-    "DESCRIPTION": "Academic NL Discard 1 Academic attack card, and draw 2 cards. NL Add 1 *Evolution *Point to your hand if Vengeance is active. ",
+    "DESCRIPTION": "Academic. NL Discard 1 Academic attack card, and draw 2 cards. NL Add 1 *Evolution *Point to your hand if Vengeance is active. ",
     "UPGRADE_DESCRIPTION": "Academic NL Discard 1 attack card, and draw 2 cards. NL Add 1 *Evolution *Point to your hand if Vengeance is active."
   },
   "shadowverse:Lou_Bishop": {
     "NAME": "Lou, Lady-in-Training",
-    "DESCRIPTION": "Academic NL Deal !D! damage. NL Heal 1 HP and deal !D! damage to a random enemy whenever you gain Strength or Dexterity. "
+    "DESCRIPTION": "Academic. NL Deal !D! damage. NL Heal 1 HP and deal !D! damage to a random enemy whenever you gain Strength or Dexterity. "
   },
   "shadowverse:OrchidExaminationHall": {
     "NAME": "Orchid's Examination Hall",
@@ -5139,7 +5139,7 @@
   },
   "shadowverse:Gruinne": {
     "NAME": "Gruinne, Leonardian Provost",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Gain !M! Earth_Essence. NL Then if you have 3 or more Earth_Essence add *Veridic *Ritual in hand.",
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Gain !M! Earth_Essence. NL Then if you have 3 or more Earth_Essence add *Veridic *Ritual in hand.",
     "UPGRADE_DESCRIPTION": "Academic NL Gain !B! Block, All enemies lose 1 Strength this turn. NL Gain !M! Earth_Essence. NL Then if you have 3 or more Earth_Essence add *Veridic *Ritual in hand."
   },
   "shadowverse:Grea3": {
@@ -5148,11 +5148,11 @@
   },
   "shadowverse:GhostHunter": {
     "NAME": "GhostHunter",
-    "DESCRIPTION": "Academic NL Burial_Rite 1: Add 1 *Ghost to your hand."
+    "DESCRIPTION": "Academic. NL Burial_Rite 1: Add 1 *Ghost to your hand."
   },
   "shadowverse:Leeds": {
     "NAME": "Leeds, Pining Witch",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Burial_Rite 1: Deal !D! damage to a random enemy. NL If you Burial Rited 5 or more times this combat, gain !B! more Block. NL Last_Words: Draw a card. ",
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Burial_Rite 1: Deal !D! damage to a random enemy. NL If you Burial Rited 5 or more times this combat, gain !B! more Block. NL Last_Words: Draw a card. ",
     "EXTENDED_DESCRIPTION": [
       " NL (Burial Rited",
       " times.)"
@@ -5160,25 +5160,25 @@
   },
   "shadowverse:DemonEyeGangster": {
     "NAME": "Demon-Eyed Gangster",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Remove an enemy's Block if Vengeance is active.",
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Remove an enemy's Block if Vengeance is active.",
     "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block. NL Remove an enemy's Block if Vengeance is active. NL Stun the enemy if Vengeance is active.(Limit)"
   },
   "shadowverse:Arka": {
     "NAME": "Arka, Sin Spinner",
-    "DESCRIPTION": "Academic NL Deal !D! damage. NL Deal !D! damage again if Vengeance is active. NL Lose 2 HP if Vengeance is not active.",
+    "DESCRIPTION": "Academic. NL Deal !D! damage. NL Deal !D! damage again if Vengeance is active. NL Lose 2 HP if Vengeance is not active.",
     "UPGRADE_DESCRIPTION": "Academic NL Deal !D! damage and heal 2 HP. NL Repeat this if Vengeance is active. NL Lose 2 HP if Vengeance is not active."
   },
   "shadowverse:Vulgus": {
     "NAME": "Vulgus, Infernal Headmistress",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Double next attack's damage if Vengeance is active. NL If your HP is above 50% of your max HP, set your HP to half your max HP. NL You cannot have more HP than that amount this combat. NL You do not take more than 30% of your max HP as damage at a time for the rest of combat."
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Double next attack's damage if Vengeance is active. NL If your HP is above 50% of your max HP, set your HP to half your max HP. NL You cannot have more HP than that amount this combat. NL You do not take more than 30% of your max HP as damage at a time for the rest of combat."
   },
   "shadowverse:Kira": {
     "NAME": "Kira, Resilient Maiden",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Put a random Academic card from your draw pile to your hand."
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Put a random Academic card from your draw pile to your hand."
   },
   "shadowverse:CyclicalGuidance": {
     "NAME": "Cyclical Guidance",
-    "DESCRIPTION": "Academic NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead.",
+    "DESCRIPTION": "Academic. NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead.",
     "UPGRADE_DESCRIPTION":"Academic · Retain NL Deal !D! damage to a random enemy 4 times. NL Enhance 5: Deal 24 damage instead."
   },
   "shadowverse:Verdilia": {
@@ -5200,17 +5200,17 @@
   },
   "shadowverse:UnseenStrength": {
     "NAME": "Unseen Strength",
-    "DESCRIPTION": "Academic NL Give a *Puppet in your hand the  following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet.",
+    "DESCRIPTION": "Academic. NL Give a *Puppet in your hand the  following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet.",
     "UPGRADE_DESCRIPTION":"Academic · Retain NL Give a *Puppet in hand following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet."
   },
   "shadowverse:Lyelth": {
     "NAME": "Lyelth, Immaculate Idol",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand.",
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand.",
     "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand. NL Add an *Enhanced *Puppet to your hand."
   },
   "shadowverse:Lucius_N": {
     "NAME": "Lucius, Travelled Trainer",
-    "DESCRIPTION": "Academic NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP.",
+    "DESCRIPTION": "Academic. NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP.",
     "UPGRADE_DESCRIPTION":"Academic NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP. NL If this is a normal enemy combat, deal 4 more damage. If you this is an Elite combat, gain 1 energy. If this is in a Boss combat, add 2 *Ancient Artifacts in hand."
   },
   "shadowverse:BellWitch": {
@@ -5223,7 +5223,7 @@
   },
   "shadowverse:Memento": {
     "NAME": "Memento, the Grim Teacher",
-    "DESCRIPTION": "Academic NL Whenever you perform Burial Rite, that effect is applied twice."
+    "DESCRIPTION": "Academic. NL Whenever you perform Burial Rite, that effect is applied twice."
   },
   "shadowverse:PureflowerMaiden": {
     "NAME": "Pureflower Maiden",
@@ -5231,15 +5231,15 @@
   },
   "shadowverse:PureflameLady": {
     "NAME": "Pureflame Lady",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Whenever you gain Strength or Dexterity, deal 2 damage to all enemies.(Max. 10 times)。 NL Heal 1 HP."
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Whenever you gain Strength or Dexterity, deal 2 damage to all enemies.(Max. 10 times)。 NL Heal 1 HP."
   },
   "shadowverse:Galom": {
     "NAME": "Galom, Empress Fist",
-    "DESCRIPTION": "Academic NL Deal !D! damage to ALL enemies. NL Lose 2 HP if Vengeance is not active. NL Double the damage if Vengeance is active."
+    "DESCRIPTION": "Academic. NL Deal !D! damage to ALL enemies. NL Lose 2 HP if Vengeance is not active. NL Double the damage if Vengeance is active."
   },
   "shadowverse:Elluvia": {
     "NAME": "Elluvia, Graceful Lady",
-    "DESCRIPTION": "Academic NL Whenever you heal HP, gain 1 Strength and Dexterity. NL Ethereal.",
+    "DESCRIPTION": "Academic. NL Whenever you heal HP, gain 1 Strength and Dexterity. NL Ethereal.",
     "UPGRADE_DESCRIPTION":"Academic NL Whenever you heal HP, gain 1 Strength and Dexterity."
   },
   "shadowverse:RoboticsReporter": {
@@ -5248,12 +5248,12 @@
   },
   "shadowverse:Filly": {
     "NAME": "Filly, Mythmaster",
-    "DESCRIPTION": "Academic NL This turn, whenever you play a *Fairy, gain 1 Energy. NL If you played 3 cards this turn, gain Block equal to triple the number of cards in your hand,  NL If you played 6 cards, draw 2 cards. NL If you played 9 cards, add *Sky *Devouring *Horror with 0 cost and Exhaust to your hand.",
+    "DESCRIPTION": "Academic. NL This turn, whenever you play a *Fairy, gain 1 Energy. NL If you played 3 cards this turn, gain Block equal to triple the number of cards in your hand,  NL If you played 6 cards, draw 2 cards. NL If you played 9 cards, add *Sky *Devouring *Horror with 0 cost and Exhaust to your hand.",
     "UPGRADE_DESCRIPTION":"Academic · Retain NL Academic NL This turn, whenever you play a *Fairy, gain 1 Energy. NL If you played 3 cards this turn, gain Block equal to triple the number of cards in your hand ,  NL If you played 6 cards, draw 2 cards. NL If you played 9 cards, add *Sky *Devouring *Horror with 0 cost and Exhaust to your hand."
   },
   "shadowverse:Cornelius": {
     "NAME": "Cornelius, the Corpse King",
-    "DESCRIPTION": "Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost , Exhaust and they cost 0 this turn to your hand.",
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost , Exhaust and they cost 0 this turn to your hand.",
     "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost, Exhaust and they cost 0  to your hand. NL Add 1 *Corpse *King's *Command to your hand."
   },
   "shadowverse:CorpseKingCommand": {
