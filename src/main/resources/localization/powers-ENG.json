@@ -1843,5 +1843,24 @@
     "DESCRIPTIONS": [
       "Immune to all Debuffs this turn. Enemies will not gain Buffs this turn."
     ]
+   },
+  "shadowverse:WimaelPower": {
+    "NAME": "Wimael, Redolent Enforcer",
+    "DESCRIPTIONS": [
+      "Increased by #b at the start of your turn",
+      " Add #y Wimael, Redolent Enforcer with 0 cost and Exhaust this turn to your hand."
+    ]
+  },
+   "shadowverse:OverflowPower": {
+    "NAME": "Overflow",
+    "DESCRIPTIONS": [
+      "When the Overflow value reaches 3, enter Overflow and gain [E] each turn. Current Overflow Points: #b",
+      " /3。",
+      "Gain [E] at the start of your turn. When Overflow value reaches 3, enter Full Overflow and gain [E] [E] each turn 。 Current Overflow Points: #b",
+      " /3。",
+      "Gain [E] [E] at the start of your turn.",
+      "Overflow",
+      "Full Overflow"
+    ]
   }
 }
