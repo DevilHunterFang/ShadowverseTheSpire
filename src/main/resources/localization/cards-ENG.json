@@ -5332,7 +5332,7 @@
   },
    "shadowverse:Gawain": {
     "NAME": "Gawain, Oath to Glory",
-    "DESCRIPTION": "Deal !D! Damage。 NL Rally 5：Draw 1 card. NL Rally 10：If this card is drawn, upgrade it. NL Rally 15：Double the damage. NL Rally 20：Gain 1 Buffer. ",
+    "DESCRIPTION": "Deal !D! Damage. NL Rally 5：Draw 1 card. NL Rally 10：If this card is drawn, upgrade it. NL Rally 15：Double the damage. NL Rally 20：Gain 1 Buffer. ",
     "EXTENDED_DESCRIPTION": [
       " NL （Rally Count：",
       ")"
@@ -5453,25 +5453,255 @@
     "DESCRIPTION": "Crystallize 1: Countdown 1: Return this card to your hand and change its cost to 0. NL NL --------------------- NL NL Deal !D! damage. NL Gain !B! Block ."
   },
   "shadowverse:HolyLightningBird": {
-    "NAME": "Holy Lighting Bird",
+    "NAME": "Holy Lightning Bird",
     "DESCRIPTION": "Crystallize 0: Countdown 1: 1 Gain !M! energy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If you have played 5 or more amulets with Countdown, gain 1 energy."
   },
   "shadowverse:DragonWarrior": {
-    "NAME": "龙族勇士",
-    "DESCRIPTION": "造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+    "NAME": "Dragon Warrior",
+    "DESCRIPTION": "Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION":"Deal !D! Damage。 NL Deal !M! additional damage."
   },
   "shadowverse:DragonOracle": {
-    "NAME": "龙之启示",
-    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+    "NAME": "Dragon Oracle",
+    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active，draw !M! card.",
+    "UPGRADE_DESCRIPTION":"Gain 1 Overflow point. NL Gain [E] [E] next turn. NL If Overflow is active，draw !M! card."
   },
   "shadowverse:Strike_D": {
-    "NAME": "打击",
-    "DESCRIPTION": "造成 !D! 点伤害。"
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. "
   },
   "shadowverse:Defend_D": {
-    "NAME": "防御",
-    "DESCRIPTION": "获得 !B! 点 格挡 。"
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. "
+  },
+  "shadowverse:BlazingBreath": {
+    "NAME": "Blazing Breath",
+    "DESCRIPTION": "Deal !D! Damage. "
+  },
+   "shadowverse:SeabrandDragon": {
+    "NAME": "Seabrand Dragon",
+    "DESCRIPTION": "Deal !D! Damage. NL If Overflow is active, double this card's damage."
+  },
+  "shadowverse:DraconicFervor": {
+    "NAME": "Draconic Fervor",
+    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn. NL Gain !B! Block, draw !M! cards."
+  },
+  "shadowverse:Rahab": {
+    "NAME": "Rahab",
+    "DESCRIPTION": "Gain !B! Block. NL If you have any Energy remaining at the end of your turn, gain Strength equal to your remaining energy."
+  },
+   "shadowverse:DragonicCall": {
+    "NAME": "Draconic Call",
+    "DESCRIPTION": "Draw !M! cards. NL If Overflow is active, draw an additional card. NL You cannot draw additional cards this turn."
+  },
+   "shadowverse:WardenOfTheAdamantClaw": {
+    "NAME": "Warden of the Adamant Claw",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Enhance 2: Gain !M! more Block and draw 3 cards."
+  },
+   "shadowverse:ScaleboundPlight": {
+    "NAME": "Scalebound Plight",
+    "DESCRIPTION": "Discard !M! cards, draw !M! cards. NL If Overflow is active, draw 1 more card."
+  },
+  "shadowverse:IvoryDragon": {
+    "NAME": "Ivory Dragon",
+    "DESCRIPTION": "Gain !B! Block. NL If Overflow is active, draw 1 card."
+  },
+  "shadowverse:LightningVelociraptor": {
+    "NAME": "Lightning Velociraptor",
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Naterran *Great *Tree to your hand. NL If Overflow is active, add 1 more."
+  },
+  "shadowverse:WildMana": {
+    "NAME": "Feral Aether",
+    "DESCRIPTION": "Natura NL Add 1 *Naterran *Great *Tree to your hand. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Natura NL Add 1 *Naterran *Great *Tree to your hand."
+  },
+   "shadowverse:WhirlwindPteranodon": {
+    "NAME": "Whirlwind Pteranodon",
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: Add 1 *Naterran *Great *Tree to your hand. NL If the Power Naterran_Great_Tree is active for you, remove it and gain 1 Overflow point."
+  },
+    "shadowverse:HellFlameDragon": {
+    "NAME": "Hellflame Dragon",
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust."
+  },
+  "shadowverse:Python": {
+    "NAME": "Python",
+    "DESCRIPTION": "Gain !B! Block. NL Select up to 10 cards in your draw pile and exhaust them. NL Exhaust. ",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !B! Block. NL Select up to 10 cards in your draw pile and exhaust them. NL Exhaust."
+  },
+   "shadowverse:AugiteWyrm": {
+    "NAME": "Augite Wyrm",
+    "DESCRIPTION": "Accelerate 0: Discard 1 card, draw 1 card. NL If Overflow is active, draw 1 more card. NL  NL --------------------- NL  NL Deal !D! Damage to all enemies."
+  },
+  "shadowverse:HotheadedMarauder": {
+    "NAME": "Hotheaded Marauder",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL If the last card played this combat was a Condemned card, gain 1 Overflow point."
+     "shadowverse:RazorClawedThief": {
+    "NAME": "Razor-Clawed Thief",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Last_Words: Add 1 *Razor-Clawed *Thief with Exhaust and without Last Words to your hand."
+  },
+  "shadowverse:RazorClawedThief_Copy": {
+    "NAME": "Razor-Clawed Thief",
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Exhaust."
+  },
+  "shadowverse:ScorchedEarthTyrant": {
+    "NAME": "Scorched-Earth Tyrant",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Deal !D! damage to all enemies. NL If the last card played was a Condemned card, deal damage again."
+  },
+   "shadowverse:Antemaria": {
+    "NAME": "Antemaria, Huntress Convict",
+    "DESCRIPTION": "Condemned NL Accelerate 0: Deal !M! damage to a random enemy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If the last card played was a Condemned card, double the damage."
+  },
+  "shadowverse:Drazael": {
+    "NAME": "Drazael, Ravening Enforcer",
+    "DESCRIPTION": "Condemned NL Accelerate 0: Draw 1 card. NL  NL --------------------- NL  NL Gain 1 Artifact, heal 5 HP. NL All enemies lose 5 Strength and Dexterity. NL Gain !B! Block. Exhaust."
+  },
+  "shadowverse:DragonewtMight": {
+    "NAME": "Dragonewt's Might",
+    "DESCRIPTION": "Discard 1 card, draw 1 card. Deal !D! Damage to a random enemy. NL When this card is discarded from your hand，draw !M! card(s)."
+  },
+  "shadowverse:TouchingThoughts": {
+    "NAME": "Touching Thoughts",
+    "DESCRIPTION": "Natura NL Add !M! *Naterran *Great *Trees to your hand. NL If Overflow is active, gain [E]. NL Exhaust."
+  },
+  "shadowverse:ManagarmrScout": {
+    "NAME": "Managarmr Scout.",
+    "DESCRIPTION": "Natura NL Deak !D! Damage. NL Add 2 *Naterran *Great *Trees to your hand."
+  },
+  "shadowverse:DragonCounsel": {
+    "NAME": "Dragon Counsel",
+    "DESCRIPTION": "Randomly discard the lowest cost card in your hand. NL Draw !M! cards."
+  },
+  "shadowverse:Ghandagoza": {
+    "NAME": "Ghandagoza, Fist of Rage",
+    "DESCRIPTION": "Deal !D! damage twice."
+  },
+  "shadowverse:Dagon": {
+    "NAME": "Dagon, Lord of the Seas",
+    "DESCRIPTION": "Deal !D! damage 3 times. NL Strength affects this card !M! times。"
+  },
+  "shadowverse:ImperialDragoon": {
+    "NAME": "Imperial Dragoon",
+    "DESCRIPTION": "Discard all cards in your hand. NL Deal !D! damage to all enemies for each card discarded."
+  },
+  "shadowverse:ShipsbanePlesiosaurus": {
+    "NAME": "Shipsbane Plesiosaurus",
+    "DESCRIPTION": "Natura NL Whenever a card is discarded from your hand, deal 4 damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Natura NL Whenever a card is discarded from your hand, deal 4 damage to a random enemy. NL Discard 1 card, draw 2 cards."
+  },
+  "shadowverse:DraconicCounsel": {
+    "NAME": "Draconic Counsel",
+    "DESCRIPTION": "Discard 1 card and draw 1 card. NL If Overflow is active，Add 1 copy of this card without the Overflow effect to your hand. It costs 0."
+  },
+  "shadowverse:DraconicCounsel_Copy": {
+    "NAME": "Draconic Counsel",
+    "DESCRIPTION": "Discard 1 card and draw 1 card. NL Ethereal. NL Exhaust."
+  },
+  "shadowverse:DracomancerRites": {
+    "NAME": "Dracomancer's Rites",
+    "DESCRIPTION": "Whenever you discard cards from your hand, draw the same number of cards. NL Etheral.",
+    "UPGRADE_DESCRIPTION": "Whenever you discard cards from your hand, draw the same number of cards."
+  },
+  "shadowverse:Kit": {
+    "NAME": "Luxfang Kit",
+    "DESCRIPTION": "Deal !D! Damage. NL When this card is discarded, deal !D! damage to a random enemy."
+  },
+  "shadowverse:OrbedCancer": {
+    "NAME": "Orbed Cancer",
+    "DESCRIPTION": "Accelerate 1: Discard 1 card, draw !M! cards. NL  NL ------------------- NL  NL Gain !B! Block twice."
+  },
+  "shadowverse:PumpkinDragon": {
+    "NAME": "Pumpkin Dragon",
+    "DESCRIPTION": "Accelerate 1: Draw !M! cards. NL  NL ------------------- NL  NL Gain !B! Block. Draw !M! cards."
+  },
+  "shadowverse:MermaidSinger": {
+    "NAME": "Mermaid Singer",
+    "DESCRIPTION": "Gain !B! Block. NL If this card is discarded from your hand, gain !B! Block"
+  },
+  "shadowverse:GoldenDragonDen": {
+    "NAME": "Golden Dragon's Den",
+    "DESCRIPTION": "At the start of your turn, randomly discard the lowest cost card in your hand and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, randomly discard the lowest cost card in your hand and draw 1 card. "
+  },
+  "shadowverse:SiLong": {
+    "NAME": "Si Long, Draconic God-Queen",
+    "DESCRIPTION": "Festive NL Gain !B! Block and 3 HP. NL Add 1 *Tidal *Tyranny to your hand. NL Gain 1 Overflow point.",
+    "UPGRADE_DESCRIPTION": "Festive NL Gain !B! Block and 3 HP. NL Add 1 *Tidal *Tyranny+ to your hand. NL Gain 1 Overflow point."
+  },
+  "shadowverse:TidalTyranny": {
+    "NAME": "Tidal Tyranny",
+    "DESCRIPTION": "Festive NL Deal !D! Damage to a random enemy. NL If Overflow is active, add 1 *Evolution *Point to your hand. NL Exhaust."
+  },
+  "shadowverse:WaterwyrmBlessing": {
+    "NAME": "Waterwyrm's Blessing",
+    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn 。 NL If Overflow is active, draw !M! cards."
+  },
+  "shadowverse:WindblastDragon": {
+    "NAME": "Windblast Dragon",
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust."
+  },
+  "shadowverse:PolyphonicRoar": {
+    "NAME": "Polyphonic Roar",
+    "DESCRIPTION": "At the start of your turn, add 1 *Windblast Dragon to your hand. It costs 0 this turn.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, add 1 *Windblast *Dragon+ to your hand. It costs 0 this turn."
+  },
+  "shadowverse:OtohimeVanguard": {
+    "NAME": "Otohime's Vanguard",
+    "DESCRIPTION": "Deal !D! Damage. NL Exhaust."
+  },
+  "shadowverse:DragonEmpressOtohime": {
+    "NAME": "Dragon Empress Otohime",
+    "DESCRIPTION": "Accelerate 0: Add 1 *Otohime's *Vanguard to your hand. NL  NL --------------------- NL  NL Gain !B! Block. NL Add 4 *Otohime's *Vanguards to your hand.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Add 1 *Otohime's *Vanguard+ to your hand. NL  NL --------------------- NL  NL Gain !B! Block. NL Add 4 upgraded *Otohime's *Vanguards to your hand."
+  },
+  "shadowverse:ResplendentPhoenix": {
+    "NAME": "Resplendent Phoenix",
+    "DESCRIPTION": "All cards you draw cost half as much energy (rounded up)."
+  },
+  "shadowverse:PoseidonGuard": {
+    "NAME": "Poseidon's Guard",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust."
+  },
+  "shadowverse:Poseidon": {
+    "NAME": "Poseidon",
+    "DESCRIPTION": "Accelerate 1: Add 1 *Poseidon's *Guard to your hand. NL  NL --------------------- NL  NL Gain !B! Block. NL Add 2 *Poseidon's *Guards to your hand.",
+    "UPGRADE_DESCRIPTION": "Accelerate 1: Add 1 *Poseidon's *Guard+ to your hand. NL  NL --------------------- NL  NL Gain !B! Block. NL Add 2 upgraded *Poseidon's *Guards to your hand."
+  },
+  "shadowverse:EncounterFromTheDeep": {
+    "NAME": "Encounter From The Deep",
+    "DESCRIPTION": "Select a card in your draw pile, deal damage equal to !D! times its cost to a random enemy. NL If that card costs 3 or more energy, deal 10 additional damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Select a card in your draw pile, deal damage equal to !D! times its cost to a random enemy. NL If that card costs 3 or more energy, deal 10 additional damage. NL Exhaust."
+  },
+  "shadowverse:Argente": {
+    "NAME": "Argente, Purest Silver",
+    "DESCRIPTION": "Gain !B! Block. NL Discard 2 cards from your hand, gain 1 Overflow point. NL If you discarded cards 2 or more times this combat, draw 3 cards.",
+    "EXTENDED_DESCRIPTION": [
+      "（Number of times you discarded：",
+      ")"
+    ]
+  },
+  "shadowverse:Lumiore": {
+    "NAME": "Lumiore, Prestigious Gold",
+    "DESCRIPTION": "Gain !B! Block. Gain [E} NL Deal !M! Damage to all enemies for every card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
+    "EXTENDED_DESCRIPTION": [
+      "（Number of times you discarded：",
+      ")"
+    ]
+  },
+  "shadowverse:NoirNBlanc": {
+    "NAME": "Noir & Blanc, Brothers",
+    "DESCRIPTION": "Deal !D! Damage. NL When this card is discarded, deal 6 damage to a random enemy. NL After playing or discarding this card, if Overflow is active at the end of your turn, gain !B! Block, 1 Afterimage, Artifact and Power Damage Immune. If you still have any block next turn, deal !M! damage to a random enemy."
+  },
+  "shadowverse:DragoonMedic": {
+    "NAME": "Dragoon Medic",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL If this card is discarded from your hand, gain !M! Block next turn."
+  },
+  "shadowverse:VerdantRebirth": {
+    "NAME": "Verdant Rebirth",
+    "DESCRIPTION": "Natura NL Deal !D! Damage. NL Add 1 *Naterran *Great *Tree to your hand. NL Deal !M! more damage if the Power *Naterran *Great *Tree is active."
+  },
+  "shadowverse:DisdainfulRending": {
+    "NAME": "Disdainful Rending",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Burn to your hand."
+  }
   }
 }
