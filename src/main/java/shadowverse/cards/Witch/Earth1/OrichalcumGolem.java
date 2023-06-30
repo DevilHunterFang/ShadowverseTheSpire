@@ -71,6 +71,14 @@
          super.update();
      }
 
+     public void triggerOnGlowCheck() {
+         if (Shadowverse.Accelerate(this)) {
+             this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+         } else {
+             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+         }
+     }
+
      public void rand(int[] l, int n, int m)
      {
          int i;

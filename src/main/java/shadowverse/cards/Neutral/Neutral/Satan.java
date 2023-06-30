@@ -89,6 +89,14 @@ public class Satan extends AbstractNeutralCard implements BranchableUpgradeCard 
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()){

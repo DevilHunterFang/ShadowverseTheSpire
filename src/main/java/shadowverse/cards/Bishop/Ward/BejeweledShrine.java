@@ -82,8 +82,8 @@ public class BejeweledShrine extends CustomCard implements AbstractNoCountDownAm
                 (AbstractDungeon.player.hasPower(PenNibPower.POWER_ID)&&AbstractDungeon.player.hasPower(BarricadePower.POWER_ID))||
                 (AbstractDungeon.player.hasPower(DoubleDamagePower.POWER_ID)&&AbstractDungeon.player.hasPower(BlurPower.POWER_ID))
         ){
-            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new StrengthPower(AbstractDungeon.player,amount),amount));
-            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,(AbstractPower)new DexterityPower(AbstractDungeon.player,amount),amount));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new StrengthPower(AbstractDungeon.player,amount),amount));
+            addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DexterityPower(AbstractDungeon.player,amount),amount));
         }
     }
 

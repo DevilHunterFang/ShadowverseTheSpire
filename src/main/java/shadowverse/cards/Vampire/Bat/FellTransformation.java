@@ -30,6 +30,7 @@ public class FellTransformation
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.cardsToPreview.upgrade();
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

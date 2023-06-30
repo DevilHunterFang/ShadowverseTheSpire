@@ -74,6 +74,8 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         public static AbstractCard.CardTags GILDED;
         @SpireEnum
         public static AbstractCard.CardTags ACADEMIC;
+        @SpireEnum
+        public static AbstractCard.CardTags ARMED;
     }
 
     public int earthCount = 0;
@@ -93,6 +95,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
     public int skullFaneAccCount = 0;
     public int magachiyoCount = 0;
     public int burialCount = 0;
+    public int discardCount = 0;
 
     public AbstractBanPool cardPool;
 
@@ -123,6 +126,7 @@ public abstract class AbstractShadowversePlayer extends CustomPlayer {
         this.skullFaneAccCount = 0;
         this.magachiyoCount = 0;
         this.burialCount = 0;
+        this.discardCount = 0;
     }
 
     public void useCard(AbstractCard c, AbstractMonster monster, int energyOnUse) {

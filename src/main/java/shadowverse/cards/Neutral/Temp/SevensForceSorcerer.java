@@ -42,9 +42,9 @@ public class SevensForceSorcerer extends CustomCard {
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("SevensForceSorcerer"));
-        addToBot((AbstractGameAction) new VFXAction(new RainbowCardEffect()));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, (AbstractPower) new SevensForceSorcererPower((AbstractCreature) abstractPlayer)));
+        addToBot(new SFXAction("SevensForceSorcerer"));
+        addToBot(new VFXAction(new RainbowCardEffect()));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new SevensForceSorcererPower(abstractPlayer)));
         if (this.upgraded) {
             for (AbstractCard c : abstractPlayer.hand.group) {
                 if (c.type == CardType.SKILL && c.costForTurn < 2) {

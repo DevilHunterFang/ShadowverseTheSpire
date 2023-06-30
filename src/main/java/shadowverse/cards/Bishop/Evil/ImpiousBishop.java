@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Neutral.Curse.Indulgence;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -64,7 +65,7 @@ public class ImpiousBishop
             addToBot(new ApplyPowerAction(p,p,new NextTurnBlockPower(p,this.block),this.block));
             addToBot(new HealAction(p,p,3));
             addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,2));
-            if (EnergyPanel.getCurrentEnergy() < 4){
+            if (this.type == CardType.POWER){
                 addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }

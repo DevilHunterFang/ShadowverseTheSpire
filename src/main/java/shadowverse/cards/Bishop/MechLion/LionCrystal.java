@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Neutral.Temp.*;
 import shadowverse.characters.Bishop;
@@ -70,9 +71,9 @@ public class LionCrystal extends AbstractEnhanceCard {
             if (c instanceof LionCrystal || c instanceof LionCrystalCopy)
                 count++;
         }
-        if (count > 5) {
+        if (count > 5 || Shadowverse.Enhance(enhanceCost)) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-        } else if (count > 2) {
+        } else {
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }

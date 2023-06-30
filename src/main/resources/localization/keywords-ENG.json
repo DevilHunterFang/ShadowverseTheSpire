@@ -445,6 +445,18 @@
         "Academic"
       ],
       "DESCRIPTION": "Trait. 28th Expansion《Academy of Ages》 cards."
+    },
+    {
+      "NAMES": [
+        "觉醒"
+      ],
+      "DESCRIPTION": "觉醒值达到3点时进入觉醒状态。回合开始时获得 [E] 。"
+    },
+    {
+      "NAMES": [
+        "完全觉醒"
+      ],
+      "DESCRIPTION": "处于觉醒状态时觉醒值达到3点时进入完全觉醒状态。回合开始时获得 [E] [E] 。"
     }
   ]
 }

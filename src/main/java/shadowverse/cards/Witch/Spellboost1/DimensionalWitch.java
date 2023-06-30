@@ -53,8 +53,8 @@ public class DimensionalWitch extends CustomCard implements BranchableUpgradeCar
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         if (c.type == CardType.SKILL) {
             flash();
-            addToBot((AbstractGameAction) new SFXAction("spell_boost"));
-            addToBot((AbstractGameAction) new ReduceCostAction((AbstractCard) this));
+            addToBot(new SFXAction("spell_boost"));
+            addToBot(new ReduceCostAction(this));
         }
     }
 
@@ -67,48 +67,48 @@ public class DimensionalWitch extends CustomCard implements BranchableUpgradeCar
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("DimensionalWitch"));
-                addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new WhirlwindEffect(new Color(1.0F, 0.9F, 0.4F, 1.0F), true)));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
+                addToBot(new SFXAction("DimensionalWitch"));
+                addToBot(new VFXAction(new WhirlwindEffect(new Color(1.0F, 0.9F, 0.4F, 1.0F), true)));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
                 this.cost = 6;
                 int count = AbstractDungeon.player.hand.size();
                 for (int i = 0; i < count; i++) {
                     if (Settings.FAST_MODE) {
-                        addToTop((AbstractGameAction) new ExhaustAction(1, true, true, false, Settings.ACTION_DUR_XFAST));
+                        addToTop(new ExhaustAction(1, true, true, false, Settings.ACTION_DUR_XFAST));
                     } else {
-                        addToTop((AbstractGameAction) new ExhaustAction(1, true, true));
+                        addToTop(new ExhaustAction(1, true, true));
                     }
                 }
-                addToBot((AbstractGameAction) new DrawCardAction((AbstractCreature) abstractPlayer, 5));
-                addToBot((AbstractGameAction) new SpellBoostAction(abstractPlayer, (AbstractCard) this, abstractPlayer.hand.group));
+                addToBot(new DrawCardAction(abstractPlayer, 5));
+                addToBot(new SpellBoostAction(abstractPlayer, this, abstractPlayer.hand.group));
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("DimensionalWitch2"));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new RainbowCardEffect()));
-                AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
+                addToBot(new SFXAction("DimensionalWitch2"));
+                addToBot(new VFXAction(new RainbowCardEffect()));
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
                 int size = 10-abstractPlayer.hand.group.size();
-                addToBot((AbstractGameAction)new DrawExptCardAction((AbstractCreature)abstractPlayer, size, c -> (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)||c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)), new AbstractGameAction() {
+                addToBot(new DrawExptCardAction(abstractPlayer, size, c -> (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)||c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)), new AbstractGameAction() {
                     public void update() {
                         this.isDone = true;
                         for (AbstractCard c : DrawCardAction.drawnCards) {
                             if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {
                                 for (int i = 0; i < DimensionalWitch.this.magicNumber; i++) {
                                     c.flash();
-                                    addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-                                    addToBot((AbstractGameAction)new ReduceCostAction(c));
+                                    addToBot(new SFXAction("spell_boost"));
+                                    addToBot(new ReduceCostAction(c));
                                 }
                             }
                             if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)) {
                                 for (int i = 0; i < DimensionalWitch.this.magicNumber; i++) {
                                     c.flash();
                                     c.magicNumber = ++c.baseMagicNumber;
-                                    addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+                                    addToBot(new SFXAction("spell_boost"));
                                 }
                             }
                         }
                     }
                 }));
-                addToBot((AbstractGameAction)new DrawCardAction(1));
+                addToBot(new DrawCardAction(1));
                 this.cost = 6;
                 break;
             default:
@@ -118,7 +118,7 @@ public class DimensionalWitch extends CustomCard implements BranchableUpgradeCar
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new DimensionalWitch();
+        return new DimensionalWitch();
     }
 
     @Override

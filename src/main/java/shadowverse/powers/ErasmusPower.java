@@ -66,12 +66,12 @@ import shadowverse.characters.AbstractShadowversePlayer;
    
    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
      if (isPlayer) {
-       addToBot((AbstractGameAction)new SFXAction("ErasmusPower"));
+       addToBot(new SFXAction("ErasmusPower"));
        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
          if (!mo.isDeadOrEscaped())
-           addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new LightningEffect(mo.drawX, mo.drawY), 0.05F)); 
+           addToBot(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), 0.05F)); 
        } 
-       addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+       addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
        AbstractPlayer p = (AbstractPlayer)this.owner;
        boolean powerExists = false;
        for (AbstractPower pow : p.powers) {
@@ -85,10 +85,10 @@ import shadowverse.characters.AbstractShadowversePlayer;
          flash();
          for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
            if (!mo.isDeadOrEscaped())
-             addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new LightningEffect(mo.drawX, mo.drawY), 0.05F)); 
+             addToBot(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), 0.05F)); 
          } 
-         addToBot((AbstractGameAction)new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
-         addToBot((AbstractGameAction)new ApplyPowerAction(this.owner, this.owner, new EarthEssence(this.owner, -1), -1));
+         addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+         addToBot(new ApplyPowerAction(this.owner, this.owner, new EarthEssence(this.owner, -1), -1));
        } 
      } 
    }

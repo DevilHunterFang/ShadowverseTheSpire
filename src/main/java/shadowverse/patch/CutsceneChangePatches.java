@@ -46,6 +46,8 @@ public class CutsceneChangePatches {
                 customBg = ImageMaster.loadImage("img/scene/nemesisBg.png");
             }else if (AbstractDungeon.player instanceof Bishop){
                 customBg = ImageMaster.loadImage("img/scene/bishopBg.png");
+            } else if (AbstractDungeon.player instanceof Dragon) {
+                customBg = ImageMaster.loadImage("img/scene/dragonBg.png");
             }
             if (customBg != null) {
                 try {
@@ -69,6 +71,11 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/shizuru1.png"));
                     customPanels.add(new CutscenePanel("img/scene/royal2.png"));
                     customPanels.add(new CutscenePanel("img/scene/shizuru3.png"));
+                }
+                else if ((CharacterSelectScreenPatches.characters[3]).reskinCount == 2){
+                    customPanels.add(new CutscenePanel("img/scene/monika1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/royal2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/monika3.png"));
                 }
             }else if (AbstractDungeon.player instanceof Witchcraft){
                 if ((CharacterSelectScreenPatches.characters[0]).reskinCount == 0){
@@ -157,6 +164,21 @@ public class CutsceneChangePatches {
                     customPanels.add(new CutscenePanel("img/scene/saren_summer.png"));
                     customPanels.add(new CutscenePanel("img/scene/saren_summer2.png"));
                     customPanels.add(new CutscenePanel("img/scene/saren_summer3.png"));
+                }
+            }
+            else if (AbstractDungeon.player instanceof Dragon){
+                if ((CharacterSelectScreenPatches.characters[7]).reskinCount == 0){
+                    customPanels.add(new CutscenePanel("img/scene/kaya1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/dragon2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/kaya3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[7]).reskinCount == 1){
+                    customPanels.add(new CutscenePanel("img/scene/grea1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/dragon2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/grea3.png"));
+                }else if ((CharacterSelectScreenPatches.characters[7]).reskinCount == 2){
+                    customPanels.add(new CutscenePanel("img/scene/inori1.png"));
+                    customPanels.add(new CutscenePanel("img/scene/dragon2.png"));
+                    customPanels.add(new CutscenePanel("img/scene/inori3.png"));
                 }
             }
             if (customPanels != null) {

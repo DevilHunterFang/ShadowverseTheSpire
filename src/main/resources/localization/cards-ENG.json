@@ -3858,7 +3858,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "Shadow's Corrosion",
-    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to triple the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
+    "DESCRIPTION": "Natura. NL Apply the following effect to an enemy: At the start of your turn, lose HP equal to quadruple the number of played *Naterran *Great *Trees played this combat. NL If the enemy already has this effect, deal the same amount of damage directly instead. NL Exhaust."
   },
   "shadowverse:Valdain": {
     "NAME": "Valdain, Cursed Shadow",
@@ -4560,7 +4560,7 @@
   },
   "shadowverse:MasqueradeGhost": {
     "NAME": "Masquerade Ghost",
-    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: At the start of your next turn, put a 0 cost *Masquerade *Ghost without Last_Words into your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: At the start of your next turn, put a 0 cost *Masquerade *Ghost without Last_Words into your hand."
   },
   "shadowverse:MasqueradeGhost_Copy": {
     "NAME": "Masquerade Ghost",
@@ -4862,7 +4862,7 @@
     "DESCRIPTION": "Condemned NL Gain the following effect: Whenever you perform Burial_Rite, deal 10 damage to all enemies (up to 3 times per turn). NL Burial_Rite 2: Reanimate 1 and Reanimate 2. NL Banish. ",
     "UPGRADE_DESCRIPTION":"Condemned NL Gain the following effect: Whenever you perform Burial_Rite, deal 10 damage to all enemies (up to 3 times per turn). NL Burial_Rite 2: Reanimate 1 and Reanimate 2. "
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "Deathscythe Hound",
     "DESCRIPTION": "Deal !D! Damage to all enemies. NL Necromancy 8: Repeat the previous effect once. "
   },
@@ -5253,8 +5253,9 @@
   },
   "shadowverse:Cornelius": {
     "NAME": "Cornelius, the Corpse King",
-    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost , Exhaust and they cost 0 this turn to your hand.",
-    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards with 1 cost, Exhaust and they cost 0  to your hand. NL Add 1 *Corpse *King's *Command to your hand."
+
+    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies. NL Add 4 different non-Shadowcraft Attack cards that originally cost 1 to your hand. They cost 0 and Exhaust. NL Exhaust",
+    "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Apply 2 Weak and Vulnerable to ALL enemies.  NL Add 4 different non-Shadowcraft Attack cards that originally cost 1 to your hand. They cost 0 and Exhaust. NL Add 1 *Corpse *King's *Command to your hand.",
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "Corpse King's Command ",
@@ -5442,5 +5443,36 @@
       "Spellboost1",
       "Spellboost2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "Pinion Prayer",
+    "DESCRIPTION": "Countdown 2: Add a *Holy *Falcon to your hand.",
+    "UPGRADE_DESCRIPTION": "Countdown 2: Add a *Holy *Falcon+ to your hand."
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "Master Adjudicator",
+    "DESCRIPTION": "Crystallize 1: Countdown 1: Return this card to your hand and change its cost to 0. NL NL --------------------- NL NL Deal !D! damage. NL Gain !B! Block ."
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "Holy Lighting Bird",
+    "DESCRIPTION": "Crystallize 0: Countdown 1: 1 Gain !M! energy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If you have played 5 or more amulets with Countdown, gain 1 energy."
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "龙族勇士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   }
 }

@@ -32,8 +32,9 @@ public class Cornelius
 
     public Cornelius() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF);
-        this.baseBlock = 24;
+        this.baseBlock = 20;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
+        this.exhaust = true;
     }
 
 

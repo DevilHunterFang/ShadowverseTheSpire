@@ -72,7 +72,7 @@ public class WardenOfHonor
             }
             addToBot(new MakeTempCardInDiscardAction(copy,1));
         }
-        if (EnergyPanel.getCurrentEnergy() < 4){
+        if (EnergyPanel.getCurrentEnergy() < 4 && this.costForTurn > 0){
             addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
         }
 

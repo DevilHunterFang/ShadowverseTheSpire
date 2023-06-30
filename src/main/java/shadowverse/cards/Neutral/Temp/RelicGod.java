@@ -51,8 +51,8 @@ public class RelicGod
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new HeavenlyAegisPower(p)));
-        addToBot((AbstractGameAction)new PlaceAmulet(this.makeStatEquivalentCopy(),null));
+        addToBot(new ApplyPowerAction(p,p,new HeavenlyAegisPower(p)));
+        addToBot(new PlaceAmulet(this.makeStatEquivalentCopy(),null));
     }
 
 
@@ -72,10 +72,10 @@ public class RelicGod
 
     @Override
     public void endOfTurn(AmuletOrb paramOrb) {
-        addToBot((AbstractGameAction) new GainBlockAction(AbstractDungeon.player,this.block));
+        addToBot( new GainBlockAction(AbstractDungeon.player,this.block));
         AbstractCreature m = AbstractDungeon.getRandomMonster();
         if (m != null && !m.isDeadOrEscaped()) {
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
+            addToBot(new VFXAction(new VerticalImpactEffect(m.hb.cX + m.hb.width / 4.0F, m.hb.cY - m.hb.height / 4.0F)));
             addToBot(new DamageAction(m, new DamageInfo(AbstractDungeon.player, damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY, true));
         }
     }

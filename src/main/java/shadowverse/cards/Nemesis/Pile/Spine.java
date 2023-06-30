@@ -32,7 +32,7 @@ import shadowverse.powers.SpinePower;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Spine extends CustomCard implements BranchableUpgradeCard{
+public class Spine extends CustomCard implements BranchableUpgradeCard {
     public static final String ID = "shadowverse:Spine";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Spine");
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Spine2");
@@ -47,7 +47,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
 
     public static AbstractCard token = new SpineArtifact();
 
-    public static ArrayList<AbstractCard> returnChoice(){
+    public static ArrayList<AbstractCard> returnChoice() {
         ArrayList<AbstractCard> list = new ArrayList<>();
         list.add(new BlitzArtifact());
         list.add(new EdgeArtifact());
@@ -64,7 +64,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
     }
 
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (this.chosenBranch()==1){
+        if (this.chosenBranch() == 1) {
             if (AbstractDungeon.player.hasPower("Burst") || AbstractDungeon.player.hasPower("Double Tap") || AbstractDungeon.player.hasPower("Amplified")) {
                 doubleCheck = true;
                 if (EnergyPanel.getCurrentEnergy() - c.costForTurn < this.cost) {
@@ -87,7 +87,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
     }
 
     public void triggerOnGainEnergy(int e, boolean dueToCard) {
-        if (this.chosenBranch()==1){
+        if (this.chosenBranch() == 1) {
             if (EnergyPanel.getCurrentEnergy() >= 2 && this.type != CardType.ATTACK) {
                 resetAttributes();
                 this.type = CardType.ATTACK;
@@ -97,7 +97,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
     }
 
     public void triggerWhenDrawn() {
-        if (this.chosenBranch()==1){
+        if (this.chosenBranch() == 1) {
             if (Shadowverse.Accelerate((AbstractCard) this)) {
                 super.triggerWhenDrawn();
                 setCostForTurn(0);
@@ -111,7 +111,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
 
     @Override
     public void atTurnStart() {
-        if (this.chosenBranch()==1){
+        if (this.chosenBranch() == 1) {
             if (AbstractDungeon.player.hand.group.contains(this)) {
                 if (EnergyPanel.getCurrentEnergy() < 2) {
                     setCostForTurn(0);
@@ -126,7 +126,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
     }
 
     public void onMoveToDiscard() {
-        if (this.chosenBranch()==1){
+        if (this.chosenBranch() == 1) {
             resetAttributes();
             this.type = CardType.ATTACK;
             applyPowers();
@@ -135,28 +135,37 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
 
     public void update() {
         super.update();
-            switch (previewBranch){
-                case 0:
-                default:
-                    if (this.hb.hovered)
-                        this.cardsToPreview = this.token.makeCopy();
-                    break;
-                case 1:
-                    if (this.hb.hovered)
-                        if (this.rotationTimer <= 0.0F) {
-                            this.rotationTimer = 2.0F;
-                            this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
-                            if (this.previewIndex == returnChoice().size() - 1) {
-                                this.previewIndex = 0;
-                            } else {
-                                this.previewIndex++;
-                            }
+        switch (previewBranch) {
+            case 0:
+            default:
+                if (this.hb.hovered)
+                    this.cardsToPreview = this.token.makeCopy();
+                break;
+            case 1:
+                if (this.hb.hovered)
+                    if (this.rotationTimer <= 0.0F) {
+                        this.rotationTimer = 2.0F;
+                        this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                        if (this.previewIndex == returnChoice().size() - 1) {
+                            this.previewIndex = 0;
                         } else {
-                            this.rotationTimer -= Gdx.graphics.getDeltaTime();
+                            this.previewIndex++;
                         }
-                    break;
-            }
+                    } else {
+                        this.rotationTimer -= Gdx.graphics.getDeltaTime();
+                    }
+                break;
+        }
     }
+
+    public void triggerOnGlowCheck() {
+        if (this.chosenBranch() == 1 && Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
 
     @Override
     public List<UpgradeBranch> possibleBranches() {
@@ -199,54 +208,54 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
 
     @Override
     public void upgrade() {
-        ((UpgradeBranch)((BranchableUpgradeCard)this).possibleBranches().get(chosenBranch())).upgrade();
+        ((UpgradeBranch) ((BranchableUpgradeCard) this).possibleBranches().get(chosenBranch())).upgrade();
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Settings.BLUE_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.2F));
-        if (!this.upgraded){
-            addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-            addToBot((AbstractGameAction)new SFXAction("Spine"));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.token.makeStatEquivalentCopy()));
-            addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new SpinePower(abstractPlayer,this.magicNumber),this.magicNumber));
-        }else {
-            switch (chosenBranch()){
+        addToBot((AbstractGameAction) new VFXAction((AbstractCreature) abstractPlayer, (AbstractGameEffect) new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Settings.BLUE_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.2F));
+        if (!this.upgraded) {
+            addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+            addToBot((AbstractGameAction) new SFXAction("Spine"));
+            addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.token.makeStatEquivalentCopy()));
+            addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new SpinePower(abstractPlayer, this.magicNumber), this.magicNumber));
+        } else {
+            switch (chosenBranch()) {
                 case 0:
-                    addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-                    addToBot((AbstractGameAction)new SFXAction("Spine"));
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.token.makeStatEquivalentCopy()));
-                    addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new SpinePower(abstractPlayer,this.magicNumber),this.magicNumber));
+                    addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+                    addToBot((AbstractGameAction) new SFXAction("Spine"));
+                    addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.token.makeStatEquivalentCopy()));
+                    addToBot((AbstractGameAction) new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower) new SpinePower(abstractPlayer, this.magicNumber), this.magicNumber));
                     break;
                 case 1:
                     if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-                        addToBot((AbstractGameAction)new SFXAction("Spine2_Acc"));
-                        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.token.makeStatEquivalentCopy()));
-                    }else {
-                        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-                        addToBot((AbstractGameAction)new SFXAction("Spine2"));
+                        addToBot((AbstractGameAction) new SFXAction("Spine2_Acc"));
+                        addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.token.makeStatEquivalentCopy()));
+                    } else {
+                        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
+                        addToBot((AbstractGameAction) new SFXAction("Spine2"));
                         ArrayList<AbstractCard> list = new ArrayList<>();
                         ArrayList<String> dup = new ArrayList<>();
-                        for (AbstractCard c: abstractPlayer.exhaustPile.group){
-                            if (c.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT)&&!dup.contains(c.cardID)){
+                        for (AbstractCard c : abstractPlayer.exhaustPile.group) {
+                            if (c.hasTag(AbstractShadowversePlayer.Enums.ARTIFACT) && !dup.contains(c.cardID)) {
                                 dup.add(c.cardID);
                                 AbstractCard card = c.makeCopy();
                                 list.add(card);
                             }
                         }
-                        if (list.size()>=6){
-                            for (AbstractCard c:returnChoice()){
+                        if (list.size() >= 6) {
+                            for (AbstractCard c : returnChoice()) {
                                 AbstractCard tmp = c.makeStatEquivalentCopy();
                                 tmp.setCostForTurn(0);
-                                addToBot((AbstractGameAction)new MakeTempCardInHandAction(tmp));
+                                addToBot((AbstractGameAction) new MakeTempCardInHandAction(tmp));
                             }
-                        }else {
+                        } else {
                             AbstractCard[] artifactToken = new AbstractCard[returnChoice().size()];
                             returnChoice().toArray(artifactToken);
-                            for (AbstractCard c:artifactToken){
+                            for (AbstractCard c : artifactToken) {
                                 c.setCostForTurn(0);
                             }
-                            addToBot((AbstractGameAction)new Choose2DifferentAction(true,artifactToken));
+                            addToBot((AbstractGameAction) new Choose2DifferentAction(true, artifactToken));
                         }
                     }
                     break;
@@ -259,7 +268,7 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
     @Override
     public AbstractCard makeSameInstanceOf() {
         AbstractCard card = null;
-        if (this.chosenBranch()==1&&Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
+        if (this.chosenBranch() == 1 && Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
             card = (new Spine_Acc()).makeStatEquivalentCopy();
             card.uuid = (new Spine_Acc()).uuid;
         } else {
@@ -272,6 +281,6 @@ public class Spine extends CustomCard implements BranchableUpgradeCard{
 
     @Override
     public AbstractCard makeCopy() {
-        return (AbstractCard)new Spine();
+        return (AbstractCard) new Spine();
     }
 }

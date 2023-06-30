@@ -69,7 +69,7 @@ public class Anvelt
             addToBot(new VFXAction(p, new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.4F));
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-            if (EnergyPanel.getCurrentEnergy() < 8){
+            if (this.type == CardType.POWER){
                 addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }

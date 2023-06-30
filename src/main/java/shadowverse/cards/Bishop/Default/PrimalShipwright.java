@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 import shadowverse.orbs.Minion;
@@ -34,6 +35,7 @@ public class PrimalShipwright
         this.baseDamage = 0;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
     }
 
 
@@ -109,7 +111,7 @@ public class PrimalShipwright
             addToBot(new SFXAction("PrimalShipwright"));
             calculateCardDamage(abstractMonster);
             addToBot(new DamageAction(abstractMonster, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-            if (EnergyPanel.getCurrentEnergy() < 6){
+            if (this.type == CardType.POWER){
                 addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }

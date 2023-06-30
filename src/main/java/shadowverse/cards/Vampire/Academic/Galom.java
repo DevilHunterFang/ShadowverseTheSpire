@@ -5,6 +5,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -40,6 +41,7 @@ public class Galom extends CustomCard {
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction("Galom"));
         if (p.stance.ID.equals(Vengeance.STANCE_ID) || p.hasPower(EpitaphPower.POWER_ID)) {
             addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage * 2, true), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.FIRE));
         }else {

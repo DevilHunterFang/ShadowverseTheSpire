@@ -3863,7 +3863,7 @@
   },
   "shadowverse:ShadowCorrosion": {
     "NAME": "影の侵食",
-    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける3のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける3のダメージを与える。 NL 廃棄 。"
+    "DESCRIPTION": "自然 。 NL 敵は「ターン開始時、この戦闘中にプレイしていた *ナテラの大樹 の数かける4のHPを失う」を持つ。 NL 敵がすでにこれを持っているなら、この戦闘中にプレイしていた  *ナテラの大樹 の数かける4のダメージを与える。 NL 廃棄 。"
   },
   "shadowverse:Valdain": {
     "NAME": "呪われし影・ヴァイディ",
@@ -4861,7 +4861,7 @@
     "DESCRIPTION": "八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。 NL エセリアル 。",
     "UPGRADE_DESCRIPTION":"八獄 NL 自分は「 葬送 する度、敵全体に10ダメージを与える(上限は1ターンに3回)」を持つ。 NL カード2枚を 葬送 し、 リアニメイト 1、2。"
   },
-  "shadowverse:DeathScytheHound": {
+  "shadowverse:DeathscytheHound": {
     "NAME": "デスサイズハウンド",
     "DESCRIPTION": "敵全体に !D! ダメージを与える。 NL ネクロマンス 8 もう一回ダメージを与える。"
   },
@@ -5252,8 +5252,8 @@
   },
   "shadowverse:Cornelius": {
     "NAME": "屍術王・コルネリウス",
-    "DESCRIPTION": "学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。",
-    "UPGRADE_DESCRIPTION":"学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL *王たる屍術 1枚を手札に加える。"
+    "DESCRIPTION": "学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL 廃棄 。",
+    "UPGRADE_DESCRIPTION":"学園 NL !B! ブロック を得る 。 NL 敵全体に 弱体化 と 脱力 2を与える。 NL コスト1のネクロマンサーでないアタックをランダムに4枚を手札に加える。 NL *王たる屍術 1枚を手札に加える。 NL 廃棄 。"
   },
   "shadowverse:CorpseKingCommand": {
     "NAME": "王たる屍術",
@@ -5442,5 +5442,36 @@
       "スペル1",
       "スペル2"
     ]
+  },
+  "shadowverse:PinionPrayer": {
+    "NAME": "詠唱：白翼への祈り",
+    "DESCRIPTION": "カウントダウン 2 NL *ホーリーファルコン を1枚手札に加える。",
+    "UPGRADE_DESCRIPTION":"カウントダウン 2 NL *ホーリーファルコン+ を1枚手札に加える。"
+  },
+  "shadowverse:JudgmentSpearMaster": {
+    "NAME": "ジャッジメントスピアマスター",
+    "DESCRIPTION": "結晶 1 · カウントダウン 1 NL これを手札に加え、このターンこれのコストは0。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL !B! ブロック を得る。"
+  },
+  "shadowverse:HolyLightningBird": {
+    "NAME": "雷導の神鳥",
+    "DESCRIPTION": "結晶 0 · カウントダウン 1 NL エナジー !M! を得る。 NL  NL --------------------- NL  NL !D! ダメージを与える。 NL この戦闘中に カウントダウン を持つアミュレットを5枚以上プレイしていたなら、エナジー1を得る。"
+  },
+  "shadowverse:DragonWarrior": {
+    "NAME": "龙族勇士",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 再造成 !M! 点伤害。"
+  },
+  "shadowverse:DragonOracle": {
+    "NAME": "龙之启示",
+    "DESCRIPTION": "获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Strike_D": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "shadowverse:Defend_D": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
   }
 }

@@ -81,19 +81,19 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
             setHp(1200);
         }
         if (AbstractDungeon.ascensionLevel >= 19) {
-            this.heavyDmg = 30;
+            this.heavyDmg = 24;
             this.multiDmg = 3;
             this.strAmount = 3;
             this.debuffAmount = 2;
             this.blockAmount = 20;
         } else if (AbstractDungeon.ascensionLevel >= 4) {
-            this.heavyDmg = 30;
+            this.heavyDmg = 24;
             this.multiDmg = 2;
             this.strAmount = 2;
             this.debuffAmount = 2;
             this.blockAmount = 18;
         } else {
-            this.heavyDmg = 28;
+            this.heavyDmg = 22;
             this.multiDmg = 2;
             this.strAmount = 2;
             this.debuffAmount = 1;
@@ -168,7 +168,8 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
             case 1:
                 addToBot(new ShoutAction(this, DIALOG[1], 1.0F, 2.0F));
                 addToBot(new SFXAction("Taketsumi_A3"));
-                addToBot(new MakeTempCardInDrawPileAction(new Dazed(),4,true,true,false));
+                addToBot(new MakeTempCardInDrawPileAction(new Dazed(),2,true,true,false));
+                addToBot(new MakeTempCardInDiscardAction(new Dazed(),2));
                 addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new WeakPower(AbstractDungeon.player,debuffAmount,true)));
                 break;
             case 2:
@@ -181,11 +182,11 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
             case 3:
                 addToBot(new ShoutAction(this, DIALOG[3], 1.0F, 2.0F));
                 addToBot(new SFXAction("Taketsumi_A1"));
-                for (int i = 0;i < 8; i++){
+                for (int i = 0;i < 6; i++){
                     addToBot(new DamageAction(AbstractDungeon.player,this.damage.get(1), AbstractGameAction.AttackEffect.SLASH_HEAVY));
                 }
                 addToBot(new MakeTempCardInDiscardAction(new Wound(),debuffAmount));
-                addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new DexterityPower(AbstractDungeon.player,-debuffAmount),-debuffAmount));
+                addToBot(new ApplyPowerAction(AbstractDungeon.player,this,new DrawReductionPower(AbstractDungeon.player,1),1));
                 break;
             case 4:
                 addToBot(new ShoutAction(this, DIALOG[4], 1.0F, 2.0F));
@@ -211,7 +212,7 @@ public class TaketsumiBOSS extends CustomMonster implements SpriteCreature {
             return;
         }
         if (!lastMove((byte)3)&& !lastMove((byte)3)){
-            setMove(SLASH,(byte)3, Intent.ATTACK_DEBUFF,(this.damage.get(1)).base, 8, true);
+            setMove(SLASH,(byte)3, Intent.ATTACK_DEBUFF,(this.damage.get(1)).base, 6, true);
             return;
         }
         setMove((byte)4, Intent.DEFEND);

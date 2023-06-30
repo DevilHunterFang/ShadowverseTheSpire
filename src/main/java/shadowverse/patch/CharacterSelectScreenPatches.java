@@ -74,7 +74,8 @@ public class CharacterSelectScreenPatches {
              new AbstractRoyalSkin(),
              new AbstractVampireSkin(),
              new AbstractBishopSkin(),
-             new AbstractNemesisSkin()
+             new AbstractNemesisSkin(),
+             new AbstractDragonSkin()
     };
 
     public static Color BLACK_OUTLINE_COLOR = new Color(0.0F, 0.0F, 0.0F, 0.5F);
@@ -168,9 +169,9 @@ public class CharacterSelectScreenPatches {
                             c.skins[c.reskinCount].render(sb);
                             if (CharacterSelectScreenPatches.char_effectsQueue.size() > 0) {
                                 for (int k = 0; k < CharacterSelectScreenPatches.char_effectsQueue.size(); k++) {
-                                    if (!((AbstractGameEffect) CharacterSelectScreenPatches.char_effectsQueue.get(k)).isDone) {
-                                        ((AbstractGameEffect) CharacterSelectScreenPatches.char_effectsQueue.get(k)).update();
-                                        ((AbstractGameEffect) CharacterSelectScreenPatches.char_effectsQueue.get(k)).render(sb);
+                                    if (!(CharacterSelectScreenPatches.char_effectsQueue.get(k)).isDone) {
+                                        (CharacterSelectScreenPatches.char_effectsQueue.get(k)).update();
+                                        (CharacterSelectScreenPatches.char_effectsQueue.get(k)).render(sb);
                                     } else {
                                         if (CharacterSelectScreenPatches.char_effectsQueue_toRemove == null)
                                             CharacterSelectScreenPatches.char_effectsQueue_toRemove = new ArrayList<>();
@@ -284,8 +285,9 @@ public class CharacterSelectScreenPatches {
                         || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Royal")).NAMES[0])
                         || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Vampire")).NAMES[0])
                         || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Bishop")).NAMES[0])
-                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Nemesis")).NAMES[0]))
-                    ;
+                        || __instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Nemesis")).NAMES[0])
+                        ||__instance.c.name.equals((CardCrawlGame.languagePack.getCharacterString("shadowverse:Dragon")).NAMES[0])
+                );
                 if (__instance.selected) {
                     glowColor.r = 0.0F;
                     glowColor.g = 1.0F;

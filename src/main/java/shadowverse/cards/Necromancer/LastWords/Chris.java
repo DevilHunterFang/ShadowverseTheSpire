@@ -56,8 +56,8 @@ public class Chris
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("Chris"));
-        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new SFXAction("Chris"));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
         int count = 0;
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.LASTWORD))
@@ -65,11 +65,11 @@ public class Chris
         }
         if (count >= 5) {
             this.cardsToPreview.setCostForTurn(0);
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         }
         if (count>=10){
             if (!abstractPlayer.hasPower(BarricadePower.POWER_ID))
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new BarricadePower(abstractPlayer)));
+                addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new BarricadePower(abstractPlayer)));
         }
     }
 

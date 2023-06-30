@@ -30,7 +30,7 @@ public class Verdilia extends AbstractRightClickCard2 {
 
     public Verdilia() {
         super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Bishop.Enums.COLOR_WHITE, CardRarity.RARE, CardTarget.SELF);
-        this.baseDamage = 8;
+        this.baseBlock= 8;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
         this.cardsToPreview = new CyclicalGuidance();
     }

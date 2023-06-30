@@ -1,5 +1,4 @@
- package shadowverse.cards.Elf.Fairy;
- 
+package shadowverse.cards.Elf.Fairy;
 
 
 import basemod.abstracts.CustomCard;
@@ -19,46 +18,45 @@ import shadowverse.cards.Neutral.Temp.ThronBurst;
 import shadowverse.characters.Elf;
 
 
- public class RoseQueen
-   extends CustomCard
- {
-   public static final String ID = "shadowverse:RoseQueen";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:RoseQueen");
-   public static final String NAME = cardStrings.NAME;
-   public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-   public static final String IMG_PATH = "img/cards/RoseQueen.png";
+public class RoseQueen
+        extends CustomCard {
+    public static final String ID = "shadowverse:RoseQueen";
+    public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:RoseQueen");
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String IMG_PATH = "img/cards/RoseQueen.png";
 
-   public RoseQueen() {
-     super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.SELF);
-     this.baseBlock = 25;
-     this.cardsToPreview = (AbstractCard)new ThronBurst();
-   }
+    public RoseQueen() {
+        super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.SELF);
+        this.baseBlock = 25;
+        this.cardsToPreview = new ThronBurst();
+    }
 
-   
-   public void upgrade() {
-     if (!this.upgraded) {
-       upgradeName();
-       this.cardsToPreview.upgrade();
-       this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-       initializeDescription();
-     } 
-   }
- 
-   
-   public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new SFXAction("RoseQueen"));
-     addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
-     for (AbstractCard c:abstractPlayer.hand.group){
-       if (c instanceof Fairy){
-         addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,abstractPlayer.hand));
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-       }
-     }
-   }
- 
-   
-   public AbstractCard makeCopy() {
-     return (AbstractCard)new RoseQueen();
-   }
- }
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            this.cardsToPreview.upgrade();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
+        }
+    }
+
+
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        addToBot(new SFXAction("RoseQueen"));
+        addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+        for (AbstractCard c : abstractPlayer.hand.group) {
+            if (c instanceof Fairy) {
+                addToBot(new ExhaustSpecificCardAction(c, abstractPlayer.hand));
+                addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+            }
+        }
+    }
+
+
+    public AbstractCard makeCopy() {
+        return (AbstractCard) new RoseQueen();
+    }
+}
 

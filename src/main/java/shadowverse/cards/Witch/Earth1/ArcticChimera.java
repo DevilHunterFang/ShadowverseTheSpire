@@ -65,6 +65,14 @@ public class ArcticChimera
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractPower p = abstractPlayer.getPower(EarthEssence.POWER_ID);
         if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {

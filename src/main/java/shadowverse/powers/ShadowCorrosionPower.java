@@ -43,13 +43,13 @@
 
    @Override
    public void atStartOfTurn() {
-       addToBot((AbstractGameAction)new LoseHPAction(this.owner,this.owner,this.amount, AbstractGameAction.AttackEffect.POISON));
+       addToBot(new LoseHPAction(this.owner,this.owner,this.amount, AbstractGameAction.AttackEffect.POISON));
    }
 
      @Override
      public void onUseCard(AbstractCard card, UseCardAction action) {
          if (card instanceof NaterranGreatTree)
-             addToBot((AbstractGameAction)new ApplyPowerAction(this.owner,this.owner,(AbstractPower)new ShadowCorrosionPower(this.owner,3),3));
+             addToBot(new ApplyPowerAction(this.owner,this.owner,new ShadowCorrosionPower(this.owner,4),4));
      }
 
      @Override

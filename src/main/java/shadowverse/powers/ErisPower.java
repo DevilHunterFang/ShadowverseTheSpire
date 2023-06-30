@@ -1,7 +1,9 @@
 package shadowverse.powers;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -11,9 +13,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.action.PlaceAmulet;
-import shadowverse.cards.Neutral.Temp.RelicPlaton;
-import shadowverse.cards.Neutral.Temp.RelicPrism;
-import shadowverse.cards.Neutral.Temp.RelicTorus;
+import shadowverse.cards.Neutral.Temp.*;
 import shadowverse.orbs.AmuletOrb;
 
 import java.util.ArrayList;
@@ -44,6 +44,8 @@ public class ErisPower extends AbstractPower {
             AbstractCard p = new RelicPrism();
             AbstractCard t = new RelicTorus();
             AbstractCard pl = new RelicPlaton();
+            boolean hasSphere = false;
+            boolean hasGod = false;
             if (upgraded){
                 p.upgrade();
                 t.upgrade();
@@ -66,16 +68,34 @@ public class ErisPower extends AbstractPower {
                         toPlace.remove(t);
                     if (c instanceof RelicPlaton)
                         toPlace.remove(pl);
+                    if (c instanceof RelicSphere)
+                        hasSphere = true;
+                    if (c instanceof RelicGod)
+                        hasGod = true;
+                }
+                if (toPlace.size() == 1 && hasSphere && !hasGod){
+                    toPlace.clear();
+                    for (AbstractOrb o: AbstractDungeon.player.orbs){
+                        if (o instanceof AmuletOrb){
+                            if (((AmuletOrb) o).amulet instanceof RelicPrism || ((AmuletOrb) o).amulet instanceof RelicTorus ||((AmuletOrb) o).amulet instanceof RelicPlaton ||((AmuletOrb) o).amulet instanceof RelicSphere)
+                                addToBot(new EvokeSpecificOrbAction(o));
+                        }
+                    }
+                    AbstractCard god = new RelicGod();
+                    if (upgraded)
+                        god.upgrade();
+                    addToBot(new PlaceAmulet(god,null));
+                    addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new HeavenlyAegisPower(AbstractDungeon.player)));
                 }
                 if (toPlace.size()>0){
                     AbstractCard card = toPlace.get(AbstractDungeon.cardRandomRng.random(toPlace.size()-1));
                     if (card instanceof RelicPrism)
-                        addToBot((AbstractGameAction)new SFXAction("RelicPrism"));
+                        addToBot(new SFXAction("RelicPrism"));
                     if (card instanceof RelicTorus)
-                        addToBot((AbstractGameAction)new SFXAction("RelicTorus"));
+                        addToBot(new SFXAction("RelicTorus"));
                     if (card instanceof RelicPlaton)
-                        addToBot((AbstractGameAction)new SFXAction("RelicPlaton"));
-                    addToBot((AbstractGameAction)new PlaceAmulet(card,null));
+                        addToBot(new SFXAction("RelicPlaton"));
+                    addToBot(new PlaceAmulet(card,null));
                 }
             }
         }

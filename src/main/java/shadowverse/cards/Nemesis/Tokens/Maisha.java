@@ -55,21 +55,21 @@ public class Maisha
     public void use(AbstractPlayer p, AbstractMonster m) {
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Maisha"));
-                addToBot((AbstractGameAction) new DrawCardAction(this.magicNumber));
-                addToBot((AbstractGameAction) new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+                addToBot(new SFXAction("Maisha"));
+                addToBot(new DrawCardAction(this.magicNumber));
+                addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Maisha2"));
+                addToBot(new SFXAction("Maisha2"));
                 int dmg = 0;
                 for (AbstractCard c:p.exhaustPile.group){
                     if (c.type ==CardType.ATTACK){
                         dmg++;
                     }
                 }
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ViolentAttackEffect(m.hb.cX, m.hb.cY, Color.BLUE), 0.8F));
+                addToBot(new VFXAction(new ViolentAttackEffect(m.hb.cX, m.hb.cY, Color.BLUE), 0.8F));
                 for (int i = 0; i < 5; i++)
-                    addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new StarBounceEffect(m.hb.cX, m.hb.cY)));
+                    addToBot(new VFXAction(new StarBounceEffect(m.hb.cX, m.hb.cY)));
                 if (EnergyPanel.getCurrentEnergy()>2){
                     addToBot(new DamageAction(m,new DamageInfo(p,dmg*this.magicNumber,this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
                 }else {

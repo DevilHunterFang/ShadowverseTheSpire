@@ -83,21 +83,21 @@ import shadowverse.powers.WrathPower;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      if (abstractMonster!=null){
-       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.2F));
+       addToBot(new VFXAction(new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.2F));
      }
      calculateCardDamage(abstractMonster);
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
      if (abstractPlayer.hasPower(NightVampirePower.POWER_ID)){
-       addToBot((AbstractGameAction)new SFXAction("NightVampirePower"));
+       addToBot(new SFXAction("NightVampirePower"));
        if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.hasPower(WrathPower.POWER_ID)){
-         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new PoisonPower((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, 2)));
-         addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,2));
+         addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new PoisonPower(abstractMonster, abstractPlayer, 2)));
+         addToBot(new HealAction(abstractPlayer,abstractPlayer,2));
        }else {
-         addToBot((AbstractGameAction)new LoseHPAction(abstractPlayer,abstractPlayer,1));
+         addToBot(new LoseHPAction(abstractPlayer,abstractPlayer,1));
        }
      }
      if (abstractPlayer.hasPower(VanpiPower.POWER_ID)){
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, (AbstractPower)new PoisonPower((AbstractCreature)abstractMonster, (AbstractCreature)abstractPlayer, 2)));
+       addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new PoisonPower(abstractMonster, abstractPlayer, 2)));
        addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,2, DamageInfo.DamageType.HP_LOSS)));
        addToBot(new SFXAction("VanpiPower"));
      }

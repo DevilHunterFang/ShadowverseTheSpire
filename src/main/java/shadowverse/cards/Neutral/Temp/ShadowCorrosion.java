@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
  import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
  import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
  import shadowverse.characters.AbstractShadowversePlayer;
+ import shadowverse.characters.Dragon;
  import shadowverse.powers.ShadowCorrosionPower;
 
  public class ShadowCorrosion
@@ -30,7 +31,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
    public static final String IMG_PATH = "img/cards/ShadowCorrosion.png";
 
    public ShadowCorrosion() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.ENEMY);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.SPECIAL, CardTarget.ENEMY);
      this.baseMagicNumber = 0;
      this.magicNumber = this.baseMagicNumber;
      this.exhaust = true;
@@ -50,17 +51,17 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("ShadowCorrosion"));
+     addToBot(new SFXAction("ShadowCorrosion"));
      int treeAmt = 0;
      for (AbstractCard c: AbstractDungeon.actionManager.cardsPlayedThisCombat){
        if (c instanceof NaterranGreatTree)
          treeAmt++;
      }
      if (!abstractMonster.hasPower(ShadowCorrosionPower.POWER_ID)){
-       addToBot((AbstractGameAction) new ApplyPowerAction(abstractMonster,abstractMonster,(AbstractPower)new ShadowCorrosionPower(abstractMonster,treeAmt*3),treeAmt*3));
+       addToBot(new ApplyPowerAction(abstractMonster,abstractMonster,new ShadowCorrosionPower(abstractMonster,treeAmt*4),treeAmt*4));
      }else {
-       addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, abstractMonster.getPower(ShadowCorrosionPower.POWER_ID).amount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-       addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.BLACK, Color.PURPLE), 0.6F));
+       addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, abstractMonster.getPower(ShadowCorrosionPower.POWER_ID).amount, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+       addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.BLACK, Color.PURPLE), 0.6F));
      }
    }
  

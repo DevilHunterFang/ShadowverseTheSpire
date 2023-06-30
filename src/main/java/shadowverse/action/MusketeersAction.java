@@ -63,7 +63,7 @@ public class MusketeersAction
                         c.upgrade();
                     }
                     if (c instanceof Aramis) {
-                        addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, c)));
+                        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, c)));
                     }
                     if (c instanceof DArtagnan){
                         c.baseDamage *= 2;
@@ -95,7 +95,7 @@ public class MusketeersAction
                         disCard.upgrade();
                     }
                     if (disCard instanceof Aramis) {
-                        addToBot((AbstractGameAction) new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, disCard)));
+                        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new AramisPower(AbstractDungeon.player, 1, disCard)));
                     }
                     if (this.amount == 1) {
                         if (AbstractDungeon.player.hand.group.size()<10){
@@ -112,7 +112,7 @@ public class MusketeersAction
             }
             tickDuration();
             if (secondTime) {
-                addToBot((AbstractGameAction) new MusketeersAction(false, false,card));
+                addToBot(new MusketeersAction(false, false,card));
                 this.secondTime = false;
             }
         }

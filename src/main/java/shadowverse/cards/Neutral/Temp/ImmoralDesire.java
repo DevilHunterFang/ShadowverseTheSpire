@@ -73,9 +73,9 @@ public class ImmoralDesire
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("ImmoralDesire"));
+        addToBot(new SFXAction("ImmoralDesire"));
         ArrayList<AbstractCard> chose2 = new ArrayList<>();
-        addToBot((AbstractGameAction) new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
             return card.type == CardType.ATTACK;
         }, abstractCards -> {
             for (AbstractCard c : abstractCards) {
@@ -84,7 +84,7 @@ public class ImmoralDesire
                 c.superFlash();
             }
         }));
-        addToBot((AbstractGameAction) new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
+        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
             return card.type == CardType.ATTACK && !chose2.contains(card);
         }, abstractCards -> {
             for (AbstractCard c : abstractCards) {

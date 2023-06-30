@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -43,6 +44,7 @@ import shadowverse.characters.Bishop;
  
    
    public void use(AbstractPlayer p, AbstractMonster m) {
+     addToBot(new SFXAction("Lou_Bishop"));
      addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
      AbstractPower s = p.getPower(StrengthPower.POWER_ID);
      AbstractPower d = p.getPower(DexterityPower.POWER_ID);

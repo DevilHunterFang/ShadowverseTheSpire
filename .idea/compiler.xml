@@ -9,5 +9,8 @@
         <module name="shadowverse" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shadowverse" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

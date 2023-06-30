@@ -62,12 +62,12 @@ import shadowverse.orbs.AmuletOrb;
          }
        }
        if (hasGod){
-         addToBot((AbstractGameAction)new HealAction(AbstractDungeon.player,AbstractDungeon.player,3));
+         addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,3));
        }else {
-         addToBot((AbstractGameAction)new HealAction(AbstractDungeon.player,AbstractDungeon.player,1));
+         addToBot(new HealAction(AbstractDungeon.player,AbstractDungeon.player,1));
        }
        if (this.upgraded)
-         addToBot((AbstractGameAction)new GainBlockAction(AbstractDungeon.player,this.block));
+         addToBot(new GainBlockAction(AbstractDungeon.player,this.block));
    }
 
    @Override

@@ -1,26 +1,25 @@
  package shadowverse.cards.Elf.Fairy;
- 
 
 
-import basemod.abstracts.CustomCard;
-import basemod.helpers.CardModifierManager;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.combat.HeartMegaDebuffEffect;
-import shadowverse.cardmods.NobilisMod;
-import shadowverse.cards.Neutral.Temp.Fairy;
-import shadowverse.characters.Elf;
+ import basemod.abstracts.CustomCard;
+ import basemod.helpers.CardModifierManager;
+ import com.megacrit.cardcrawl.actions.AbstractGameAction;
+ import com.megacrit.cardcrawl.actions.animations.VFXAction;
+ import com.megacrit.cardcrawl.actions.common.DamageAction;
+ import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+ import com.megacrit.cardcrawl.actions.utility.SFXAction;
+ import com.megacrit.cardcrawl.cards.AbstractCard;
+ import com.megacrit.cardcrawl.cards.DamageInfo;
+ import com.megacrit.cardcrawl.characters.AbstractPlayer;
+ import com.megacrit.cardcrawl.core.CardCrawlGame;
+ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+ import com.megacrit.cardcrawl.localization.CardStrings;
+ import com.megacrit.cardcrawl.monsters.AbstractMonster;
+ import com.megacrit.cardcrawl.vfx.combat.HeartMegaDebuffEffect;
+ import shadowverse.cardmods.NobilisMod;
+ import shadowverse.cards.Neutral.Temp.Fairy;
+ import shadowverse.characters.Elf;
 
 
  public class Nobilis extends CustomCard {

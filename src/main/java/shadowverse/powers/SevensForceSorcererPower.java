@@ -45,7 +45,7 @@ public class SevensForceSorcererPower extends AbstractPower {
         if (this.amount == 0) {
             flash();
             addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
-            addToBot((AbstractGameAction)new SFXAction("SevensForeSorcererEff"));
+            addToBot((AbstractGameAction)new SFXAction("SevensForceSorcererEff"));
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
                     addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)mo, 99999));

@@ -36,7 +36,7 @@ import shadowverse.stance.Vengeance;
    public CorruptedBat() {
      super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.ATTACK, Vampire.Enums.COLOR_SCARLET, CardRarity.COMMON, CardTarget.SELF);
      this.baseBlock = 5;
-     this.cardsToPreview = (AbstractCard)new NaterranGreatTree();
+     this.cardsToPreview = new NaterranGreatTree();
      this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
    }
  
@@ -51,12 +51,12 @@ import shadowverse.stance.Vengeance;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-     addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
-     addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+     addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+     addToBot(new MakeTempCardInHandAction(c, 1));
      if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)){
-       addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new StrengthPower(abstractPlayer, 1), 1));
-       addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new LoseStrengthPower(abstractPlayer, 1), 1));
-       addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new PlatedArmorPower(abstractPlayer,2),2));
+       addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new StrengthPower(abstractPlayer, 1), 1));
+       addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new LoseStrengthPower(abstractPlayer, 1), 1));
+       addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,new PlatedArmorPower(abstractPlayer,2),2));
      }
    }
  

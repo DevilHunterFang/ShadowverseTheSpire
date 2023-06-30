@@ -28,6 +28,7 @@ public class MumExaminationHall extends AbstractAmuletCard {
         super(ID, NAME, IMG_PATH, -2, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.NONE);
         this.baseMagicNumber = 9;
         this.magicNumber = this.baseMagicNumber;
+        this.countDown = 1;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
         this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
     }

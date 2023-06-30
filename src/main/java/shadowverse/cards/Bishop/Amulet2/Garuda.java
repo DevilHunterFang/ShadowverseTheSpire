@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -22,10 +22,14 @@ import com.megacrit.cardcrawl.vfx.combat.WhirlwindEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.Shadowverse;
-import shadowverse.action.*;
+import shadowverse.action.Garuda2Action;
+import shadowverse.action.Garuda3Action;
+import shadowverse.action.PlaceAmulet;
+import shadowverse.action.ReduceCountDownAction;
 import shadowverse.cardmods.GarudaMod;
 import shadowverse.cards.AbstractAmuletCard;
-import shadowverse.cards.Neutral.Temp.*;
+import shadowverse.cards.Neutral.Temp.Garuda2_Acc;
+import shadowverse.cards.Neutral.Temp.Garuda4_Cry;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 
@@ -112,7 +116,7 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard {
 
     @Override
     public void atTurnStart() {
-        if (this.chosenBranch() == 1 || this.chosenBranch() == 3)  {
+        if (this.chosenBranch() == 1 || this.chosenBranch() == 3) {
             if (AbstractDungeon.player.hand.group.contains(this)) {
                 if (EnergyPanel.getCurrentEnergy() < 4) {
                     setCostForTurn(0);
@@ -126,6 +130,14 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard {
                 }
                 applyPowers();
             }
+        }
+    }
+
+    public void triggerOnGlowCheck() {
+        if (this.chosenBranch() == 1 && AbstractDungeon.player.hand.group.contains(this) && EnergyPanel.getCurrentEnergy() < 4) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 
@@ -257,16 +269,16 @@ public class Garuda extends CustomCard implements BranchableUpgradeCard {
                 case 3:
                     if (Shadowverse.Accelerate(this) && this.type == CardType.POWER) {
                         addToBot(new SFXAction("Garuda4_Acc"));
-                        addToBot(new PlaceAmulet(new Garuda4_Cry(),null));
-                    }else {
+                        addToBot(new PlaceAmulet(new Garuda4_Cry(), null));
+                    } else {
                         addToBot(new SFXAction("Garuda4"));
                         addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-                        addToBot( new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
+                        addToBot(new SelectCardsInHandAction(1, TEXT[0], false, false, card -> {
                             return card instanceof AbstractAmuletCard;
                         }, abstractCards -> {
                             for (AbstractCard c : abstractCards) {
                                 CardModifierManager.addModifier(c, new GarudaMod(c.cost));
-                                ((AbstractAmuletCard)c).countDown = 0;
+                                ((AbstractAmuletCard) c).countDown = 0;
                                 c.setCostForTurn(0);
                             }
                         }));

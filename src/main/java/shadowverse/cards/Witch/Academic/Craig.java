@@ -28,7 +28,7 @@ import shadowverse.powers.CraigPower;
      super(ID, NAME, IMG_PATH, BASE_COST, DESCRIPTION, CardType.POWER, Witchcraft.Enums.COLOR_BLUE, CardRarity.UNCOMMON, CardTarget.SELF);
      this.tags.add(AbstractShadowversePlayer.Enums.SPELL_BOOST);
      this.tags.add(AbstractShadowversePlayer.Enums.MYSTERIA);
-     this.baseMagicNumber = 4;
+     this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
    }
 

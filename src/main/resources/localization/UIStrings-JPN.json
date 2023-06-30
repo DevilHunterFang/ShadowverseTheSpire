@@ -143,5 +143,134 @@
     "TEXT": [
       " NL これをプレイする時、ランダムな敵に元々のコスト×10のダメージを与える。"
     ]
+  },
+  "shadowverse": {
+    "TEXT": [
+      "影之诗"
+    ]
+  },
+  "shadowverse:SpellboostMod": {
+    "TEXT": [
+      "增幅",
+      "",
+      "本牌耗能增加 #b2 。 NL 魔力增幅  \b耗能减少1 [E] 。"
+    ],
+    "EXTRA_TEXT": [
+      " NL 魔力增幅  \b耗能减少1 [E] 。"
+    ]
+  },
+  "shadowverse:EarthMod": {
+    "TEXT": [
+      "土之",
+      "",
+      "打出时，获得 #b1 层 土之印记 。"
+    ],
+    "EXTRA_TEXT": [
+      " NL 获得1层 土之印记 。"
+    ]
+  },
+  "shadowverse:MachinaMod": {
+    "TEXT": [
+      "机械化",
+      "",
+      "机械 ，造成的伤害与获得的 #y格挡 减少 #b25% 。打出时增加 #b1 张 #y生产器械 到手中。"
+    ],
+    "EXTRA_TEXT": [
+      "机械 NL ",
+      " NL 增加1张 *生产器械 到手中。"
+    ]
+  },
+  "shadowverse:NaturaMod": {
+    "TEXT": [
+      "纯真的",
+      "",
+      "自然 ，造成的伤害与获得的 #y格挡 减少 #b33% 。打出时增加 #b1 张 #y那塔拉的大树 到手中。"
+    ],
+    "EXTRA_TEXT": [
+      "自然 NL ",
+      " NL 增加1张 *那塔拉的大树 到手中。"
+    ]
+  },
+  "shadowverse:ArtifactMod": {
+    "TEXT": [
+      "量产型",
+      "",
+      "创造物 。打出时增加 #b2 张 #y解析的创造物 到抽牌堆中。"
+    ],
+    "EXTRA_TEXT": [
+      "创造物 NL ",
+      " NL 增加2张 *解析的创造物 到抽牌堆中。"
+    ]
+  },
+  "shadowverse:MysteriaMod": {
+    "TEXT": [
+      "新生",
+      "",
+      "马纳历亚 学园 。打出时随机在手牌中增加 #b1 张 #y马纳历亚的魔弹 或 #y马纳历亚的防阵 。"
+    ],
+    "EXTRA_TEXT": [
+      "马纳历亚 学园  NL ",
+      " NL 随机在手牌中增加1张 *马纳历亚的魔弹 或 *马纳历亚的防阵 。"
+    ]
+  },
+  "shadowverse:BurialMod": {
+    "TEXT": [
+      "送葬的",
+      "",
+      "打出时 葬送 #b1 张牌，抽 #b1 张牌。"
+    ],
+    "EXTRA_TEXT": [
+      " NL 葬送 1张牌，抽1张牌。"
+    ]
+  },
+  "shadowverse:WindMod": {
+    "TEXT": [
+      "",
+      "飓风",
+      "获得的 #y格挡 减少 #b33% ，打出时 死灵术 #b6 对全体敌人造成 #b10 点伤害。"
+    ],
+    "EXTRA_TEXT": [
+      " NL  死灵术 6 \b对全体敌人造成10点伤害。"
+    ]
+  },
+  "shadowverse:ReanimateMod": {
+    "TEXT": [
+      "",
+      "苏生",
+      "本牌耗能增加 #b1 。打出时 亡者召还 #b1 。"
+    ],
+    "EXTRA_TEXT": [
+      " NL 亡者召还 1。"
+    ]
+  },
+  "shadowverse:CondemnedMod": {
+    "TEXT": [
+      "入狱的",
+      "",
+      "八狱 ，造成的伤害与获得的 #y格挡 增加 #b20% 。"
+    ],
+    "EXTRA_TEXT": [
+      "八狱 NL "
+    ]
+  },
+  "shadowverse:LootMod": {
+    "TEXT": [
+      "劫掠的",
+      "",
+      "造成的伤害 减少 #b10% 。打出时随机增加 #b1 张 #y财宝牌 到手中。"
+    ],
+    "EXTRA_TEXT": [
+      " NL 随机增加 #b1 张 #y财宝牌 到手中。"
+    ]
+  },
+  "shadowverse:CoinMod": {
+    "TEXT": [
+      "",
+      "与金币",
+      "打出时增加 #b1 张 #y闪耀的金币 到手中。"
+    ],
+    "EXTRA_TEXT": [
+      " NL 增加1张 *闪耀的金币 到手中。"
+    ]
   }
 }

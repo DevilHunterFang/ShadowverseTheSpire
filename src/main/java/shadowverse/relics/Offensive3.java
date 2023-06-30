@@ -43,21 +43,6 @@ import shadowverse.powers.Cemetery;
        }
      }
 
-     @Override
-     public void onPlayerEndTurn() {
-         int playerNecromance = 0;
-         if (AbstractDungeon.player.hasPower(Cemetery.POWER_ID)){
-             for (AbstractPower p :AbstractDungeon.player.powers){
-                 if (p.ID.equals(Cemetery.POWER_ID))
-                     playerNecromance = p.amount;
-             }
-         }
-         if (playerNecromance>=3){
-             flash();
-             addToBot(new NecromanceAction(3,null,
-                     new MakeTempCardInHandAction(new Zombie(),1)));
-         }
-     }
 
      public AbstractRelic makeCopy() {
      return (AbstractRelic)new Offensive3();

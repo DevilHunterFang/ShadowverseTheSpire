@@ -49,21 +49,21 @@ public class WonderTree
     @Override
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
-            addToBot((AbstractGameAction)new SelectCardsInHandAction(8,TEXT[0],true,true,card -> {
+            addToBot(new SelectCardsInHandAction(8,TEXT[0],true,true,card -> {
                 return card instanceof Fairy;
             }, abstractCards -> {
                 if (abstractCards.size()>0){
                     this.hasFusion = true;
                 }
                 for(AbstractCard c:abstractCards){
-                    addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                 }
             }));
         }
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new WonderTreePower(abstractPlayer,1,this.magicNumber,this.hasFusion,this.upgraded)));
+        addToBot(new ApplyPowerAction(abstractPlayer,abstractPlayer,(AbstractPower)new WonderTreePower(abstractPlayer,1,this.magicNumber,this.hasFusion,this.upgraded)));
     }
 
 

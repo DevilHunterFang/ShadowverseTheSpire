@@ -565,5 +565,19 @@
       "When picked up or battle 6 (8 with the first time) times, choose 1 rare card from 3 into your deck.",
       "Choose a bonus card"
     ]
+  },
+  "shadowverse:MonikaBOSS": {
+    "NAME": "フリューゲルコート",
+    "FLAVOR": "モニカが着用しているコート。 その豪奢な仕立ては、背中に続く者たちの心身を奮い立たせ、 ありとあらゆる攻撃力を大幅に向上させる。",
+    "DESCRIPTIONS": [
+      " #y先攻の証 と置き換える。 戦闘ごとに #b2 回かつ1ターンに1度、これを右クリックすることで #yEP を手札に加える。 EPをプレイする度、すべてのフォロワーを #g+1/+1 する。"
+    ]
+  },
+  "shadowverse:Offensive8": {
+    "NAME": "先手印记",
+    "FLAVOR": "您为先手，不更换手牌。",
+    "DESCRIPTIONS": [
+      "以 #b1 点觉醒值开始战斗。"
+    ]
   }
 }

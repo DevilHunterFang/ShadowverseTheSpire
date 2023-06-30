@@ -40,10 +40,10 @@ public class Ceres
     public static final String IMG_PATH = "img/cards/Ceres.png";
     public static final String IMG_PATH2 = "img/cards/Ceres2.png";
     private int branchPreview = 0;
-    private static AbstractCard vow = (AbstractCard)new EternalVow();
-    private static AbstractCard immoral = (AbstractCard)new ImmoralDesire();
+    private static AbstractCard vow = new EternalVow();
+    private static AbstractCard immoral = new ImmoralDesire();
     private static  AbstractCard upgradedVow(){
-      AbstractCard c = (AbstractCard)new EternalVow();
+      AbstractCard c = new EternalVow();
       c.upgrade();
       return c;
     }
@@ -74,21 +74,21 @@ public class Ceres
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new GainBlockAction((AbstractCreature) abstractPlayer, (AbstractCreature) abstractPlayer, this.block));
+        addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Ceres"));
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new RegenPower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new ThornsPower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+                addToBot(new SFXAction("Ceres"));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new RegenPower(abstractPlayer, this.magicNumber), this.magicNumber));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new ThornsPower(abstractPlayer, this.magicNumber), this.magicNumber));
                 if (this.upgraded){
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(upgradedVow().makeStatEquivalentCopy()));
+                    addToBot(new MakeTempCardInHandAction(upgradedVow().makeStatEquivalentCopy()));
                 }else {
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(vow.makeStatEquivalentCopy()));
+                    addToBot(new MakeTempCardInHandAction(vow.makeStatEquivalentCopy()));
                 }
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Ceres2"));
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(immoral.makeStatEquivalentCopy()));
+                addToBot(new SFXAction("Ceres2"));
+                addToBot(new MakeTempCardInHandAction(immoral.makeStatEquivalentCopy()));
                 break;
             default:
                 break;
@@ -97,13 +97,13 @@ public class Ceres
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Ceres();
+        return  new Ceres();
     }
 
     @Override
     public void triggerOnExhaust() {
         if (chosenBranch()==1){
-            addToBot((AbstractGameAction)new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
+            addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.POISON));
         }
     }
 

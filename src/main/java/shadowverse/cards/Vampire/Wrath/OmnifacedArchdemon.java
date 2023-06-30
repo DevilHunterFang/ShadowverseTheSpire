@@ -51,18 +51,18 @@ public class OmnifacedArchdemon
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("OmnifacedArchdemon"));
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new SFXAction("OmnifacedArchdemon"));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
         int amt = 1;
         if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.hasPower(WrathPower.POWER_ID)){
             amt = 3;
         }
         for (int i=0;i<amt;i++){
-            AbstractCreature m = (AbstractCreature) AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+            AbstractCreature m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             if (m != null && !m.isDeadOrEscaped()){
-                addToBot((AbstractGameAction) new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.2F));
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
+                addToBot(new VFXAction(new BiteEffect(m.hb.cX, m.hb.cY - 40.0F * Settings.scale, Color.SCARLET.cpy()), 0.2F));
+                addToBot(new DamageAction(m, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
             }
         }
     }

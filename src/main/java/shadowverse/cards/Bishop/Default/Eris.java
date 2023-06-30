@@ -63,7 +63,7 @@ public class Eris
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard)returnChoice().get(previewIndex).makeCopy();
+                this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -78,19 +78,19 @@ public class Eris
 
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Eris"));
-        addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BorderFlashEffect(Color.GOLDENROD, true)));
-        addToBot((AbstractGameAction)new GainBlockAction(p,this.block));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) p, (AbstractPower) new ErisPower((AbstractCreature) p,this.upgraded)));
+        addToBot(new SFXAction("Eris"));
+        addToBot(new VFXAction(new BorderFlashEffect(Color.GOLDENROD, true)));
+        addToBot(new GainBlockAction(p,this.block));
+        addToBot( new ApplyPowerAction(p, p, new ErisPower(p,this.upgraded)));
         AbstractCard c = new RelicSphere();
         if (this.upgraded)
             c.upgrade();
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(c));
+        addToBot(new MakeTempCardInHandAction(c));
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Eris();
+        return  new Eris();
     }
 }
 

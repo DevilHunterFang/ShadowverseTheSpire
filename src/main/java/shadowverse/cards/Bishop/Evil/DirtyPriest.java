@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractCrystalizeCard;
 import shadowverse.cards.Neutral.Curse.Indulgence;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 
@@ -63,7 +64,7 @@ public class DirtyPriest
             addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
             addToBot(new MakeTempCardInDrawPileAction(this.cardsToPreview,1,true,true,false));
             addToBot(new MakeTempCardInDiscardAction(this.cardsToPreview,1));
-            if (EnergyPanel.getCurrentEnergy() < 4){
+            if (this.type == CardType.POWER){
                 addToBot(new MakeTempCardInDiscardAction(this.makeStatEquivalentCopy(),1));
             }
         }

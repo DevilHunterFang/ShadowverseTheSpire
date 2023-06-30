@@ -1295,7 +1295,7 @@
     "NAME": "그림자의 잠식",
     "DESCRIPTIONS": [
       "턴 시작시 체력을 #b",
-      " 잃습니다. 나테라의 신목을 사용할 때마다 피해+3."
+      " 잃습니다. 나테라의 신목을 사용할 때마다 피해+4."
     ]
   },
   "shadowverse:DualbladePower": {
@@ -1684,7 +1684,7 @@
       " 번 반복한다. "
     ]
   },
-  "shadowverse:BenevolentElf": {
+  "shadowverse:BenevolentElfPower": {
     "NAME": "베네딕션 엘프",
     "DESCRIPTIONS": [
       "이번 턴 종료시 체력이 6 이하인 모든 적을 소멸시킵니다. 내 체력이 최대치라면, 6 대신 18 이하인 적까지 소멸시킵니다."
@@ -1845,10 +1845,79 @@
     ]
   },
   "shadowverse:WimaelPower": {
-    "NAME": "香風の執行者・ウィムエル",
+    "NAME": "향풍의 집행자 위무엘",
     "DESCRIPTIONS": [
-      "ターン開始時、このターンだけコストが０の #y香風の執行者・ウィムエル #b",
-      " 枚を手札に加える。"
+      "턴 시작시, 그 턴 비용이 0인 #y향풍의 집행자 위무엘을 #b",
+      " 장 얻습니다."
+    ]
+  },
+  "shadowverse:OverflowPower": {
+    "NAME": "미각성",
+    "DESCRIPTIONS": [
+      "각성치가 3이 되면 각성 상태에 돌입해 매 턴 [E] 를 얻습니다. 현재 각성치 #b",
+      " /3.",
+      "턴 시작시 [E] 를 얻습니다. 각성치가 3이 되면 완전각성 상태에 돌입해 매 턴 [E] [E] 를 얻습니다. 현재 각성치 #b",
+      " /3",
+      "매 턴 [E] [E] 를 얻습니다.",
+      "각성",
+      "완전각성"
+   ]
+  },
+  "shadowverse:RahabPower": {
+    "NAME": "라합",
+    "DESCRIPTIONS": [
+      "턴 종료시, 남은 에너지 1마다 힘을 #b",
+      " 얻습니다."
+    ]
+  },
+  "shadowverse:ShipsbanePlesiosaurusPower": {
+    "NAME": "격랑의 플레시오사우루스",
+    "DESCRIPTIONS": [
+      "카드를 버릴때마다 무작위 적에게 피해를 #b4 줍니다."
+    ]
+  },
+  "shadowverse:DracomancerRitesPower": {
+    "NAME": "용무녀의 의식",
+    "DESCRIPTIONS": [
+      "카드를 버릴때마다 카드를 #b",
+      " 장 뽑습니다."
+    ]
+  },
+  "shadowverse:GoldenDragonDenPower": {
+    "NAME": "황금룡의 둥지",
+    "DESCRIPTIONS": [
+      "턴 시작시 비용이 가장 낮은 카드 #b",
+      " 장을 무작위로 버리고, 카드를 #b",
+      " 장 뽑습니다."
+    ]
+  },
+  "shadowverse:PolyphonicRoarPower": {
+    "NAME": "계속되는 포효",
+    "DESCRIPTIONS": [
+      "턴 시작시 #b",
+      " 장의 비용이 0인 #y질풍룡을 얻습니다.",
+      " 장의 비용이 0인 #y질풍룡+을 얻습니다."
+    ]
+  },
+  "shadowverse:ResplendentPhoenixPower": {
+    "NAME": "오색찬란한 봉황 소녀",
+    "DESCRIPTIONS": [
+      "뽑은 카드의 비용이 절반이 됩니다."
+    ]
+  },
+  "shadowverse:LumiorePower": {
+    "NAME": "금빛의 위광 루미오르",
+    "DESCRIPTIONS": [
+      "카드를 1장 버릴때마다 모든 적에게 피해를 #b",
+      " 줍니다. "
+    ]
+  },
+  "shadowverse:NoirNBlancPower": {
+    "NAME": "흑백의 난무 느와르와 블랑",
+    "DESCRIPTIONS": [
+      "턴 종료시 #y완전각성 상태라면, #y흐릿함 과 #y인공물, #y파워 #y피해 #y면역을 1 얻고 방어도를 #b",
+      " 얻습니다.  다음 턴 시작시 방어도를 모두 잃지 않았다면 무작위 적에게 피해를 #b",
+      " 줍니다."
     ]
   }
 }

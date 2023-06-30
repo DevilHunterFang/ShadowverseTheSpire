@@ -55,9 +55,9 @@ public class MajorPrayers
             }
         }
         if (amt>=2){
-            addToBot((AbstractGameAction)new SFXAction("MajorPrayers"));
-            addToBot((AbstractGameAction)new DrawCardAction(this.magicNumber));
-            addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+            addToBot(new SFXAction("MajorPrayers"));
+            addToBot(new DrawCardAction(this.magicNumber));
+            addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
         }else{
             ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
             AbstractCard m = new MunyaruRaid();
@@ -68,7 +68,7 @@ public class MajorPrayers
             }
             stanceChoices.add(m);
             stanceChoices.add(e);
-            addToBot((AbstractGameAction) new ChooseOneAction(stanceChoices));
+            addToBot( new ChooseOneAction(stanceChoices));
         }
 
     }

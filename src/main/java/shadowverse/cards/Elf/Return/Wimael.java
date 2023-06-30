@@ -41,7 +41,7 @@ public class Wimael extends CustomCard {
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c.type == CardType.SKILL && c.baseBlock == 0){
+        if (c.type == CardType.SKILL && c.baseBlock <= 0){
             flash();
             addToBot(new SFXAction("spell_boost"));
             addToBot(new ReduceCostAction(this));
