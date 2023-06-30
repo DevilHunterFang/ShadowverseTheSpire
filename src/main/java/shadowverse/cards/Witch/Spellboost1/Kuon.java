@@ -3,7 +3,6 @@ package shadowverse.cards.Witch.Spellboost1;
 
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.Gdx;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -16,7 +15,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.HeartBuffEffect;
 import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
@@ -75,14 +73,14 @@ public class Kuon
         if (this.chosenBranch() == 0) {
             if (c.type == CardType.SKILL) {
                 flash();
-                addToBot((AbstractGameAction) new SFXAction("spell_boost"));
-                addToBot((AbstractGameAction) new ReduceCostAction((AbstractCard) this));
+                addToBot(new SFXAction("spell_boost"));
+                addToBot(new ReduceCostAction((AbstractCard) this));
             }
         }else {
             if (c.type == CardType.SKILL) {
                 flash();
                 this.magicNumber = ++this.baseMagicNumber;
-                addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+                addToBot(new SFXAction("spell_boost"));
             }
         }
     }
@@ -139,34 +137,34 @@ public class Kuon
     }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new GainBlockAction(abstractPlayer, this.block));
-        AbstractDungeon.actionManager.addToBottom((AbstractGameAction) new VFXAction((AbstractGameEffect) new HeartBuffEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY)));
+        addToBot(new GainBlockAction(abstractPlayer, this.block));
+        AbstractDungeon.actionManager.addToBottom(new VFXAction(new HeartBuffEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY)));
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction) new SFXAction("Kuon"));
+                addToBot(new SFXAction("Kuon"));
                 ArrayList<AbstractCard> shikigamiHand = returnShikigami();
                 for (AbstractCard c : shikigamiHand) {
                     if (this.upgraded) {
                         c.upgrade();
                     }
-                    addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
+                    addToBot(new MakeTempCardInHandAction(c, 1));
                 }
                 this.cost = BASE_COST;
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Kuon2"));
+                addToBot(new SFXAction("Kuon2"));
                 if (this.magicNumber>=9){
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new CelestialShikigami()));
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new NobleShikigami()));
-                    addToBot((AbstractGameAction)new GainEnergyAction(1));
+                    addToBot(new MakeTempCardInHandAction(new CelestialShikigami()));
+                    addToBot(new MakeTempCardInHandAction(new NobleShikigami()));
+                    addToBot(new GainEnergyAction(1));
                 } else if (this.magicNumber>=6) {
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new CelestialShikigami()));
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new DemonicShikigami()));
-                    addToBot((AbstractGameAction)new GainEnergyAction(1));
+                    addToBot(new MakeTempCardInHandAction(new CelestialShikigami()));
+                    addToBot(new MakeTempCardInHandAction(new DemonicShikigami()));
+                    addToBot(new GainEnergyAction(1));
                 }else if (this.magicNumber>=3){
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new PaperShikigami()));
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new DemonicShikigami()));
-                    addToBot((AbstractGameAction)new GainEnergyAction(1));
+                    addToBot(new MakeTempCardInHandAction(new PaperShikigami()));
+                    addToBot(new MakeTempCardInHandAction(new DemonicShikigami()));
+                    addToBot(new GainEnergyAction(1));
                 }
                 this.baseMagicNumber = 0;
                 this.magicNumber = this.baseMagicNumber;

@@ -28,12 +28,12 @@ public class Rowen extends CustomCard {
 
     @Override
     public void triggerOnEndOfPlayerTurn() {
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
+        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Rowen"));
+        addToBot(new SFXAction("Rowen"));
     }
 
     @Override

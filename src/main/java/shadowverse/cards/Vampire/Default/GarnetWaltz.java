@@ -52,11 +52,11 @@ public class GarnetWaltz
         stanceChoices.add(new UriasRevelry());
         stanceChoices.add(new MonoResolve());
         if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.stance.ID.equals(Vengeance.STANCE_ID)){
-            addToBot((AbstractGameAction)new SFXAction("GarnetWaltz"));
-            addToBot((AbstractGameAction) new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-            addToBot((AbstractGameAction)new GetEPAction(true,1));
+            addToBot(new SFXAction("GarnetWaltz"));
+            addToBot( new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, this.magicNumber, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+            addToBot(new GetEPAction(true,1));
         }else {
-            addToBot((AbstractGameAction)new ChooseOneAction(stanceChoices));
+            addToBot(new ChooseOneAction(stanceChoices));
         }
     }
 

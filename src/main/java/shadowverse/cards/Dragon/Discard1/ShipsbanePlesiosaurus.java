@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
+import shadowverse.action.NaturalDiscardAction;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Dragon;
@@ -34,6 +35,7 @@ import shadowverse.powers.ShipsbanePlesiosaurusPower;
      super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.POWER, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
      this.tags.add(AbstractShadowversePlayer.Enums.NATURAL);
      this.cardsToPreview = new EvolutionPoint();
+     this.baseBlock = 9;
    }
  
    
@@ -56,7 +58,8 @@ import shadowverse.powers.ShipsbanePlesiosaurusPower;
        }
      }
      if (upgraded){
-       addToBot(new DiscardAction(abstractPlayer,abstractPlayer,1,false));
+       addToBot(new NaturalDiscardAction(abstractPlayer,abstractPlayer,1,false,false,
+               new GainBlockAction(abstractPlayer,this.block)));
        addToBot(new DrawCardAction(2));
        addToBot(new DamageRandomEnemyAction(new DamageInfo(abstractPlayer,4, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
      }

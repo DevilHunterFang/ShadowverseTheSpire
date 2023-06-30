@@ -57,6 +57,15 @@ import shadowverse.characters.Necromancer;
      super.update();
    }
 
+   public void triggerOnGlowCheck() {
+     if (Shadowverse.Accelerate(this)) {
+       this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+     } else {
+       this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+     }
+   }
+
+
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
        addToBot((AbstractGameAction)new SFXAction("AdherentOfScream_Acc"));

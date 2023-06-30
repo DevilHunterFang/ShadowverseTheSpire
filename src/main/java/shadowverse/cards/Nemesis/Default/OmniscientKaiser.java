@@ -70,6 +70,15 @@ public class OmniscientKaiser extends CustomCard {
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
+
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
             ArrayList<AbstractCard> cardsNotToExhaust = new ArrayList<>();

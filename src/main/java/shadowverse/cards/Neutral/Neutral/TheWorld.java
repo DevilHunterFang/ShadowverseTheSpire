@@ -53,11 +53,11 @@ public class TheWorld extends AbstractNeutralCard {
             combatCheck = false;
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
             if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this, AbstractDungeon.player.discardPile));
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+                addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.discardPile));
+                addToBot(new MakeTempCardInHandAction(c, 1));
             } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(this, AbstractDungeon.player.drawPile));
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+                addToBot(new ExhaustSpecificCardAction(this, AbstractDungeon.player.drawPile));
+                addToBot(new MakeTempCardInHandAction(c, 1));
             }
         }else if (this.turnCount != 5){
             dupCheck = true;
@@ -69,8 +69,8 @@ public class TheWorld extends AbstractNeutralCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("TheWorld"));
-        addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
+        addToBot(new SFXAction("TheWorld"));
+        addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
         if (abstractPlayer.currentHealth < abstractPlayer.maxHealth*3/4){
             AbstractMonster strongestMonster = null;
             for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
@@ -84,10 +84,10 @@ public class TheWorld extends AbstractNeutralCard {
                     }
                 }
             }
-            addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClashEffect(strongestMonster.hb.cX, strongestMonster.hb.cY), 0.1F));
-            addToBot((AbstractGameAction)new DamageAction((AbstractCreature)strongestMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-            addToBot((AbstractGameAction)new HealAction((AbstractCreature)AbstractDungeon.player, (AbstractCreature)AbstractDungeon.player, 5));
-            addToBot((AbstractGameAction)new DrawCardAction((AbstractCreature)abstractPlayer, 2));
+            addToBot(new VFXAction(new ClashEffect(strongestMonster.hb.cX, strongestMonster.hb.cY), 0.1F));
+            addToBot(new DamageAction(strongestMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 5));
+            addToBot(new DrawCardAction(abstractPlayer, 2));
         }
     }
 

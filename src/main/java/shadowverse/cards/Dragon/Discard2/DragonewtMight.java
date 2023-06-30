@@ -25,7 +25,7 @@ import shadowverse.characters.Dragon;
    public static final String IMG_PATH = "img/cards/DragonewtMight.png";
 
    public DragonewtMight() {
-     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.BASIC, CardTarget.ALL_ENEMY);
+     super(ID, NAME, IMG_PATH, 1, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.ALL_ENEMY);
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
      this.baseDamage = 9;

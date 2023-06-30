@@ -34,6 +34,6 @@ public class Motorbike extends CustomCard {
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new VigorPower((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new VigorPower(abstractPlayer, this.magicNumber), this.magicNumber));
     }
 }

@@ -5,6 +5,7 @@
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -52,6 +53,7 @@ import shadowverse.characters.Dragon;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      addToBot(new SFXAction("ScorchedEarthTyrant"));
+     addToBot(new GainBlockAction(abstractPlayer,this.block));
      addToBot(new DamageAllEnemiesAction(abstractPlayer, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
      if (!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
              .get(AbstractDungeon.actionManager.cardsPlayedThisCombat

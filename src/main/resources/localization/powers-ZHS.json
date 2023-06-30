@@ -1919,5 +1919,34 @@
       " 点格挡。下回合开始，如果格挡没有完全消失，对随机敌人造成 #b",
       " 点伤害。"
     ]
+  },
+  "shadowverse:PrimeDragonKeeperPower": {
+    "NAME": "原初驭龙使",
+    "DESCRIPTIONS": [
+      "每当打出耗能为1以下的龙族攻击牌时，对随机敌人造成 #b",
+      " 点伤害。如果已 #y觉醒 ,回合结束时获得 #b",
+      " 点 #y火焰屏障 。"
+    ]
+  },
+  "shadowverse:DragonsongFlutePower": {
+    "NAME": "唤龙魔笛",
+    "DESCRIPTIONS": [
+      "每当抽到耗能为1以下的攻击、状态或诅咒牌时，将其消耗并增加 #b1 张 #y地狱火魔龙 到手中。"
+    ]
+  },
+  "shadowverse:RowenPower": {
+    "NAME": "屠龙之枪",
+    "DESCRIPTIONS": [
+      "造成的攻击伤害增加 #b",
+      " 点。此效果 #b",
+      " 回合后失效。"
+    ]
+  },
+  "shadowverse:WildfangDragonewtPower": {
+    "NAME": "荒牙龙少女",
+    "DESCRIPTIONS": [
+      "本回合内每当丢弃1张手牌时，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
   }
 }

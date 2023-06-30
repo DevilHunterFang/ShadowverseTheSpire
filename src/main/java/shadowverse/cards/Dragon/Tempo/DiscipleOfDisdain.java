@@ -1,4 +1,4 @@
- package shadowverse.cards.Dragon.Default;
+ package shadowverse.cards.Dragon.Tempo;
  
 
 
@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -20,16 +21,16 @@ import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
 import shadowverse.characters.Dragon;
 
 
- public class DisdainfulRending extends CustomCard {
-   public static final String ID = "shadowverse:DisdainfulRending";
-   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DisdainfulRending");
+ public class DiscipleOfDisdain extends CustomCard {
+   public static final String ID = "shadowverse:DiscipleOfDisdain";
+   public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:DiscipleOfDisdain");
    public static final String NAME = cardStrings.NAME;
    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-   public static final String IMG_PATH = "img/cards/DisdainfulRending.png";
+   public static final String IMG_PATH = "img/cards/DiscipleOfDisdain.png";
 
-   public DisdainfulRending() {
-     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.SKILL, Dragon.Enums.COLOR_BROWN, CardRarity.UNCOMMON, CardTarget.ENEMY);
-     this.baseDamage = 9;
+   public DiscipleOfDisdain() {
+     super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.COMMON, CardTarget.ENEMY);
+     this.baseDamage = 4;
      this.cardsToPreview = new Burn();
    }
  
@@ -43,16 +44,15 @@ import shadowverse.characters.Dragon;
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot(new SFXAction("DisdainfulRending"));
+     addToBot(new SFXAction("DiscipleOfDisdain"));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
      addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy()));
-     if (abstractMonster != null)
-       addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
-     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
+     addToBot(new DrawCardAction(1));
    }
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new DisdainfulRending();
+     return (AbstractCard)new DiscipleOfDisdain();
    }
  }
 

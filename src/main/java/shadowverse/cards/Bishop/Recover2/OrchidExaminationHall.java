@@ -1,6 +1,7 @@
 package shadowverse.cards.Bishop.Recover2;
 
 import com.badlogic.gdx.Gdx;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,10 +13,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Neutral.Temp.*;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
+import shadowverse.powers.CutthroatPower;
 
 import java.util.ArrayList;
 
@@ -28,11 +31,28 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
     private float rotationTimer;
     private int previewIndex;
 
+    public int enhanceCost;
+    public int baseCost;
+
+    public boolean exFreeOnce;
+
+    public int exCost;
+
+    public int exCostForTurn;
+
+    public int ex;
+
     public OrchidExaminationHall() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.UNCOMMON, CardTarget.NONE);
         this.countDown = 1;
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
         this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
+        this.baseCost = cost;
+        this.enhanceCost = 1;
+        this.exCost = cost;
+        this.exCostForTurn = cost;
+        this.exFreeOnce = false;
+        this.ex = 0;
     }
 
     public static ArrayList<AbstractCard> returnChoice() {
@@ -62,11 +82,40 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
         }
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT
         ) {
-            if (Shadowverse.Enhance(1)) {
-                setCostForTurn(1);
-            }else{
-                setCostForTurn(0);
+            if (Shadowverse.Enhance(enhanceCost)) {
+                if (this.ex == 0) {
+                    this.exCost = this.cost;
+                    this.exCostForTurn = this.costForTurn;
+                }
+                this.ex = 1;
+                this.exFreeOnce = this.freeToPlayOnce;
+                setCostForTurn(enhanceCost);
+            } else {
+                if (this.ex > 0) {
+                    setCostForTurn(baseCost);
+                    this.cost = this.exCost;
+                    this.costForTurn = this.exCostForTurn;
+                    this.freeToPlayOnce = this.exFreeOnce;
+                }
+                this.ex = 0;
             }
+        }
+    }
+
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractEnhanceCard c = (AbstractEnhanceCard) super.makeStatEquivalentCopy();
+        c.exCost = this.exCost;
+        c.exCostForTurn = this.exCostForTurn;
+        c.exFreeOnce = this.exFreeOnce;
+        c.ex = this.ex;
+        return c;
+    }
+
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Enhance(enhanceCost)) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         }
     }
 
@@ -108,18 +157,29 @@ public class OrchidExaminationHall extends AbstractAmuletCard {
         }
     }
 
-    @Override
-    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (this.costForTurn == 1) {
-            ArrayList<AbstractCard> list = returnChoice();
-            if (upgraded) {
-                for (AbstractCard c : list) {
-                    c.upgrade();
-                }
+    public void enhanceUse(AbstractPlayer p, AbstractMonster m){
+        ArrayList<AbstractCard> list = returnChoice();
+        if (upgraded) {
+            for (AbstractCard c : list) {
+                c.upgrade();
             }
-            addToBot(new ChooseOneAction(list));
+        }
+        addToBot(new ChooseOneAction(list));
+    }
+
+    public void baseUse(AbstractPlayer p, AbstractMonster m){
+        addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
+    }
+
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        if (this.costForTurn == enhanceCost && Shadowverse.Enhance(enhanceCost)) {
+            enhanceUse(p, m);
+            if (p.hasPower(CutthroatPower.POWER_ID)) {
+                addToBot(new GainEnergyAction(enhanceCost - 1));
+            }
         } else {
-            addToBot(new HealAction(AbstractDungeon.player, AbstractDungeon.player, 1));
+            baseUse(p, m);
         }
     }
 }

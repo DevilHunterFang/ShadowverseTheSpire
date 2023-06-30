@@ -100,6 +100,14 @@ public abstract class AbstractEnhanceCard extends CustomCard {
         }
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Enhance(enhanceCost) || Shadowverse.Enhance(exEnhanceCost)) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     public abstract void exEnhanceUse(AbstractPlayer p, AbstractMonster m);
 
     public abstract void enhanceUse(AbstractPlayer p, AbstractMonster m);

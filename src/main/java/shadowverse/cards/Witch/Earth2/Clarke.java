@@ -78,6 +78,14 @@ import shadowverse.action.BlockPerCardAction;
        }
    }
 
+     public void triggerOnGlowCheck() {
+         if (this.type == CardType.SKILL) {
+             this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+         } else {
+             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+         }
+     }
+
 
    public void triggerOnGainEnergy(int e, boolean dueToCard) {
      if (EnergyPanel.getCurrentEnergy() >= 5 && this.type != CardType.ATTACK) {

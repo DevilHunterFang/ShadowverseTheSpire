@@ -65,13 +65,13 @@ public class SkullFane
                 this.type = CardType.SKILL;
             } else {
                 if (this.type == CardType.SKILL) {
-                    if (hasReduced){
+                    if (hasReduced) {
                         this.costForTurn = 2;
                         if (this.cost != this.costForTurn) {
                             this.isCostModified = true;
                         }
                         this.cost = this.costForTurn;
-                    }else {
+                    } else {
                         setCostForTurn(5);
                     }
                     this.type = CardType.ATTACK;
@@ -81,20 +81,28 @@ public class SkullFane
         super.update();
     }
 
+    public void triggerOnGlowCheck() {
+        if (previewBranch == 1 && Shadowverse.Accelerate(this)) {
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
     @Override
     public void triggerOnEndOfPlayerTurn() {
         if (this.previewBranch == 1)
             if (AbstractDungeon.player instanceof AbstractShadowversePlayer) {
                 if (((AbstractShadowversePlayer) AbstractDungeon.player).skullFaneAccCount >= 4) {
                     this.type = CardType.ATTACK;
-                    if (!hasReduced){
+                    if (!hasReduced) {
                         this.costForTurn = 2;
                         if (this.cost != this.costForTurn) {
                             this.isCostModified = true;
                         }
                         this.cost = this.costForTurn;
                         hasReduced = true;
-                    }else {
+                    } else {
                         this.costForTurn = 0;
                         if (this.cost != this.costForTurn) {
                             this.isCostModified = true;
@@ -126,7 +134,7 @@ public class SkullFane
     }
 
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
-        switch (chosenBranch()){
+        switch (chosenBranch()) {
             case 0:
                 addToBot(new SFXAction("SkullFane"));
                 addToBot(new VFXAction(new HeartMegaDebuffEffect()));
@@ -136,7 +144,7 @@ public class SkullFane
                 if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
                     addToBot(new SFXAction("SkullFane2_Acc"));
                     addToBot(new SkullFaneAccAction(this));
-                }else {
+                } else {
                     addToBot(new SFXAction("SkullFane2"));
                     addToBot(new VFXAction(new HeartMegaDebuffEffect()));
                     addToBot(new SkullFaneAction(this.magicNumber, this.block));

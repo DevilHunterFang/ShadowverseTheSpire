@@ -44,16 +44,16 @@ public class ArrowPower
         this.amount -= 1;
         if (this.amount == 0){
             flash();
-            addToBot((AbstractGameAction)new DrawCardAction(1));
-            addToBot((AbstractGameAction)new RemoveSpecificPowerAction(this.owner,this.owner,this));
+            addToBot(new DrawCardAction(1));
+            addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,this));
         }
         updateDescription();
     }
 
     public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
         if (isPlayer) {
-            addToBot((AbstractGameAction) new SFXAction("ArrowPower"));
-            addToBot((AbstractGameAction) new ApplyPowerAction(this.owner, this.owner, (AbstractPower) new StrengthPower(this.owner, 1), 1));
+            addToBot( new SFXAction("ArrowPower"));
+            addToBot( new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, 1), 1));
         }
     }
 }

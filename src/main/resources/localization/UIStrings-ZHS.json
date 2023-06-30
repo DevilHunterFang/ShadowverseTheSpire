@@ -272,5 +272,10 @@
     "EXTRA_TEXT": [
       " NL 增加1张 *闪耀的金币 到手中。"
     ]
+  },
+  "shadowverse:ArmedMod": {
+    "TEXT": [
+      "武装 NL "
+    ]
   }
 }

@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import shadowverse.Shadowverse;
+import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.cards.Neutral.Status.EvolutionPoint;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Nemesis;
@@ -28,6 +29,14 @@ public class Judith extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Judith.png";
+
+    public boolean exFreeOnce;
+
+    public int exCost;
+
+    public int exCostForTurn;
+
+    public int ex;
 
     public Judith() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, CardType.ATTACK, Nemesis.Enums.COLOR_SKY, CardRarity.RARE, CardTarget.ENEMY);
@@ -47,6 +56,10 @@ public class Judith extends CustomCard {
         this.tags.add(AbstractShadowversePlayer.Enums.ACADEMIC);
         this.tags.add(AbstractShadowversePlayer.Enums.ARMED);
         this.tags.add(CardTags.STRIKE);
+        this.exCost = cost;
+        this.exCostForTurn = cost;
+        this.exFreeOnce = false;
+        this.ex = 0;
     }
 
 
@@ -63,17 +76,54 @@ public class Judith extends CustomCard {
         if (AbstractDungeon.currMapNode != null && (AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT
                 ) {
             if (Shadowverse.Enhance(5)){
+                if (this.ex == 0) {
+                    this.exCost = this.cost;
+                    this.exCostForTurn = this.costForTurn;
+                }
+                this.ex = 5;
+                this.exFreeOnce = this.freeToPlayOnce;
                 setCostForTurn(5);
             }
             else if (Shadowverse.Enhance(4)){
+                if (this.ex == 0) {
+                    this.exCost = this.cost;
+                    this.exCostForTurn = this.costForTurn;
+                }
+                this.ex = 4;
+                this.exFreeOnce = this.freeToPlayOnce;
                 setCostForTurn(4);
             }else if (Shadowverse.Enhance(3)){
+                if (this.ex == 0) {
+                    this.exCost = this.cost;
+                    this.exCostForTurn = this.costForTurn;
+                }
+                this.ex = 3;
+                this.exFreeOnce = this.freeToPlayOnce;
                 setCostForTurn(3);
             }else if (Shadowverse.Enhance(2)){
+                if (this.ex == 0) {
+                    this.exCost = this.cost;
+                    this.exCostForTurn = this.costForTurn;
+                }
+                this.ex = 2;
+                this.exFreeOnce = this.freeToPlayOnce;
                 setCostForTurn(2);
             }else if (Shadowverse.Enhance(1)){
+                if (this.ex == 0) {
+                    this.exCost = this.cost;
+                    this.exCostForTurn = this.costForTurn;
+                }
+                this.ex = 1;
+                this.exFreeOnce = this.freeToPlayOnce;
                 setCostForTurn(1);
             } else {
+                if (this.ex > 0) {
+                    setCostForTurn(0);
+                    this.cost = this.exCost;
+                    this.costForTurn = this.exCostForTurn;
+                    this.freeToPlayOnce = this.exFreeOnce;
+                }
+                this.ex = 0;
                 setCostForTurn(0);
             }
         }
@@ -124,6 +174,22 @@ public class Judith extends CustomCard {
         }
     }
 
+    public void triggerOnGlowCheck() {
+        if (Shadowverse.Enhance(1)) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractEnhanceCard c = (AbstractEnhanceCard) super.makeStatEquivalentCopy();
+        c.exCost = this.exCost;
+        c.exCostForTurn = this.exCostForTurn;
+        c.exFreeOnce = this.exFreeOnce;
+        c.ex = this.ex;
+        return c;
+    }
 
     public AbstractCard makeCopy() {
         return (AbstractCard) new Judith();

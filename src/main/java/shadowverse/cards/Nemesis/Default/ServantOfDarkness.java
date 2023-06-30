@@ -58,7 +58,6 @@ public class ServantOfDarkness
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(1);
-            upgradeBaseCost(0);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
