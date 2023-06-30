@@ -1845,15 +1845,100 @@
     ]
   },
   "shadowverse:OverflowPower": {
-    "NAME": "未觉醒",
+    "NAME": "Unawakened",
     "DESCRIPTIONS": [
-      "觉醒值达到3时进入觉醒状态，回合开始时获得 [E] 。当前觉醒值 #b",
+      "Enters Overflow when you have 3 Overflow points, afterward gain [E] at the start of your turn. Overflow Points: #b",
       " /3。",
-      "回合开始时获得 [E] 。 觉醒值达到3时进入完全觉醒状态，回合开始时获得 [E] [E] 。 当前觉醒值 #b",
+      "Gain [E] at the start of every turn.  Enters Full Overflow when you have 3 OVerflow points once again, afterward gain [E] [E] at the start of your turn. Overflow Points: #b",
       " /3。",
-      "回合开始时获得 [E] [E] 。",
-      "觉醒",
-      "完全觉醒"
+      "Gain [E] [E] at the start of every turn.",
+      "Overflow",
+      "Full Overflow"
+  },
+  "shadowverse:RahabPower": {
+    "NAME": "Rahab",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain Strength equal to your remaining energy. #b",
+      " Energy leftover. "
+    ]
+ },
+  "shadowverse:ShipsbanePlesiosaurusPower": {
+    "NAME": "Shipsbane Plesiosaurus",
+    "DESCRIPTIONS": [
+      "Whenever a card is discarded from your hand, deal #b4 damage to a random enemy. "
+    ]
+  },
+   "shadowverse:DracomancerRitesPower": {
+    "NAME": "Dracomancer's Rites",
+    "DESCRIPTIONS": [
+      "Whenever a card is discarded from your hand, draw #b",
+      "cards "
+    ]
+  },
+   "shadowverse:GoldenDragonDenPower": {
+    "NAME": "Golden Dragon's Den",
+    "DESCRIPTIONS": [
+      "At the start of your turn, randomly discard #b",
+      " cards with the lowest cost in your hand and draw #b",
+      " cards. "
+    ]
+  },
+   "shadowverse:PolyphonicRoarPower": {
+    "NAME": "Polyphonic Roar",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yStorm #yDragon(s) that cost 0 to your hand.",
+      " #yStorm #yDragon+(s) that cost 0 to your hand. "
+    ]
+  },
+  "shadowverse:ResplendentPhoenixPower": {
+    "NAME": "Resplendent Phoenix",
+    "DESCRIPTIONS": [
+      "All cards you draw cost half energy (rounded up). "
+    ]
+  },
+   "shadowverse:LumiorePower": {
+    "NAME": "Lumiore, Prestigious Gold",
+    "DESCRIPTIONS": [
+      "For each card you discard from your hand, deal #b",
+      " points of Damage. "
+    ]
+  },
+  "shadowverse:NoirNBlancPower": {
+    "NAME": "Noir and Blanc, Brothers",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if in #yFull #yOverflow, gain #b1 #yAfterimage, #yArtifact, #yPower #yDamage #yImmune and #b",
+      " Block. At the start of your next turn, if you had any remaining Block, randomly deal #b",
+      " points of Damage. "
+    ]
+  },
+   "shadowverse:PrimeDragonKeeperPower": {
+    "NAME": "Prime Dragon Keeper",
+    "DESCRIPTIONS": [
+      "Whenever you play a Dragoncraft attack card that costs 1 or less, a random enemy takes #b",
+      " Damage. If #yOverflow is active, at the end of your turn gain #b",
+      " #yFlame #yBarrier. "
+    ]
+  },
+  "shadowverse:DragonsongFlutePower": {
+    "NAME": "Dragonsong Flute",
+    "DESCRIPTIONS": [
+      "Whenever a #yStatus, #yCurse, or Attack that costs 1 or less is drawn, exhaust it and add #b1 #yHellflame #yDragon(s) to your hand. "
+    ]
+  },
+   "shadowverse:RowenPower": {
+    "NAME": "Rowen, Dragon Lance",
+    "DESCRIPTIONS": [
+      "Attack damage increased by #b",
+      " points. Effect expires after #b",
+      " turns. "
+    ]
+  },
+   "shadowverse:WildfangDragonewtPower": {
+    "NAME": "Wildfang Dragonewt",
+    "DESCRIPTIONS": [
+      "Whenever a card is discarded from your hand this turn, a random enemy takes #b",
+      " Damage. "
     ]
   }
 }
