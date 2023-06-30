@@ -5702,6 +5702,162 @@
   "shadowverse:DisdainfulRending": {
     "NAME": "Disdainful Rending",
     "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Burn to your hand."
-  }
+  },
+  "shadowverse:RowenRoar": {
+    "NAME": "Rowen's Roar",
+    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn.",
+    "UPGRADE_DESCRIPTION":"Gain 1 Overflow point. NL Gain [E] [E] next turn."
+  },
+  "shadowverse:ValdainClaw": {
+    "NAME": "Valdain's Claw",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable to a random enemy."
+  },
+   "shadowverse:CursedFuror": {
+    "NAME": "Cursed Furor",
+    "DESCRIPTION": " Choose: NL *Rowen's *Roar NL *Valdain's Claw. NL Gain 1 Overflow Point and gain [E] next turn, or apply !M! Weak and Vulnerable to a random enemy. NL If Overflow is active, apply both effects."
+  },
+  "shadowverse:ServantOfDisdain": {
+    "NAME": "Servant of Disdain",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust all *Burns in your hand, and draw 1 card for each exhausted."
+  },
+  "shadowverse:DiscipleOfDisdain": {
+    "NAME": "Disciple of Disdain",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Burn to your hand. NL Draw 1 card."
+  },
+  "shadowverse:ArdentTorch": {
+    "NAME": "Ardent Torch",
+    "DESCRIPTION": "Add 1 *Burn to your hand. NL Draw 1 card. NL Draw an additional card for each *Burn in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Add 1 *Burn to your hand. NL Draw 1 card. NL Draw an additional card for each *Burn in your hand."
+  },
+  "shadowverse:AdherentOfArdor": {
+    "NAME": "Adherent of Ardor",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 2 *Burns to your hand. NL If Overflow is active, deal !D! damage again and add 1 more *Burn to your hand."
+  },
+  "shadowverse:SneerOfDisdain": {
+    "NAME": "Sneer of Disdain",
+    "DESCRIPTION": "Deal !D! Damage. NL Enhance 2: Exhaust all *Burns in your hand and deal !M! damage for each exhausted, then add 1 *Burn to your hand."
+  },
+  "shadowverse:PrimeDragonKeeper": {
+    "NAME": "Prime Dragon Keeper",
+    "DESCRIPTION": "Whenever you play a Dragoncraft attack card that costs 1 or less, deal !M! Damae to a random enemy. NL If Overflow is active, gain !M! Flame Barrier at the end of your turn.",
+    "UPGRADE_DESCRIPTION":"Innate. NL Whenever you play a Dragoncraft attack card that costs 1 or less, deal !M! Damage to a random enemy. NL If Overflow is active, gain !M! Flame Barrier at the end of your turn."
+  },
+  "shadowverse:DragonsongFlute": {
+    "NAME": "Dragonsong Flute",
+    "DESCRIPTION": "If Overflow is active, Exhaust all Status, Curse and Dragoncraft Attack cards that cost 1 or less in your hand and add that many *Hellflame *Dragons to your hand. NL Whenever you draw a Status, Curse, or Attack card that costs 1 or less, Exhaust it and add a *Hellflame *Dragon to your hand. NL Ethereal.",
+    "UPGRADE_DESCRIPTION":"If Overflow is active, Exhaust all Status, Curse and Dragoncraft Attack cards that cost 1 or less in your hand and add that many *Hellflame *Dragons to your hand. NL Whenever you draw a Status, Curse or Attack card that costs 1 or less, Exhaust it and add a *Hellflame *Dragon to your hand."
+  },
+  "shadowverse:DragonWeapon": {
+    "NAME": "Draconic Weapon",
+    "DESCRIPTION": "Armed NL Choose 1 Attack card, it gains Armed trait and the effect "Gain 1 Block" when played.",
+    "UPGRADE_DESCRIPTION":"Armed· Retain NL Choose 1 Attack card, it gains Armed trait and the effect "Gain 1 Block" when played."
+  },
+  "shadowverse:DraconicArmor": {
+    "NAME": "Draconic Armor",
+    "DESCRIPTION": "Armed NL Add !M! Armed Attack cards from your draw pile to your hand. NL Add 1 *Draconic *Armor to your hand."
+  },
+  "shadowverse:SwiftbladeDragonewt": {
+    "NAME": "Swiftblade Dragonewt",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Add 1 *Draconic *Armor to your hand. NL If 4 or more Armed attack cards have been played this combat, deal !D! Damage again.",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Has played",
+      "Armed Attack Cards)"
+    ]
+  },
+  "shadowverse:Draconir": {
+    "NAME": "Draconir, Knuckle Dragon",
+    "DESCRIPTION": "Armed NL Gain !B! Block. NL Add !M! *Draconic *Armor(s) to your hand. NL If 4 or more Armed Attack cards have been played this combat, add 1 *Miracle and 1 *Evolution *Point to your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Has played",
+      "Armed Attack cards)"
+    ]
+  },
+  "shadowverse:LanceLizard": {
+    "NAME": "Lance Lizard",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Add 1 *Draconic *Armor to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain !B! Block and deal !D! Damage again.",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Has played",
+      "Armed Attack cards)"
+    ]
+  },
+  "shadowverse:DragonSmash": {
+    "NAME": "Draconic Smash",
+    "DESCRIPTION": "Armed NL Deal !D! Damage to a random enemy. NL Add 1 *Draconic *Armor to your hand."
+  },
+  "shadowverse:HammerDragonewt": {
+    "NAME": "Hammer Dragonewt",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Last_Words: when this card is played, Add 1 *Draconic *Smash to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
+    "UPGRADE_DESCRIPTION":"Armed NL Deal !D! Damage. NL Last_Words: when this card is played, Add 1 *Draconic *Smash+ to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
+    "EXTENDED_DESCRIPTION": [
+      " NL （Has played",
+      "Armed Attack cards)"
+    ]
+  },
+  "shadowverse:Georgius": {
+    "NAME": "Georgius",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! Damage to all enemies. NL Repeat once, if Overflow is active. NL Repeat twice if Full Overflow is active."
+  },
+  "shadowverse:Ethica": {
+    "NAME": "Ethica, Firebrand Claw",
+    "DESCRIPTION": "Deal !D! Damage to all enemies. NL If OVerflow is active, add 1 *Miracle and 1 *Evolution *Point to your hand."
+  },
+  "shadowverse:SpringwellDragonKeeper": {
+    "NAME": "Springwell Dragon Keeper",
+    "DESCRIPTION": "Discard 1 card, deal !D! Damage. NL Enhance 2: Gain !B! Block."
+  },
+  "shadowverse:WyrmfireEngineer": {
+    "NAME": "Wyrmfire Engineer",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Bullet *Bike that costs 1 to your hand. NL If Overflow is active, the next attack card you play deals 5 additional damage instead."
+  },
+  "shadowverse:GoldenDragon": {
+    "NAME": "Supreme Golden Dragon",
+    "DESCRIPTION": "Gain !B! Block. NL Heal 2 HP. NL Exhaust."
+  },
+  "shadowverse:SilverDragon": {
+    "NAME": "Supreme Silver Dragon",
+    "DESCRIPTION": "Deal !D! Damage. NL If you have *Supreme *Golden *Dragon in your hand, deal !D! Damage again. NL Deal !M! Damage to all enemies. NL Exhaust."
+  },
+  "shadowverse:Garyu": {
+    "NAME": "Garyu, Supreme Dragonkin",
+    "DESCRIPTION": "Deal !D! Damage. NL Enhance 2: Choose NL *Supreme *Silver Dragon NL *Supreme *Golden *Dragon NL Add the chosen card to your hand. NL Enhance 4: Add both to your hand and gain 2 Strength and Dexterity. ",
+    "UPGRADE_DESCRIPTION":"Deal !D! Damage. NL Enhance 2: Choose NL *Supreme *Silver Dragon+ NL *Supreme *Golden *Dragon+ NL Add the chosen card to your hand. NL Enhance 4: Add both to your hand and gain 2 Strength and Dexterity. "
+  },
+  "shadowverse:RowenCard": {
+    "NAME": "Rowen, Dragon Lance",
+    "DESCRIPTION": "Deal !D! Damage. NL Add 1 *Curse *Of *The *Black *Dragon to your hand. NL Enhance 2: Countdown 2: All damage you deal is increased by 3. NL Exhaust !stslib:ex!."
+  },
+  "shadowverse:WildfangDragonewt": {
+    "NAME": "Wildfang Dragonewt",
+    "DESCRIPTION": "For each card you discarded by an effect this turn, deal !M! damage to a random enemy."
+  },
+  "shadowverse:Heliodragon": {
+    "NAME": "Heliodragon",
+    "DESCRIPTION": "When this card is discarded, add 1 *Ivory Dragon with Exhaust to your hand. NL Gain !B! Block. NL For each card you discarded by an effect this turn, gain !M! Block."
+  },
+  "shadowverse:RockbackAnkylosaurus": {
+    "NAME": "Rockback Ankylosaurus",
+    "DESCRIPTION": "Natura NL Discard 1 card, deal !D! Damage to a random enemy. NL If you discarded a Natura card with this effect, deal !M! damage to all enemies. NL Last_Words: When this card is played, draw 1 card."
+  },
+  "shadowverse:SteelcapPachycephalosaurus": {
+    "NAME": "Steelcap Pachycephalosaurus",
+    "DESCRIPTION": "Natura NL Deal !D! Damage. NL If you have discarded any cards this turn, gain [E] and add 1 *Evolution *Point to your hand."
+  },
+  "shadowverse:AzureDragon": {
+    "NAME": "Azure Dragon's Rage",
+    "DESCRIPTION": "Retain. NL Costs [E] less for each card discarded this turn. NL Deal !D! Damage. NL Exhaust."
+  },
+  "shadowverse:CrimsonDragon": {
+    "NAME": "Crimson Dragon's Sorrow",
+    "DESCRIPTION": "Retain. NL Costs [E] less for each card discarded this turn. NL Gain !B! Block. NL Discard 1 card, draw 2 cards. NL Exhaust."
+  },
+  "shadowverse:TurncoatDragonSummoner": {
+    "NAME": "Turncoat Dragon Summoner",
+    "DESCRIPTION": "When this card is discarded from your hand, add 1 *Crimson *Dragon's *Sorrow to your hand. NL Gain !B! Block. NL Add 1 *Azure *Dragon's *Rage to your hand.",
+    "UPGRADE_DESCRIPTION":"When this card is discarded from your hand, add 1 *Crimson *Dragon's *Sorrow+ to your hand. NL Gain !B! Block. NL Add 1 *Azure *Dragon's *Rage+ to your hand.
+  },
+  "shadowverse:SoaringDragonewt": {
+    "NAME": "Soaring Dragonewt",
+    "DESCRIPTION": "Whenever you play a Skill card, upgrade this card. NL Deal !D! Damage. NL Randomly discard the lowest cost card in your hand and draw 1 card.",
+    "UPGRADE_DESCRIPTION":"Downgrades when played. NL Deal !D! Damage. NL Randomly discard the lowest cost card in your hand, draw 1 card. Do this three times."
   }
 }
