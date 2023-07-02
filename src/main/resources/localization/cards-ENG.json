@@ -5633,7 +5633,7 @@
   },
   "shadowverse:WaterwyrmBlessing": {
     "NAME": "Waterwyrm's Blessing",
-    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn 。 NL If Overflow is active, draw !M! cards."
+    "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn. NL If Overflow is active, draw !M! cards."
   },
   "shadowverse:WindblastDragon": {
     "NAME": "Windblast Dragon",
@@ -5706,7 +5706,7 @@
   "shadowverse:RowenRoar": {
     "NAME": "Rowen's Roar",
     "DESCRIPTION": "Gain 1 Overflow point. NL Gain [E] next turn.",
-    "UPGRADE_DESCRIPTION":"Gain 1 Overflow point. NL Gain [E] [E] next turn."
+    "UPGRADE_DESCRIPTION":" Gain 1 Overflow point. NL Gain [E] [E] next turn."
   },
   "shadowverse:ValdainClaw": {
     "NAME": "Valdain's Claw",
