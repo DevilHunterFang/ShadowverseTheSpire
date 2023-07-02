@@ -5545,11 +5545,11 @@
   },
   "shadowverse:ScorchedEarthTyrant": {
     "NAME": "Scorched-Earth Tyrant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Deal !D! damage to all enemies. NL If the last card played was a Condemned card, deal damage again."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Deal !D! Damage to all enemies. NL If the last card played was a Condemned card, deal !D! Damage again."
   },
    "shadowverse:Antemaria": {
     "NAME": "Antemaria, Huntress Convict",
-    "DESCRIPTION": "Condemned NL Accelerate 0: Deal !M! damage to a random enemy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If the last card played was a Condemned card, double the damage."
+    "DESCRIPTION": "Condemned NL Accelerate 0: Deal !M! Damage to a random enemy. NL  NL --------------------- NL  NL Deal !D! Damage. NL If the last card played was a Condemned card, double the damage."
   },
   "shadowverse:Drazael": {
     "NAME": "Drazael, Ravening Enforcer",
@@ -5573,11 +5573,11 @@
   },
   "shadowverse:Ghandagoza": {
     "NAME": "Ghandagoza, Fist of Rage",
-    "DESCRIPTION": "Deal !D! damage twice."
+    "DESCRIPTION": "Deal !D! Damage twice."
   },
   "shadowverse:Dagon": {
     "NAME": "Dagon, Lord of the Seas",
-    "DESCRIPTION": "Deal !D! damage 3 times. NL Strength affects this card !M! times。"
+    "DESCRIPTION": "Deal !D! Damage 3 times. NL Strength affects this card !M! times。"
   },
   "shadowverse:ImperialDragoon": {
     "NAME": "Imperial Dragoon",
@@ -5590,7 +5590,7 @@
   },
   "shadowverse:DraconicCounsel": {
     "NAME": "Draconic Counsel",
-    "DESCRIPTION": "Discard 1 card and draw 1 card. NL If Overflow is active，Add 1 copy of this card without the Overflow effect to your hand. It costs 0."
+    "DESCRIPTION": "Discard 1 card and draw 1 card. NL If Overflow is active，add 1 copy of this card without the Overflow effect to your hand. It costs 0."
   },
   "shadowverse:DraconicCounsel_Copy": {
     "NAME": "Draconic Counsel",
@@ -5681,7 +5681,7 @@
   },
   "shadowverse:Lumiore": {
     "NAME": "Lumiore, Prestigious Gold",
-    "DESCRIPTION": "Gain !B! Block. Gain [E} NL Deal !M! Damage to all enemies for every card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
+    "DESCRIPTION": "Gain !B! Block. Gain [E] NL Deal !M! Damage to all enemies for every card discarded this turn. NL If you discarded cards 2 or more times this combat, discard 2 cards and draw 3 cards.",
     "EXTENDED_DESCRIPTION": [
       "（Number of times you discarded：",
       ")"
@@ -5731,7 +5731,7 @@
   },
   "shadowverse:AdherentOfArdor": {
     "NAME": "Adherent of Ardor",
-    "DESCRIPTION": "Deal !D! Damage. NL Add 2 *Burns to your hand. NL If Overflow is active, deal !D! damage again and add 1 more *Burn to your hand."
+    "DESCRIPTION": "Deal !D! Damage. NL Add 2 *Burns to your hand. NL If Overflow is active, deal !D! Damage again and add 1 more *Burn to your hand."
   },
   "shadowverse:SneerOfDisdain": {
     "NAME": "Sneer of Disdain",
@@ -5739,18 +5739,18 @@
   },
   "shadowverse:PrimeDragonKeeper": {
     "NAME": "Prime Dragon Keeper",
-    "DESCRIPTION": "Whenever you play a Dragoncraft attack card that costs 1 or less, deal !M! Damae to a random enemy. NL If Overflow is active, gain !M! Flame Barrier at the end of your turn.",
-    "UPGRADE_DESCRIPTION":"Innate. NL Whenever you play a Dragoncraft attack card that costs 1 or less, deal !M! Damage to a random enemy. NL If Overflow is active, gain !M! Flame Barrier at the end of your turn."
+    "DESCRIPTION": "Whenever you play a Dragoncraft attack card that costs 1 or less, deal !M! Damage to a random enemy. NL If Overflow is active, gain !M! Flame Barrier at the end of your turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Dragoncraft attack card that costs 1 or less, deal !M! Damage to a random enemy. NL If Overflow is active, gain !M! Flame Barrier at the end of your turn."
   },
   "shadowverse:DragonsongFlute": {
     "NAME": "Dragonsong Flute",
     "DESCRIPTION": "If Overflow is active, Exhaust all Status, Curse and Dragoncraft Attack cards that cost 1 or less in your hand and add that many *Hellflame *Dragons to your hand. NL Whenever you draw a Status, Curse, or Attack card that costs 1 or less, Exhaust it and add a *Hellflame *Dragon to your hand. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"If Overflow is active, Exhaust all Status, Curse and Dragoncraft Attack cards that cost 1 or less in your hand and add that many *Hellflame *Dragons to your hand. NL Whenever you draw a Status, Curse or Attack card that costs 1 or less, Exhaust it and add a *Hellflame *Dragon to your hand."
+    "UPGRADE_DESCRIPTION": "If Overflow is active, Exhaust all Status, Curse and Dragoncraft Attack cards that cost 1 or less in your hand and add that many *Hellflame *Dragons to your hand. NL Whenever you draw a Status, Curse or Attack card that costs 1 or less, Exhaust it and add a *Hellflame *Dragon to your hand."
   },
   "shadowverse:DragonWeapon": {
     "NAME": "Draconic Weapon",
-    "DESCRIPTION": "Armed NL Choose 1 Attack card, it gains Armed trait and the effect "Gain 1 Block" when played.",
-    "UPGRADE_DESCRIPTION":"Armed· Retain NL Choose 1 Attack card, it gains Armed trait and the effect "Gain 1 Block" when played."
+    "DESCRIPTION": "Armed NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played.",
+    "UPGRADE_DESCRIPTION": "Armed· Retain NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played."
   },
   "shadowverse:DraconicArmor": {
     "NAME": "Draconic Armor",
@@ -5786,8 +5786,8 @@
   },
   "shadowverse:HammerDragonewt": {
     "NAME": "Hammer Dragonewt",
-    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Last_Words: when this card is played, Add 1 *Draconic *Smash to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
-    "UPGRADE_DESCRIPTION":"Armed NL Deal !D! Damage. NL Last_Words: when this card is played, Add 1 *Draconic *Smash+ to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Last_Words: When this card is played, Add 1 *Draconic *Smash to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
+    "UPGRADE_DESCRIPTION":"Armed NL Deal !D! Damage. NL Last_Words: When this card is played, Add 1 *Draconic *Smash+ to your hand. NL If 4 or more Armed Attack cards have been played this combat, double the damage and gain 1 Strength and Dexterity.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
       "Armed Attack cards)"
@@ -5819,8 +5819,8 @@
   },
   "shadowverse:Garyu": {
     "NAME": "Garyu, Supreme Dragonkin",
-    "DESCRIPTION": "Deal !D! Damage. NL Enhance 2: Choose NL *Supreme *Silver Dragon NL *Supreme *Golden *Dragon NL Add the chosen card to your hand. NL Enhance 4: Add both to your hand and gain 2 Strength and Dexterity. ",
-    "UPGRADE_DESCRIPTION":"Deal !D! Damage. NL Enhance 2: Choose NL *Supreme *Silver Dragon+ NL *Supreme *Golden *Dragon+ NL Add the chosen card to your hand. NL Enhance 4: Add both to your hand and gain 2 Strength and Dexterity. "
+    "DESCRIPTION": "Deal !D! Damage. NL Enhance 2: Choose NL *Supreme *Silver Dragon or NL *Supreme *Golden *Dragon NL Add the chosen card to your hand. NL Enhance 4: Add both to your hand and gain 2 Strength and Dexterity. ",
+    "UPGRADE_DESCRIPTION":"Deal !D! Damage. NL Enhance 2: Choose NL *Supreme *Silver Dragon+ or NL *Supreme *Golden *Dragon+ NL Add the chosen card to your hand. NL Enhance 4: Add both to your hand and gain 2 Strength and Dexterity. "
   },
   "shadowverse:RowenCard": {
     "NAME": "Rowen, Dragon Lance",
@@ -5828,7 +5828,7 @@
   },
   "shadowverse:WildfangDragonewt": {
     "NAME": "Wildfang Dragonewt",
-    "DESCRIPTION": "For each card you discarded by an effect this turn, deal !M! damage to a random enemy."
+    "DESCRIPTION": "For each card you discarded by an effect this turn, deal !M! Damage to a random enemy."
   },
   "shadowverse:Heliodragon": {
     "NAME": "Heliodragon",
@@ -5836,7 +5836,7 @@
   },
   "shadowverse:RockbackAnkylosaurus": {
     "NAME": "Rockback Ankylosaurus",
-    "DESCRIPTION": "Natura NL Discard 1 card, deal !D! Damage to a random enemy. NL If you discarded a Natura card with this effect, deal !M! damage to all enemies. NL Last_Words: When this card is played, draw 1 card."
+    "DESCRIPTION": "Natura NL Discard 1 card, deal !D! Damage to a random enemy. NL If you discarded a Natura card with this effect, deal !M! Damage to all enemies. NL Last_Words: When this card is played, draw 1 card."
   },
   "shadowverse:SteelcapPachycephalosaurus": {
     "NAME": "Steelcap Pachycephalosaurus",
@@ -5853,7 +5853,7 @@
   "shadowverse:TurncoatDragonSummoner": {
     "NAME": "Turncoat Dragon Summoner",
     "DESCRIPTION": "When this card is discarded from your hand, add 1 *Crimson *Dragon's *Sorrow to your hand. NL Gain !B! Block. NL Add 1 *Azure *Dragon's *Rage to your hand.",
-    "UPGRADE_DESCRIPTION":"When this card is discarded from your hand, add 1 *Crimson *Dragon's *Sorrow+ to your hand. NL Gain !B! Block. NL Add 1 *Azure *Dragon's *Rage+ to your hand.
+    "UPGRADE_DESCRIPTION": "When this card is discarded from your hand, add 1 *Crimson *Dragon's *Sorrow+ to your hand. NL Gain !B! Block. NL Add 1 *Azure *Dragon's *Rage+ to your hand."
   },
   "shadowverse:SoaringDragonewt": {
     "NAME": "Soaring Dragonewt",
