@@ -5534,7 +5534,7 @@
   },
   "shadowverse:HotheadedMarauder": {
     "NAME": "Hotheaded Marauder",
-    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL If the last card played this combat was a Condemned card, gain 1 Overflow point."
+    "DESCRIPTION": "Condemned NL Deal !D! Damage. NL If the last card played was a Condemned card, gain 1 Overflow point."
      "shadowverse:RazorClawedThief": {
     "NAME": "Razor-Clawed Thief",
     "DESCRIPTION": "Condemned NL Deal !D! Damage. NL Last_Words: Add 1 *Razor-Clawed *Thief with Exhaust and without Last Words to your hand."
