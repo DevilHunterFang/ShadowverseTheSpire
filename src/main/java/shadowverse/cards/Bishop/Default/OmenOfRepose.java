@@ -58,33 +58,33 @@ public class OmenOfRepose
     public void use(AbstractPlayer p, AbstractMonster abstractMonster) {
         switch (chosenBranch()){
             case 0:
-                addToBot((AbstractGameAction)new SFXAction("OmenOfRepose"));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new MiracleEffect(Color.GOLD.cpy(),Color.WHITE.cpy(),"HEAL_3")));
-                addToBot((AbstractGameAction)new HealAction(p,p,1));
-                addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new DrawCardNextTurnPower(p,1),1));
-                addToBot((AbstractGameAction)new ReduceAllCountDownAction(1));
-                addToBot((AbstractGameAction)new ApplyPowerAction(p,p,(AbstractPower)new RealmOfReposePower(p,1),1));
-                addToBot((AbstractGameAction)new SkipEnemiesTurnAction());
-                addToBot((AbstractGameAction)new PressEndTurnButtonAction());
+                addToBot(new SFXAction("OmenOfRepose"));
+                addToBot(new VFXAction((AbstractGameEffect)new MiracleEffect(Color.GOLD.cpy(),Color.WHITE.cpy(),"HEAL_3")));
+                addToBot(new HealAction(p,p,1));
+                addToBot(new ApplyPowerAction(p,p,new DrawCardNextTurnPower(p,1),1));
+                addToBot(new ReduceAllCountDownAction(1));
+                addToBot(new ApplyPowerAction(p,p,new RealmOfReposePower(p,1),1));
+                addToBot(new SkipEnemiesTurnAction());
+                addToBot(new PressEndTurnButtonAction());
                 break;
             case 1:
-                addToBot((AbstractGameAction)new SFXAction("OmenOfRepose2"));
+                addToBot(new SFXAction("OmenOfRepose2"));
                 int amt = 0;
                 for (AbstractCard c : AbstractDungeon.player.hand.group) {
                     if (c.type != CardType.SKILL && c.type != CardType.POWER){
-                        addToTop((AbstractGameAction)new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
+                        addToTop(new ExhaustSpecificCardAction(c, AbstractDungeon.player.hand));
                         amt++;
                     }
                 }
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDeadOrEscaped()){
                         amt++;
-                        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)p, (AbstractPower)new WeakPower((AbstractCreature)mo, 4, false), 4, true, AbstractGameAction.AttackEffect.NONE));
-                        addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)mo, (AbstractCreature)p, (AbstractPower)new VulnerablePower((AbstractCreature)mo, 4, false), 4, true, AbstractGameAction.AttackEffect.NONE));
+                        addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, 4, false), 4, true, AbstractGameAction.AttackEffect.NONE));
+                        addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, 4, false), 4, true, AbstractGameAction.AttackEffect.NONE));
                     }
                 }
                 if (amt>=4){
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(new FlowOfDispair()));
+                    addToBot(new MakeTempCardInHandAction(new FlowOfDispair()));
                 }
                 break;
         }

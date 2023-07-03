@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
@@ -49,13 +50,13 @@ public class Baal
     @Override
     protected void onRightClick() {
             if (!this.hasFusion && AbstractDungeon.player!=null){
-                addToBot((AbstractGameAction)new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                    return card.type==CardType.ATTACK&&card.color== Vampire.Enums.COLOR_SCARLET&&card.cost<2&&card!=this;
+                addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
+                    return CardLibrary.getCard(card.cardID).type==CardType.ATTACK&&card.color== Vampire.Enums.COLOR_SCARLET&& CardLibrary.getCard(card.cardID).cost<2&&card!=this;
                 }, abstractCards -> {
                     for (AbstractCard c:abstractCards){
                         this.magicNumber++;
                         this.applyPowers();
-                        addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                        addToBot(new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                     }
                 }));
             this.hasFusion = true;
@@ -81,13 +82,13 @@ public class Baal
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Baal"));
+        addToBot(new SFXAction("Baal"));
         if (this.magicNumber>=2){
-            addToBot((AbstractGameAction)new ExpertiseAction((AbstractCreature)abstractPlayer, 6));
+            addToBot(new ExpertiseAction(abstractPlayer, 6));
         }
         if (this.magicNumber>=5){
-            addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new CleaveEffect(), 0.4F));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
+            addToBot(new VFXAction(abstractPlayer, new CleaveEffect(), 0.4F));
+            addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.damage, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
         }
     }
 

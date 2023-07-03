@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -47,7 +48,7 @@ public class ObsessiveScholar extends AbstractRightClickCard2 {
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
             addToBot(new SelectCardsInHandAction(9,TEXT[0],true,true, card -> {
-                return card.type != CardType.SKILL && card != this;
+                return CardLibrary.getCard(card.cardID).type != CardType.SKILL && card != this;
             }, abstractCards -> {
                 if (abstractCards.size()>0){
                     this.hasFusion = true;

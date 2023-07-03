@@ -83,12 +83,12 @@ import shadowverse.action.InvocationAction;
    public void atTurnStart() {
      if (((AbstractShadowversePlayer)AbstractDungeon.player).naterranCount >= 7 && dupCheck) {
          dupCheck = false;
-       if (AbstractDungeon.player.discardPile.contains((AbstractCard)this)) {
-         addToBot((AbstractGameAction)new ReduceCostForTurnAction((AbstractCard)this, 9));
-         addToBot((AbstractGameAction)new DiscardToHandAction((AbstractCard)this));
-       } else if (AbstractDungeon.player.drawPile.contains((AbstractCard)this)) {
-         addToBot((AbstractGameAction)new ReduceCostForTurnAction((AbstractCard)this, 9));
-         addToBot((AbstractGameAction)new InvocationAction((AbstractCard)this));
+       if (AbstractDungeon.player.discardPile.contains(this)) {
+         addToBot(new ReduceCostForTurnAction(this, 9));
+         addToBot(new DiscardToHandAction(this));
+       } else if (AbstractDungeon.player.drawPile.contains(this)) {
+         addToBot(new ReduceCostForTurnAction(this, 9));
+         addToBot(new InvocationAction(this));
        } 
      }else if (((AbstractShadowversePlayer)AbstractDungeon.player).naterranCount < 7){
        dupCheck = true;
@@ -106,18 +106,18 @@ import shadowverse.action.InvocationAction;
      }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new SFXAction("Riley"));
-     addToBot((AbstractGameAction)new WaitAction(0.8F));
-     addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-     addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new LightningEffect(abstractMonster.drawX, abstractMonster.drawY), 0.05F));
+     addToBot(new SFXAction("Riley"));
+     addToBot(new WaitAction(0.8F));
+     addToBot(new SFXAction("ATTACK_HEAVY"));
+     addToBot(new VFXAction(new LightningEffect(abstractMonster.drawX, abstractMonster.drawY), 0.05F));
      calculateCardDamage(abstractMonster);
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
    }
  
  
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Riley();
+     return new Riley();
    }
  }
 

@@ -37,7 +37,7 @@ public class Lymaga
     public Lymaga() {
         super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Elf.Enums.COLOR_GREEN, CardRarity.RARE, CardTarget.ENEMY);
         this.baseDamage = 32;
-        this.cardsToPreview = (AbstractCard) new GreenWoodGuardian();
+        this.cardsToPreview = new GreenWoodGuardian();
         this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
         this.exhaust = true;
     }
@@ -101,12 +101,12 @@ public class Lymaga
         }
         if (count >= 6 && dupCheck) {
             dupCheck = false;
-            if (AbstractDungeon.player.discardPile.contains((AbstractCard) this)) {
-                addToBot((AbstractGameAction) new ReduceCostForTurnAction((AbstractCard) this, 9));
-                addToBot((AbstractGameAction) new DiscardToHandAction((AbstractCard) this));
-            } else if (AbstractDungeon.player.drawPile.contains((AbstractCard) this)) {
-                addToBot((AbstractGameAction) new ReduceCostForTurnAction((AbstractCard) this, 9));
-                addToBot((AbstractGameAction) new InvocationAction((AbstractCard) this));
+            if (AbstractDungeon.player.discardPile.contains(this)) {
+                addToBot(new ReduceCostForTurnAction(this, 9));
+                addToBot(new DiscardToHandAction(this));
+            } else if (AbstractDungeon.player.drawPile.contains(this)) {
+                addToBot(new ReduceCostForTurnAction(this, 9));
+                addToBot(new InvocationAction(this));
             }
         } else if (count < 6) {
             dupCheck = true;
@@ -120,24 +120,24 @@ public class Lymaga
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            addToBot((AbstractGameAction) new SFXAction("Lymaga_Acc"));
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            addToBot(new SFXAction("Lymaga_Acc"));
             AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-            AbstractCard a = (AbstractCard) new Lymaga_NoAcc();
+            AbstractCard a = new Lymaga_NoAcc();
             if (this.upgraded)
                 a.upgrade();
-            addToBot((AbstractGameAction) new MakeTempCardInHandAction(c, 1));
-            addToBot((AbstractGameAction) new MakeTempCardInDiscardAction(a, 1));
+            addToBot(new MakeTempCardInHandAction(c, 1));
+            addToBot(new MakeTempCardInDiscardAction(a, 1));
         } else {
-            addToBot((AbstractGameAction) new SFXAction("Lymaga"));
-            addToBot((AbstractGameAction) new WaitAction(0.8F));
-            addToBot((AbstractGameAction) new SFXAction("ATTACK_HEAVY"));
-            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
+            addToBot(new SFXAction("Lymaga"));
+            addToBot(new WaitAction(0.8F));
+            addToBot(new SFXAction("ATTACK_HEAVY"));
+            addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         }
     }
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Lymaga();
+        return new Lymaga();
     }
 }
 

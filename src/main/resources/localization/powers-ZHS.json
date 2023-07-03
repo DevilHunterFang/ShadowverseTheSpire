@@ -1948,5 +1948,54 @@
       "本回合内每当丢弃1张手牌时，对随机敌人造成 #b",
       " 点伤害。"
     ]
+  },
+  "shadowverse:ByronPower": {
+    "NAME": "钢甲龙骑士·拜伦",
+    "DESCRIPTIONS": [
+      "本回合内，打出攻击牌时获得 #b",
+      " 点 #y力量 。如果是机械牌，额外获得 #b",
+      " 点 #y敏捷 。"
+    ]
+  },
+  "shadowverse:LavateinnDragonAttackFormPower": {
+    "NAME": "莱瓦汀龙·攻击模式",
+    "DESCRIPTIONS": [
+      "本回合内每打出1张武装攻击牌，获得 #b",
+      " 点 #y力量 和 #y敏捷 。"
+    ]
+  },
+  "shadowverse:LavateinnDragonDefenseFormPower": {
+    "NAME": "莱瓦汀龙·防御模式",
+    "DESCRIPTIONS": [
+      "回合结束时，回复2点生命。本回合受到的伤害减少 #b",
+      " 点。"
+    ]
+  },
+  "shadowverse:ZoePower": {
+    "NAME": "伟大的调停者·佐伊",
+    "DESCRIPTIONS": [
+      "回合结束为止，你受到的伤害变为0。只在打出的回合有效。战斗结束时，回复 #b",
+      " 点生命。"
+    ]
+  },
+  "shadowverse:DragonplateWarriorPower": {
+    "NAME": "龙铠战士",
+    "DESCRIPTIONS": [
+      "每当打出非攻击牌时，对全体敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "shadowverse:DragonHoardPower": {
+    "NAME": "龙之财宝",
+    "DESCRIPTIONS": [
+      "回合开始或打出攻击牌时，减少 #b1 倒计时。 倒计时结束后，失去本效果，消耗手牌、弃牌堆、抽牌堆中所有攻击牌，并增加对应数量的 #y地狱炎龙 到手牌、弃牌堆、抽牌堆中。"
+    ]
+  },
+  "shadowverse:RomeliaPower": {
+    "NAME": "遗留的电击",
+    "DESCRIPTIONS": [
+      "回合开始时，获得 #b2 点 #y临时敏捷 和 #b1 点能量。此效果在 #b",
+      " 回合后失效。"
+    ]
   }
 }

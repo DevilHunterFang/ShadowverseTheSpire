@@ -1919,5 +1919,83 @@
       " 얻습니다.  다음 턴 시작시 방어도를 모두 잃지 않았다면 무작위 적에게 피해를 #b",
       " 줍니다."
     ]
+  },
+  "shadowverse:PrimeDragonKeeperPower": {
+    "NAME": "태초의 용술사",
+    "DESCRIPTIONS": [
+      "비용이 1 이하인 공격 카드를 사용할때마다, 무작위 적에게 피해 #b",
+      " . #y각성 상태라면, 턴 종료시 #y화염장벽을 #b",
+      " 얻는다. "
+    ]
+  },
+  "shadowverse:DragonsongFlutePower": {
+    "NAME": "용을 부르는 피리",
+    "DESCRIPTIONS": [
+      "비용이 1 이하인 공격카드나 저주, 상태이상 카드를 뽑을때마다 소멸시키고, #y지옥의화염룡 #b1 장을 얻습니다."
+    ]
+  },
+  "shadowverse:RowenPower": {
+    "NAME": "멸룡창",
+    "DESCRIPTIONS": [
+      "입히는 피해가 #b",
+      " 증가합니다. 이 효과는 #b",
+      " 지속됩니다."
+    ]
+  },
+  "shadowverse:WildfangDragonewtPower": {
+    "NAME": "날뛰는 용인 소녀",
+    "DESCRIPTIONS": [
+      "이번 턴 카드를 버릴 때마다, 무작위 적에게 피해를  #b",
+      " 줍니다. "
+    ]
+  },
+  "shadowverse:ByronPower": {
+    "NAME": "강철 용기병 바이론",
+    "DESCRIPTIONS": [
+      "이번 턴 공격 카드를 사용할 때마다 힘을 #b",
+      " 얻습니다. 그게 기계 카드라면, 추가로 민첩도 #b",
+      " 얻습니다. "
+    ]
+  },
+  "shadowverse:LavateinnDragonAttackFormPower": {
+    "NAME": "레바테인 드래곤 어택 모드",
+    "DESCRIPTIONS": [
+      "이번 턴 무장 공격 카드를 사용할 때마다 힘과 민첩을 #b",
+      " 얻습니다."
+    ]
+  },
+  "shadowverse:LavateinnDragonDefenseFormPower": {
+    "NAME": "레버테인 드래곤 디펜스 모드",
+    "DESCRIPTIONS": [
+      "턴 종료시 체력을 2 회복합니다. 이번 턴 받는 피해가 #b",
+      " 감소합니다. "
+    ]
+  },
+  "shadowverse:ZoePower": {
+    "NAME": "위대한 조정자 조이",
+    "DESCRIPTIONS": [
+      "이번 턴 받는 피해가 0이 됩니다. 전투 종료시 체력을 #b",
+      " 회복합니다."
+    ]
+  },
+  "shadowverse:DragonplateWarriorPower": {
+    "NAME": "용갑옷의 전사",
+    "DESCRIPTIONS": [
+      "공격 카드가 아닌 카드를 사용할 때마다 모든 적에게 피해를  #b",
+      " 줍니다. "
+    ]
+  },
+  "shadowverse:DragonHoardPower": {
+    "NAME": "용의 보물",
+    "DESCRIPTIONS": [
+      "공격 카드를 사용할 때마다 카운트다운이 1 감소합니다. 카운트다운이 0이 되면, 손패와 뽑을/버릴 카드더미의 모든 공격 카드를 소멸시키고, 그만큼 고대의 화염룡을 채워넣습니다."
+    ]
+  },
+  "shadowverse:RomeliaPower": {
+    "NAME": "남겨진 전격",
+    "DESCRIPTIONS": [
+      "턴 시작시, 임시 민첩을 #b2 얻고 에너지를 #b1 얻습니다. 이 효과는 #b",
+      " 턴동안 지속됩니다. "
+    ]
   }
 }

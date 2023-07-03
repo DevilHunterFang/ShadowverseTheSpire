@@ -51,29 +51,29 @@ public class ShadowBahmut
         for (AbstractPower pow : abstractMonster.powers) {
             if (pow.type != AbstractPower.PowerType.DEBUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting"
                     && pow.ID != StrengthPower.POWER_ID && pow.ID != DexterityPower.POWER_ID) {
-                addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
+                addToBot(new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
             }
         }
         if (abstractMonster != null)
-            addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-        addToBot((AbstractGameAction) new WaitAction(0.8F));
+            addToBot(new VFXAction( new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+        addToBot(new WaitAction(0.8F));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
-                addToBot((AbstractGameAction) new SuicideAction(mo));
+                addToBot(new SuicideAction(mo));
             }
         }
        if (abstractMonster != null)
-           addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
-       addToBot((AbstractGameAction)new WaitAction(0.8F));
+           addToBot(new VFXAction(new WeightyImpactEffect(abstractMonster.hb.cX, abstractMonster.hb.cY)));
+       addToBot(new WaitAction(0.8F));
        if (abstractMonster.currentHealth>this.damage){
            abstractMonster.currentHealth -= Math.min(this.damage, abstractMonster.currentHealth - 1);
            abstractMonster.update();
        }else {
-           addToBot((AbstractGameAction)new JudgementAction((AbstractCreature)abstractMonster, this.damage));
+           addToBot(new JudgementAction(abstractMonster, this.damage));
        }
        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
            if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
-               addToBot((AbstractGameAction) new SuicideAction(mo));
+               addToBot(new SuicideAction(mo));
            }
        }
    }

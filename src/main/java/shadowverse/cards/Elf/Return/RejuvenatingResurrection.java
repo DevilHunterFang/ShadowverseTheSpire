@@ -32,6 +32,21 @@ public class RejuvenatingResurrection extends CustomCard {
         }
     }
 
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        boolean canUse = super.canUse(p, m);
+        if (!canUse)
+            return false;
+        boolean hasAttack = false;
+        for (AbstractCard c : p.discardPile.group) {
+            if (c.type == AbstractCard.CardType.ATTACK || c.type == CardType.POWER)
+                hasAttack = true;
+        }
+        if (!hasAttack) {
+            this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+            canUse = false;
+        }
+        return canUse;
+    }
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         addToBot(new SFXAction("RejuvenatingResurrection"));

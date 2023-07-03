@@ -15,7 +15,6 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import shadowverse.cards.AbstractEnhanceCard;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Elf;
 
@@ -58,9 +57,6 @@ public class Hozumi extends CustomCard {
                     addToBot(new ExhaustSpecificCardAction(card,p.hand));
                     if (card.type==CardType.ATTACK){
                         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
-                        while (c instanceof AbstractEnhanceCard){
-                            c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.ATTACK).makeCopy();
-                        }
                         c.setCostForTurn(0);
                         addToBot(new MakeTempCardInHandAction(c));
                     }

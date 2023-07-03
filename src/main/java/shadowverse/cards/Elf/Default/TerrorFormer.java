@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -54,16 +55,16 @@ public class TerrorFormer
     @Override
     protected void onRightClick() {
         if (!this.hasFusion && AbstractDungeon.player!=null){
-            addToBot((AbstractGameAction)new SelectCardsInHandAction(8,TEXT[0],true,true,card -> {
-                return card.type==CardType.ATTACK&&card.color==Elf.Enums.COLOR_GREEN&&card.cost>0&&card!=this;
+            addToBot(new SelectCardsInHandAction(8,TEXT[0],true,true,card -> {
+                return CardLibrary.getCard(card.cardID).type==CardType.ATTACK&&card.color==Elf.Enums.COLOR_GREEN&&CardLibrary.getCard(card.cardID).cost>0&&card!=this;
             }, abstractCards -> {
                 if (abstractCards.size()>1){
-                    addToBot((AbstractGameAction)new DrawCardAction(1));
+                    addToBot(new DrawCardAction(1));
                     fusionAmt++;
                     this.applyPowers();
                 }
                 for (AbstractCard c:abstractCards){
-                    addToBot((AbstractGameAction) new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
+                    addToBot( new ExhaustSpecificCardAction(c,AbstractDungeon.player.hand));
                 }
             }));
             this.hasFusion = true;
@@ -94,11 +95,11 @@ public class TerrorFormer
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new ApplyPowerAction(abstractMonster, abstractPlayer, (AbstractPower) new WeakPower(abstractMonster, 2, false), 2));
+        addToBot( new ApplyPowerAction(abstractMonster, abstractPlayer, (AbstractPower) new WeakPower(abstractMonster, 2, false), 2));
         if (abstractMonster != null)
-            addToBot((AbstractGameAction) new VFXAction((AbstractGameEffect) new VerticalImpactEffect(abstractMonster.hb.cX + abstractMonster.hb.width / 4.0F, abstractMonster.hb.cY - abstractMonster.hb.height / 4.0F)));
+            addToBot( new VFXAction((AbstractGameEffect) new VerticalImpactEffect(abstractMonster.hb.cX + abstractMonster.hb.width / 4.0F, abstractMonster.hb.cY - abstractMonster.hb.height / 4.0F)));
         calculateCardDamage(abstractMonster);
-        addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot( new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
 

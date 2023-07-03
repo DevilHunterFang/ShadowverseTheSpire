@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
 
@@ -18,7 +19,7 @@ public class BounceAction extends AbstractGameAction {
 
     public BounceAction(int amount) {
         this.p = AbstractDungeon.player;
-        setValues((AbstractCreature)this.p, (AbstractCreature)AbstractDungeon.player, amount);
+        setValues(this.p, AbstractDungeon.player, amount);
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_MED;
     }
@@ -27,7 +28,7 @@ public class BounceAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_MED) {
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for (AbstractCard c : this.p.discardPile.group) {
-                if (c.type == AbstractCard.CardType.ATTACK || c.type == AbstractCard.CardType.POWER)
+                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK || CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.POWER)
                     tmp.addToRandomSpot(c);
             }
             if (tmp.size() == 0) {

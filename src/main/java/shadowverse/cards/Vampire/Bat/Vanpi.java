@@ -73,7 +73,7 @@ public class Vanpi
                 if (this.hb.hovered)
                     if (this.rotationTimer <= 0.0F) {
                         this.rotationTimer = 2.0F;
-                        this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                        this.cardsToPreview = returnChoice().get(previewIndex).makeCopy();
                         if (this.previewIndex == returnChoice().size() - 1) {
                             this.previewIndex = 0;
                         } else {
@@ -89,7 +89,7 @@ public class Vanpi
                 if (this.hb.hovered)
                     if (this.rotationTimer <= 0.0F) {
                         this.rotationTimer = 2.0F;
-                        this.cardsToPreview = (AbstractCard) returnChoice2().get(previewIndex).makeCopy();
+                        this.cardsToPreview = returnChoice2().get(previewIndex).makeCopy();
                         if (this.previewIndex == returnChoice2().size() - 1) {
                             this.previewIndex = 0;
                         } else {
@@ -113,38 +113,38 @@ public class Vanpi
         switch (chosenBranch()) {
             case 0:
                 if (p.hasPower(EpitaphPower.POWER_ID) || p.stance.ID.equals(Vengeance.STANCE_ID)) {
-                    AbstractCard v2 = (AbstractCard) new Vanpi2();
-                    AbstractCard v1 = (AbstractCard) new Vanpi1();
+                    AbstractCard v2 = new Vanpi2();
+                    AbstractCard v1 = new Vanpi1();
                     if (this.upgraded) {
                         v1.upgrade();
                         v2.upgrade();
                     }
-                    addToBot((AbstractGameAction) new ChoiceAction(new AbstractCard[]{v2, v1}));
+                    addToBot(new ChoiceAction(new AbstractCard[]{v2, v1}));
                 } else {
-                    addToBot((AbstractGameAction) new SFXAction("Vanpi"));
-                    addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
-                    addToBot((AbstractGameAction) new LoseHPAction(p, p, 2));
+                    addToBot(new SFXAction("Vanpi"));
+                    addToBot(new GainBlockAction(p, this.block));
+                    addToBot(new LoseHPAction(p, p, 2));
                     for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                         if (!mo.isDeadOrEscaped()) {
-                            addToBot((AbstractGameAction) new LoseHPAction(mo, p, 2));
+                            addToBot(new LoseHPAction(mo, p, 2));
                         }
                     }
-                    AbstractCard fb = (AbstractCard) new ForestBat();
+                    AbstractCard fb = new ForestBat();
                     if (this.upgraded)
                         fb.upgrade();
-                    addToBot((AbstractGameAction) new MakeTempCardInHandAction(fb));
+                    addToBot(new MakeTempCardInHandAction(fb));
                 }
                 break;
             case 1:
-                addToBot((AbstractGameAction) new SFXAction("Vanpi_Q"));
-                addToBot((AbstractGameAction) new GainBlockAction(p, this.block));
-                addToBot((AbstractGameAction)new LoseHPAction(p,p,1));
-                addToBot((AbstractGameAction)new MakeTempCardInHandAction(new ForestBat()));
+                addToBot(new SFXAction("Vanpi_Q"));
+                addToBot(new GainBlockAction(p, this.block));
+                addToBot(new LoseHPAction(p,p,1));
+                addToBot(new MakeTempCardInHandAction(new ForestBat()));
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
                     if (!mo.isDeadOrEscaped()){
-                        addToBot((AbstractGameAction)new LoseHPAction(mo,p,1));
-                        addToBot((AbstractGameAction)new ApplyPowerAction(mo, p, (AbstractPower)new StrengthPower(mo, 1), 1));
-                        addToBot((AbstractGameAction)new ApplyPowerAction(mo, p, (AbstractPower)new LoseStrengthPower(mo, 1), 1));
+                        addToBot(new LoseHPAction(mo,p,1));
+                        addToBot(new ApplyPowerAction(mo, p, new StrengthPower(mo, 1), 1));
+                        addToBot(new ApplyPowerAction(mo, p, new LoseStrengthPower(mo, 1), 1));
                     }
                 }
                 if (p.hasPower(EpitaphPower.POWER_ID) || p.stance.ID.equals(Vengeance.STANCE_ID) || p.hasPower(WrathPower.POWER_ID)) {
@@ -163,7 +163,7 @@ public class Vanpi
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Vanpi();
+        return new Vanpi();
     }
 
     @Override

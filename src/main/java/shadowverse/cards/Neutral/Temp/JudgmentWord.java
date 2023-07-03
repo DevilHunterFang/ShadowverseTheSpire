@@ -39,13 +39,13 @@ public class JudgmentWord
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction) new SFXAction("JudgmentWord"));
+        addToBot(new SFXAction("JudgmentWord"));
         if (abstractMonster.hasPower("Artifact")) {
-            addToBot((AbstractGameAction) new RemoveSpecificPowerAction(abstractMonster, abstractPlayer, "Artifact"));
+            addToBot(new RemoveSpecificPowerAction(abstractMonster, abstractPlayer, "Artifact"));
         } else {
             for (AbstractPower pow : abstractMonster.powers) {
                 if (pow.type == AbstractPower.PowerType.BUFF && pow.ID != "Invincible" && pow.ID != "Mode Shift" && pow.ID != "Split" && pow.ID != "Unawakened" && pow.ID != "Life Link" && pow.ID != "Fading" && pow.ID != "Stasis" && pow.ID != "Minion" && pow.ID != "Shifting" && pow.ID != "shadowverse:chushouHealPower") {
-                    addToBot((AbstractGameAction) new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
+                    addToBot(new RemoveSpecificPowerAction(pow.owner, abstractPlayer, pow.ID));
                     break;
                 }
             }

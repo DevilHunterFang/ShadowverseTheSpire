@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import shadowverse.powers.Cemetery;
 
@@ -22,7 +23,7 @@ public class DestroyAction extends AbstractGameAction {
     public DestroyAction(int amount,AbstractGameAction action) {
         this.p = AbstractDungeon.player;
         this.action = action;
-        setValues((AbstractCreature)this.p, (AbstractCreature)AbstractDungeon.player, amount);
+        setValues(this.p, AbstractDungeon.player, amount);
         this.actionType = AbstractGameAction.ActionType.EXHAUST;
         this.duration = Settings.ACTION_DUR_MED;
     }
@@ -31,7 +32,7 @@ public class DestroyAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_MED) {
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for (AbstractCard c : this.p.discardPile.group) {
-                if (c.type == AbstractCard.CardType.ATTACK)
+                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK)
                     tmp.addToRandomSpot(c);
             }
             if (tmp.size() == 0) {
@@ -41,11 +42,11 @@ public class DestroyAction extends AbstractGameAction {
             if (tmp.size() == 1) {
                 AbstractCard card = tmp.getTopCard();
                     card.unhover();
-                    addToBot((AbstractGameAction)new ExhaustSpecificCardAction(card,this.p.discardPile));
+                    addToBot(new ExhaustSpecificCardAction(card,this.p.discardPile));
                     if (null!=action){
                         addToBot(action);
                     }
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
+                addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
                 this.isDone = true;
                 return;
             }
@@ -56,11 +57,11 @@ public class DestroyAction extends AbstractGameAction {
         if (AbstractDungeon.gridSelectScreen.selectedCards.size() != 0) {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
                 c.unhover();
-                addToBot((AbstractGameAction)new ExhaustSpecificCardAction(c,this.p.discardPile));
+                addToBot(new ExhaustSpecificCardAction(c,this.p.discardPile));
                 if (null!=action){
                     addToBot(action);
                 }
-                addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Cemetery((AbstractCreature)p, 1), 1));
+                addToBot(new ApplyPowerAction(p, p, new Cemetery(p, 1), 1));
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }

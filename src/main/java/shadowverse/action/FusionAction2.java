@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.UIStrings;
 
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class FusionAction2 extends AbstractGameAction {
     @Override
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-            if (hasFusion){
+            if (hasFusion) {
                 this.isDone = true;
                 return;
             }
@@ -62,7 +63,7 @@ public class FusionAction2 extends AbstractGameAction {
                 return;
             }
             for (AbstractCard c : this.p.hand.group) {
-                if (c.color != color || c.type != type) {
+                if (c.color != color || CardLibrary.getCard(c.cardID).type != type) {
                     this.cannotFusion.add(c);
                 }
                 if (cost != null) {
@@ -101,11 +102,11 @@ public class FusionAction2 extends AbstractGameAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             int count = 0;
-            if (AbstractDungeon.handCardSelectScreen.selectedCards.group.size()!=0)
-            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                this.p.hand.moveToExhaustPile(c);
-                count++;
-            }
+            if (AbstractDungeon.handCardSelectScreen.selectedCards.group.size() != 0)
+                for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+                    this.p.hand.moveToExhaustPile(c);
+                    count++;
+                }
             self.magicNumber += count;
             self.applyPowers();
             returnCards();
