@@ -1941,5 +1941,54 @@
       "Whenever a card is discarded from your hand this turn, a random enemy takes #b",
       " Damage. "
     ]
+  },
+  "shadowverse:ByronPower": {
+    "NAME": "Byron, Fullmetal Dragoon",
+    "DESCRIPTIONS": [
+      "When playing an Attack card this turn, gain #b",
+      " #yStrength. If it's a Machina card, gain #b",
+      " #yDexterity ."
+    ]
+  },
+  "shadowverse:LavateinnDragonAttackFormPower": {
+    "NAME": "Lævateinn Dragon, Attack Form",
+    "DESCRIPTIONS": [
+      "For each Armed attack card played this turn, gain #b",
+      " #yStrength and #yDexterity ."
+    ]
+  },
+  "shadowverse:LavateinnDragonDefenseFormPower": {
+    "NAME": "Lævateinn Dragon, Defense Form",
+    "DESCRIPTIONS": [
+      "At the end of the turn, heal 2 HP. Reduce damage taken this turn by #b",
+      " points. "
+    ]
+  },
+  "shadowverse:ZoePower": {
+    "NAME": "Zooey, Arbiter of the Skies",
+    "DESCRIPTIONS": [
+      "Until the end of the turn, reduce damage you take to 0. Regain #b",
+      " HP. "
+    ]
+  },
+  "shadowverse:DragonplateWarriorPower": {
+    "NAME": "Dragonplate Warrior",
+    "DESCRIPTIONS": [
+      "Whenever a non-attack card is played, all enemies take #b",
+      " Points of damage."
+    ]
+  },
+  "shadowverse:DragonHoardPower": {
+    "NAME": "Dragon's Hoard",
+    "DESCRIPTIONS": [
+      "At the start of each turn and when an attack card is played, subtract #b1 from the Countdown. After the Countdown reaches 0, lose this effect and all attacks in the hand, draw and discard piles are exhausted and replaced with #yHellfire #yDragons for each exhausted."
+    ]
+  },
+  "shadowverse:RomeliaPower": {
+    "NAME": "Romelia, Lightning Striker",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b2 Dexterity temporarily and #b1 Energy. This effect is active for #b",
+      " turns before expiring."
+    ]
   }
 }
