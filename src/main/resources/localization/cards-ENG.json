@@ -4702,7 +4702,7 @@
   },
   "shadowverse:HeroOfAntiquity": {
     "NAME": "Hero of Antiquity",
-    "DESCRIPTION": "Heroic. NL Gain !B! Block and deal !D! damage. NL Distress_Call: You do not lose your Block at the start of your next turn."
+    "DESCRIPTION": "Heroic. NL Gain !B! Block and deal !D! damage. NL Distress_Call: Block is no longer removed at the start of your next turn."
   },
   "shadowverse:CosmosFang": {
     "NAME": "Cosmos Fang",
@@ -4734,7 +4734,7 @@
   },
   "shadowverse:BejeweledShrine": {
     "NAME": "Bejeweled Shrine",
-    "DESCRIPTION": "Draw 1 card. NL At the start of your turn, randomly gain 1 Blur or Pen Nib. NL At the end of your turn if both effects are active, gain Barricade, your attack damage remains doubled next turn and gain 1 Strength and Dexterity. NL If you have played 5 or more amulets with Countdown, gain 3 Strength and Dexterity instead."
+    "DESCRIPTION": "Draw 1 card. NL At the start of your turn, randomly gain 1 Blur or Pen Nib. NL At the end of your turn if both effects are active, gain Barricade, 1 Strength, 1 Dexterity and your attack damage remains doubled this turn. NL If you have played 5 or more amulets with Countdown, gain 3 Strength and Dexterity instead."
   },
   "shadowverse:ImpiousBishop": {
     "NAME": "Impious Bishop",
@@ -5077,8 +5077,8 @@
   },
   "shadowverse:Castelle": {
     "NAME": "Castelle, Budding Mage",
-    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand. (X is non-strike Forestcraft Attack cards played in this combat)",
-    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand. (X is non-strike Forestcraft Attack cards played in this combat)",
+    "DESCRIPTION": "Academic NL Gain !B! Block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer into hand. (X is equal to non-strike Forestcraft Attack cards played in this combat)",
+    "UPGRADE_DESCRIPTION": "Academic NL Gain !B! block, deal !D! damage. NL If X is 10 or more. put 1 *Verdant *Prayer+ into hand. (X is equal to non-strike Forestcraft Attack cards played in this combat)",
     "EXTENDED_DESCRIPTION": [
       " NL (X is",
       " .)"
