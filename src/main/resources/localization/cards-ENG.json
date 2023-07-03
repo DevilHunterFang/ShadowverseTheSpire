@@ -5990,77 +5990,77 @@
   },
   "shadowverse:DragonAwakening": {
     "NAME": "Dragon's Awakening",
-    "DESCRIPTION": "限定 获得1点 敏捷 。 NL 爆能强化 1:抽 !M! 张牌。"
+    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Enhance 1: Draw !M! cards."
   },
   "shadowverse:Sandstorm": {
-    "NAME": "沙尘风暴",
-    "DESCRIPTION": "限定 获得1点 敏捷 。 NL 爆能强化 1:对全体敌人造成 !M! 点伤害。"
+    "NAME": "Sandstorm",
+    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Enhance 1: Deal !M! Damage to all enemies."
   },
   "shadowverse:WhimsicalMermaid": {
-    "NAME": "幻梦人鱼",
-    "DESCRIPTION": "限定 获得1点 敏捷 。 NL 获得 !B! 点 格挡 。 NL 抽1张牌。 NL 如果有2点以上 敏捷 ，额外抽1张。"
+    "NAME": "Whimsical Mermaid",
+    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Gain !B! Block. NL Draw 1 card. NL If you have at least 2 Dexterity, draw 1 more card."
   },
   "shadowverse:Gunbein": {
-    "NAME": "威严的龙人·刚培恩",
-    "DESCRIPTION": "学园 · 激奏 0: 限定 获得1点 敏捷 。 NL 对随机敌人造成4点伤害。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 如果有2点以上 敏捷 ，额外获得1次 格挡 。"
+    "NAME": "Gunbein, Lofty Dragonewt",
+    "DESCRIPTION": "Academic - Accelerate 0: Gain 1 Dexterity (Limit). NL Deal 4 damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL If you have at least 2 Dexterity, gain !B! Block again."
   },
   "shadowverse:PrimeConflagration": {
-    "NAME": "原初的炎热",
-    "DESCRIPTION": "获得1点 敏捷 。 NL 对随机敌人造成 !M! 点伤害。"
+    "NAME": "Prime Conflagration",
+    "DESCRIPTION": "Gain 1 Dexterity. NL Deal !M! Damage to a random enemy."
   },
   "shadowverse:BlazingDragonewt": {
-    "NAME": "火炎龙斗士",
-    "DESCRIPTION": "限定 获得1点 敏捷 。 NL 获得 !B! 点 格挡 。 NL 丢弃1张牌，抽1张牌。"
+    "NAME": "Blazing Dragonewt",
+    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Gain !B! Block. NL Discard 1 card, draw 1 card."
   },
   "shadowverse:CoralShark": {
-    "NAME": "珊瑚鲨",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果有2点以上 敏捷 ，获得 !B! 点 格挡 。"
+    "NAME": "Coral Shark",
+    "DESCRIPTION": "Deal !D! Damage. NL If you have at least 2 Dexterity, gain !B! Block."
   },
   "shadowverse:WindsweptDragonewt": {
-    "NAME": "风之龙人",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果有2点以上 敏捷 ，伤害翻倍。"
+    "NAME": "Windswept Dragonewt",
+    "DESCRIPTION": "Deal !D! Damage. NL If you have at least 2 Dexterity, double the damage."
   },
   "shadowverse:PropheticDragon": {
-    "NAME": "神谕翼龙",
-    "DESCRIPTION": "激奏 0: 只有在有2点以上 敏捷 时才可以 激奏 。 NL 获得1点 觉醒值 。 NL 如果已 觉醒 ，抽1张牌。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 3次。"
+    "NAME": "Prophetic Dragon",
+    "DESCRIPTION": "Can Only Accelerate if you have at least 2 Dexterity. Accelerate 0: Gain 1 Overflow point. If Overflow is active, draw 1 card. NL NL --------------------- NL NL Gain !B! Block 3 times."
   },
   "shadowverse:GrandSlamTamer": {
-    "NAME": "全胜驭龙使",
-    "DESCRIPTION": "学园 · 限定 获得1点 敏捷 。 NL 获得 !B! 点 格挡 。 NL 如果有2点以上 敏捷 ，增加1张 *地狱火魔龙 到手中。 NL 如果有4点以上，使其伤害翻倍。"
+    "NAME": "Grand Slam Taker",
+    "DESCRIPTION": "Academic. Gain 1 Dexterity (Limit). NL Gain !B! Block. NL If you have at least 2 Dexterity, add 1 *Hellflame *Dragon to your hand, NL If you have at least 4 Dexterity, double the damage."
   },
   "shadowverse:CelestialDragoon": {
-    "NAME": "天威的龙巫女",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。",
-    "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。 NL 造成 !B! 点伤害，只受 敏捷 影响。"
+    "NAME": "Celestial Dragoon",
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Strength and Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain 1 Strength and Dexterity. NL Deal !B! Damage. Dexterity affects this card's damage."
   },
   "shadowverse:HowlingConflagration": {
-    "NAME": "爆炎咆哮",
-    "DESCRIPTION": "对随机敌人造成 !M! 点伤害。 NL 获得1点 临时敏捷 。 NL 消耗 。"
+    "NAME": "Howling Conflagration",
+    "DESCRIPTION": "Deal !M! Damage to a random enemy. NL Gain 1 Dexterity until the end of this turn. NL Exhaust."
   },
   "shadowverse:Dracu": {
-    "NAME": "焦热龙翼·德莱克",
-    "DESCRIPTION": "激奏 0:获得1点 敏捷 ，增加1张 *爆炎咆哮 到手中。 NL  NL --------------------- NL  NL 对全体敌人造成 !D! 点伤害。 NL (受 !M! 倍 敏捷 影响) NL 如果有4点以上 敏捷 ，额外对全体敌人造成20点伤害。",
-    "UPGRADE_DESCRIPTION":"激奏 0:获得1点 敏捷 ，增加1张 *爆炎咆哮+ 到手中。 NL  NL --------------------- NL  NL 对全体敌人造成 !D! 点伤害。 NL (受 !M! 倍 敏捷 影响) NL 如果有4点以上 敏捷 ，额外对全体敌人造成20点伤害。"
+    "NAME": "Drache, Fiery Dragonlord",
+    "DESCRIPTION": "Accelerate 0: Gain 1 Dexterity, put 1 *Howling *Conflagration in your hand. NL NL --------------------- NL NL Deal !D! Damage to all enemies. NL Dexterity affects this card !M! times. NL If you have at least 4 Dexterity, deal 20 damage to all enemies.",
+    "UPGRADE_DESCRIPTION": "Accelerate 0: Gain 1 Dexterity, put 1 *Howling *Conflagration+ in your hand. NL NL --------------------- NL NL Deal !D! Damage to all enemies. NL Dexterity affects this card !M! times. NL If you have at least 4 Dexterity, deal 20 damage to all enemies."
   },
   "shadowverse:Joe": {
-    "NAME": "热血龙教师·乔",
-    "DESCRIPTION": "学园 · 结晶 0:消耗1张手牌，增加1张其复制品到抽牌堆中。 NL 增加1张这张牌的复制品到弃牌堆中。 NL 获得1点 敏捷 ，下回合开始时额外抽1张牌。 NL 如果消耗的是 学园 牌，下回合开始时再抽1张。 NL  NL --------------------- NL  NL 获得 !B! 点 格挡 。 NL 如果有4点以上 敏捷 ，对全体敌人造成 !D! 点伤害。 NL  如果有6点以上 敏捷 ，对全体敌人造成 !M! 点伤害。"
+    "NAME": "Coach Joe, Fiery Counselor",
+    "DESCRIPTION": "Academy - Crystallize 0: Exhaust 1 card in your hand and add it to the draw pile. NL Add 1 copy of this card to the discard pile. NL Gain 1 Dexterity and draw 1 more card next turn. NL If you exhausted an Academic card, draw 2 more cards next turn. NL NL --------------------- NL NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! Damage to all enemies. If you have at least 6 Dexterity, deal !M! Damage to all enemies."
   },
   "shadowverse:Romelia": {
-    "NAME": "崇高的雳雷·罗玛洛尼雅",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得2点 临时敏捷 。 NL 倒计时 2:回合开始时，获得2点 临时敏捷 和 [E] 。. NL 消耗 。"
+    "NAME": "Romelia, Lightning Striker",
+    "DESCRIPTION": "Deal !D! Damage. NL Gain 2 Dexterity this turn. NL Countdown 2: At the start of your turn, gain 2 Dexterity and [E] until the end of your turn. NL Exhaust."
   },
   "shadowverse:DragonPool": {
     "NAME": "",
     "DESCRIPTION": "",
     "EXTENDED_DESCRIPTION": [
-      "基本",
-      "武装",
-      "弃牌1",
-      "弃牌2",
-      "自然",
-      "庭院",
-      "节奏",
+      "Basic",
+      "Armed",
+      "Fold 1",
+      "Fold 2",
+      "Natura",
+      "Courtyard",
+      "Rhythm",
       "Buff"
     ]
   }
