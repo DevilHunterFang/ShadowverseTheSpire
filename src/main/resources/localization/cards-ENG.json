@@ -5002,12 +5002,12 @@
   },
   "shadowverse:OliviaSylvia": {
     "NAME": "Olivia & Sylvia, Wardens",
-    "DESCRIPTION": "Gain !B! Block. NL Add 2 *Evolution *Point to your hand. NL Deal !D! Damage to all enemies. Deal !M! additional damage for each *Evolution *Point in your exhaust pile. NL Gain X Energy. X equals the number of *Evolution *Point in your exhaust pile."
+    "DESCRIPTION": "Gain !B! Block. NL Add 2 *Evolution *Points to your hand. NL Deal !D! Damage to all enemies. Deal !M! additional damage for each *Evolution *Points in your exhaust pile. NL Gain X Energy. X equals the number of *Evolution *Points in your exhaust pile."
   },
   "shadowverse:SacredSheep": {
     "NAME": "Sacred Sheep",
-    "DESCRIPTION": "The next 3 damage you take becomes 0. NL Ethereal.",
-    "UPGRADE_DESCRIPTION":"The next 3 damage you take becomes 0."
+    "DESCRIPTION": "Gain 3 #yBuffer. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain 3 #yBuffer."
   },
   "shadowverse:Judith": {
     "NAME": "Judith, Cosmic Observer",
