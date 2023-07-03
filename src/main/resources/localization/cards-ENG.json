@@ -832,7 +832,7 @@
   },
   "shadowverse:Hero": {
     "NAME": "Heroic Resolve",
-    "DESCRIPTION": "Heroic. NL At the end of your turn, if at least 4 cards were played this turn, draw !M! more card(s) at the start of your next turn and gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
+    "DESCRIPTION": "Heroic. NL At the end of your turn, if at least 4 cards were played this turn, draw !M! more card(s) next turn and gain !M! Dexterity and Strength. NL If at least 8 cards were played, double the effect. NL Exhaust."
   },
   "shadowverse:WindFall": {
     "NAME": "Windfall Fay",
