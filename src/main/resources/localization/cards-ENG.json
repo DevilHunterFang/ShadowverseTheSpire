@@ -2685,8 +2685,8 @@
     "DESCRIPTION": "Retain. NL If Overflow is not active, lose 1 HP at the end of your turn. NL If Overflow is active, deal !D! damage to a random enemy."
   },
   "shadowverse:ShadowBahmut": {
-    "NAME": "Shadow Bahmut",
-    "DESCRIPTION": "Deal !D! unblockable damage. NL The enemy loses all buffs except Strength and Dexterity. NL Kill all Minions."
+    "NAME": "Shadow Bahamut",
+    "DESCRIPTION": "Deal !D! unblockable damage. NL Enemy loses all buffs except Strength and Dexterity. NL Kill all Minions."
   },
   "shadowverse:ShiningValkyrie": {
     "NAME": "Shining Valkyrie",
@@ -2694,7 +2694,7 @@
   },
   "shadowverse:LegendSwordCommander": {
     "NAME": "Legendary Sword Commander",
-    "DESCRIPTION": "You will not lose Block at the start of your turn. NL At the end of your turn, gain !M! Block. NL Whenever you play an attack card, deal !M! damage to all enemies."
+    "DESCRIPTION": "Block is no longer removed at the start of your turn. NL At the end of your turn, gain !M! Block. NL Whenever you play an attack card, deal !M! damage to all enemies."
   },
   "shadowverse:DeadSoulTaker": {
     "NAME": "Departed Soultaker",
