@@ -5200,17 +5200,17 @@
   },
   "shadowverse:UnseenStrength": {
     "NAME": "Unseen Strength",
-    "DESCRIPTION": "Academic. NL Give a *Puppet in your hand the  following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet.",
-    "UPGRADE_DESCRIPTION":"Academic · Retain NL Give a *Puppet in hand following effect 「This damage is unblockable」. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet."
+    "DESCRIPTION": "Academic NL Select a *Puppet in your hand. If it would deal damage, ignore the enemy's Block. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet.",
+    "UPGRADE_DESCRIPTION":"Academic · Retain NL Select a *Puppet in your hand. If it would deal damage, ignore the enemy's Block. NL If there are 10 or more Attack cards in your Exhaust pile, gain 2 Strength and Dexterity. NL If there are 20 or more, upgrade that *Puppet."
   },
   "shadowverse:Lyelth": {
     "NAME": "Lyelth, Immaculate Idol",
-    "DESCRIPTION": "Academic. NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand.",
+    "DESCRIPTION": "Academic NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand.",
     "UPGRADE_DESCRIPTION":"Academic NL Gain !B! Block. NL Exhaust a card in hand, then put a copy of that card into your draw pile. NL Add a *Lyelth's *Marionette and *Unseen *Strength to your hand. NL Add an *Enhanced *Puppet to your hand."
   },
   "shadowverse:Lucius_N": {
     "NAME": "Lucius, Travelled Trainer",
-    "DESCRIPTION": "Academic. NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP.",
+    "DESCRIPTION": "Academic NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP.",
     "UPGRADE_DESCRIPTION":"Academic NL Deal !D! damage. NL If your class is Forestcraft or Runecraft, gain 1 energy. if Shadowcraft or Portalcraft, add 2 *Ghosts to your hand. If Swordcraft, apply 2 Vulnerable. If Havencraft or Bloodcraft, Heal 3 HP. NL If this is a normal enemy combat, deal 4 more damage. If you this is an Elite combat, gain 1 energy. If this is in a Boss combat, add 2 *Ancient Artifacts in hand."
   },
   "shadowverse:BellWitch": {
@@ -5223,7 +5223,7 @@
   },
   "shadowverse:Memento": {
     "NAME": "Memento, the Grim Teacher",
-    "DESCRIPTION": "Academic. NL Whenever you perform Burial Rite, that effect is applied twice."
+    "DESCRIPTION": "Academic NL Whenever you perform Burial Rite, that effect is applied twice."
   },
   "shadowverse:PureflowerMaiden": {
     "NAME": "Pureflower Maiden",
