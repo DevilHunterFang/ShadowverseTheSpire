@@ -5750,15 +5750,15 @@
   "shadowverse:DragonWeapon": {
     "NAME": "Draconic Weapon",
     "DESCRIPTION": "Armed NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played.",
-    "UPGRADE_DESCRIPTION": "Armed· Retain NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played."
+    "UPGRADE_DESCRIPTION": "Armed - Retain NL Choose 1 Attack card, it gains the Armed trait and will give 1 Block when played."
   },
   "shadowverse:DraconicArmor": {
     "NAME": "Draconic Armor",
-    "DESCRIPTION": "Armed NL Add !M! Armed Attack cards from your draw pile to your hand. NL Add 1 *Draconic *Armor to your hand."
+    "DESCRIPTION": "Armed NL Add !M! Armed Attack cards from your draw pile to your hand. NL Add 1 *Draconic *Weapon to your hand."
   },
   "shadowverse:SwiftbladeDragonewt": {
     "NAME": "Swiftblade Dragonewt",
-    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Add 1 *Draconic *Armor to your hand. NL If 4 or more Armed attack cards have been played this combat, deal !D! Damage again.",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed attack cards have been played this combat, deal !D! Damage again.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
       "Armed Attack Cards)"
@@ -5766,7 +5766,7 @@
   },
   "shadowverse:Draconir": {
     "NAME": "Draconir, Knuckle Dragon",
-    "DESCRIPTION": "Armed NL Gain !B! Block. NL Add !M! *Draconic *Armor(s) to your hand. NL If 4 or more Armed Attack cards have been played this combat, add 1 *Miracle and 1 *Evolution *Point to your hand.",
+    "DESCRIPTION": "Armed NL Gain !B! Block. NL Add !M! *Draconic *Weapon(s) to your hand. NL If 4 or more Armed Attack cards have been played this combat, add 1 *Miracle and 1 *Evolution *Point to your hand.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
       "Armed Attack cards)"
@@ -5774,7 +5774,7 @@
   },
   "shadowverse:LanceLizard": {
     "NAME": "Lance Lizard",
-    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Add 1 *Draconic *Armor to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain !B! Block and deal !D! Damage again.",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed Attack cards have been played this combat, gain !B! Block and deal !D! Damage again.",
     "EXTENDED_DESCRIPTION": [
       " NL （Has played",
       "Armed Attack cards)"
@@ -5782,7 +5782,7 @@
   },
   "shadowverse:DragonSmash": {
     "NAME": "Draconic Smash",
-    "DESCRIPTION": "Armed NL Deal !D! Damage to a random enemy. NL Add 1 *Draconic *Armor to your hand."
+    "DESCRIPTION": "Armed NL Deal !D! Damage to a random enemy. NL Add 1 *Draconic *Weapon to your hand."
   },
   "shadowverse:HammerDragonewt": {
     "NAME": "Hammer Dragonewt",
@@ -5859,136 +5859,137 @@
     "NAME": "Soaring Dragonewt",
     "DESCRIPTION": "Whenever you play a Skill card, upgrade this card. NL Deal !D! Damage. NL Randomly discard the lowest cost card in your hand and draw 1 card.",
     "UPGRADE_DESCRIPTION":"Downgrades when played. NL Deal !D! Damage. NL Randomly discard the lowest cost card in your hand, draw 1 card. Do this three times."
+  },
     "shadowverse:WiseDragonewtScholar": {
-    "NAME": "聪慧的龙人织术师",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 丢弃1张牌，抽1张牌。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 丢弃1张牌，抽1张牌。 NL 丢弃1张牌，抽1张牌。"
+    "NAME": "Wise Dragonewt Scholar",
+    "DESCRIPTION": "Deal !D! Damage. NL Discard 1 card, draw 1 card.",
+    "UPGRADE_DESCRIPTION":"Deal !D! Damage. NL Discard 1 card, draw 1 card. NL Discard 1 card, draw 1 card once more."
   },
   "shadowverse:LiliumHatchling": {
-    "NAME": "莉莉尤姆的幼龙",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复2点生命。 NL 消耗 。"
+    "NAME": "Lilium's Hatchling",
+    "DESCRIPTION": "Gain !B! Block. NL Heal 2 HP. NL Exhaust."
   },
   "shadowverse:LiliumDragon": {
-    "NAME": "莉莉尤姆的巨龙",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 使目标失去一种 正面效果 。 NL (如果有 人工制品 则优先失去。)  NL 目标本回合失去3点 力量 。 NL 消耗 。"
+    "NAME": "Lilium's Dragon",
+    "DESCRIPTION": "Deal !D! Damage. NL Remove an enemy buff (Artifact first if enemy has it). NL Enemy loses 3 Strength this turn. NL Exhaust."
   },
   "shadowverse:DraconicCreation": {
-    "NAME": "龙之创造",
-    "DESCRIPTION": "丢弃2张牌。 NL 增加1张 *莉莉尤姆的幼龙 和 *莉莉尤姆的巨龙 到手中。 NL 虚无 。 NL 消耗 。"
+    "NAME": "Draconic Creation",
+    "DESCRIPTION": "Discard 2 cards. NL Add 1 *Lilium's *Hatchling and *Lilium's *Dragon to your hand. NL Ethereal. NL Exhaust."
   },
   "shadowverse:Lilium": {
-    "NAME": "龙之魔女·莉莉尤姆",
-    "DESCRIPTION": "丢弃1张牌，获得 [E] [E] 。 NL 增加1张 *龙之创造 到手中。",
-    "UPGRADE_DESCRIPTION":"丢弃1张牌，获得 [E] [E] 。 NL 增加1张 *龙之创造+ 到手中。"
+    "NAME": "Lilium, the Wyrmwitch",
+    "DESCRIPTION": "Discard 1 card, gain [E] [E]. NL Add 1 *Draconic *Creation to your hand.",
+    "UPGRADE_DESCRIPTION": "Discard 1 card, gain [E] [E]. NL Add 1 *Draconic *Creation+ to your hand."
   },
   "shadowverse:IronscaleSerpentDrake": {
-    "NAME": "坚鳞的龙首巨蛇",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果这张卡为 武装 牌，额外获得 !B! 点 格挡 。 NL 如果有 力量 ，额外获得 !B! 点 格挡 。"
+    "NAME": "Ironscale Serpent Drake",
+    "DESCRIPTION": "Gain !B! Block. NL If this card becomes an Armed card, gain !B! more Block. NL If you have gained Strength, gain !B! more Block."
   },
   "shadowverse:Byron": {
-    "NAME": "钢甲龙骑士·拜伦",
-    "DESCRIPTION": "机械 NL 获得 !B! 点 格挡 。 NL 本回合内，每当打出攻击牌时，获得1点 力量 。 NL 如果是 机械 牌，则再获得1点 敏捷 。",
-    "UPGRADE_DESCRIPTION":"机械 NL 获得 !B! 点 格挡 。 NL 增加1张 *生产器械 到手中。 NL 本回合内，每当打出攻击牌时，获得1点 力量 。 NL 如果是 机械 牌，则再获得1点 敏捷 。"
+    "NAME": "Byron, Fullmetal Dragoon",
+    "DESCRIPTION": "Machina NL Gain !B! Block. NL This turn, whenever you play an Attack, gain 1 Strength. NL Whenever you play a Machina Attack card, gain 1 Dexterity.",
+    "UPGRADE_DESCRIPTION":"Machina NL Gain !B! Block. NL Add 1 *Assembly *Droid to your hand. NL This turn, whenever you play and Attack, gain 1 Strength. NL Whenever you play a Machina Attack card, gain 1 Dexterity."
   },
   "shadowverse:ArmorBurst": {
-    "NAME": "装甲解放",
-    "DESCRIPTION": "选择弃牌堆中的1张 武装 攻击牌，将其耗能-1返回手中。 NL 增加1张 *龙武装甲 到手中。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"选择弃牌堆中的1张 武装 攻击牌，将其耗能-1返回手中。 NL 增加1张 *龙武装甲 到手中。",
+    "NAME": "Armor Burst",
+    "DESCRIPTION": "Put 1 Armed Attack card from the discard pile to your hand. It costs 1 less. NL Put 1 *Draconic *Weapon to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Put 1 Armed Attack card from the discard pile to your hand. It costs 1 less. NL Put 1 *Draconic *Weapon to your hand. ",
     "EXTENDED_DESCRIPTION": [
-      "没有武装攻击牌。"
+      "There are no Armed attacks in my discard pile."
     ]
   },
   "shadowverse:Reggie": {
-    "NAME": "烈霸工匠·蕾吉",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果已 觉醒 ，则伤害翻倍。 NL 如果这张卡为 武装 牌或有 力量 ，获得1点 觉醒值 。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 如果已 觉醒 ，则伤害翻倍。 NL 获得1点 力量 、 敏捷 和 觉醒值 。"
+    "NAME": "Reggie, Peerless Artisan",
+    "DESCRIPTION": "Deal !D! Damage. NL If Overflow is active, double the damage. NL If this card has the Armed trait or you gained Strength, gain 1 Overflow point.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL If Overflow is active, double the damage. NL Gain 1 Strength, Dexterity and Overflow point."
   },
   "shadowverse:LavateinnDragonAttackForm": {
-    "NAME": "莱瓦汀龙·攻击模式",
-    "DESCRIPTION": "武装 NL 对全体敌人造成 !D! 点伤害。 NL 本回合内每当打出 武装 攻击牌时，获得1点 力量 和 敏捷 。 NL 消耗 。"
+    "NAME": "Lævateinn Dragon, Attack Form",
+    "DESCRIPTION": "Armed NL Deal !D! Damage to all enemies. NL This turn, whenever you play an Armed attack card, gain 1 Strength and Dexterity. NL Exhaust."
   },
   "shadowverse:LavateinnDragonDefenseForm": {
-    "NAME": "莱瓦汀龙·防御模式",
-    "DESCRIPTION": "武装 NL 获得 !B! 点 格挡 。 NL 抽2张牌。 NL 本回合受到的伤害减少2。 NL 回合结束时回复3点生命。 NL 消耗 。"
+    "NAME": "Lævateinn Dragon, Defense Form"
+    "DESCRIPTION": "Armed NL Gain !B! Block. NL Draw 2 cards. NL Reduce damage taken by 2 this round. Heal 3 HP at the end of your turn. NL Exhaust."
   },
   "shadowverse:LavateinnDragonBlastForm": {
-    "NAME": "莱瓦汀龙·爆裂模式",
-    "DESCRIPTION": "武装 NL 获得 [E] 。 NL  造成 !D! 点伤害。 NL 本场战斗每打出1张 武装 攻击牌本伤害 + !M! 。 NL 消耗 。"
+    "NAME": "Lævateinn Dragon, Blast Form",
+    "DESCRIPTION": "Armed NL Gain [E]. NL Deal !D! Damage. NL Increase this card's damage by !M! for each Armed Attack card played this combat. NL Exhaust."
   },
   "shadowverse:LavateinnDragon": {
-    "NAME": "莱瓦汀龙",
-    "DESCRIPTION": "武装 NL 造成 !D! 点伤害。 NL 如果手中有 *龙武装甲 ，将其消耗并增加1张 *进化点 到手中。 NL 如果本场战斗已打出过4张以上的 武装 攻击牌，改为 抉择 : NL *莱瓦汀龙·攻击模式 NL *莱瓦汀龙·防御模式 NL *莱瓦汀龙·爆裂模式 NL 从选择的牌中将1张加入手中。",
-    "UPGRADE_DESCRIPTION":"武装 NL 造成 !D! 点伤害。 NL 如果手中有 *龙武装甲 ，将其消耗并增加1张 *进化点 到手中。 NL 增加1张 *龙武装甲 到手中。 NL 如果本场战斗已打出过4张以上的 武装 攻击牌，改为 抉择 : NL *莱瓦汀龙·攻击模式 NL *莱瓦汀龙·防御模式 NL *莱瓦汀龙·爆裂模式 NL 从选择的牌中将1张加入手中。",
+    "NAME": "Lævateinn Dragon",
+    "DESCRIPTION": "Armed NL Deal !D! Damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
+    "UPGRADE_DESCRIPTION": "Armed NL Deal !D! Damage. NL If you have any *Draconic *Weapons in your hand, exhaust 1 and add an *Evolution *Point to your hand. NL Add 1 *Draconic *Weapon to your hand. NL If at least 4 Armed Attack cards were played this combat, instead Choose: NL *Lævateinn *Dragon, *Attack *Form NL *Lævateinn *Dragon, *Defense Form NL or *Lævateinn *Dragon, *Blast *Form NL And add it to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL （已打出过",
-      "张 武装 攻击牌)"
+      " NL （Played",
+      "Armed Attack Cards)"
     ]
   },
   "shadowverse:Zoe_Copy": {
-    "NAME": "伟大的调停者·佐伊",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 失去生命直至1点。 NL 战斗结束时，回复因此失去的生命。 NL 本回合你受到的伤害变为0。 NL 消耗 。"
+    "NAME": "Zooey, Arbiter of the Skies",
+    "DESCRIPTION": "Deal !D! Damage. NL Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of this combat. NL You take no further damage this turn. NL Exhaust."
   },
   "shadowverse:Zoe": {
-    "NAME": "伟大的调停者·佐伊",
-    "DESCRIPTION": "激奏 0:增加1张没有激奏效果的 *伟大的调停者·佐伊 到弃牌堆中并抽1张牌。 NL  NL --------------------- NL  NL 造成 !D! 点伤害。 NL 失去生命直至1点。 NL 战斗结束时，回复因此失去的生命。 NL 本回合你受到的伤害变为0。 NL 消耗 。"
+    "NAME": "Zooey, Arbiter of the Skies",
+    "DESCRIPTION": "Accelerate 0: Add 1 *Zooey, *Arbiter *of *the *Skies without Accelerate to your discard pile and draw 1 card. NL NL --------------------- NL NL Deal !D! Damage. Lose HP until you have only 1 HP left. NL Restore this lost HP at the end of combat. NL You take no further damage this turn. NL Exhaust."
   },
   "shadowverse:TheJustice": {
-    "NAME": "《正义》·伊兰翠",
-    "DESCRIPTION": "随机发动以下1种效果。 NL 获得 !B! 点 格挡 ，回复8点生命，抽3张牌。 NL 造成 !D! 点伤害。"
+    "NAME": "XI. Erntz, Justice",
+    "DESCRIPTION": "Randomly activates one of the following effects. NL Gain !B! Block, heal 8 HP and draw 3 cards. NL Or deal !D! Damage."
   },
   "shadowverse:DragonDevouringDread": {
-    "NAME": "噬龙的禁忌",
-    "DESCRIPTION": "融合 ：原本耗能为3以上的攻击牌。 NL 与这张牌 融合 时，获得1点能量。 NL 与这张牌融合时，如果为第2次，增加1点 觉醒值 。 NL 如果为第3次，抽2张牌。 NL  NL --------------------- NL  NL 消耗手中所有状态牌和诅咒牌。 NL 给予全体敌人 !M! 层 易伤 和虚弱 。 NL 获得 !M! 点能量。 NL 每融合1次上述数值+1。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"保留 · 融合 ：原本耗能为3以上的攻击牌。 NL 与这张牌 融合 时，获得1点能量。 NL 与这张牌融合时，如果为第2次，增加1点 觉醒值 。 NL 如果为第3次，抽2张牌。 NL  NL --------------------- NL  NL 消耗手中所有状态牌和诅咒牌。 NL 给予全体敌人 !M! 层 易伤 和虚弱 。 NL 获得 !M! 点能量。 NL 每融合1次上述数值+1。 NL 消耗 。"
+    "NAME": "Dragon-Devouring Dread",
+    "DESCRIPTION": "Fusion: Attack cards that cost at least 3. NL When you fuse cards to this card, if it's the 1st time, gain 1 Strength. NL If it's the 2nd time, gain 1 Overflow point. NL If it's the 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curse cards in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Retain - Fusion: Attack cards that cost at least 3. NL When you fuse cards to this card, if it's the 1st time, gain 1 Strength. NL If it's the 2nd time, gain 1 Overflow point. NL If it's the 3rd time, draw 2 cards. NL NL --------------------- NL NL Exhaust all Status and Curse cards in your hand. NL Apply !M! Weak and Vulnerable to all enemies. NL Gain !M! Strength. NL Increase this value by 1 for each card Fused. NL Exhaust."
   },
   "shadowverse:NewfoundAllies": {
-    "NAME": "未知相遇",
-    "DESCRIPTION": "自然 NL 从抽牌堆中将 !M! 张 自然 攻击牌 加入手中。 NL 如果有 *那塔拉的大树 ，额外增加1张。"
+    "NAME": "Newfound Allies",
+    "DESCRIPTION": "Natura NL Add !M! Natura Attack cards from the draw pile to your hand. NL If you have the power *Naterran *Great *Tree active, add 1 more."
   },
   "shadowverse:DragonplateWarrior": {
-    "NAME": "龙铠战士",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得「每当打出非攻击牌时，对全体敌人造成 !M! 点伤害」效果。 NL 消耗 。"
+    "NAME": "Dragonplate Warrior",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you play a non-Attack card, deal !D! Damage to all enemies for the rest of this combat. NL Exhaust."
   },
   "shadowverse:IniquitousLindworm": {
-    "NAME": "邪龙·林德沃姆",
-    "DESCRIPTION": "造成 !D! 点无法防御的伤害。 NL 消耗 。"
+    "NAME": "Iniquitous Lindworm",
+    "DESCRIPTION": "Deal !D! Damage. Ignore the enemy's Block. NL Exhaust."
   },
   "shadowverse:VirtuousLindworm": {
-    "NAME": "圣龙·林德沃姆",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 回复5点生命。 NL 下回合开始时额外抽5张牌。 NL 消耗 。"
+    "NAME": "Virtuous Lindworm",
+    "DESCRIPTION": "Gain !B! Block. NL Heal 5 HP. NL Draw 5 more cards next turn. NL Exhaust."
   },
   "shadowverse:Lindworm": {
-    "NAME": "林德沃姆",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 果本场战斗已打出过10张以上的非攻击牌且剩余能量为5以上，消耗5点能量并改为 抉择 : NL *圣龙·林德沃姆 NL *邪龙·林德沃姆 NL 从选择的牌中将1张加入手中。",
-    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 果本场战斗已打出过10张以上的非攻击牌且剩余能量为5以上，消耗5点能量并改为 抉择 : NL *圣龙·林德沃姆+ NL *邪龙·林德沃姆+ NL 从选择的牌中将1张加入手中。。",
+    "NAME": "Lindworm",
+    "DESCRIPTION": "Deal !D! Damage. NL Gain !B! Block. NL If at least 10 non-Attack cards have been played this combat, and you have at least 5 energy, use 5 energy and instead Choose: NL *Virtuous *Lindworm or NL *Iniquitous *Lindworm NL and add it to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Gain !B! Block. NL If at least 10 non-Attack cards have been played this combat, and you have at least 5 energy, use 5 energy and instead Choose: NL *Virtuous *Lindworm+ or NL *Iniquitous *Lindworm+ NL and add it to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL （已打出过",
-      "张非攻击牌)"
+      " NL （Played",
+      "non-Attack cards)"
     ]
   },
   "shadowverse:Djeana": {
-    "NAME": "奋勇的兽人·吉娜",
-    "DESCRIPTION": "自然 · 融合 : *那塔拉的大树 。 NL 与这张牌 融合 时，获得1点 觉醒值 。 NL 获得 !B! 点 格挡 。"
+    "NAME": "Djeana, the Stouthearted",
+    "DESCRIPTION": "Natura - Fusion: *Naterran *Great *Trees. NL Whenever cards are fused to this card, gain 1 Overflow point. NL Gain !B! Block."
   },
   "shadowverse:WildfireTyrannosaur": {
-    "NAME": "猛焰暴龙",
-    "DESCRIPTION": "自然 · 激奏 0:造成 !M! 点伤害，增加1张 *那塔拉的大树 到手中。 NL  NL --------------------- NL  NL 丢弃手中 自然 牌樟树的卡，每丢弃1张 自然 牌，对全体敌人造成 !D! 点伤害。"
+    "NAME": "Wildfire Tyrannosaur",
+    "DESCRIPTION": "Natura - Accelerate 0: Deal !M! Damage. Add 1 *Naterran *Great *Tree to your hand. NL  NL --------------------- NL  NL Discard all Natura cards from your hand and deal !D! Damage to all enemies for each card discarded."
   },
   "shadowverse:InfernoDragon": {
-    "NAME": "地狱炎龙",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点 格挡 。 NL 消耗 。"
+    "NAME": "Inferno Dragon",
+    "DESCRIPTION": "Deal !D! Damage. NL Gain !B! Block. NL Exhaust."
   },
   "shadowverse:DragonHoard": {
-    "NAME": "龙之财宝",
-    "DESCRIPTION": "倒计时 16 :消耗手牌、弃牌堆、抽牌堆中所有攻击牌，并增加对应数量的 *地狱炎龙 到手牌、弃牌堆、抽牌堆中。 NL 打出攻击牌时，减少1 倒计时 。 NL 爆能强化 2:减少 8 倒计时，并增加2张 *地狱火魔龙 到手中。",
-    "UPGRADE_DESCRIPTION":"固有 · 倒计时 16 :消耗手牌、弃牌堆、抽牌堆中所有攻击牌，并增加对应数量的 *地狱炎龙 到手牌、弃牌堆、抽牌堆中。 NL 打出攻击牌时，减少1 倒计时 。 NL 爆能强化 2:减少 8 倒计时，并增加2张 *地狱火魔龙 到手中。"
+    "NAME": "Dragon's Hoard",
+    "DESCRIPTION": "Countdown 16: Exhaust all attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 8 from this card's Countdown and add 2 *Hellflame *Dragons to your hand.",
+    "UPGRADE_DESCRIPTION":"Innate - Countdown 16: Exhaust all attacks in your hand, discard and draw piles and replace them with *Inferno *Dragons. NL Whenever you play an attack card, subtract 1 from this card's Countdown. NL Enhance 2: Subtract 8 from this card's Countdown and add 2 *Hellflame *Dragons to your hand."
   },
   "shadowverse:HypersonicDragonewt": {
-    "NAME": "残影龙人",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果已 觉醒 ，则额外造成1次伤害。"
+    "NAME": "Hypersonic Dragonewt",
+    "DESCRIPTION": "Deal !D! Damage. NL If Overflow is active, deal !D! Damage again."
   },
   "shadowverse:DragonAwakening": {
-    "NAME": "龙之觉醒",
+    "NAME": "Dragon's Awakening",
     "DESCRIPTION": "限定 获得1点 敏捷 。 NL 爆能强化 1:抽 !M! 张牌。"
   },
   "shadowverse:Sandstorm": {
