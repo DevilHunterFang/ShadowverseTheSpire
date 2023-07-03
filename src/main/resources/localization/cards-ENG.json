@@ -4994,7 +4994,7 @@
   },
   "shadowverse:Windslasher": {
     "NAME": "Windslasher",
-    "DESCRIPTION": "Heroic. NL Deal !D! Damage. NL Choose a Heroic card in your discard pile and add it to your hand. It costs 0 this turn. NL Add a random Heroic card from your draw pile to your hand. NL Distress_Call: This card costs 0 this turn."
+    "DESCRIPTION": "Heroic. NL Deal !D! Damage. NL Choose a card in your hand and place it on top of your draw pile. NL Choose a Heroic card in your discard pile. That card costs 0 until played. NL Distress_Call: This card costs 0 this turn."
   },
   "shadowverse:GeneralMaximus": {
     "NAME": "General Maximus",
