@@ -2682,7 +2682,7 @@
   },
   "shadowverse:CurseOfTheBlackDragon": {
     "NAME": "Curse of the Black Dragon",
-    "DESCRIPTION": "Retain. NL Lose 1 HP at the end of your turn."
+    "DESCRIPTION": "Retain. NL If Overflow is not active, lose 1 HP at the end of your turn. NL If Overflow is active, deal !D! damage to a random enemy."
   },
   "shadowverse:ShadowBahmut": {
     "NAME": "Shadow Bahmut",
