@@ -28,7 +28,7 @@ import shadowverse.characters.Dragon;
    public static final String[] TEXT = uiStrings.TEXT;
 
    public Python() {
-     super(ID, NAME, IMG_PATH, 3, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
+     super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.SELF);
      this.baseBlock = 27;
      this.exhaust = true;
    }
@@ -37,10 +37,7 @@ import shadowverse.characters.Dragon;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       this.isInnate = true;
        upgradeBlock(7);
-       this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-       initializeDescription();
      } 
    }
  

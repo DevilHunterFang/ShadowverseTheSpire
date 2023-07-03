@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import shadowverse.Shadowverse;
 import shadowverse.characters.AbstractShadowversePlayer;
 
@@ -28,7 +29,7 @@ public class BounceActionM extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_MED) {
             CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
             for (AbstractCard c : this.p.discardPile.group) {
-                if (c.type == AbstractCard.CardType.ATTACK || c.type == AbstractCard.CardType.POWER)
+                if (CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.ATTACK || CardLibrary.getCard(c.cardID).type == AbstractCard.CardType.POWER)
                     tmp.addToRandomSpot(c);
             }
             if (tmp.size() == 0) {
@@ -51,7 +52,7 @@ public class BounceActionM extends AbstractGameAction {
                     this.p.discardPile.removeCard(card);
                     AbstractDungeon.player.hand.addToTop(card);
                     if (card.hasTag(AbstractShadowversePlayer.Enums.MACHINE)){
-                        addToBot((AbstractGameAction)new DrawCardAction(this.p,1));
+                        addToBot(new DrawCardAction(this.p,1));
                     }
                     AbstractDungeon.player.hand.refreshHandLayout();
                     AbstractDungeon.player.hand.applyPowers();
@@ -74,7 +75,7 @@ public class BounceActionM extends AbstractGameAction {
                     this.p.hand.addToTop(c);
                 }
                 if (c.hasTag(AbstractShadowversePlayer.Enums.MACHINE)){
-                    addToBot((AbstractGameAction)new DrawCardAction(this.p,1));
+                    addToBot(new DrawCardAction(this.p,1));
                 }
                 this.p.hand.refreshHandLayout();
                 this.p.hand.applyPowers();

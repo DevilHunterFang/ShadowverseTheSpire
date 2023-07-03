@@ -38,7 +38,7 @@ import shadowverse.powers.OverflowPower;
 
    public ImperialDragoon() {
      super(ID, NAME, IMG_PATH, 4, DESCRIPTION, CardType.ATTACK, Dragon.Enums.COLOR_BROWN, CardRarity.RARE, CardTarget.ALL_ENEMY);
-     this.baseDamage = 14;
+     this.baseDamage = 12;
      this.jokePortrait = new TextureAtlas.AtlasRegion(LEADER_SKIN_VERSION, 0, 0, LEADER_SKIN_VERSION.getWidth(), LEADER_SKIN_VERSION.getHeight());
    }
  

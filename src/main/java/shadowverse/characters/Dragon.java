@@ -25,6 +25,7 @@ import shadowverse.cards.Dragon.Basic.Defend_D;
 import shadowverse.cards.Dragon.Basic.DragonOracle;
 import shadowverse.cards.Dragon.Basic.DragonWarrior;
 import shadowverse.cards.Dragon.Basic.Strike_D;
+import shadowverse.cards.Dragon.DragonPool;
 import shadowverse.cards.Elf.ElfPool;
 import shadowverse.effect.ShadowverseEnergyOrb;
 import shadowverse.patch.CharacterSelectScreenPatches;
@@ -50,16 +51,16 @@ public class Dragon extends AbstractShadowversePlayer{
     public Dragon(String name) {
         super(name, Enums.Dragon, new ShadowverseEnergyOrb(null, null,null,BASE_LAYER), (AbstractAnimation)new SpriterAnimation(((CharacterSelectScreenPatches.characters[7]).skins[(CharacterSelectScreenPatches.characters[7]).reskinCount]).scmlURL));
         initializeClass(null, ((CharacterSelectScreenPatches.characters[7]).skins[(CharacterSelectScreenPatches.characters[7]).reskinCount]).SHOULDER1, ((CharacterSelectScreenPatches.characters[7]).skins[(CharacterSelectScreenPatches.characters[7]).reskinCount]).SHOULDER2, ((CharacterSelectScreenPatches.characters[7]).skins[(CharacterSelectScreenPatches.characters[7]).reskinCount]).CORPSE, getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(3));
-        this.cardPool= new ElfPool(0);
+        this.cardPool= new DragonPool(0);
     }
 
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> starterDeck = new ArrayList<>(); int i;
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 4; i++) {
             starterDeck.add(Strike_D.ID);
         }
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < 4; i++) {
             starterDeck.add(Defend_D.ID);
         }
         starterDeck.add(DragonOracle.ID);

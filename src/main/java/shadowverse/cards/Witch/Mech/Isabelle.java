@@ -63,7 +63,7 @@ public class Isabelle
     @Override
     protected void onRightClick() {
         if (!this.hasFusion){
-            addToBot((AbstractGameAction)new FusionAction2(8,false,true,true,this,this.hasFusion,Witchcraft.Enums.COLOR_BLUE,CardType.ATTACK,null));
+            addToBot(new FusionAction2(8,false,true,true,this,this.hasFusion,Witchcraft.Enums.COLOR_BLUE,CardType.ATTACK,null));
         }
     }
 
@@ -75,22 +75,22 @@ public class Isabelle
             this.hasFusion = true;
             switch (turnCount){
                 case 1:
-                    AbstractCard union = (AbstractCard)new UnionMagic();
+                    AbstractCard union = new UnionMagic();
                     if (this.upgraded)
                         union.upgrade();
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(union.makeStatEquivalentCopy()));
+                    addToBot(new MakeTempCardInHandAction(union.makeStatEquivalentCopy()));
                     break;
                 case 2:
-                    AbstractCard insight = (AbstractCard)new Insight();
+                    AbstractCard insight = new Insight();
                     if (this.upgraded)
                         insight.upgrade();
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(insight.makeStatEquivalentCopy()));
+                    addToBot(new MakeTempCardInHandAction(insight.makeStatEquivalentCopy()));
                     break;
                 case 3:
-                    AbstractCard fire = (AbstractCard)new FireBall();
+                    AbstractCard fire = new FireBall();
                     if (this.upgraded)
                         fire.upgrade();
-                    addToBot((AbstractGameAction)new MakeTempCardInHandAction(fire.makeStatEquivalentCopy()));
+                    addToBot(new MakeTempCardInHandAction(fire.makeStatEquivalentCopy()));
                     break;
                 default:
                     break;
@@ -109,7 +109,7 @@ public class Isabelle
         if (this.hb.hovered)
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
-                this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                this.cardsToPreview =  returnChoice().get(previewIndex).makeCopy();
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -124,15 +124,15 @@ public class Isabelle
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new SFXAction("Isabelle"));
-        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new SFXAction("Isabelle"));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
         //增幅
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST)) {
                 for (int i = 0; i < 1; i++) {
                     c.flash();
-                    addToBot((AbstractGameAction)new SFXAction("spell_boost"));
-                    addToBot((AbstractGameAction)new ReduceCostAction(c));
+                    addToBot(new SFXAction("spell_boost"));
+                    addToBot(new ReduceCostAction(c));
                 }  continue;
             }
             if (c.hasTag(AbstractShadowversePlayer.Enums.SPELL_BOOST_ATTACK)) {
@@ -140,20 +140,20 @@ public class Isabelle
                     c.flash();
 
                     c.magicNumber = ++c.baseMagicNumber;
-                    addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+                    addToBot(new SFXAction("spell_boost"));
                 }
             }
         }
         //指引
-        AbstractCard fate = (AbstractCard)new FatesHand();
+        AbstractCard fate = new FatesHand();
         if (this.upgraded)
             fate.upgrade();
-        addToBot((AbstractGameAction)new MakeTempCardInHandAction(fate.makeStatEquivalentCopy()));
+        addToBot(new MakeTempCardInHandAction(fate.makeStatEquivalentCopy()));
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new Isabelle();
+        return  new Isabelle();
     }
 }
 

@@ -60,12 +60,12 @@
      }
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-     addToBot((AbstractGameAction)new BounceAction(1));
-     addToTop((AbstractGameAction)new VFXAction((AbstractGameEffect)new ThrowDaggerEffect(abstractMonster.hb.cX, abstractMonster.hb.cY),0.3F));
+     addToBot(new BounceAction(1));
+     addToTop(new VFXAction((AbstractGameEffect)new ThrowDaggerEffect(abstractMonster.hb.cX, abstractMonster.hb.cY),0.3F));
      if (abstractMonster.hasPower("Flight")){
-         addToBot((AbstractGameAction)new RemoveSpecificPowerAction(abstractMonster,abstractPlayer,"Flight"));
+         addToBot(new RemoveSpecificPowerAction(abstractMonster,abstractPlayer,"Flight"));
      }
-     addToBot((AbstractGameAction)new DamageAction((AbstractCreature)abstractMonster, new DamageInfo((AbstractCreature)abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+     addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
    }
  
    

@@ -49,19 +49,19 @@ public class TheBerserker
 
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-        addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-        addToBot((AbstractGameAction)new LoseHPAction(abstractPlayer,abstractPlayer,1));
-        addToBot((AbstractGameAction)new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
+        addToBot(new GainBlockAction(abstractPlayer,this.block));
+        addToBot(new LoseHPAction(abstractPlayer,abstractPlayer,1));
+        addToBot(new HealAction(abstractPlayer,abstractPlayer,this.magicNumber));
         if (abstractPlayer.hasPower(EpitaphPower.POWER_ID)||abstractPlayer.hasPower(WrathPower.POWER_ID)){
-            addToBot((AbstractGameAction)new ArmamentsAction(true));
+            addToBot(new ArmamentsAction(true));
         }
         if (EnergyPanel.getCurrentEnergy()-this.costForTurn>=2){
-            addToBot((AbstractGameAction) new SFXAction("TheBerserker2"));
-            addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC), 0.2F));
-            addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)abstractPlayer, DamageInfo.createDamageMatrix(this.damage*2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SMASH, false));
+            addToBot( new SFXAction("TheBerserker2"));
+            addToBot(new VFXAction(abstractPlayer, new ShockWaveEffect(abstractPlayer.hb.cX, abstractPlayer.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC), 0.2F));
+            addToBot(new DamageAllEnemiesAction(abstractPlayer, DamageInfo.createDamageMatrix(this.damage*2, true), this.damageTypeForTurn, AbstractGameAction.AttackEffect.SMASH, false));
         }else {
-            addToBot((AbstractGameAction) new SFXAction("TheBerserker"));
-            addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            addToBot( new SFXAction("TheBerserker"));
+            addToBot( new DamageAction( abstractMonster, new DamageInfo( abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
 
     }

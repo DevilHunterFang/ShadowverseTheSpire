@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
@@ -43,7 +44,7 @@ public class BurialAction extends AbstractGameAction {
                 return;
             }
             for (AbstractCard c : this.p.hand.group) {
-                if (c.type!= AbstractCard.CardType.ATTACK) {
+                if (CardLibrary.getCard(c.cardID).type!= AbstractCard.CardType.ATTACK) {
                     this.cannotChose.add(c);
                 }
             }
@@ -102,7 +103,7 @@ public class BurialAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
-                if (c.type== AbstractCard.CardType.ATTACK){
+                if (CardLibrary.getCard(c.cardID).type== AbstractCard.CardType.ATTACK){
                     AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
                     this.p.hand.removeCard(c);
                     AbstractDungeon.actionManager.cardsPlayedThisCombat.add(c);

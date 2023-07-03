@@ -54,7 +54,7 @@ public class MinthePower
     public int betterOnApplyPowerStacks(AbstractPower power, AbstractCreature target, AbstractCreature source, int stackAmount) {
         if (power instanceof Cemetery && stackAmount < 0){
             flash();
-            addToBot(new ApplyPowerAction(target,source,new Cemetery(target,-stackAmount),stackAmount));
+            addToBot(new ApplyPowerAction(target,source,new Cemetery(target,-stackAmount),-stackAmount));
         }
         return stackAmount;
     }

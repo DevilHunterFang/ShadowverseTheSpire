@@ -52,7 +52,7 @@ import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
        flash();
        
        this.magicNumber = ++this.baseMagicNumber;
-       addToBot((AbstractGameAction)new SFXAction("spell_boost"));
+       addToBot(new SFXAction("spell_boost"));
      } 
    }
    
@@ -93,9 +93,9 @@ import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
        } 
        amountOfweakestMonster = weakestMonster.currentHealth + weakestMonster.currentBlock;
        if (leftDamage < amountOfweakestMonster) {
-         addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-         addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
-         addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+         addToBot(new SFXAction("ATTACK_HEAVY"));
+         addToBot(new VFXAction(abstractPlayer, new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
+         addToBot(new DamageAction(weakestMonster, new DamageInfo(abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
          leftDamage = 0;
          continue;
        } else if (leftDamage >= amountOfweakestMonster) {
@@ -106,16 +106,16 @@ import com.megacrit.cardcrawl.vfx.combat.MindblastEffect;
            }
          } 
          if (count <= 1) {
-           addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-           addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
-           addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+           addToBot(new SFXAction("ATTACK_HEAVY"));
+           addToBot(new VFXAction(abstractPlayer, new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
+           addToBot(new DamageAction(weakestMonster, new DamageInfo(abstractPlayer, leftDamage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
            leftDamage = 0;
            continue;
          }
          if (!weakestMonster.isDead || !weakestMonster.isDeadOrEscaped()) {
-           addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-           addToBot((AbstractGameAction)new VFXAction((AbstractCreature)abstractPlayer, (AbstractGameEffect)new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
-           addToBot((AbstractGameAction)new DamageAction((AbstractCreature)weakestMonster, new DamageInfo((AbstractCreature)abstractPlayer, amountOfweakestMonster, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+           addToBot(new SFXAction("ATTACK_HEAVY"));
+           addToBot(new VFXAction(abstractPlayer, new MindblastEffect(abstractPlayer.dialogX, abstractPlayer.dialogY, abstractPlayer.flipHorizontal), 0.1F));
+           addToBot(new DamageAction(weakestMonster, new DamageInfo(abstractPlayer, amountOfweakestMonster, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
            leftDamage -= amountOfweakestMonster;
            (AbstractDungeon.getMonsters()).monsters.remove(weakestMonster);
            weakestMonster = null;
