@@ -103,7 +103,7 @@
     "NAME": "Bow of Unkilling",
     "FLAVOR": "Fear not ruin, one must merely endure eternity.",
     "DESCRIPTIONS": [
-      "At the start of your turn, randomly apply 1 Vulnerable, Weak,  #yChoke , -1 #yStrength this turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs apply only once."
+      "At the start of your turn, randomly apply 1 Vulnerable, Weak, #yChoke , -1 #yStrength this turn, #yTalk #yto #ythe #yHand, or Poison to all enemies. Each of these debuffs apply only once."
     ]
   },
   "shadowverse:ArisaBOSS": {
@@ -122,7 +122,7 @@
   },
   "shadowverse:LymagaWeapon": {
     "NAME": "Judgment Rising",
-    "FLAVOR": "Those slashed by her supreme blade, Judgment Rising, will be consumed by thorns and returned to the earth.",
+    "FLAVOR": "You must understand that freedom is but a sweet poison.",
     "DESCRIPTIONS": [
       "At the start of turn, put a 0 cost #yGreenwood #yGuardian into your hand."
     ]
@@ -383,7 +383,7 @@
     "NAME": "Cross Craft",
     "FLAVOR": "New Limited Time Format: Cross Craft! Build decks with cards from 2 different classes!",
     "DESCRIPTIONS": [
-      "Enemies will drop an additional reward of a card belonging to a Shadowverse class other than your own.",
+      "Enemies will drop an additional card reward belonging to a Shadowverse class other than your own.",
       "Enemies drop an additional card reward from ",
       " .",
       "#yRunecraft",
@@ -392,7 +392,8 @@
       "#yBloodcraft",
       "#yPortalcraft",
       "#ySwordcraft",
-      "#yHavencraft"
+      "#yHavencraft",
+      "#yDragoncraft"
     ]
   },
   "shadowverse:Offensive7": {
@@ -559,25 +560,80 @@
     ]
   },
   "shadowverse:FortuneWell": {
-    "NAME": "Fortune Well",
-    "FLAVOR": "你这井怎么不能井异画啊！",
+    "FLAVOR": "Why can't you make a different painting!?",
     "DESCRIPTIONS": [
-      "When picked up or battle 6 (8 with the first time) times, choose 1 rare card from 3 into your deck.",
+      "Upon pick up, choose and add 1 Rare card to your deck and obtain an additional card reward. After 8 combats and then every 6 combats afterward, choose and add 1 Rare card to your deck.",
       "Choose a bonus card"
     ]
   },
   "shadowverse:MonikaBOSS": {
-    "NAME": "フリューゲルコート",
-    "FLAVOR": "モニカが着用しているコート。 その豪奢な仕立ては、背中に続く者たちの心身を奮い立たせ、 ありとあらゆる攻撃力を大幅に向上させる。",
+    "NAME": "Flugel Coat",
+    "FLAVOR": "The coat worn by Monika. Its luxurious tailoring inspires the minds and bodies of those who follow at its back and greatly improves all kinds of offensive capabilities.",
     "DESCRIPTIONS": [
-      " #y先攻の証 と置き換える。 戦闘ごとに #b2 回かつ1ターンに1度、これを右クリックすることで #yEP を手札に加える。 EPをプレイする度、すべてのフォロワーを #g+1/+1 する。"
+      "Replaces #yToken #yOf #y1st. Right click once per turn and up to #y2 times per combat to add 1 #yEvolution #yPoint to your hand. When you play an Evolution point, all followers gain #g+1/+1."
     ]
   },
   "shadowverse:Offensive8": {
-    "NAME": "先手印记",
-    "FLAVOR": "您为先手，不更换手牌。",
+    "NAME": "Token of 1st",
+    "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "以 #b1 点觉醒值开始战斗。"
+      "Start each combat with #b1 Overflow point."
+    ]
+  },
+  "shadowverse:TotalDomination": {
+    "NAME": "Total Domination",
+    "FLAVOR": "Everything turns to ash and dust with a slash of my claw. I guess if you wanted to be more than a dumb beast, you could swear fealty to me...",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of every turn. Start each combat with #b2 #yBurns in your draw pile and discard pile."
+    ]
+  },
+  "shadowverse:MaoAndFengtian": {
+    "NAME": "Mao and Fengtian",
+    "FLAVOR": "Hear the dragon's victory roar!",
+    "DESCRIPTIONS": [
+      "The 2nd time you play an attack card that was created each combat, draw #b2 cards and gain [E]"
+    ]
+  },
+  "shadowverse:Hiro": {
+    "NAME": "Overjoyousness",
+    "FLAVOR": "Shadowverse is fun!",
+    "DESCRIPTIONS": [
+      "Upon pickup, replace the #yDragon #yOracle in your deck with #yHiro #yRyuugasaki's #yDragon #yOracle"
+    ]
+  },
+  "shadowverse:Enkia": {
+    "NAME": "Artiglio, Perforating Flame",
+    "FLAVOR": "Pierce them through, Artiglio!",
+    "DESCRIPTIONS": [
+      "You are always treated as though you have played a #yCondemned card every turn."
+    ]
+  },
+  "shadowverse:DragonQueenCastle": {
+    "NAME": "Dragon Queen's Castle",
+    "FLAVOR": "Protect Empress Otohime!",
+    "DESCRIPTIONS": [
+      "The first attack each turn that costs #b3 or more is played twice."
+    ]
+  },
+  "shadowverse:KayaBOSS": {
+    "NAME": "Dragon's Fist",
+    "FLAVOR": "Kaya wore it on her hands like a glove with a huge dragon's wrist. It is said that it responds to the strong emotions of the wearer, and the karmic fire that erupts from it can burn hostile foes into nothing.",
+    "DESCRIPTIONS": [
+      "At the start of each combat gain #b3 #yOverflow points. Lose #b1 #yDexterity each turn."
+    ]
+  },
+  "shadowverse:GreaBOSS": {
+    "NAME": "Dragon Amulet",
+    "FLAVOR": "A dragon talisman that enhances Grea's abilities. Under the protection of its gems, the Dragon Princess' flames become more intense, burning all in their path.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b1 Overflow point. At the start of each turn, if #yOverflow is active for you, add 1 #yGrea's #Ember to your hand."
+    ]
+  },
+  "shadowverse:InoriBOSS": {
+    "NAME": "Inori's Piko Hammer",
+    "FLAVOR": "Inori's favorite hammer. Completely different from its original appearance after being transformed by Homare, its strength can withstand even the power of the Dragon Clan's awakening.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b1 Overflow point. Start each combat with all enemies Stunned."
     ]
   }
 }
