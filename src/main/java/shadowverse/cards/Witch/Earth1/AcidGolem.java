@@ -48,22 +48,22 @@
              if (abstractPlayer instanceof  AbstractShadowversePlayer){
                  ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
              }
-             addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
-             addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
+             addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, -1), -1));
+             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
          }
          if (p.amount>1){
              if (abstractPlayer instanceof  AbstractShadowversePlayer){
                  ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
              }
-             addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
-             addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
+             addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, -1), -1));
+             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
          }
          if (p.amount>2){
              if (abstractPlayer instanceof  AbstractShadowversePlayer){
                  ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
              }
-             addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -1), -1));
-             addToBot((AbstractGameAction)new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
+             addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, -1), -1));
+             addToBot(new DamageAction(abstractMonster,new DamageInfo(abstractPlayer,this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.POISON));
          }
      }
    }

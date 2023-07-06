@@ -133,7 +133,7 @@ public class Roy extends CustomCard implements BranchableUpgradeCard {
                 addToBot(new ChoiceAction2(l,s));
                 break;
             case 1:
-                if (this.costForTurn == 3) {
+                if (this.costForTurn == 4) {
                     addToBot(new SFXAction("Roy2_Eh"));
                     addToBot(new DestroyAction(1, (new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage * 2, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY))));
                     addToBot(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(9, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));

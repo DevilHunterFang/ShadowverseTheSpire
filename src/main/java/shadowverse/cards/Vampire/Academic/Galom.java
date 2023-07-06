@@ -35,7 +35,7 @@ public class Galom extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(6);
         }
     }
 

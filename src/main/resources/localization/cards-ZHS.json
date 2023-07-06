@@ -4992,7 +4992,7 @@
   },
   "shadowverse:Windslasher": {
     "NAME": "驭风斩击者",
-    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 选择弃牌堆中的1张 英雄 牌，将其本回合耗能变为0加入手中。 NL 随机从抽牌堆中将1张 英雄 牌加入手中。 NL 危难 ：这张牌本回合耗能变为0。"
+    "DESCRIPTION": "英雄 。 NL 造成 !D! 点伤害。 NL 如果打出的上一张牌是 英雄 牌，将其本回合耗能变为0加入手中。 NL 随机从抽牌堆中将1张 英雄 牌加入手中。 NL 危难 ：再增加1张。"
   },
   "shadowverse:GeneralMaximus": {
     "NAME": "极限将军",
@@ -6027,7 +6027,7 @@
   },
   "shadowverse:CelestialDragoon": {
     "NAME": "天威的龙巫女",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。 NL 消耗性 !stslib:ex! ",
     "UPGRADE_DESCRIPTION":"获得 !B! 点 格挡 。 NL 获得1点 力量 和 敏捷 。 NL 造成 !B! 点伤害，只受 敏捷 影响。 NL 消耗性 !stslib:ex! 。"
   },
   "shadowverse:HowlingConflagration": {
@@ -6177,5 +6177,84 @@
     "NAME": "龙之启示",
     "DESCRIPTION": "固有 。 NL 获得1点觉醒值。 NL 下回合获得 [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。",
     "UPGRADE_DESCRIPTION":"固有 。 NL 获得1点觉醒值。 NL 下回合获得 [E] [E] 。 NL 如果已 觉醒 ，额外抽 !M! 张牌。"
+  },
+  "shadowverse:Oberon": {
+    "NAME": "奥伯龙",
+    "DESCRIPTION": "激奏 1:本场战斗已打出的卡牌张数为30以上时才可以激奏。 NL 增加1张耗能为0带有消耗且可以造成2次伤害的 *奥伯龙 到手中。 NL  NL ------------------- NL  NL 造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"激奏 1:本场战斗已打出的卡牌张数为30以上时才可以激奏。 NL 增加1张耗能为0带有消耗且可以造成2次伤害的 *奥伯龙+ 到手中。 NL  NL ------------------- NL  NL 造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已打出 ",
+      " 张。)"
+    ]
+  },
+  "shadowverse:Oberon_Copy": {
+    "NAME": "奥伯龙",
+    "DESCRIPTION": "造成 !D! 点伤害2次。 NL 消耗 。"
+  },
+  "shadowverse:MasterMageLevi2": {
+    "NAME": "轮回的大魔法师·里维",
+    "DESCRIPTION": "增加1张 *红莲的法术 到手中。 NL 每有1层 土之印记 ，造成3点伤害。 NL 土之秘术 2 :对全体敌人造成 !D! 点伤害。 NL 如果本场战斗已消耗的 土之印记 数量为7以上，增加1张 *奇迹 和 *进化点 到手中。",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已消耗 ",
+      " 层。)"
+    ]
+  },
+  "shadowverse:BindingRitual": {
+    "NAME": "束缚术式",
+    "DESCRIPTION": "获得 !M! 层 土之印记 。 NL 抽1张牌。 NL 随机敌人本回合失去 !M! 点 力量 。"
+  },
+  "shadowverse:ColossalSummoning": {
+    "NAME": "浩大的召唤",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果本场战斗已消耗的 土之印记 数量为7以上，改为增加1张本回合耗能为0且带有消耗的 *创世龙 到手中。",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      " NL (已消耗 ",
+      " 层。)"
+    ]
+  },
+  "shadowverse:Fafnir_D": {
+    "NAME": "邪智之龙·法芙娜",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 增加1张 *灼伤 到弃牌堆中。 NL 获得「回合结束时，对随机敌人造成20点伤害，本回合每打出1张攻击牌，此伤害减少4」效果。"
+  },
+  "shadowverse:PlatinumDragonblader": {
+    "NAME": "白金龙剑士",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 如果已 完全觉醒 ，下一次攻击伤害翻倍。"
+  },
+  "shadowverse:HellfireStrike": {
+    "NAME": "魔炎斩击",
+    "DESCRIPTION": "造成 !D! 点伤害。(这张牌也视为打击牌) NL 死灵术 4:对全体敌人造成 !M! 点伤害。"
+  },
+  "shadowverse:Charon": {
+    "NAME": "冥河引渡者·凯伦",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 死灵术 5:抽1张牌，使这张牌本回合耗能变为0。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 死灵术 5:抽1张牌，使这张牌本场战斗耗能变为0。"
+  },
+  "shadowverse:Cerberus3": {
+    "NAME": "冥境咆犬·刻耳柏洛斯",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张本回合耗能为0且带有消耗的 *冥界斗犬·欧特鲁斯+ 到手中。 NL 如果打出的上一张牌已 升级 ，改为 *冥河引渡者·凯伦+ 。"
+  },
+  "shadowverse:Gadel": {
+    "NAME": "饥欲之王·葛帝尔",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 增加1张 *进化点 到手中。 NL 破坏 1张牌，抽 !M! 张牌。"
+  },
+  "shadowverse:Leoparion": {
+    "NAME": "猫狮豹兽",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 可被多次 升级 。 NL 消耗 。"
+  },
+  "shadowverse:PeckishOwlcat": {
+    "NAME": "渴望的猫头鹰",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 可被多次 升级 。 NL 消耗 。"
+  },
+  "shadowverse:Doublame": {
+    "NAME": "芭伦·完美之念",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抉择 : NL *猫狮豹兽 NL *渴望的猫头鹰 NL 从选择的牌中将1张加入手中。并根据消耗堆中 *进化点 的数量升级选择的牌。 NL 如果消耗堆中 *进化点 的数量为5以上，增加1张 *进化点 到手中。"
+  },
+  "shadowverse:Jeanne6": {
+    "NAME": "神谕的启程·贞德",
+    "DESCRIPTION": "对全体敌人造成 !D! 点伤害。 NL 获得2点能量。 NL 升级所有手牌。 NL 获得1层 能力伤害无效 。 NL 如果本回合已打出的卡片张数为2以上，获得 !B! 点 格挡 。 NL 消耗 。"
+  },
+  "shadowverse:JewelShine": {
+    "NAME": "宝石光耀",
+    "DESCRIPTION": "从抽牌堆中将 !M! 张能力牌加入手中。 NL 如果本场战斗已打出5张以上拥有倒数的护符，获得1点 力量 和3点 敏捷 并 消耗 这张牌。"
   }
 }

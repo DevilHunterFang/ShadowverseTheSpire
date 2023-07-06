@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import shadowverse.cards.AbstractAmuletCard;
+import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Bishop;
 import shadowverse.orbs.AmuletOrb;
 public class Garuda4_Cry extends AbstractAmuletCard {
@@ -19,6 +20,7 @@ public class Garuda4_Cry extends AbstractAmuletCard {
     public Garuda4_Cry() {
         super(ID, NAME, IMG_PATH, 0, DESCRIPTION, Bishop.Enums.COLOR_WHITE, CardRarity.SPECIAL, CardTarget.NONE);
         this.countDown = 1;
+        this.tags.add(AbstractShadowversePlayer.Enums.AMULET_FOR_ONECE);
     }
     @Override
     public void onStartOfTurn(AmuletOrb paramOrb) {

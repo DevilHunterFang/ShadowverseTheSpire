@@ -122,6 +122,7 @@ public class ElfPool extends AbstractBanPool {
         Long.addCard(new Rhinoceroach());
         Long.addCard(new SkyDevouring());
         Long.addCard(new WindFall());
+        Long.addCard(new Oberon());
         NatMech.addCard(new AvatarOfFruition());
         NatMech.addCard(new Cleft());
         NatMech.addCard(new Damian());

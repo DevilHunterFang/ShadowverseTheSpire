@@ -38,7 +38,6 @@ import shadowverse.powers.OverflowPower;
    public void upgrade() {
      if (!this.upgraded) {
        upgradeName();
-       upgradeBlock(4);
        upgradeDamage(5);
      }
    }

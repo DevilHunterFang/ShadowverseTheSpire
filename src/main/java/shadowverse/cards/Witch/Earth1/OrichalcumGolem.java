@@ -112,19 +112,19 @@
            int y = l[1];
            int z = l[2];
          if (this.upgraded) {
-           addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, x * 8));
+           addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, x * 8));
          } else {
-           addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, x * 6));
+           addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, x * 6));
          } 
-         addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, y));
+         addToBot(new MakeTempCardInHandAction(c, y));
          for (int i = 0; i < z; i++) {
-           addToBot((AbstractGameAction)new AttackDamageRandomEnemyAction((AbstractCard)this, AbstractGameAction.AttackEffect.LIGHTNING));
+           addToBot(new AttackDamageRandomEnemyAction((AbstractCard)this, AbstractGameAction.AttackEffect.LIGHTNING));
          }
-         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -earthEssence.amount), -earthEssence.amount));
+         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new EarthEssence(abstractPlayer, -earthEssence.amount), -earthEssence.amount));
        } 
      } else {
-       addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, this.block));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new NextTurnEarthEssence((AbstractCreature)abstractPlayer, this.magicNumber), this.magicNumber));
+       addToBot(new GainBlockAction(abstractPlayer, abstractPlayer, this.block));
+       addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new NextTurnEarthEssence(abstractPlayer, this.magicNumber), this.magicNumber));
      } 
    }
    

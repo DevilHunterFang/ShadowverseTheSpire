@@ -1,11 +1,9 @@
 package shadowverse.cards.Royal.Hero;
 
 import basemod.abstracts.CustomCard;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.FetchAction;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
-import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -15,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import shadowverse.action.DrawPileToHandAction_Tag;
 import shadowverse.characters.AbstractShadowversePlayer;
 import shadowverse.characters.Royal;
 
@@ -64,23 +63,36 @@ public class Windslasher extends CustomCard {
         return false;
     }
 
+    public void triggerOnGlowCheck() {
+        if ((!AbstractDungeon.actionManager.cardsPlayedThisCombat.isEmpty() && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+                .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+                        .size() - 1)).hasTag(AbstractShadowversePlayer.Enums.HERO))) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        }
+    }
+
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction(ID.replace("shadowverse:", "")));
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new FetchAction(p.drawPile, card -> hasTag(AbstractShadowversePlayer.Enums.HERO), 1, abstractCards -> {
-            if (inDanger())
-                for (AbstractCard c : abstractCards) {
-                    c.setCostForTurn(0);
-                }
-        }));
-        addToBot(new SelectCardsAction(p.discardPile.group,1,TEXT[0],false,card -> hasTag(AbstractShadowversePlayer.Enums.HERO),abstractCards ->
-        {
-            for (AbstractCard c : abstractCards) {
-                c.setCostForTurn(0);
+        int amount = 1;
+        if (inDanger())
+            amount++;
+        addToBot(new DrawPileToHandAction_Tag(amount,AbstractShadowversePlayer.Enums.HERO,null));
+        if ((AbstractDungeon.actionManager.cardsPlayedThisCombat.size() > 1 && (AbstractDungeon.actionManager.cardsPlayedThisCombat
+                .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+                        .size() - 2)).hasTag(AbstractShadowversePlayer.Enums.HERO))){
+            AbstractCard c = AbstractDungeon.actionManager.cardsPlayedThisCombat
+                    .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+                            .size() - 2);
+            c.setCostForTurn(0);
+            if (p.discardPile.group.contains(c)){
+                addToBot(new DiscardToHandAction(c));
             }
-        }));
+        }
     }
 
     @Override

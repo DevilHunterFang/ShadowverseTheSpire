@@ -34,7 +34,7 @@
  
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
-       addToBot((AbstractGameAction)new DrawCardAction(3, (AbstractGameAction)new ImaginationAction(this.upgraded)));
+       addToBot(new DrawCardAction(3, new ImaginationAction(this.upgraded)));
    }
  
    

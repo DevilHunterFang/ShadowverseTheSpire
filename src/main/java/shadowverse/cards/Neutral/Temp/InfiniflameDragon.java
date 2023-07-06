@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.common.SuicideAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
@@ -65,6 +66,7 @@ public class InfiniflameDragon
             if (c.type == CardType.ATTACK) {
                 addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.SCARLET, Color.ORANGE), 0.1F));
                 addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, 10, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ExhaustSpecificCardAction(c,abstractPlayer.hand));
             }
         }
         if (abstractMonster != null) {

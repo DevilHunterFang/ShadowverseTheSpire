@@ -1640,6 +1640,19 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
             reflectedMap.put("Forte4", new Sfx(voicePath + "Forte4.wav"));
             reflectedMap.put("Forte4Power", new Sfx(voicePath + "Forte4Power.wav"));
             reflectedMap.put("Forte5", new Sfx(voicePath + "Forte5.wav"));
+            reflectedMap.put("Oberon", new Sfx(voicePath + "Oberon.wav"));
+            reflectedMap.put("Oberon_Acc", new Sfx(voicePath + "Oberon_Acc.wav"));
+            reflectedMap.put("MasterMageLevi2", new Sfx(voicePath + "MasterMageLevi2.wav"));
+            reflectedMap.put("Fafnir_D", new Sfx(voicePath + "Fafnir_D.wav"));
+            reflectedMap.put("PlatinumDragonblader", new Sfx(voicePath + "PlatinumDragonblader.wav"));
+            reflectedMap.put("HellfireStrike", new Sfx(voicePath + "HellfireStrike.wav"));
+            reflectedMap.put("Charon", new Sfx(voicePath + "Charon.wav"));
+            reflectedMap.put("Cerberus3", new Sfx(voicePath + "Cerberus3.wav"));
+            reflectedMap.put("Gadel", new Sfx(voicePath + "Gadel.wav"));
+            reflectedMap.put("PeckishOwlcat", new Sfx(voicePath + "PeckishOwlcat.wav"));
+            reflectedMap.put("Doublame", new Sfx(voicePath + "Doublame.wav"));
+            reflectedMap.put("Jeanne6", new Sfx(voicePath + "Jeanne6.wav"));
+            reflectedMap.put("JewelShine", new Sfx(voicePath + "JewelShine.wav"));
         }
         if (Loader.isModLoaded("CardAugments")) {
             AugmentHelper.register();
@@ -2946,7 +2959,21 @@ public class Shadowverse implements PostInitializeSubscriber, EditCardsSubscribe
         BaseMod.addCard(new Filene());
         BaseMod.addCard(new Forte());
         BaseMod.addCard(new InfiniflameDragon());
+        BaseMod.addCard(new DragonlifeBlade());
+        BaseMod.addCard(new DragonstrifeBlade());
         BaseMod.addCard(new Hiro());
+        BaseMod.addCard(new Oberon());
+        BaseMod.addCard(new BindingRitual());
+        BaseMod.addCard(new ColossalSummoning());
+        BaseMod.addCard(new Fafnir_D());
+        BaseMod.addCard(new PlatinumDragonblader());
+        BaseMod.addCard(new HellfireStrike());
+        BaseMod.addCard(new Charon());
+        BaseMod.addCard(new Gadel());
+        BaseMod.addCard(new Leoparion(0));
+        BaseMod.addCard(new PeckishOwlcat(0));
+        BaseMod.addCard(new Doublame());
+        BaseMod.addCard(new JewelShine());
         logger.info("Success");
     }
 

@@ -92,6 +92,7 @@ public class DragonPool extends AbstractBanPool {
         Default.addCard(new Aiela());
         Default.addCard(new Masamune());
         Default.addCard(new Filene());
+        Default.addCard(new PlatinumDragonblader());
         Discard1.addCard(new DracomancerRites());
         Discard1.addCard(new DraconicCounsel());
         Discard1.addCard(new DragoonMedic());
@@ -145,6 +146,7 @@ public class DragonPool extends AbstractBanPool {
         Ramp.addCard(new Zoe());
         Ramp.addCard(new Jerva());
         Ramp.addCard(new GenesisDragon());
+        Ramp.addCard(new Fafnir_D());
         Tempo.addCard(new AdherentOfArdor());
         Tempo.addCard(new ArdentTorch());
         Tempo.addCard(new DiscipleOfDisdain());
@@ -157,6 +159,7 @@ public class DragonPool extends AbstractBanPool {
         Tempo.addCard(new SneerOfDisdain());
         Tempo.addCard(new OmenOfDisdain());
         Tempo.addCard(new Forte());
+        Tempo.addCard(new DragonsongFlute());
         Armed.addCard(new ArmorBurst());
         Armed.addCard(new Byron());
         Armed.addCard(new DraconicArmor());

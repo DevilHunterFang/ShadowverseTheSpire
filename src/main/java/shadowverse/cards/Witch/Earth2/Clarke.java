@@ -44,7 +44,7 @@ import shadowverse.action.BlockPerCardAction;
      this.tags.add(AbstractShadowversePlayer.Enums.EARTH_RITE);
      this.baseMagicNumber = 1;
      this.magicNumber = this.baseMagicNumber;
-     this.cardsToPreview = (AbstractCard)new VeridicRitual();
+     this.cardsToPreview = new VeridicRitual();
      this.tags.add(AbstractShadowversePlayer.Enums.ACCELERATE);
    }
  
@@ -96,7 +96,7 @@ import shadowverse.action.BlockPerCardAction;
    }
    
    public void triggerWhenDrawn() {
-     if (Shadowverse.Accelerate((AbstractCard)this)) {
+     if (Shadowverse.Accelerate(this)) {
        super.triggerWhenDrawn();
        setCostForTurn(0);
        this.type = CardType.SKILL;
@@ -128,13 +128,13 @@ import shadowverse.action.BlockPerCardAction;
    
    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
      AbstractCard c = this.cardsToPreview.makeStatEquivalentCopy();
-     if (Shadowverse.Accelerate((AbstractCard)this) && this.type == CardType.SKILL) {
-       addToBot((AbstractGameAction)new SFXAction("Clarke_Accelerate"));
-       addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, 1), 1));
-       addToBot((AbstractGameAction)new MakeTempCardInHandAction(c, 1));
+     if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+       addToBot(new SFXAction("Clarke_Accelerate"));
+       addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new EarthEssence(abstractPlayer, 1), 1));
+       addToBot(new MakeTempCardInHandAction(c, 1));
      } else {
-       addToBot((AbstractGameAction)new SFXAction("Clarke"));
-       addToBot((AbstractGameAction)new GainEnergyAction(5));
+       addToBot(new SFXAction("Clarke"));
+       addToBot(new GainEnergyAction(5));
        boolean powerExists = false;
        for (AbstractPower pow : abstractPlayer.powers) {
          if (pow.ID.equals("shadowverse:EarthEssence")) {
@@ -146,15 +146,15 @@ import shadowverse.action.BlockPerCardAction;
            if (abstractPlayer instanceof  AbstractShadowversePlayer){
                ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
            }
-         addToBot((AbstractGameAction)new BlockPerCardAction(this.block));
-         addToBot((AbstractGameAction)new ExpertiseAction((AbstractCreature)abstractPlayer, 10));
-         addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)abstractPlayer, (AbstractCreature)abstractPlayer, (AbstractPower)new EarthEssence((AbstractCreature)abstractPlayer, -this.magicNumber), -this.magicNumber));
+         addToBot(new BlockPerCardAction(this.block));
+         addToBot(new ExpertiseAction(abstractPlayer, 10));
+         addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, (AbstractPower)new EarthEssence(abstractPlayer, -this.magicNumber), -this.magicNumber));
        } 
      } 
    }
    
    public AbstractCard makeCopy() {
-     return (AbstractCard)new Clarke();
+     return new Clarke();
    }
  }
 

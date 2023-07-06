@@ -91,6 +91,7 @@ public class NecroPool extends AbstractBanPool {
         Default.addCard(new SoulTaker());
         Default.addCard(new SowDeathReapLife());
         Default.addCard(new Wight());
+        Default.addCard(new Charon());
         Burial.addCard(new CarnivalNecromancer());
         Burial.addCard(new DemonicProcession());
         Burial.addCard(new EverdarkStrix());
@@ -152,6 +153,7 @@ public class NecroPool extends AbstractBanPool {
         Necromancy.addCard(new Krampus());
         Necromancy.addCard(new Orthrus());
         Necromancy.addCard(new WightKing());
+        Necromancy.addCard(new HellfireStrike());
         Shadows.addCard(new AdherentOfScream());
         Shadows.addCard(new BoneChimera());
         Shadows.addCard(new DeathTyrant());

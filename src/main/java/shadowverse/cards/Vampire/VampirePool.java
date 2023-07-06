@@ -137,6 +137,8 @@ public class VampirePool  extends AbstractBanPool {
         Evolve.addCard(new ShadowDevil());
         Evolve.addCard(new Signa());
         Evolve.addCard(new Yuzuki());
+        Evolve.addCard(new Gadel());
+        Evolve.addCard(new Doublame());
         NatMech.addCard(new ArmoredBat());
         NatMech.addCard(new CorruptedBat());
         NatMech.addCard(new CreepingMadness());

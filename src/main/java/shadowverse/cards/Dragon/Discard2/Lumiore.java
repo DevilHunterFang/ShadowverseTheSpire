@@ -65,16 +65,6 @@ import shadowverse.powers.OverflowPower;
      if (abstractPlayer instanceof AbstractShadowversePlayer){
        if (((AbstractShadowversePlayer) abstractPlayer).discardCount > 3){
          addToBot(new DiscardAction(abstractPlayer,abstractPlayer,2,false));
-         if (abstractPlayer.hand.size() < 3){
-           int amount = abstractPlayer.hand.size()-1;
-           if (amount > 0){
-             addToBot(new VFXAction(AbstractDungeon.player, new CleaveEffect(), 0.2F));
-             addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.magicNumber*amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
-           }
-         }else {
-           addToBot(new VFXAction(AbstractDungeon.player, new CleaveEffect(), 0.2F));
-           addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.magicNumber*2, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
-         }
          addToBot(new DrawCardAction(3));
        }
      }

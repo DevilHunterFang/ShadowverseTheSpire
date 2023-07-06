@@ -113,6 +113,7 @@ public class BishopPool extends AbstractBanPool {
         Amulet2.addCard(new HolyLightningBird());
         Amulet2.addCard(new PinionPrayer());
         Amulet2.addCard(new JudgmentSpearMaster());
+        Amulet2.addCard(new JewelShine());
         Evil.addCard(new AllFeeling());
         Evil.addCard(new DarkOffering());
         Evil.addCard(new DirtyPriest());

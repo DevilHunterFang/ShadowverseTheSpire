@@ -579,5 +579,61 @@
     "DESCRIPTIONS": [
       "전투 시작시 각성치를 #b1 얻습니다."
     ]
+  },
+  "shadowverse:TotalDomination": {
+    "NAME": "패극",
+    "FLAVOR": "약자를 찢어발기고 불태우는 다섯갈래의 손톱.",
+    "DESCRIPTIONS": [
+      "전투 시작시 뽑을 카드더미와 버린 카드더미에 #y화상 2장씩을 섞어넣습니다. 턴 시작시 [E] 를 얻습니다."
+    ]
+  },
+  "shadowverse:MaoAndFengtian": {
+    "NAME": "진황·봉천",
+    "FLAVOR": "두 검「진황」과「봉천」으로 가류는 천하에 울려퍼지는 무용담을 만들었습니다. ",
+    "DESCRIPTIONS": [
+      "전투마다 토큰 공격 카드를 2번째 사용하면, 카드를 #b2 장 뽑고  [E] 를 얻습니다."
+    ]
+  },
+  "shadowverse:Hiro": {
+    "NAME": "타노시봇",
+    "FLAVOR": "샤도바 슷게 타노시-!",
+    "DESCRIPTIONS": [
+      "획득시, #y용의 #y신탁 을 #y용의 #y신탁(특별 일러스트) 로 바꿉니다."
+    ]
+  },
+  "shadowverse:Enkia": {
+    "NAME": "운기아",
+    "FLAVOR": "방해하는 건 부술 뿐… 파헤쳐라, 운기아.",
+    "DESCRIPTIONS": [
+      "항상 팔옥 카드를 사용한 상태로 간주됩니다."
+    ]
+  },
+  "shadowverse:DragonQueenCastle": {
+    "NAME": "용궁성",
+    "FLAVOR": "오토히메님을지키게써요!",
+    "DESCRIPTIONS": [
+      "턴당 1회, 비용이 #b3 이상인 공격 카드가 1번 더 사용됩니다."
+    ]
+  },
+  "shadowverse:KayaBOSS": {
+    "NAME": "드래곤즈 피스트",
+    "FLAVOR": "카야가 몸에 걸친 거대한 용의 팔같이 생긴 농수. 사용자의 격정에 따라 내뿜어지는 업화는, 상대하는 모든것들을 불태운다고 전해진다.",
+    "DESCRIPTIONS": [
+      "전투 시작시 #y각성치 를  #b3 얻습니다. 턴 종료시 #y민첩 을 #b 1 잃습니다."
+    ]
+  },
+  "shadowverse:GreaBOSS": {
+    "NAME": "드래그 아뮬렛",
+    "FLAVOR": "글레어가 가진 힘을 높여주는 용의 아뮬렛. 보석에 담겨진 가호를 받아 용공주의 불꽃은 기세를 더해, 모든 적을 태워버린다.",
+    "DESCRIPTIONS": [
+      "전투 시작시 각성치를 #b1 얻습니다. 턴 시작시 #y각성 상태라면, #y글레어의 #y이글거리는 #y화염 1장을 얻습니다."
+    ]
+  },
+  "shadowverse:InoriBOSS": {
+    "NAME": "이노리의 뿅망치",
+    "FLAVOR": "이노리가 애용하는 망치. 호마레에 의해 개조되어, 겉보기와는 달리 드래곤족의 각성에도 견딜 수 있는 강도를 가지고 있다.",
+    "DESCRIPTIONS": [
+      "전투 시작시 각성치를 #b1 얻습니다. 전투 시작시 모든 적을 기절시킵니다."
+    ]
   }
 }

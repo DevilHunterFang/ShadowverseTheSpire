@@ -20,6 +20,8 @@ import rs.lazymankits.interfaces.cards.BranchableUpgradeCard;
 import rs.lazymankits.interfaces.cards.UpgradeBranch;
 import shadowverse.action.BurialAction;
 import shadowverse.action.CerberusAction;
+import shadowverse.cards.Necromancer.Default.Charon;
+import shadowverse.cards.Necromancer.Necromancy.Orthrus;
 import shadowverse.cards.Neutral.Temp.Koko;
 import shadowverse.cards.Neutral.Temp.Mimi;
 import shadowverse.characters.AbstractShadowversePlayer;
@@ -34,12 +36,17 @@ public class Cerberus
     public static final String ID = "shadowverse:Cerberus";
     public static CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("shadowverse:Cerberus");
     public static CardStrings cardStrings2 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Cerberus2");
+    public static CardStrings cardStrings3 = CardCrawlGame.languagePack.getCardStrings("shadowverse:Cerberus3");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards/Cerberus.png";
     public static final String IMG_PATH2 = "img/cards/Cerberus2.png";
+    public static final String IMG_PATH3 = "img/cards/Cerberus3.png";
+    private static final String TEXT = CardCrawlGame.languagePack.getUIString("shadowverse:Exhaust").TEXT[0];
     private float rotationTimer;
     private int previewIndex;
+
+    private boolean branch3;
 
     public static ArrayList<AbstractCard> returnChoice() {
         ArrayList<AbstractCard> list = new ArrayList<>();
@@ -47,6 +54,14 @@ public class Cerberus
         list.add(new Koko());
         return list;
     }
+
+    public static ArrayList<AbstractCard> returnChoice2() {
+        ArrayList<AbstractCard> list = new ArrayList<>();
+        list.add(new Orthrus());
+        list.add(new Charon());
+        return list;
+    }
+
 
     public Cerberus() {
         super(ID, NAME, IMG_PATH, 2, DESCRIPTION, CardType.ATTACK, Necromancer.Enums.COLOR_PURPLE, CardRarity.RARE, CardTarget.SELF);
@@ -64,6 +79,9 @@ public class Cerberus
             if (this.rotationTimer <= 0.0F) {
                 this.rotationTimer = 2.0F;
                 this.cardsToPreview = (AbstractCard) returnChoice().get(previewIndex).makeCopy();
+                if (branch3){
+                    this.cardsToPreview = (AbstractCard) returnChoice2().get(previewIndex).makeCopy();
+                }
                 if (this.previewIndex == returnChoice().size() - 1) {
                     this.previewIndex = 0;
                 } else {
@@ -120,6 +138,26 @@ public class Cerberus
                     }
                 }
                 break;
+            case 2:
+                addToBot(new SFXAction("Cerberus3"));
+                AbstractCard tmp = new Orthrus();
+                AbstractCard c = AbstractDungeon.actionManager.cardsPlayedThisCombat
+                        .get(AbstractDungeon.actionManager.cardsPlayedThisCombat
+                                .size() - 2);
+                if (c.upgraded){
+                    tmp = new Charon();
+                }
+                tmp.upgrade();
+                tmp.setCostForTurn(0);
+                tmp.costForTurn = 0;
+                tmp.isCostModified = true;
+                tmp.exhaustOnUseOnce = true;
+                tmp.exhaust = true;
+                tmp.rawDescription += " NL " + TEXT + " 。";
+                tmp.initializeDescription();
+                tmp.applyPowers();
+                abstractPlayer.hand.addToTop(tmp);
+                break;
         }
     }
 
@@ -154,6 +192,20 @@ public class Cerberus
                 Cerberus.this.upgradeBaseCost(1);
                 Cerberus.this.rawDescription = cardStrings2.DESCRIPTION;
                 Cerberus.this.initializeDescription();
+            }
+        });
+        list.add(new UpgradeBranch() {
+            @Override
+            public void upgrade() {
+                ++Cerberus.this.timesUpgraded;
+                Cerberus.this.upgraded = true;
+                Cerberus.this.textureImg = IMG_PATH3;
+                Cerberus.this.loadCardImage(IMG_PATH3);
+                Cerberus.this.name = cardStrings3.NAME;
+                Cerberus.this.initializeTitle();
+                Cerberus.this.rawDescription = cardStrings3.DESCRIPTION;
+                Cerberus.this.initializeDescription();
+                Cerberus.this.branch3 = true;
             }
         });
         return list;

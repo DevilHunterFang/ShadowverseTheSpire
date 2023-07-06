@@ -130,6 +130,8 @@ public class WitchPool extends AbstractBanPool {
         Earth2.addCard(new Magisa());
         Earth2.addCard(new Telescope());
         Earth2.addCard(new WitchsCauldron());
+        Earth2.addCard(new BindingRitual());
+        Earth2.addCard(new ColossalSummoning());
         Mech.addCard(new Awakened());
         Mech.addCard(new GrimoireSorcerer());
         Mech.addCard(new Isabelle());

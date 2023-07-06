@@ -75,38 +75,38 @@ public class ArcticChimera
 
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         AbstractPower p = abstractPlayer.getPower(EarthEssence.POWER_ID);
-        if (Shadowverse.Accelerate((AbstractCard) this) && this.type == CardType.SKILL) {
-            if (p!=null&&p.amount>0) {
-                if (abstractMonster!=null)
-                    addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.BLUE, Color.WHITE), 0.1F));
-                addToBot((AbstractGameAction) new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-                addToBot((AbstractGameAction) new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 1));
-                addToBot((AbstractGameAction) new DrawCardAction(1));
-                if (abstractPlayer instanceof  AbstractShadowversePlayer){
-                    ((AbstractShadowversePlayer)abstractPlayer).earthCount++;
+        if (Shadowverse.Accelerate(this) && this.type == CardType.SKILL) {
+            if (p != null && p.amount > 0) {
+                if (abstractMonster != null)
+                    addToBot(new VFXAction(new ClawEffect(abstractMonster.hb.cX, abstractMonster.hb.cY, Color.BLUE, Color.WHITE), 0.1F));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 1));
+                addToBot(new DrawCardAction(1));
+                if (abstractPlayer instanceof AbstractShadowversePlayer) {
+                    ((AbstractShadowversePlayer) abstractPlayer).earthCount++;
                 }
             }
-        }else {
-            addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-            addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-            if (p!=null&&p.amount>2) {
-                addToBot((AbstractGameAction)new GainBlockAction(abstractPlayer,this.block));
-                addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.WHITE.cpy()), 0.2F));
-                addToBot((AbstractGameAction)new DamageAction((AbstractCreature) abstractMonster, new DamageInfo((AbstractCreature) abstractPlayer, abstractPlayer.currentBlock+this.block*3, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-                addToBot((AbstractGameAction)new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 3));
-                if (abstractPlayer instanceof  AbstractShadowversePlayer){
-                    ((AbstractShadowversePlayer)abstractPlayer).earthCount+=2;
+        } else {
+            addToBot(new GainBlockAction(abstractPlayer, this.block));
+            addToBot(new GainBlockAction(abstractPlayer, this.block));
+            if (p != null && p.amount > 2) {
+                addToBot(new GainBlockAction(abstractPlayer, this.block));
+                addToBot(new VFXAction(new BiteEffect(abstractMonster.hb.cX, abstractMonster.hb.cY - 40.0F * Settings.scale, Color.WHITE.cpy()), 0.2F));
+                addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, abstractPlayer.currentBlock + this.block * 3, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new ReducePowerAction(abstractPlayer, abstractPlayer, abstractPlayer.getPower(EarthEssence.POWER_ID), 3));
+                if (abstractPlayer instanceof AbstractShadowversePlayer) {
+                    ((AbstractShadowversePlayer) abstractPlayer).earthCount += 2;
                 }
-            }else {
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractMonster,abstractPlayer,new VulnerablePower(abstractMonster,2,false),2));
-                addToBot((AbstractGameAction)new ApplyPowerAction(abstractPlayer,abstractPlayer,new EarthEssence(abstractPlayer,2),2));
+            } else {
+                addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new VulnerablePower(abstractMonster, 2, false), 2));
+                addToBot(new ApplyPowerAction(abstractPlayer, abstractPlayer, new EarthEssence(abstractPlayer, 2), 2));
             }
         }
     }
 
 
     public AbstractCard makeCopy() {
-        return (AbstractCard) new ArcticChimera();
+        return new ArcticChimera();
     }
 }
 
