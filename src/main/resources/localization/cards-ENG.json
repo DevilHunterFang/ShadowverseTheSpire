@@ -224,8 +224,8 @@
   },
   "shadowverse:AbsoluteZeroBlade": {
     "NAME": "Absolute Zeroblade",
-    "DESCRIPTION": "If the enemy has 10 or less HP, set their HP to 0. NL Draw 1 card. NL Spellboost: \bFor each Spellboost, add 3 to the HP threshold needed to set to 0. NL (10 + 3 * Number of Spellboosts)",
-    "UPGRADE_DESCRIPTION": "If the enemy has 10 or less HP, set their HP to 0. NL Draw 1 card. NL Spellboost: \bFor each Spellboost, add 5 to the HP threshold needed to set to 0. NL (10 + 5 * Number of Spellboosts)",
+    "DESCRIPTION": "If the enemy has 10 or less HP, set their HP to 0. NL Draw 1 card. NL Spellboost: \bFor each Spellboost, add 3 to the HP threshold needed to set to 0. NL (10 + 3 X Number of Spellboosts)",
+    "UPGRADE_DESCRIPTION": "If the enemy has 10 or less HP, set their HP to 0. NL Draw 1 card. NL Spellboost: \bFor each Spellboost, add 5 to the HP threshold needed to set to 0. NL (10 + 5 X Number of Spellboosts)",
     "EXTENDED_DESCRIPTION": [
       " NL (Current Spellboosts: ",
       ")"
