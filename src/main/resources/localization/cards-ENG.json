@@ -1783,7 +1783,7 @@
     "NAME": "Baal",
     "DESCRIPTION": "Fusion: Bloodcraft Attack cards that cost 1 or less. NL If 2 or more cards were fused to this card, draw until you have 6 cards. NL If 5 or more cards were fused, deal !D! damage to all enemies",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards.)"
     ]
   },
