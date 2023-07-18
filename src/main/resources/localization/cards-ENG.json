@@ -189,8 +189,8 @@
   },
   "shadowverse:OrichalcumGolem": {
     "NAME": "Orichalcum Golem",
-    "DESCRIPTION": "Accelerate 0: Earth_Rite X: Randomly activate 1 of the following effects X times. X equals the value of Earth_Essence: NL 1. Gain 6 Block NL 2. Put 1 *Veridic *Ritual into your hand NL 3. Deal !D! damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL Gain 2 Earth_Essence next turn.",
-    "UPGRADE_DESCRIPTION": " Accelerate 0: Earth_Rite X: Randomly activate 1 of the following effects X times. X equals the value of Earth_Essence: NL 1. Gain 8 Block NL 2. Put 1 *Veridic *Ritual+ into your hand NL 3. Deal !D! damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL Gain 2 Earth_Essence next turn."
+    "DESCRIPTION": "Accelerate 0: Earth_Rite X: Randomly activate 1 of the following effects X times. X equals the value of Earth_Essence: NL 1. Gain 6 Block. NL 2. Put 1 *Veridic *Ritual into your hand. NL 3. Deal !D! damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL Gain 2 Earth_Essence next turn.",
+    "UPGRADE_DESCRIPTION": " Accelerate 0: Earth_Rite X: Randomly activate 1 of the following effects X times. X equals the value of Earth_Essence: NL 1. Gain 8 Block. NL 2. Put 1 *Veridic *Ritual+ into your hand. NL 3. Deal !D! damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL Gain 2 Earth_Essence next turn."
   },
   "shadowverse:DwarfAlchemist": {
     "NAME": "Dwarf Alchemist",
@@ -257,8 +257,8 @@
   },
   "shadowverse:ForbiddenDarkMage": {
     "NAME": "Forbidden Darkmage",
-    "DESCRIPTION": "Crystallize 0: \bLose all Earth_Essence, you don't take more than 4 damage at a time, draw 1 card and heal 1 HP at the end of your turn. NL This effect lasts 1 turn for each Earth_Essence lost this way. NL --------------------- NL Deal !D! damage. Increase this card's damage by 7 for every Earth_Essence used this combat.",
-    "UPGRADE_DESCRIPTION": "Crystallize 0: \bLose all Earth_Essence, you don't take no more than 4 damage at a time, draw 1 card and heal 1 HP at the end of your turn. NL This effect lasts 1 turn for each Earth_Essence lost this way. NL --------------------- NL Deal !D! damage. Increase this card's damage by 9 for every Earth_Essence used this combat."
+    "DESCRIPTION": "Crystallize 0: \bLose all Earth_Essence. You don't take more than 4 damage at a time. Draw 1 card and heal 1 HP at the end of your turn. NL This effect lasts 1 turn for each Earth_Essence lost this way. NL --------------------- NL Deal !D! damage. Increase this card's damage by 7 for every Earth_Essence used this combat.",
+    "UPGRADE_DESCRIPTION": "Crystallize 0: \bLose all Earth_Essence. You don't take no more than 4 damage at a time. Draw 1 card and heal 1 HP at the end of your turn. NL This effect lasts 1 turn for each Earth_Essence lost this way. NL --------------------- NL Deal !D! damage. Increase this card's damage by 9 for every Earth_Essence used this combat."
   },
   "shadowverse:RepairMode": {
     "NAME": "Repair Mode",
@@ -414,7 +414,7 @@
   },
   "shadowverse:OmenOfOne2": {
     "NAME": "Mjerrabaine, Great One",
-    "DESCRIPTION": "Exhaust all duplicate cards in your draw pile and discard pile. NL Then, if the number of remaining cards are at least half the number in your deck, gain the following effect: NL At the end of your turn, if you've played a card that costs 2 or less, deal 10 damage to a random enemy at the end of your turn. NL If you've played a card that costs 2 or more, deal 18 damage to all enemies. NL Put a *Great *Testimony into your hand."
+    "DESCRIPTION": "Exhaust all duplicate cards in your draw pile and discard pile. NL Then, if the number of remaining cards are at least half the number in your deck, gain the following effect: NL At the end of your turn, if you've played a card that costs 2 or less, deal 10 damage to a random enemy. NL If you've played a card that costs 2 or more, deal 18 damage to all enemies. NL Put a *Great *Testimony into your hand."
   },
   "shadowverse:RearriveOne": {
     "NAME": "Second Advent of the Omens",
@@ -500,8 +500,8 @@
   },
   "shadowverse:Machinus": {
     "NAME": "Natur Al'machinus",
-    "DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 7 and randomly add 1 Natura or Machina card from your draw pile for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1.",
-    "UPGRADE_DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 9 and randomly add 1 Natura or Machina card from your draw pile for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1."
+    "DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 7 and randomly add 1 Natura or Machina card from your draw pile to your hand for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1.",
+    "UPGRADE_DESCRIPTION": "Machina · Natura. NL Fusion: Machina or Natura. NL Deal !D! damage, gain !B! Block. NL Increase this card's damage by 9 and randomly add 1 Natura or Machina card from your draw pile to your hand for every card fused. NL If this card is fused with both a Machina and a Natura card, reduce the cost of the cards added by 1."
   },
   "shadowverse:WitchSnap": {
     "NAME": "Witch Snap",
@@ -517,7 +517,7 @@
   },
   "shadowverse:Zeus": {
     "NAME": "Zeus, the Supreme",
-    "DESCRIPTION": "Can be upgraded multiple times. NL Randomly activate the following effects !M! times: NL 1. Heal 5 HP NL 2. Remove Block from all enemies and gain 3 Strength NL 3. Deal !D! damage to all enemies NL 4. Apply 2 Weak and 4 Poison to all enemies NL 5. Gain !B! Block NL NL Exhaust."
+    "DESCRIPTION": "Can be upgraded multiple times. NL Randomly activate the following effects !M! times: NL 1. Heal 5 HP. NL 2. Remove Block from all enemies and gain 3 Strength. NL 3. Deal !D! damage to all enemies. NL 4. Apply 2 Weak and 4 Poison to all enemies. NL 5. Gain !B! Block. NL Exhaust."
   },
   "shadowverse:StarBright": {
     "NAME": "Starbright Deity",
@@ -613,8 +613,8 @@
   },
   "shadowverse:LegendaryFighter": {
     "NAME": "Legendary Fighter",
-    "DESCRIPTION": "During this turn: Gain 1 Double Tap once if you play an Attack card. Gain 1 Envenom once if you play a Skill card. Gain 1 Artifact once if you play a Power card. NL If you play all 3 types of cards without losing HP, put 1 *Legendary *Fighter into your hand next turn. It will deal 50 damage twice when played.",
-    "UPGRADE_DESCRIPTION": "Innate. During this turn: Gain 1 Double Tap once if you play an Attack card. Gain 1 Envenom once if you play a Skill card. Gain 1 Artifact once if you play a Power card. NL If you play all 3 types of cards without losing HP, put 1 *Legendary *Fighter into your hand next turn. It will deal 50 damage twice when played."
+    "DESCRIPTION": "During this turn: Gain 1 Double Tap once if you play an Attack card. Gain 1 Envenom once if you play a Skill card. Gain 1 Artifact once if you play a Power card. NL If you play all 3 types of cards without losing HP, put 1 *Legendary *Fighter Attack card into your hand next turn.",
+    "UPGRADE_DESCRIPTION": "Innate. During this turn: Gain 1 Double Tap once if you play an Attack card. Gain 1 Envenom once if you play a Skill card. Gain 1 Artifact once if you play a Power card. NL If you play all 3 types of cards without losing HP, put 1 *Legendary *Fighter Attack card into your hand next turn."
   },
   "shadowverse:Gabriel": {
     "NAME": "Gabriel, Heavenly Voice",
@@ -643,7 +643,7 @@
     "DESCRIPTION": "Gain !B! Block. NL If this card was Spellboosted at least 3 times, gain 1 [E] and put a *Paper *Shikigami and a *Demonic *Shikigami into your hand. If at least 6 times, put a *Celestial *Shikigami into your hand instead of a *Paper *Shikigami. If at least 9 times, put a *Noble *Shikigami into your hand instead of a *Demonic *Shikigami.",
     "EXTENDED_DESCRIPTION": [
       " NL (Times Spellboosted: ",
-      ".)"
+      " .)"
     ]
   },
   "shadowverse:Owen": {
@@ -1006,7 +1006,7 @@
     "NAME": "Greenwood Guardian",
     "DESCRIPTION": "Gain !B! Block. NL If at least 3 *Greenwood *Guardians were played this combat, gain 3 more Block. If at least 6 were played, gain !M! Plated Armor. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (*Greenwood *Guardians played this combat:",
+      " NL (*Greenwood *Guardians played this combat: ",
       " )"
     ]
   },
@@ -1024,10 +1024,10 @@
   },
   "shadowverse:Lymaga": {
     "NAME": "Lymaga, Forest Champion",
-    "DESCRIPTION": "Accelerate 0: Add a *Greenwood *Guardian into your hand and add a copy of this card without Accelerate into your discard pile. NL NL --------------------- NL NL Deal !D! damage. NL Invocation: At the start of your turn, If at least 6 *Greenwood *Guardians were played this combat, put this card into your hand and change its cost to 0. NL Exhaust.",
+    "DESCRIPTION": "Accelerate 0: Add a *Greenwood *Guardian into your hand and add a copy of this card without Accelerate to your discard pile. NL NL --------------------- NL NL Deal !D! damage. NL Invocation: At the start of your turn, If at least 6 *Greenwood *Guardians were played this combat, put this card into your hand and change its cost to 0. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (*Greenwood *Guardians played this combat:",
-      ".)"
+      " NL (*Greenwood *Guardians played this combat: ",
+      " .)"
     ]
   },
   "shadowverse:Lymaga_NoAcc": {
@@ -1079,7 +1079,7 @@
   },
   "shadowverse:Amataz2": {
     "NAME": "Amataz, Reverse Blader",
-    "DESCRIPTION": "Gain !B! Block. NL Return all non-strike Forestcraft Attacks in your discard piles to your draw pile and add X *Fairies into your hand. X equals the number of cards returned. NL If at least 10 non-Strike Forestcraft Attacks were played this combat, gain 4 more Block. NL If at least 20 were played, apply 3 Vulnerable and 3 Weak to all enemies."
+    "DESCRIPTION": "Gain !B! Block. NL Return all non-strike Forestcraft Attacks in your discard pile to your draw pile and add X *Fairies into your hand. X equals the number of cards returned. NL If at least 10 non-Strike Forestcraft Attacks were played this combat, gain 4 more Block. NL If at least 20 were played, apply 3 Vulnerable and 3 Weak to all enemies."
   },
   "shadowverse:DivineSmithing": {
     "NAME": "Divine Smithing",
@@ -1765,7 +1765,7 @@
   },
   "shadowverse:SexyVampire": {
     "NAME": "Seductress Vampire",
-    "DESCRIPTION": "Whenever you draw this card and Vengeance is not active, your HP becomes equal to half your max HP and this card Exhausts. You cannot have more than half of your max HP this combat. At the end of combat, heal HP equal to the amount lost by this card's effect. NL Deal !D! damage and heal !M! HP"
+    "DESCRIPTION": "Whenever you draw this card and Vengeance is not active, your HP becomes equal to half your max HP and this card Exhausts. You cannot have more than half of your max HP this combat. At the end of combat, heal HP equal to the amount lost by this card's effect. NL Deal !D! damage and heal !M! HP."
   },
   "shadowverse:SadisticDemon": {
     "NAME": "Contemptuous Demon",
@@ -2073,7 +2073,7 @@
   },
   "shadowverse:BelphometCard3": {
     "NAME": "Belphomet, Ultimate Creator",
-    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand.  NL ---------- NL  Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
+    "DESCRIPTION": "Machina. NL Fusion: Machina. NL The 2nd or 4th time cards are fused to this card, use 1 Energy and put 1 *Armored *Tentacle into your hand. The 3rd or 5th time, use 1 Energy and put 1 *Assault *Tentacle into your hand. Gain !B! Block. NL Put 1 *Tisiphone, *Malignance *Lives into your hand. If fused with at least 1 card, put 1 *Alecto, *Dissonance *Lives into your hand. If at least 2 cards, put 1 *Megaera, *Indignance *Lives into your hand."
   },
   "shadowverse:TisiphoneCard": {
     "NAME": "Tisiphone, the Malignant",
@@ -2526,7 +2526,7 @@
   },
   "shadowverse:Spine2": {
     "NAME": "Spinaria, Keeper of the End",
-    "DESCRIPTION": "Accelerate 0: Add 1 *Spinaria’s *Artifact to your hand. NL  NL --------------------- NL  NL Gain !B! Block. NL Choose 2: Add 1 *Keenedge *Artifact, *Airstrike *Artifact or *Barrier *Artifact to your hand and change its cost to 0. NL If you have 6 or more AF cards with different names in your exhaust pile, add all 3 to your hand instead. NL Exhaust."
+    "DESCRIPTION": "Accelerate 0: Add 1 *Spinaria’s *Artifact to your hand. NL --------------------- NL Gain !B! Block. NL Choose 2: Add 1 *Keenedge *Artifact, *Airstrike *Artifact or *Barrier *Artifact to your hand and change its cost to 0. NL If you have 6 or more AF cards with different names in your exhaust pile, add all 3 to your hand instead. NL Exhaust."
   },
   "shadowverse:Miriam": {
     "NAME": "Miriam, Mutinous Being",
@@ -4567,11 +4567,11 @@
   },
   "shadowverse:MasqueradeGhost": {
     "NAME": "Masquerade Ghost",
-    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: Put a 0 cost *Masquerade *Ghost without Last_Words into your hand next turn."
+    "DESCRIPTION": "Deal !D! damage. Put a *Ghost into your hand. NL *Ghosts deal !M! additional damage this turn. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Last_Words: Put a 0 cost *Masquerade *Ghost without Last_Words into your hand next turn."
   },
   "shadowverse:MasqueradeGhost_Copy": {
     "NAME": "Masquerade Ghost",
-    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL Until the end of this turn, *Ghosts deal !M! additional damage. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. Put a *Ghost into your hand. NL *Ghosts deal !M! additional damage this turn. NL Until the end of this turn, whenever a *Ghost is exhausted, add a *Gargantuan *Ghost to your hand. NL Exhaust."
   },
   "shadowverse:Baccherus": {
     "NAME": "Baccherus, Peppy Ghostie",
@@ -4745,7 +4745,7 @@
   },
   "shadowverse:ImpiousBishop": {
     "NAME": "Impious Bishop",
-    "DESCRIPTION": "Crystalize 0: Countdown 2: NL Add an *Indulgence to your hand at the start of your turn. NL NL --------------------- NL NL When you play this card from your hand or its Countdown reaches 0, gain !B! Block and heal 3 HP. NL When you play this card from your hand, gain !B! Block next turn. NL Put 2 *Indulgence into your discard pile."
+    "DESCRIPTION": "Crystalize 0: Countdown 2: NL Add an *Indulgence to your hand at the start of your turn. NL --------------------- NL  When you play this card from your hand or its Countdown reaches 0, gain !B! Block and heal 3 HP. NL When you play this card from your hand, gain !B! Block next turn. NL Put 2 *Indulgence into your discard pile."
   },
   "shadowverse:Magachiyo": {
     "NAME": "Magachiyo, Barbed Convict",
@@ -4819,7 +4819,7 @@
   },
   "shadowverse:Sephie": {
     "NAME": "Sephie, Depraved Convict",
-    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL Whenever you fuse at least 2 cards at once to this card and you have at least 1 energy, spend 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was fused this way, no energy is spent. NL ---------------- NL Deal !D! Damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If you played at least 5 *Volunteer *Test *Subject, add !M! damage to them for each one in your hand."
+    "DESCRIPTION": "Condemned / Retain NL Fusion: Non-Strike Attack cards. NL If you fuse at least 2 cards at once to this card, use 1 energy to put a 0 cost *Volunteer *Test *Subject into your hand. NL If a Condemned card was fused, no energy is used. Deal !D! Damage. Put a 0 cost *Volunteer *Test *Subject into your hand. NL If you played at least 5 *Volunteer *Test *Subjects, add !M! damage to them for each one in your hand."
   },
   "shadowverse:SkullFish": {
     "NAME": "Skullfish",
@@ -4935,7 +4935,7 @@
   },
   "shadowverse:SkullFane2": {
     "NAME": "Skullfane, the Defiled",
-    "DESCRIPTION": "Accelerate 0: Select 1 Amulet and subtract 1 from its Countdown. NL If the Countdown becomes 0, return this card to your hand. NL NL --------------------- NL NL At the end of your turn, If you Accelerated *Skullfane, *the *Defiled at least 4 times this combat, subtract 3 from its cost. NL Deal !D! damage to all enemies. NL Reduce the Countdown of all your amulets to 0. For each Curse that was in your Amulet zone, gain !B! Block and !M! Strength. "
+    "DESCRIPTION": "Accelerate 0: Select 1 Amulet and subtract 1 from its Countdown. NL If the Countdown becomes 0, return this card to your hand. NL --------------------- NL At the end of your turn, If you Accelerated this card at least 4 times this combat, subtract 3 from its cost. NL Deal !D! damage to all enemies. NL Reduce the Countdown of all amulets to 0. For each Curse that was in your Amulet zone, gain !B! Block and !M! Strength. "
   },
   "shadowverse:Cutthroat": {
     "NAME": "Cutthroat, Discord Convict",
@@ -5303,7 +5303,7 @@
   "shadowverse:DimensionCrack": {
     "NAME": "Dimension Crack",
     "DESCRIPTION": "Choose 2 of the following and shuffle 2 copies of them to your draw pile： NL *Analyzing *Artifact, *Ancient *Artifact, *Keenedge *Artifact, *Airstrike *Artifact. NL Enhance 3: Add them to your hand instead. NL Exhaust. ",
-    "UPGRADE_DESCRIPTION": "Choose 2 of the following and shuffle 2 copies of them to your draw pile： NL *Analyzing *Artifact, *Ancient *Artifact, *Keenedge *Artifact, *Airstrike *Artifact. NL Exhausts when used !stslib:ex! times. "
+    "UPGRADE_DESCRIPTION": "Choose 2 of the following and shuffle 2 copies of them to your draw pile： NL *Analyzing *Artifact, *Ancient *Artifact, *Keenedge *Artifact, *Airstrike *Artifact. NL Enhance 3: Add them to your hand instead. NL Exhausts when used !stslib:ex! times. "
   },
   "shadowverse:FighterFortitude": {
     "NAME": "Fighter's Fortitude",
