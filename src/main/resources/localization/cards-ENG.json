@@ -4309,7 +4309,7 @@
   },
   "shadowverse:ArcticChimera": {
     "NAME": "Arctic Chimera",
-    "DESCRIPTION": "Accelerate 0: Earth_Rite: Deal !D! damage and draw 1 card. NL NL --------------------- NL NL Gain !B! Block twice. NL Earth_Rite 3: Gain !B! Block 3 times and deal damage equal to your Block. NL If you have less than 3 Earth_Essence, gain 2 Earth_Essence and apply 2 Vulnerable."
+    "DESCRIPTION": "Accelerate 0: Earth_Rite: Deal !D! damage and draw 1 card. NL NL --------------------- NL NL Gain !B! Block twice. NL If you have less than 3 Earth_Essence, gain 2 Earth_Essence and apply 2 Vulnerable. NL Earth_Rite 3: Gain !B! Block 3 times and deal damage equal to your Block."
   },
   "shadowverse:EternalContract": {
     "NAME": "Eternal Contract",
