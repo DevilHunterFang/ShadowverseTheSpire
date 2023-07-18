@@ -6291,7 +6291,7 @@
     "NAME": "Shin, Enemy of Chaos",
     "DESCRIPTION": "Gain !B! Block. NL If Resonance has been active 5 or more times this combat, apply 2 Weak and Vulnerable to all enemies. NL If 10 or more times, deal !D! damage to all enemies. NL If 15 or more times, gain !M! additional Block. NL If 20 or more times, subtract 1 from the cost of all cards this combat.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Resonance has been active",
+      " NL (Resonance has been active ",
       " times.)"
     ]
   },
@@ -6343,6 +6343,6 @@
   },
   "shadowverse:Lvbu": {
     "NAME": "Peerless Warrior",
-    "DESCRIPTION": "1/1. NL When you play this card, remove all other followers, summon a Peerless Warrior and give it +X/+Y. X is the total attack of those other followers. Y is the total Health of those other followers. If the total of X or Y is 20 or more, you are unaffected by debuffs except those that affect Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to this follower's Attack and gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."
+    "DESCRIPTION": "1/1. NL Remove all other followers, summon a Peerless Warrior. It gains +X/+Y. X and Y equal to the total Attack and Health of those other followers. If X OR Y is 20 or more, you cannot be debuffed unless it affects Strength or Dexterity and this follower does not lose Health. NL Passive: Deal damage equal to this follower's Attack, gain Block equal to its Health, then reduce Health by 1. NL Evoke: Spawn a copy of this follower. NL Exhaust."
   }
 }
