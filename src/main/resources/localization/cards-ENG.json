@@ -195,7 +195,7 @@
   "shadowverse:DwarfAlchemist": {
     "NAME": "Dwarf Alchemist",
     "DESCRIPTION": "Gain !B! Block. NL Gain 1 Earth_Essence.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain 1 Earth_Essence. NL Randomly add 1 card with Earth_Rite from your draw pile to your hand."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain 1 Earth_Essence. NL Randomly add 1 card with Earth_Essence from your draw pile to your hand."
   },
   "shadowverse:WitchsCauldron": {
     "NAME": "Witch's Cauldron",
