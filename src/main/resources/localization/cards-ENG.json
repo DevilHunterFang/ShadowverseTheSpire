@@ -6302,7 +6302,7 @@
   },
   "shadowverse:Odin2": {
     "NAME": "Odin, Advent of Ragnarok",
-    "DESCRIPTION": "Accelerate 2: Gain 1 Intangible. NL Exhaust all Attack cards in your hand, add an *Odin, *Advent *of *Ragnarok to your hand without Accelerate to your hand. It costs 1 less for each card Exhausted. NL  NL ------------------- NL  NL Deal !D! damage. NL Gain 1 Intangible."
+    "DESCRIPTION": "Accelerate 2: Gain 1 Intangible. NL Exhaust all Attack cards in your hand, add an *Odin, *Advent *of *Ragnarok without Accelerate to your hand. It costs 1 less for each card Exhausted. NL  NL ------------------- NL  NL Deal !D! damage. NL Gain 1 Intangible."
   },
   "shadowverse:Odin2_Copy": {
     "NAME": "Odin, Advent of Ragnarok",
@@ -6310,7 +6310,7 @@
   },
   "shadowverse:Grimnir2": {
     "NAME": "Grimnir, Divine Stormspear",
-    "DESCRIPTION": "Deal !D! damage to a random enemy twice. NL If there are 7 or more *Evolution Points in the exhaust pile, deal !D! damage to a random enemy 4 times instead and increase this card's damage by 12."
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice. NL If there are 7 or more *Evolution *Points in the exhaust pile, deal !D! damage to a random enemy 4 times instead and increase this card's damage by 12."
   },
   "shadowverse:Shin_Token": {
     "NAME": "Shin, Chaotic Darkness",
@@ -6318,7 +6318,7 @@
   },
    "shadowverse:VengefulMantis": {
     "NAME": "Vengeful Mantis",
-    "DESCRIPTION": "Deal !D! Damage. NL Whenever you play an attack that Exhausts, increase this card's damage by !M!. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play an attack that Exhausts, increase this card's damage by !M!. NL Exhaust."
   },
   "shadowverse:VelociousBeetle": {
     "NAME": "Velocious Beetle",
