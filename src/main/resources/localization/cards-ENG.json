@@ -4010,8 +4010,8 @@
   },
   "shadowverse:UnleashTruth": {
     "NAME": "Elimination Unleashed",
-    "DESCRIPTION": "Gain [E]. NL Put 1 Runecraft card into your hand. NL If it costs 3 or more, reduce its cost by 1. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. Gain [E]. NL Put 1 Runecraft card into hand. NL If it costs 3 or more, reduce its cost by 1. NL Exhaust."
+    "DESCRIPTION": "Gain [E]. NL Put 1 Runecraft card from the draw pile into your hand. NL If it costs 3 or more, reduce its cost by 1. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. Gain [E]. NL Put 1 Runecraft card from the draw pile into your hand. NL If it costs 3 or more, reduce its cost by 1. NL Exhaust."
   },
   "shadowverse:ResentfulScreaming": {
     "NAME": "Spiteful Screams",
