@@ -4490,8 +4490,8 @@
   },
   "shadowverse:WhirlwindAssault": {
     "NAME": "Whirlwind Assault",
-    "DESCRIPTION": "Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Strength this turn, equal to the number of other *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double all damage you deal this turn.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Strength this turn, equal to the number of other *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double all damage you deal this turn.",
+    "DESCRIPTION": "Can only be played while you have a 0 cost Attack card in your hand. Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Strength this turn, equal to the number of other *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double all damage you deal this turn.",
+    "UPGRADE_DESCRIPTION": "Innate. Can only be played while you have a 0 cost Attack card in your hand. NL Invocation: If you played 4 or more cards during your last turn, add this card to your hand. NL Gain Strength this turn, equal to the number of other *Whirlwind *Assaults played this combat. NL If you've played 5 or more, double all damage you deal this turn.",
     "EXTENDED_DESCRIPTION": [
       " NL (",
       " *Whirlwind *Assaults played.)"
