@@ -4073,7 +4073,7 @@
   },
   "shadowverse:BirthOfRavenous": {
     "NAME": "Birth of the Ravenous",
-    "DESCRIPTION": "Gain the following effect: If you have played 3 or more cards this turn, draw 1 additional card next turn. NL Exhaust."
+    "DESCRIPTION": "Gain the following effect: If you have played at least 4 cards this turn, draw 1 additional card next turn. NL Exhaust."
   },
   "shadowverse:AdherentOfDesire": {
     "NAME": "Adherent of Desire",
