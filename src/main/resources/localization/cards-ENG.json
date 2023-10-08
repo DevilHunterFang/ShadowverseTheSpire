@@ -533,7 +533,7 @@
   },
   "shadowverse:Grimnir": {
     "NAME": "Grimnir, Voidwrought Wind",
-    "DESCRIPTION": "Deal !D! damage to a random enemy. If 5 or more *Evolution *Points have been exhausted, deal !D! damage to a random enemy !M! times."
+    "DESCRIPTION": "Deal !D! damage to a random enemy. If 5 or more *Evolution *Points have been Exhausted, deal !D! damage to a random enemy !M! times."
   },
   "shadowverse:SlashOfOne": {
     "NAME": "Slash of the One",
@@ -1352,7 +1352,7 @@
   },
   "shadowverse:Nicola2": {
     "NAME": "Nicola, Forever Forbidden",
-    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a copy of this card to your discard pile. NL Increase this card's damage by !M! times the number of Attack cards in your exhausted pile. NL Exhaust."
+    "DESCRIPTION": "Machina. NL Deal !D! damage. NL Add a copy of this card to your discard pile. NL Increase this card's damage by !M! times the number of Attack cards in your Exhaust pile. NL Exhaust."
   },
   "shadowverse:Nicola3": {
     "NAME": "Nicola, Enduring Steward",
@@ -2113,7 +2113,7 @@
   },
   "shadowverse:ImmoralDesire": {
     "NAME": "Darkest Desire",
-    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The 1st card gains 'Last_Words: When Exhausted, deal damage equal to this card’s base damage to ALL enemies.' NL The 2nd card gains 'Last_Words: When Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
+    "DESCRIPTION": "Can only be played if you have 2 other Attacks in hand. NL Select 2 Attacks. NL The 1st card gains 'Last Words: When Exhausted, deal damage equal to this card’s base damage to ALL enemies.' NL The 2nd card gains 'Last Words: When Exhausted, gain temporary HP equal to this card’s base Block.' NL Exhaust."
   },
   "shadowverse:DimensionCut": {
     "NAME": "Dimension Cut",
@@ -2327,11 +2327,11 @@
   },
   "shadowverse:WhiteArtifact": {
     "NAME": "Destruction in White",
-    "DESCRIPTION": "AF - Retain. NL Whenever an Attack with Exhaust is played, reduce the cost of this card by 1. NL At the start of your turn, gain !M! Block. NL Add 1 *Destruction *in *Black to your hand. NL Cannot be exhausted."
+    "DESCRIPTION": "AF - Retain. NL Whenever an Attack with Exhaust is played, reduce the cost of this card by 1. NL At the start of your turn, gain !M! Block. NL Add 1 *Destruction *in *Black to your hand. NL Cannot be Exhausted."
   },
   "shadowverse:BlackArtifact": {
     "NAME": "Destruction in Black",
-    "DESCRIPTION": "AF - Retain. NL Whenever an Attack with Exhaust is played, reduce the cost of this card by 1. NL At the start of your turn, deal !M! damage to ALL enemies. NL If you’ve played *Destruction *in *White this combat, double the damage. NL Cannot be exhausted."
+    "DESCRIPTION": "AF - Retain. NL Whenever an Attack with Exhaust is played, reduce the cost of this card by 1. NL At the start of your turn, deal !M! damage to ALL enemies. NL If you’ve played *Destruction *in *White this combat, double the damage. NL Cannot be Exhausted."
   },
   "shadowverse:OmenOfDestruction": {
     "NAME": "Lishenna, Omen of Destruction",
@@ -2441,7 +2441,7 @@
   },
   "shadowverse:Tre": {
     "NAME": "Marionette--Tre",
-    "DESCRIPTION": "Deal !D! damage twice. NL Last_Words: When this card is exhausted, add 1 *Marionette--Uno and 1 *Marionette--Due to your discard pile. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage twice. NL Last_Words: When this card is Exhausted, add 1 *Marionette--Uno and 1 *Marionette--Due to your discard pile. NL Exhaust."
   },
   "shadowverse:Orchid1": {
     "NAME": "Orchis, Vengeful Puppet",
@@ -3441,7 +3441,7 @@
   },
   "shadowverse:OmenOfRepose2": {
     "NAME": "Marwynn, Repose of Despair",
-    "DESCRIPTION": "Exhaust ALL Attacks in your hand. NL Apply 4 Weak and Vulnerable to ALL enemies. NL If the total number of cards exhausted by this effect plus the number of enemies is 4 or more, put a *Torrent *of *Despair into your hand. NL Exhaust."
+    "DESCRIPTION": "Exhaust ALL Attacks in your hand. NL Apply 4 Weak and Vulnerable to ALL enemies. NL If the total number of cards Exhausted by this effect plus the number of enemies is 4 or more, put a *Torrent *of *Despair into your hand. NL Exhaust."
   },
   "shadowverse:Agnes": {
     "NAME": "Agnes, Hollow Feather",
@@ -4049,11 +4049,11 @@
   },
   "shadowverse:BlackArtifact2": {
     "NAME": "New Destruction",
-    "DESCRIPTION": "Retain - AF. NL Whenever an Attack with Exhaust is played, subtract 1 from this card's cost. NL Deal !D! damage to ALL enemies. NL Deal !M! damage to ALL enemies at the start of every turn. If *New *Prayer was played in this combat, double the damage. NL Cannot be exhausted."
+    "DESCRIPTION": "Retain - AF. NL Whenever an Attack with Exhaust is played, subtract 1 from this card's cost. NL Deal !D! damage to ALL enemies. NL Deal !M! damage to ALL enemies at the start of every turn. If *New *Prayer was played in this combat, double the damage. NL Cannot be Exhausted."
   },
   "shadowverse:WhiteArtifact2": {
     "NAME": "New Prayer",
-    "DESCRIPTION": "Retain - AF. NL Whenever an Attack with Exhaust is played, subtract 1 from this card's cost. NL Gain !B! Block. NL Gain !M! Block at the start of every turn. If *New *Destruction was played in this combat, gain double the Block. NL Cannot be exhausted."
+    "DESCRIPTION": "Retain - AF. NL Whenever an Attack with Exhaust is played, subtract 1 from this card's cost. NL Gain !B! Block. NL Gain !M! Block at the start of every turn. If *New *Destruction was played in this combat, gain double the Block. NL Cannot be Exhausted."
   },
   "shadowverse:SoloOfMelody": {
     "NAME": "Melodious Monody",
@@ -4132,7 +4132,7 @@
   },
   "shadowverse:Spector": {
     "NAME": "Bunny & Baron, Specter Duo",
-    "DESCRIPTION": " Accelerate 0: Put 1 *Desperado's *Shot into your hand. NL NL --------------------- NL NL Deal !D! damage. NL Last_Words: When exhausted, put 1 *Val, *Trusty *Getaway *Car into your hand next turn. It costs 0 until played. NL Exhaust."
+    "DESCRIPTION": " Accelerate 0: Put 1 *Desperado's *Shot into your hand. NL NL --------------------- NL NL Deal !D! damage. NL Last_Words: When Exhausted, put 1 *Val, *Trusty *Getaway *Car into your hand next turn. It costs 0 until played. NL Exhaust."
   },
   "shadowverse:HonoredFrontguardGeneral": {
     "NAME": "Honored Frontguard General",
@@ -4297,7 +4297,7 @@
   },
   "shadowverse:MagnaSaber": {
     "NAME": "Magna Saber",
-    "DESCRIPTION": "Machina - Festive. NL Maneuver: Cost 2 or less. NL Deal !D! damage. NL Deal !M! damage to ALL enemies. NL The card exhausted to Maneuver this card will not return to your hand. Instead, add 1 copy of this card to your hand and change its cost to 0 until played."
+    "DESCRIPTION": "Machina - Festive. NL Maneuver: Cost 2 or less. NL Deal !D! damage. NL Deal !M! damage to ALL enemies. NL The card Exhausted to Maneuver this card will not return to your hand. Instead, add 1 copy of this card to your hand and change its cost to 0 until played."
   },
   "shadowverse:AllFeeling": {
     "NAME": "ALL-Feeling Divine",
@@ -4387,7 +4387,7 @@
   },
   "shadowverse:CelestialArtifact": {
     "NAME": "Celestial Artifact",
-    "DESCRIPTION": "AF - Accelerate 0: Put 1 AF card from your draw pile into your hand. If there are 6 AF cards with different names in your exhausted pile, put 1 more. NL  NL --------------------- NL  NL Deal !M! damage X times. X equals the number of AF cards with different names in your exhaust pile."
+    "DESCRIPTION": "AF - Accelerate 0: Put 1 AF card from your draw pile into your hand. If there are 6 AF cards with different names in your exhaust pile, put 1 more. NL  NL --------------------- NL  NL Deal !M! damage X times. X equals the number of AF cards with different names in your exhaust pile."
   },
   "shadowverse:Yggdrasil": {
     "NAME": "Yggdrasil",
@@ -4436,7 +4436,7 @@
   },
   "shadowverse:DivineTreasureHerald": {
     "NAME": "Divine Treasure Herald",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Last_Words: When exhausted, add a *Summon *Divine *Treasure without Enhance to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Last_Words: When Exhausted, add a *Summon *Divine *Treasure without Enhance to your hand. NL Exhaust."
   },
   "shadowverse:DivineTreasureGuardian": {
     "NAME": "Divine Treasure Guardian",
@@ -4469,15 +4469,15 @@
   },
   "shadowverse:Cassim": {
     "NAME": "Cassim, the Courageous",
-    "DESCRIPTION": "Exhaust a card in your hand, shuffle a copy of the exhausted card to your draw pile and draw 1 additional card next turn. NL Deal !D! damage. NL Whenever Resonance becomes active this turn, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Exhaust a card in your hand, shuffle a copy of that card to your draw pile and draw 1 additional card next turn. NL Deal !D! damage. NL Whenever Resonance becomes active this turn, deal !M! damage to ALL enemies."
   },
   "shadowverse:Rosa": {
     "NAME": "Rosa, Unfettered Maiden",
-    "DESCRIPTION": "Exhaust a card in your hand, shuffle a copy of the exhausted card to your draw pile and draw 1 additional card next turn. NL Gain !B! Block. NL Whenever Resonance becomes active this turn, gain !M! Block."
+    "DESCRIPTION": "Exhaust a card in your hand, shuffle a copy of that card to your draw pile and draw 1 additional card next turn. NL Gain !B! Block. NL Whenever Resonance becomes active this turn, gain !M! Block."
   },
   "shadowverse:Craig": {
     "NAME": "Craig, Mysterian Chanter",
-    "DESCRIPTION": "Mysteria. NL Spellboost: Reduce the cost of this card by 1. NL Costs 1 less whenever you play a Mysteria card. NL Whenever you play a Skill, deal !M! damage to ALL enemies. NL Whenever you play a Mysteria card, gain !M! Block."
+    "DESCRIPTION": "Mysteria. NL Spellboost: Reduce the cost of this card by 1. NL Costs 1 less [E] whenever you play a Mysteria card. NL Whenever you play a Skill, deal !M! damage to ALL enemies. NL Whenever you play a Mysteria card, gain !M! Block."
   },
   "shadowverse:Hanna": {
     "NAME": "Hanna, Mysterian Maid",
@@ -4515,7 +4515,7 @@
   },
   "shadowverse:Vyrmedea": {
     "NAME": "Vyrmedea, Synthetic Voice",
-    "DESCRIPTION": "AF. NL Gain !B! Block. NL Burial_Rite 1: Put a *Keenedge *Artifact into your hand and change its cost to 0 until the end of the turn. NL If you have 6 or more different AF cards in your exhausted pile, gain 1 Strength, Dexterity and Blur at the end of your turn."
+    "DESCRIPTION": "AF. NL Gain !B! Block. NL Burial_Rite 1: Put a *Keenedge *Artifact into your hand and change its cost to 0 until the end of the turn. NL If you have 6 or more different AF cards in your exhaust pile, gain 1 Strength, Dexterity and Blur at the end of your turn."
   },
   "shadowverse:Chastity": {
     "NAME": "Absolute Chastity",
@@ -4567,11 +4567,11 @@
   },
   "shadowverse:MasqueradeGhost": {
     "NAME": "Masquerade Ghost",
-    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL *Ghosts deal !M! additional damage and whenever a *Ghost is exhausted this turn, add a *Gargantuan *Ghost to your hand. NL Last_Words: When Exhausted, put a 0 cost *Masquerade *Ghost without Last_Words into your hand next turn."
+    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL *Ghosts deal !M! additional damage and whenever a *Ghost is Exhausted this turn, add a *Gargantuan *Ghost to your hand. NL Last_Words: When Exhausted, put a 0 cost *Masquerade *Ghost without Last_Words into your hand next turn."
   },
   "shadowverse:MasqueradeGhost_Copy": {
     "NAME": "Masquerade Ghost",
-    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL *Ghosts deal !M! additional damage and whenever a *Ghost is exhausted this turn, add a *Gargantuan *Ghost to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage and put a *Ghost into your hand. NL *Ghosts deal !M! additional damage and whenever a *Ghost is Exhausted this turn, add a *Gargantuan *Ghost to your hand. NL Exhaust."
   },
   "shadowverse:Baccherus": {
     "NAME": "Baccherus, Peppy Ghostie",
@@ -4803,7 +4803,7 @@
   },
   "shadowverse:VolunteerTestSubject": {
     "NAME": "Volunteer Test Subject",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you played at least 3 *Volunteer *Test *Subjects, deal !D! damage. NL If you've played at least 5, deal 9 more damage.  NL Last_Words: When this card is exhausted, draw a card. NL Exhaust.",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you played at least 3 *Volunteer *Test *Subjects, deal !D! damage. NL If you've played at least 5, deal 9 more damage.  NL Last_Words: When this card is Exhausted, draw a card. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " *Volunteed *Test *Subjects. )"
@@ -4831,8 +4831,8 @@
   },
   "shadowverse:Istyndet": {
     "NAME": "Istyndet, Soul Convict",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and exhaust ALL non-Skill cards in your hand.  NL Last_Words: When exhausted, gain 3 Shadows.",
-    "UPGRADE_DESCRIPTION": "Condemned NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0.  NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and exhaust ALL non-Skill cards in your hand.  NL Last_Words: When exhausted, gain 3 Shadows",
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and exhaust ALL non-Skill cards in your hand.  NL Last_Words: When Exhausted, gain 3 Shadows.",
+    "UPGRADE_DESCRIPTION": "Condemned NL Gain !B! Block. NL Put a *Skullfish into your hand and change its cost to 0.  NL If you've played 10 or more cards with Last_Words, apply 1 Weak and Vulnerable to ALL enemies and exhaust ALL non-Skill cards in your hand.  NL Last_Words: When Exhausted, gain 3 Shadows",
     "EXTENDED_DESCRIPTION": [
       " NL (Played ",
       " cards with Last_Words.)"
@@ -4840,8 +4840,8 @@
   },
   "shadowverse:AbyssalColonel_crystallize": {
     "NAME": "Abyssal Colonel crystallized",
-    "DESCRIPTION": "Condemned - Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When this card is exhausted, put a *Abyssal *Colonel into your hand and change its cost to 0.",
-    "UPGRADE_DESCRIPTION": "Condemned · Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When this card is exhausted, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
+    "DESCRIPTION": "Condemned - Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When Exhausted, put a *Abyssal *Colonel into your hand and change its cost to 0.",
+    "UPGRADE_DESCRIPTION": "Condemned · Retain NL Countdown !M! : Exhaust this card. NL Last_Words: When Exhausted, put a *Abyssal *Colonel+ into your hand and change its cost to 0."
   },
   "shadowverse:AbyssalColonel_Temp": {
     "NAME": "Abyssal Colonel",
@@ -4854,11 +4854,11 @@
   },
   "shadowverse:UnderworldLieutenant": {
     "NAME": "Underworld Lieutenant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put !M! *Spartoi *Sergeant into your hand. It costs 0 this turn. NL Last_Words: When this card is exhausted, deal 6 damage to ALL enemies."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Put !M! *Spartoi *Sergeant into your hand. It costs 0 this turn. NL Last_Words: When Exhausted, deal 6 damage to ALL enemies."
   },
   "shadowverse:FallenSergeant": {
     "NAME": "Fallen Sergeant",
-    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Last_Words: When this card is exhausted, put a random Condemned card from your draw pile into your hand."
+    "DESCRIPTION": "Condemned NL Gain !B! Block. NL Last_Words: When Exhausted, put a random Condemned card from your draw pile into your hand."
   },
   "shadowverse:WardenOfCorpses": {
     "NAME": "Warden of Corpses",
@@ -5195,11 +5195,11 @@
   },
   "shadowverse:SumoMechanic": {
     "NAME": "Sumo Mechanic",
-    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When this card is played or exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your exhaust pile, gain !B! more Block. "
+    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When played or Exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your exhaust pile, gain !B! more Block. "
   },
   "shadowverse:Gioffre": {
     "NAME": "Gioffre, Diligent Engineer",
-    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When this card is played or exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your exhaust pile, add a *Mechanized *Lifeform with 0 cost and Exhaust to your hand."
+    "DESCRIPTION": "Academic - Machina NL Gain !B! Block. NL Last_Words: When played or Exhausted, put 1 *Assembly *Droid into your hand. NL If 10 or more Machina cards are in your exhaust pile, add a *Mechanized *Lifeform with 0 cost and Exhaust to your hand."
   },
   "shadowverse:LyelthMarionette": {
     "NAME": "Lyelth's Marionette",
@@ -5291,7 +5291,7 @@
   },
   "shadowverse:LeciaNano": {
     "NAME": "Lecia & Nano",
-    "DESCRIPTION": "Gain !B! Block and !M! Artifact. NL Put 1 *Twilight *Blade into your hand. NL Last_Words: When exhausted, put 1 *Lecia, *Sky *Saber and *Nano, *the *Dawnblade into your hand. NL Exhaust. NL Ethereal."
+    "DESCRIPTION": "Gain !B! Block and !M! Artifact. NL Put 1 *Twilight *Blade into your hand. NL Last_Words: When Exhausted, put 1 *Lecia, *Sky *Saber and *Nano, *the *Dawnblade into your hand. NL Exhaust. NL Ethereal."
   },
   "shadowverse:TwilightBlade": {
     "NAME": "Twilight Blade",
@@ -5731,7 +5731,7 @@
   },
   "shadowverse:ServantOfDisdain": {
     "NAME": "Servant of Disdain",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust ALL *Burns in your hand, and draw 1 card for each exhausted."
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust ALL *Burns in your hand, and draw 1 card for each."
   },
   "shadowverse:DiscipleOfDisdain": {
     "NAME": "Disciple of Disdain",
@@ -5748,7 +5748,7 @@
   },
   "shadowverse:SneerOfDisdain": {
     "NAME": "Sneer of Disdain",
-    "DESCRIPTION": "Deal !D! damage. NL Enhance 2: Exhaust ALL *Burns in your hand and gain !M! Block for each exhausted, then add 1 *Burn to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Enhance 2: Exhaust ALL *Burns in your hand and gain !M! Block for each Exhausted, then add 1 *Burn to your hand."
   },
   "shadowverse:PrimeDragonKeeper": {
     "NAME": "Prime Dragon Keeper",
@@ -6058,7 +6058,7 @@
   },
   "shadowverse:Joe": {
     "NAME": "Coach Joe, Fiery Counselor",
-    "DESCRIPTION": "Academic - Crystallize 0: Exhaust 1 card in your hand and add it to the draw pile. NL Add 1 copy of this card to the discard pile. NL Gain 1 Dexterity and draw 1 more card next turn. NL If you exhausted an Academic card, draw 2 more cards next turn. NL NL --------------------- NL NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! damage to ALL enemies. If you have at least 6 Dexterity, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Academic - Crystallize 0: Exhaust 1 card in your hand and add it to the draw pile. NL Add 1 copy of this card to the discard pile. NL Gain 1 Dexterity and draw 1 more card next turn. NL If you Exhausted an Academic card, draw 2 more cards next turn. NL NL --------------------- NL NL Gain !B! Block. If you have at least 4 Dexterity, deal !D! damage to ALL enemies. If you have at least 6 Dexterity, deal !M! damage to ALL enemies."
   },
   "shadowverse:Romelia": {
     "NAME": "Romelia, Lightning Striker",
@@ -6114,7 +6114,7 @@
   },
   "shadowverse:OmenOfDisdain": {
     "NAME": "Galmieux, Omen of Disdain",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust ALL *Burns in your hand, and deal !M! damage to a random enemy for each one exhausted. NL Enhance 3: Deal !M! damage to ALL enemies for each card exhausted instead. NL Add 1 *Burn to your hand, and deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust ALL *Burns in your hand, and deal !M! damage to a random enemy for each one Exhausted. NL Enhance 3: Deal !M! damage to ALL enemies for each card Exhausted instead. NL Add 1 *Burn to your hand, and deal !M! damage to ALL enemies."
   },
   "shadowverse:OmenOfDisdain2": {
     "NAME": "Galmieux, Ardent Disdain",
@@ -6139,7 +6139,7 @@
   },
   "shadowverse:Aiela": {
     "NAME": "Aiela, Dragon Knight",
-    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When this card is exhausted, gain 1 Overflow point."
+    "DESCRIPTION": "Gain !B! Block. NL Last_Words: When Exhausted, gain 1 Overflow point."
   },
   "shadowverse:Aiela2": {
     "NAME": "Aiela, Dragon Sword",
@@ -6188,7 +6188,7 @@
   },
   "shadowverse:InfiniflameDragon": {
     "NAME": "Infiniflame Dragon",
-    "DESCRIPTION": "Deal 50 damage. NL Kill ALL minions and deal 10 damage for each one killed. NL Exhaust ALL attack cards in your hand and deal 10 damage for each one exhausted. NL Deal !D! damage twice."
+    "DESCRIPTION": "Deal 50 damage. NL Kill ALL minions and deal 10 damage for each one killed. NL Exhaust ALL attack cards in your hand and deal 10 damage for each one Exhausted. NL Deal !D! damage twice."
   },
   "shadowverse:Hiro": {
     "NAME": "Hiro's Dragon Oracle",
@@ -6264,7 +6264,7 @@
   },
   "shadowverse:Doublame": {
     "NAME": "Doublame, Seeker of Beauty",
-    "DESCRIPTION": "Gain !B! Block. NL Choose: NL *Leoparion NL *Peckish *Owlcat NL Add 1 of the chosen cards to your hand. Upgrade the chosen card for each *Evolution *Point exhausted. NL If at least 5 *Evolution *Points are exhausted, add 1 *Evolution *Point to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Choose: NL *Leoparion NL *Peckish *Owlcat NL Add 1 of the chosen cards to your hand. Upgrade the chosen card for each *Evolution *Point Exhausted. NL If at least 5 *Evolution *Points are Exhausted, add 1 *Evolution *Point to your hand."
   },
   "shadowverse:Jeanne6": {
     "NAME": "Jeanne, Worldwalker",
@@ -6403,7 +6403,7 @@
     "NAME": "Iris, Sky Spirit",
     "DESCRIPTION": "Can only Fuse 1 card at a time. NL Retain - Fusion: 1 Forestcraft card. NL If a third card was fused to this card, it becomes *Iris, *Soaring *Spirit. NL  NL --------------------- NL  NL Gain !B! Block. NL If cards were fused to this card, draw 2 cards and add 2 to the number of cards played this turn.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards. )"
     ]
   },
@@ -6426,7 +6426,7 @@
     "DESCRIPTION": "Fusion: Non-basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
     "UPGRADE_DESCRIPTION": "Fusion: Non-basic Runecraft cards. NL If at least 5 cards are fused, it becomes *Midelo+, *Scorner *Of *Truths. NL  NL --------------------- NL  NL Gain !B! Block. NL Put a Runecraft card from the draw pile to your hand. Repeat if cards were fused to this card.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards. )"
     ]
   },
@@ -6435,7 +6435,7 @@
     "DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL If 7 or more Earth Essence has been consumed this combat，add 1 *Evolution *Point and 1 *Miracle to your hand, then gain: 'Once per turn, whenever you consume Earth Essence gain that much energy'.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain 1 Earth Essence. NL Gain: 'Once per turn, whenever you consume Earth Essence gain that much energy.' NL If 7 or more Earth Essence has been consumed this combat, add 1 *Evolution *Point and 1 *Miracle to your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Consumed",
+      " NL (Consumed ",
       " Earth Essence. )"
     ]
   },
@@ -6443,26 +6443,26 @@
     "NAME": "Gallant Dragonewt",
     "DESCRIPTION": "Armed NL Deal !D! damage. NL Add 1 *Draconic *Weapon to your hand. NL If 4 or more Armed attacks have been played this combat，double the damage and add an Armed attack with the highest cost played this combat to your hand. It gains Retain and Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL （Played",
+      " NL （Played ",
       " Armed attack cards. )"
     ]
   },
   "shadowverse:GraveAdjudicator": {
     "NAME": "Grave Adjudicator",
-    "DESCRIPTION": "Deal !D! damage. Strength affects this card !M! times. NL When played or exhausted, gain: 'Immune to debuffs except those that affect Strength and Dexterity. When an attack is exhausted or played, gain 1 Strength and Dexterity .' NL This card can not be exhausted."
+    "DESCRIPTION": "Deal !D! damage. Strength affects this card !M! times. NL When played or Exhausted, gain: 'Immune to debuffs except those that affect Strength and Dexterity. When an attack is Exhausted or played, gain 1 Strength and Dexterity .' NL This card can not be Exhausted."
   },
   "shadowverse:GraveVoidknight": {
     "NAME": "Grave Voidknight",
     "DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Fusion: Non-basic Shadowcraft cards. NL When fusing to this card, if 2 or less cards have been fused perform Necromancy 4: Randomly add a card with Last Words from the draw pile to your hand. If 3 or more are fused, this card becomes *Grave *Adjudicator+.  NL  NL --------------------- NL  NL Gain !B! Block.  NL Necromancy 4: Add 1 *Evolution *Point to your hand. Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Fused",
+      " NL (Fused ",
       " cards. )"
     ]
   },
   "shadowverse:HeartRadiance": {
     "NAME": "Heart's Radiance",
-    "DESCRIPTION": "Add 5 Shadowcraft cards that cost more than 1 energy to your hand from exhaust pile, they cost 0 this turn. NL Exhaust your hand and gain !B! Block for each card exhausted. NL Exhaust."
+    "DESCRIPTION": "Add 5 Shadowcraft cards that cost more than 1 energy to your hand from exhaust pile, they cost 0 this turn. NL Exhaust your hand and gain !B! Block for each card Exhausted. NL Exhaust."
   },
   "shadowverse:SoulLight": {
     "NAME": "Soul's Light",
@@ -6483,8 +6483,8 @@
   },
   "shadowverse:Hunters": {
     "NAME": "Lian & Alfie, Hunters",
-    "DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, upgrade this card and add an *Evolution *Point to your hand.",
-    "UPGRADE_DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, add an *Evolution *Point to your hand. NL Downgrades when played."
+    "DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are Exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, upgrade this card and add an *Evolution *Point to your hand.",
+    "UPGRADE_DESCRIPTION": "Can only fuse if 5 or more *Evolution *Points are Exhausted. NL Fusion: Non-basic Bloodcraft cards. NL If any cards are fused to this card, it becomes *Lian *& *Alfie, *Companions. NL --------------------- NL Gain !B! Block and 1 Flame Barrier. NL If you play an *Evolution *Point, add an *Evolution *Point to your hand. NL Downgrades when played."
   },
   "shadowverse:TanzaniteConvictor": {
     "NAME": "Tanzanite Convictor",
@@ -6509,7 +6509,7 @@
   },
   "shadowverse:PurelightPrototype": {
     "NAME": "Agyll, Purelight Prototype",
-    "DESCRIPTION": "AF - Fusion: Non-basic Portalcraft cards. NL If cards are fused to this card and there are 5 or less Artifacts exhausted, add 2 *Analyzing *Artifacts to your draw pile. Otherwise, this card becomes *Agyll, *Purelight *Exemplar。 NL Deal !D! damage. NL Randomly add !M! Artifacts from the draw pile to your hand."
+    "DESCRIPTION": "AF - Fusion: Non-basic Portalcraft cards. NL If cards are fused to this card and there are 5 or less Artifacts Exhausted, add 2 *Analyzing *Artifacts to your draw pile. Otherwise, this card becomes *Agyll, *Purelight *Exemplar。 NL Deal !D! damage. NL Randomly add !M! Artifacts from the draw pile to your hand."
   },
   "shadowverse:DisseminatorOfWisdom": {
     "NAME": "Disseminator of Wisdom",
