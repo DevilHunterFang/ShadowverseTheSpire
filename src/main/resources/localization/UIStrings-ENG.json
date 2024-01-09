@@ -282,5 +282,16 @@
     "TEXT": [
       " NL Banish NL When destroyed, deal 10 damage to all enemies and gain 4 Block."
     ]
+ },
+  "shadowverse:AppleMod": {
+    "TEXT": [
+      " NL Last_Words: When exhausted, draw 2 cards.",
+      " NL Last_Words: When exhausted, add a Void and a copy of this card to your hand. It costs 0."
+    ]
+  },
+  "shadowverse:HannaMod": {
+    "TEXT": [
+      " Deal 3 damage to ALL enemies. NL "
+    ]
   }
 }
