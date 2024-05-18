@@ -17,7 +17,7 @@
     "NAME": "Enchanted Library",
     "FLAVOR": "Quiet, please. Noise upsets the books. -A poster in the Enchanted Library ",
     "DESCRIPTIONS": [
-      "At the start of the first #b2 turn, put #b1 #yskill into your hand from draw pile."
+      "At the start of the first #b2 turns, put #b1 #ySkill card from your Draw Pile to your hand"
     ]
   },
   "shadowverse:EarthEssenceRelic": {
@@ -124,7 +124,7 @@
     "NAME": "Judgment Rising",
     "FLAVOR": "You must understand that freedom is but a sweet poison.",
     "DESCRIPTIONS": [
-      "At the start of turn, put a 0 cost #yGreenwood #yGuardian into your hand."
+      "At the start of each turn, put a 0 cost #yGreenwood #yGuardian into your hand."
     ]
   },
   "shadowverse:GlassOfIC": {
@@ -159,19 +159,19 @@
     "NAME": "Geass: Survive",
     "FLAVOR": "Survive!",
     "DESCRIPTIONS": [
-      "Once per combat, whenever you would die, heal 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity, and gain #b25 #yBlock."
+      "Once per combat whenever you would die, heal to 1 HP, remove all of your debuffs, gain #b5 #yStrength and #yDexterity, and gain #b25 #yBlock instead."
     ]
   },
   "shadowverse:Offensive3": {
     "NAME": "Token of 1st",
     "FLAVOR": "I go first, no need to redraw.",
     "DESCRIPTIONS": [
-      "At the start of your turn, #yNecromancy 3: Put 1 #yZombie into your hand."
+      "At the start of your turn, perform #yNecromancy 3: Put 1 #yZombie into your hand."
     ]
   },
   "shadowverse:BurialGround": {
     "NAME": "Burial Grounds",
-    "FLAVOR": "Death is gathering.",
+    "FLAVOR": "Death gathers, and it knows no bounds.",
     "DESCRIPTIONS": [
       "At the end of your turn, gain #b1 #yShadows."
     ]
@@ -222,7 +222,7 @@
     "NAME": "Vermilion Bite",
     "FLAVOR": "Submit to the great power of the Vermilion Bite!",
     "DESCRIPTIONS": [
-      "Lose #b2 life at the start of your turn. Heal #b4 life at the end of your turn."
+      "Lose #b2 HP at the start of your turn. Heal #b4 HP at the end of your turn."
     ]
   },
   "shadowverse:LustRelic": {
@@ -243,7 +243,7 @@
     "NAME": "Urias's Pendant",
     "FLAVOR": "Amuse me!",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain #b1 Strength if Vengeance is active. If Wrath is active, gain #b7 Block. If Avarice is active, draw #b1 cards."
+      "At the start of your turn, gain #b1 Strength if Vengeance is active. If Wrath is active, gain #b7 Block. If Avarice is active, draw #b1 additional card."
     ]
   },
   "shadowverse:BerserkRelic": {
@@ -313,7 +313,7 @@
     "NAME": "Tranquil Cog",
     "FLAVOR": "Wisdom keeps the universe in motion.",
     "DESCRIPTIONS": [
-      "At the start of your first #b3 turn, draw #b1 additional cards if Resonance is active for you. Otherwise, draw #b2 additional cards."
+      "At the start of your first #b3 turns, draw #b1 additional card if Resonance is active for you. Otherwise, draw #b2 additional cards."
     ]
   },
   "shadowverse:Offensive6": {
@@ -355,14 +355,14 @@
     "NAME": "Valhorean Dealer",
     "FLAVOR": "I'm sorry——Forgive me——",
     "DESCRIPTIONS": [
-      "Right click to spend #b30 gold to redraw any number of your hand."
+      "Right click to spend #b30 gold to redraw any number of cards in your hand."
     ]
   },
   "shadowverse:KagemitsuSword": {
     "NAME": "Enma Yasukuni",
     "FLAVOR": "Thanks to you, I have drawn my blade from the scabbard called peace. I will cut down my enemies. That is the sole reason I exist.",
     "DESCRIPTIONS": [
-      "ALL cards that downpgrade will automatically upgrade again after being played."
+      "ALL cards that downgrade will automatically upgrade again after being played."
     ]
   },
   "shadowverse:Durandal": {
@@ -428,7 +428,7 @@
     "NAME": "Saren's Brilliant Feather",
     "FLAVOR": "When you spread your wings, your body will no longer be bound by gravity.",
     "DESCRIPTIONS": [
-      "Replaces #yToken #yof #y1st. Gain 1 Amulet slot. If your HP is less than half of your max HP, start each of your turns with an additional [E]."
+      "Replaces #yToken #yof #y1st. Gain 1 Amulet slot. If your HP is at or below 50%, start each of your turns with an additional [E]."
     ]
   },
   "shadowverse:HeresyAvatar": {
@@ -542,21 +542,21 @@
     "NAME": "Gliesaray Orbs",
     "FLAVOR": "When boys finally learn the bitterness inherent in yearning, that's when they ripen into men.",
     "DESCRIPTIONS": [
-      "At the start of turn #b5, draw #b5 extra cards and restore #b5 HP."
+      "At the start of turn #b5, draw #b5 extra cards and heal #b5 HP."
     ]
   },
    "shadowverse:Juratio": {
     "NAME": "Juratio, Blessed Signet",
     "FLAVOR": "Forge the oath, Juratio!",
     "DESCRIPTIONS": [
-      "At the start of combat, apply #yWeak and #yVulnerable to all enemies #b1 and you gain #yRegen #b2."
+      "At the start of combat, apply #b1 #yWeak and #yVulnerable to all enemies and gain #b2 #yRegen."
     ]
   },
    "shadowverse:Lagedor": {
     "NAME": "L'Age d'Or, Enchanted Wheel",
     "FLAVOR": "Round the azure, L'Age d'Or!",
     "DESCRIPTIONS": [
-      "At the start of your first two turns, randomly add #yLoot card to your hand. At the start of your 3rd turn, gain #b14 Block."
+      "At the start of your first two turns, randomly add a #yLoot card to your hand. At the start of your 3rd turn, gain #b14 Block."
     ]
   },
   "shadowverse:FortuneWell": {
@@ -569,7 +569,7 @@
   },
   "shadowverse:MonikaBOSS": {
     "NAME": "Flugel Coat",
-    "FLAVOR": "The coat worn by Monika. Its luxurious tailoring inspires the minds and bodies of those who follow at its back.",
+    "FLAVOR": "The coat worn by Monika, Cloudhall Admiral. Its luxurious tailoring inspires the minds and bodies of those who follow at its back.",
     "DESCRIPTIONS": [
       "Replaces #yToken #yOf #y1st. Right click once per turn and up to #y2 times per combat to add 1 #yEvolution #yPoint to your hand. When you play an Evolution point, all followers gain #g+1/+1."
     ]
@@ -592,7 +592,7 @@
     "NAME": "Mao and Fengtian",
     "FLAVOR": "Hear the dragon's victory roar!",
     "DESCRIPTIONS": [
-      "The 2nd time you play an attack card that was created each combat, draw #b2 cards and gain [E]"
+      "The 2nd time you play an Attack card that was created each turn, draw #b2 cards and gain [E]"
     ]
   },
   "shadowverse:Hiro": {
