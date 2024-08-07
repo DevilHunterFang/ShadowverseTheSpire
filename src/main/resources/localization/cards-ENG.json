@@ -2894,7 +2894,7 @@
   "shadowverse:ShieldPhalanx": {
     "NAME": "Shield Phalanx",
     "DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL ",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL Rally 15: Summon a Frontguard_General instead of a Shield_Guardian (Limit). NL ",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Summon 1 Shield_Guardian NL and 1 Knight. NL Rally 15 - Limit: Summon a Frontguard_General instead of a Shield_Guardian. NL ",
     "EXTENDED_DESCRIPTION": [
       "(Rally: ",
       ")"
@@ -3089,7 +3089,7 @@
   },
   "shadowverse:FrontlineInstructor": {
     "NAME": "Frontline Instructor",
-    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10: ALL *Followers gain +1/+1 instead (Limit).",
+    "DESCRIPTION": "Gain !B! Block. The rightmost *Follower gains +1/+0. NL Rally 10 - Limit: ALL *Followers gain +1/+1 instead.",
     "EXTENDED_DESCRIPTION": [
       "(Rally:",
       ")"
@@ -3368,7 +3368,7 @@
   },
   "shadowverse:Cernunnos": {
     "NAME": "Cernunnos",
-    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Gain [E] [E] (Limit). NL Reanimate: !M!. If you've spent 20 or more Shadows to activate Necromancy effects this combat, Reanimate: 5 instead."
+    "DESCRIPTION": "Burial_Rite 1: Draw !M! card(s). NL Limit: Gain [E] [E] NL Reanimate: !M!. If you've spent 20 or more Shadows to activate Necromancy effects this combat, Reanimate: 5 instead."
   },
   "shadowverse:MiracleHarvest": {
     "NAME": "Miracle Harvest",
@@ -6004,19 +6004,19 @@
   },
   "shadowverse:DragonAwakening": {
     "NAME": "Dragon's Awakening",
-    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Enhance 1: Draw !M! cards."
+    "DESCRIPTION": "Limit: Gain 1 Dexterity. NL Enhance 1: Draw !M! cards."
   },
   "shadowverse:Sandstorm": {
     "NAME": "Sandstorm",
-    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Enhance 1: Deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Limit: Gain 1 Dexterity. NL Enhance 1: Deal !M! damage to ALL enemies."
   },
   "shadowverse:WhimsicalMermaid": {
     "NAME": "Whimsical Mermaid",
-    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Gain !B! Block. NL Draw 1 card. NL If you have at least 2 Dexterity, draw 1 more card."
+    "DESCRIPTION": "Limit: Gain 1 Dexterity. NL Gain !B! Block. NL Draw 1 card. NL If you have at least 2 Dexterity, draw 1 more card."
   },
   "shadowverse:Gunbein": {
     "NAME": "Gunbein, Lofty Dragonewt",
-    "DESCRIPTION": "Academic - Accelerate 0: Gain 1 Dexterity (Limit). NL Deal 4 damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL If you have at least 2 Dexterity, gain !B! Block again."
+    "DESCRIPTION": "Academic - Accelerate 0 - Limit: Gain 1 Dexterity. NL Deal 4 damage to a random enemy. NL NL --------------------- NL NL Gain !B! Block. NL If you have at least 2 Dexterity, gain !B! Block again."
   },
   "shadowverse:PrimeConflagration": {
     "NAME": "Prime Conflagration",
@@ -6024,7 +6024,7 @@
   },
   "shadowverse:BlazingDragonewt": {
     "NAME": "Blazing Dragonewt",
-    "DESCRIPTION": "Gain 1 Dexterity (Limit). NL Gain !B! Block. NL Discard 1 card, draw 1 card."
+    "DESCRIPTION": "Limit: Gain 1 Dexterity. NL Gain !B! Block. NL Discard 1 card, draw 1 card."
   },
   "shadowverse:CoralShark": {
     "NAME": "Coral Shark",
@@ -6040,7 +6040,7 @@
   },
   "shadowverse:GrandSlamTamer": {
     "NAME": "Grand Slam Tamer",
-    "DESCRIPTION": "Academic. Gain 1 Dexterity (Limit). NL Gain !B! Block. NL If you have at least 2 Dexterity, add 1 *Hellflame *Dragon to your hand, NL If you have at least 4 Dexterity, double that *Hellflame *Dragon's damage."
+    "DESCRIPTION": "Academic. Limit: Gain 1 Dexterity. NL Gain !B! Block. NL If you have at least 2 Dexterity, add 1 *Hellflame *Dragon to your hand, NL If you have at least 4 Dexterity, double that *Hellflame *Dragon's damage."
   },
   "shadowverse:CelestialDragoon": {
     "NAME": "Celestial Dragoon",
@@ -6164,7 +6164,7 @@
   },
   "shadowverse:Filene3": {
     "NAME": "Filene, Absolute Zero",
-    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Whitefrost *Whisper to your hand. NL If Overflow is active, Stun ALL enemies (Limit)."
+    "DESCRIPTION": "Gain !B! Block. NL Add 1 *Whitefrost *Whisper to your hand. NL Limit: If Overflow is active, Stun ALL enemies."
   },
   "shadowverse:Forte": {
     "NAME": "Dark Dragoon Forte",
@@ -6184,7 +6184,7 @@
   },
   "shadowverse:Forte5": {
     "NAME": "Forte & Miriam, Bondforged",
-    "DESCRIPTION": "Deal !D! damage. NL Gain 2 Strength and Dexterity (Limit). NL If Overflow is active, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! damage. NL Limit: Gain 2 Strength and Dexterity. NL If Overflow is active, deal !D! damage again."
   },
   "shadowverse:InfiniflameDragon": {
     "NAME": "Infiniflame Dragon",
